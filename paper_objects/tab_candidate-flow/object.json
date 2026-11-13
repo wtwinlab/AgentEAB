@@ -1,0 +1,583 @@
+{
+ "id": "tab_candidate-flow",
+ "labels": [
+  "sec:candidate-flow",
+  "eq:candidate-flow",
+  "sec:s-candidate-flow",
+  "tab:s-candidate-flow",
+  "sec:s-output-interactions"
+ ],
+ "section": "VI-A (sec:candidate-flow), Eq. 3 (eq:candidate-flow); supplementary sec:s-candidate-flow and sec:s-output-interactions",
+ "title": "Candidate flow: correct answers in the initial and last-round pools, extraction and the vote",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: initial pools with a correct query, mean of six (%)",
+   "printed": "34.76",
+   "key": "C0_mean6"
+  },
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: last-round pools with a correct query, mean of six (%)",
+   "printed": "32.87",
+   "key": "CT_mean6"
+  },
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: revision loses all correct candidates (% of questions)",
+   "printed": "4.17",
+   "key": "loss_mean6"
+  },
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: revision recovers a correct candidate (% of questions)",
+   "printed": "2.27",
+   "key": "recovery_mean6"
+  },
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: questions per configuration",
+   "printed": "198",
+   "key": "questions"
+  },
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: protocol extractor delivers a correct query (%)",
+   "printed": "26.43",
+   "key": "CD_mean6"
+  },
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: baseline vote succeeds (%)",
+   "printed": "21.13",
+   "key": "Y_mean6"
+  },
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: lenient extraction with execution voting (%)",
+   "printed": "29.12",
+   "key": "Yx_mean6"
+  },
+  {
+   "label": "sec:candidate-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "prose: recovered from the same terminal responses, about 8 pp",
+   "printed": "8",
+   "key": "Yx_minus_Y_mean6"
+  },
+  {
+   "label": "sec:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "prose: questions per row",
+   "printed": "198",
+   "key": "questions"
+  },
+  {
+   "label": "sec:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "prose: BCCS/Llama-3-8B returned-answer accuracy (%)",
+   "printed": "9.60",
+   "key": "returned_bccs_llama"
+  },
+  {
+   "label": "sec:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "prose: BCCS/Qwen2.5-7B returned-answer accuracy (%)",
+   "printed": "23.99",
+   "key": "returned_bccs_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B: C_0",
+   "printed": "23.99",
+   "key": "C0_dumad_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B: C_T",
+   "printed": "23.99",
+   "key": "CT_dumad_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B: C_D",
+   "printed": "0.00",
+   "key": "CD_dumad_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B: Y",
+   "printed": "0.00",
+   "key": "Y_dumad_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B: Loss",
+   "printed": "1.52",
+   "key": "loss_dumad_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B: Recovery",
+   "printed": "1.52",
+   "key": "recovery_dumad_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B: Y_x",
+   "printed": "22.98",
+   "key": "Yx_dumad_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B: C_0",
+   "printed": "36.87",
+   "key": "C0_dumad_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B: C_T",
+   "printed": "35.61",
+   "key": "CT_dumad_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B: C_D",
+   "printed": "35.61",
+   "key": "CD_dumad_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B: Y",
+   "printed": "34.09",
+   "key": "Y_dumad_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B: Loss",
+   "printed": "3.28",
+   "key": "loss_dumad_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B: Recovery",
+   "printed": "2.02",
+   "key": "recovery_dumad_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B: Y_x",
+   "printed": "35.35",
+   "key": "Yx_dumad_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B: C_0",
+   "printed": "28.28",
+   "key": "C0_madm2_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B: C_T",
+   "printed": "27.02",
+   "key": "CT_madm2_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B: C_D",
+   "printed": "26.77",
+   "key": "CD_madm2_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B: Y",
+   "printed": "15.40",
+   "key": "Y_madm2_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B: Loss",
+   "printed": "4.04",
+   "key": "loss_madm2_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B: Recovery",
+   "printed": "2.78",
+   "key": "recovery_madm2_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B: Y_x",
+   "printed": "22.47",
+   "key": "Yx_madm2_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B: C_0",
+   "printed": "38.64",
+   "key": "C0_madm2_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B: C_T",
+   "printed": "37.37",
+   "key": "CT_madm2_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B: C_D",
+   "printed": "37.37",
+   "key": "CD_madm2_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B: Y",
+   "printed": "29.80",
+   "key": "Y_madm2_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B: Loss",
+   "printed": "5.05",
+   "key": "loss_madm2_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B: Recovery",
+   "printed": "3.79",
+   "key": "recovery_madm2_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B: Y_x",
+   "printed": "33.59",
+   "key": "Yx_madm2_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B: C_0",
+   "printed": "32.58",
+   "key": "C0_bccs_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B: C_T",
+   "printed": "29.80",
+   "key": "CT_bccs_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B: C_D",
+   "printed": "19.44",
+   "key": "CD_bccs_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B: Y",
+   "printed": "16.16",
+   "key": "Y_bccs_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B: Loss",
+   "printed": "3.54",
+   "key": "loss_bccs_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B: Recovery",
+   "printed": "0.76",
+   "key": "recovery_bccs_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B: Y_x",
+   "printed": "24.75",
+   "key": "Yx_bccs_llama"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B: C_0",
+   "printed": "48.23",
+   "key": "C0_bccs_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B: C_T",
+   "printed": "43.43",
+   "key": "CT_bccs_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B: C_D",
+   "printed": "39.39",
+   "key": "CD_bccs_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B: Y",
+   "printed": "31.31",
+   "key": "Y_bccs_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B: Loss",
+   "printed": "7.58",
+   "key": "loss_bccs_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B: Recovery",
+   "printed": "2.78",
+   "key": "recovery_bccs_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B: Y_x",
+   "printed": "35.61",
+   "key": "Yx_bccs_qwen"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Mean: C_0",
+   "printed": "34.76",
+   "key": "C0_mean6"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Mean: C_T",
+   "printed": "32.87",
+   "key": "CT_mean6"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Mean: C_D",
+   "printed": "26.43",
+   "key": "CD_mean6"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Mean: Y",
+   "printed": "21.13",
+   "key": "Y_mean6"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Mean: Loss",
+   "printed": "4.17",
+   "key": "loss_mean6"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Mean: Recovery",
+   "printed": "2.27",
+   "key": "recovery_mean6"
+  },
+  {
+   "label": "tab:s-candidate-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Mean: Y_x",
+   "printed": "29.12",
+   "key": "Yx_mean6"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: extractor-vote interaction, Du-MAD and MAD-M2, first-agent ties (pp)",
+   "printed": "+0.25",
+   "key": "interaction_mean4_first"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: extractor-vote interaction, Du-MAD and MAD-M2, last-agent ties (pp)",
+   "printed": "+0.32",
+   "key": "interaction_mean4_last"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: extractor-vote interaction, Du-MAD and MAD-M2, random-agent ties (pp)",
+   "printed": "+0.63",
+   "key": "interaction_mean4_random"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: extractor-vote interaction, including BCCS, first-agent ties (pp)",
+   "printed": "+0.97",
+   "key": "interaction_mean6_first"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: extractor-vote interaction, including BCCS, last-agent ties (pp)",
+   "printed": "+0.76",
+   "key": "interaction_mean6_last"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: extractor-vote interaction, including BCCS, random-agent ties (pp)",
+   "printed": "+1.39",
+   "key": "interaction_mean6_random"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: first-tie joint change, corrections in runs (Du-MAD and MAD-M2)",
+   "printed": "141",
+   "key": "joint_corrections_runs_mean4"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD and MAD-M2 runs",
+   "printed": "1,584",
+   "key": "runs_four_configurations"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: last-agent ties, corrections in runs",
+   "printed": "43",
+   "key": "tie_last_corrections_runs_mean4"
+  },
+  {
+   "label": "sec:s-output-interactions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: last-agent ties, regressions in runs",
+   "printed": "35",
+   "key": "tie_last_regressions_runs_mean4"
+  }
+ ],
+ "statements": [
+  {
+   "text": "Eq. eq:candidate-flow: the four gaps sum to the failure rate in every configuration",
+   "key": "flow_identity_holds",
+   "expected": 1
+  },
+  {
+   "text": "Section III-C: Y <= C_D <= C_T holds in every run",
+   "key": "CT_ge_CD_ge_Y_every_run",
+   "expected": 1
+  },
+  {
+   "text": "sec:candidate-flow: most initial pools lack a correct answer",
+   "key": "initial_pool_correct_below_half",
+   "expected": 1
+  },
+  {
+   "text": "sec:candidate-flow: the extraction gap exceeds the net revision loss",
+   "key": "extraction_gap_exceeds_revision_net",
+   "expected": 1
+  },
+  {
+   "text": "sec:candidate-flow: the voting gap exceeds the net revision loss",
+   "key": "vote_gap_exceeds_revision_net",
+   "expected": 1
+  },
+  {
+   "text": "sec:candidate-flow: two repeats per configuration",
+   "key": "repeats_per_question",
+   "expected": 2
+  },
+  {
+   "text": "sec:s-output-interactions: Du-MAD and MAD-M2, first-agent ties, interaction not detected",
+   "key": "interaction_mean4_first_detected",
+   "expected": 0
+  },
+  {
+   "text": "sec:s-output-interactions: Du-MAD and MAD-M2, last-agent ties, interaction not detected",
+   "key": "interaction_mean4_last_detected",
+   "expected": 0
+  },
+  {
+   "text": "sec:s-output-interactions: Du-MAD and MAD-M2, random ties, interaction not detected",
+   "key": "interaction_mean4_random_detected",
+   "expected": 0
+  },
+  {
+   "text": "sec:s-output-interactions: including BCCS, first-agent ties, interaction detected",
+   "key": "interaction_mean6_first_detected",
+   "expected": 1
+  },
+  {
+   "text": "sec:s-output-interactions: including BCCS, last-agent ties, interaction detected",
+   "key": "interaction_mean6_last_detected",
+   "expected": 1
+  },
+  {
+   "text": "sec:s-output-interactions: including BCCS, random ties, interaction detected",
+   "key": "interaction_mean6_random_detected",
+   "expected": 1
+  },
+  {
+   "text": "sec:s-output-interactions: the first-tie joint change regresses two runs",
+   "key": "joint_regressions_runs_mean4",
+   "expected": 2
+  }
+ ],
+ "unreproduced": []
+}

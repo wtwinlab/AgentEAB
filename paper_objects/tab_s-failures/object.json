@@ -1,0 +1,262 @@
+{
+ "id": "tab_s-failures",
+ "labels": [
+  "tab:s-failures",
+  "sec:s-failures"
+ ],
+ "section": "Supplementary S6-G (sec:s-failures)",
+ "title": "Why a final answer on BIRD is wrong, with peers",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, Final answer correct",
+   "printed": "0.0",
+   "key": "du_mad_llama38b_correct_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, Generation",
+   "printed": "74.5",
+   "key": "du_mad_llama38b_generation_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, Format",
+   "printed": "25.5",
+   "key": "du_mad_llama38b_format_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, Selection",
+   "printed": "0.0",
+   "key": "du_mad_llama38b_selection_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, Final answer correct",
+   "printed": "34.1",
+   "key": "du_mad_qwen257b_correct_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, Generation",
+   "printed": "61.1",
+   "key": "du_mad_qwen257b_generation_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, Format",
+   "printed": "0.0",
+   "key": "du_mad_qwen257b_format_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, Selection",
+   "printed": "4.8",
+   "key": "du_mad_qwen257b_selection_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, Final answer correct",
+   "printed": "15.4",
+   "key": "madm2_objective_llama38b_correct_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, Generation",
+   "printed": "68.9",
+   "key": "madm2_objective_llama38b_generation_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, Format",
+   "printed": "0.8",
+   "key": "madm2_objective_llama38b_format_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, Selection",
+   "printed": "14.9",
+   "key": "madm2_objective_llama38b_selection_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, Final answer correct",
+   "printed": "29.8",
+   "key": "madm2_objective_qwen257b_correct_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, Generation",
+   "printed": "57.6",
+   "key": "madm2_objective_qwen257b_generation_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, Format",
+   "printed": "0.0",
+   "key": "madm2_objective_qwen257b_format_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, Selection",
+   "printed": "12.6",
+   "key": "madm2_objective_qwen257b_selection_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B, Final answer correct",
+   "printed": "9.6",
+   "key": "bccs_llama38b_correct_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B, Generation",
+   "printed": "66.7",
+   "key": "bccs_llama38b_generation_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B, Format",
+   "printed": "12.1",
+   "key": "bccs_llama38b_format_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B, Selection",
+   "printed": "11.6",
+   "key": "bccs_llama38b_selection_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B, Final answer correct",
+   "printed": "24.0",
+   "key": "bccs_qwen257b_correct_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B, Generation",
+   "printed": "49.0",
+   "key": "bccs_qwen257b_generation_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B, Format",
+   "printed": "4.3",
+   "key": "bccs_qwen257b_format_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B, Selection",
+   "printed": "22.7",
+   "key": "bccs_qwen257b_selection_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MoA (roster), Final answer correct",
+   "printed": "39.1",
+   "key": "moa_roster_correct_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MoA (roster), Generation",
+   "printed": "37.1",
+   "key": "moa_roster_generation_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MoA (roster), Format",
+   "printed": "0.0",
+   "key": "moa_roster_format_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "MoA (roster), Selection",
+   "printed": "23.7",
+   "key": "moa_roster_selection_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "FORD (roster), Final answer correct",
+   "printed": "28.5",
+   "key": "ford_roster_correct_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "FORD (roster), Generation",
+   "printed": "65.9",
+   "key": "ford_roster_generation_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "FORD (roster), Format",
+   "printed": "0.0",
+   "key": "ford_roster_format_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "FORD (roster), Selection",
+   "printed": "5.6",
+   "key": "ford_roster_selection_pct"
+  },
+  {
+   "label": "tab:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "caption: runs per cell",
+   "printed": "396",
+   "key": "du_mad_llama38b_runs"
+  },
+  {
+   "label": "sec:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD/Llama-3-8B runs with no correct query even with a perfect extractor (%)",
+   "printed": "74.5",
+   "key": "du_mad_llama38b_generation_pct"
+  },
+  {
+   "label": "sec:s-failures",
+   "tex_file": "supplementary.tex",
+   "where": "using every round moves no class by more than 2 pp (bound)",
+   "printed": "2",
+   "key": "every_round_max_class_move_pp",
+   "relation": "le"
+  }
+ ],
+ "unreproduced": []
+}

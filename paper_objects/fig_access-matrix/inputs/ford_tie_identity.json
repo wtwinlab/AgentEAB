@@ -1,0 +1,110 @@
+{
+ "claim": "on a two-valued answer set the released rule and the all-round majority agree on every trace where the stop rule fires, and the only traces where they can differ are exact ties produced by a strictly alternating trace that exhausted the round budget",
+ "rows": [
+  {
+   "all_ties_are_alternating": true,
+   "arm": "FULL",
+   "benchmark": "wdc_products",
+   "distinct_answer_values": [
+    "match",
+    "non-match"
+   ],
+   "identity_holds_where_rule_fires": true,
+   "rule_fired": 2000,
+   "rule_fired_and_last_prediction_is_strict_majority": 2000,
+   "runs": 2000,
+   "tied_and_strictly_alternating": 0,
+   "tied_runs": 0,
+   "tied_sequence_lengths": {}
+  },
+  {
+   "all_ties_are_alternating": true,
+   "arm": "NOPEER",
+   "benchmark": "wdc_products",
+   "distinct_answer_values": [
+    "match",
+    "non-match"
+   ],
+   "identity_holds_where_rule_fires": true,
+   "rule_fired": 1667,
+   "rule_fired_and_last_prediction_is_strict_majority": 1667,
+   "runs": 2000,
+   "tied_and_strictly_alternating": 333,
+   "tied_runs": 333,
+   "tied_sequence_lengths": {
+    "6": 333
+   }
+  },
+  {
+   "all_ties_are_alternating": true,
+   "arm": "ANSONLY",
+   "benchmark": "wdc_products",
+   "distinct_answer_values": [
+    "match",
+    "non-match"
+   ],
+   "identity_holds_where_rule_fires": true,
+   "rule_fired": 1993,
+   "rule_fired_and_last_prediction_is_strict_majority": 1993,
+   "runs": 2000,
+   "tied_and_strictly_alternating": 7,
+   "tied_runs": 7,
+   "tied_sequence_lengths": {
+    "6": 7
+   }
+  },
+  {
+   "all_ties_are_alternating": true,
+   "arm": "FULL",
+   "benchmark": "geographic_settlements",
+   "distinct_answer_values": [
+    "match",
+    "non-match"
+   ],
+   "identity_holds_where_rule_fires": true,
+   "rule_fired": 2000,
+   "rule_fired_and_last_prediction_is_strict_majority": 2000,
+   "runs": 2000,
+   "tied_and_strictly_alternating": 0,
+   "tied_runs": 0,
+   "tied_sequence_lengths": {}
+  },
+  {
+   "all_ties_are_alternating": true,
+   "arm": "NOPEER",
+   "benchmark": "geographic_settlements",
+   "distinct_answer_values": [
+    "match",
+    "non-match"
+   ],
+   "identity_holds_where_rule_fires": true,
+   "rule_fired": 1596,
+   "rule_fired_and_last_prediction_is_strict_majority": 1596,
+   "runs": 2000,
+   "tied_and_strictly_alternating": 404,
+   "tied_runs": 404,
+   "tied_sequence_lengths": {
+    "6": 404
+   }
+  },
+  {
+   "all_ties_are_alternating": true,
+   "arm": "ANSONLY",
+   "benchmark": "geographic_settlements",
+   "distinct_answer_values": [
+    "match",
+    "non-match"
+   ],
+   "identity_holds_where_rule_fires": true,
+   "rule_fired": 1996,
+   "rule_fired_and_last_prediction_is_strict_majority": 1996,
+   "runs": 2000,
+   "tied_and_strictly_alternating": 4,
+   "tied_runs": 4,
+   "tied_sequence_lengths": {
+    "6": 4
+   }
+  }
+ ],
+ "verdict": "holds on every cell"
+}

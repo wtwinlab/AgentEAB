@@ -1,0 +1,1620 @@
+{
+ "id": "tab_sql-rule-strength",
+ "labels": [
+  "tab:sql-rule-strength",
+  "sec:sql-final-selection",
+  "tab:s-q25-rules",
+  "sec:s-sql-rules",
+  "tab:s-empty",
+  "tab:s-testsuite",
+  "sec:s-exec"
+ ],
+ "section": "VII-B (sec:sql-final-selection); Supplementary S7-C (sec:s-sql-rules), S7-D (sec:s-exec)",
+ "title": "Execution filters on fixed SQL pools",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Unfiltered, Four candidates",
+   "printed": "+8.24",
+   "key": "bird_pool4_32b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Unfiltered, Four candidates, 95% CI lower",
+   "printed": "5.98",
+   "key": "bird_pool4_32b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Unfiltered, Four candidates, 95% CI upper",
+   "printed": "10.80",
+   "key": "bird_pool4_32b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Valid, Four candidates",
+   "printed": "+3.67",
+   "key": "bird_pool4_32b_gen_minus_valid"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Valid, Four candidates, 95% CI lower",
+   "printed": "1.92",
+   "key": "bird_pool4_32b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Valid, Four candidates, 95% CI upper",
+   "printed": "5.44",
+   "key": "bird_pool4_32b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Nonempty, Four candidates",
+   "printed": "+1.00",
+   "key": "bird_pool4_32b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Nonempty, Four candidates, 95% CI lower",
+   "printed": "-0.66",
+   "key": "bird_pool4_32b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Nonempty, Four candidates, 95% CI upper",
+   "printed": "2.76",
+   "key": "bird_pool4_32b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider Nonempty minus Valid, Four candidates",
+   "printed": "+0.48",
+   "key": "spider_pool4_nonempty_minus_valid_all"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider Nonempty minus Valid, Four candidates, 95% CI lower",
+   "printed": "-0.42",
+   "key": "spider_pool4_nonempty_minus_valid_all_lo"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider Nonempty minus Valid, Four candidates, 95% CI upper",
+   "printed": "1.38",
+   "key": "spider_pool4_nonempty_minus_valid_all_hi"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Unfiltered, Six candidates",
+   "printed": "+8.70",
+   "key": "bird_pool6_32b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Unfiltered, Six candidates, 95% CI lower",
+   "printed": "6.41",
+   "key": "bird_pool6_32b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Unfiltered, Six candidates, 95% CI upper",
+   "printed": "11.20",
+   "key": "bird_pool6_32b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Valid, Six candidates",
+   "printed": "+3.29",
+   "key": "bird_pool6_32b_gen_minus_valid"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Valid, Six candidates, 95% CI lower",
+   "printed": "1.63",
+   "key": "bird_pool6_32b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Valid, Six candidates, 95% CI upper",
+   "printed": "5.42",
+   "key": "bird_pool6_32b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Nonempty, Six candidates",
+   "printed": "-0.04",
+   "key": "bird_pool6_32b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Nonempty, Six candidates, 95% CI lower",
+   "printed": "-1.57",
+   "key": "bird_pool6_32b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "BIRD Qwen2.5-32B generation minus Nonempty, Six candidates, 95% CI upper",
+   "printed": "1.42",
+   "key": "bird_pool6_32b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider Nonempty minus Valid, Six candidates",
+   "printed": "+0.48",
+   "key": "spider_pool6_nonempty_minus_valid_all"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider Nonempty minus Valid, Six candidates, 95% CI lower",
+   "printed": "-0.70",
+   "key": "spider_pool6_nonempty_minus_valid_all_lo"
+  },
+  {
+   "label": "tab:sql-rule-strength",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider Nonempty minus Valid, Six candidates, 95% CI upper",
+   "printed": "1.53",
+   "key": "spider_pool6_nonempty_minus_valid_all_hi"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Unfiltered returns unexecutable queries, four candidates (% of the 1,532 questions scored in both pools)",
+   "printed": "16.6",
+   "key": "bird_pool4_unfiltered_winner_unexecutable_share_paired"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "generation succeeds, Unfiltered fails, pool holds a correct query: lowest of four BIRD comparisons (%)",
+   "printed": "82",
+   "key": "bird_gen_only_pool_has_correct_share_min"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Nonempty exceeds Qwen2.5-7B generation, four candidates",
+   "printed": "3.87",
+   "key": "bird_pool4_7b_gen_minus_nonempty",
+   "transform": "neg"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "wrong execution-vote winners returning an empty result on BIRD, lowest (%)",
+   "printed": "26",
+   "key": "bird_vote_empty_share_of_wrong_winners_min"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "questions with an empty Valid winner, BIRD four candidates (%)",
+   "printed": "13",
+   "key": "bird_pool4_valid_empty_winner_share_of_questions"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "questions with an empty Valid winner, BIRD six candidates (%)",
+   "printed": "13",
+   "key": "bird_pool6_valid_empty_winner_share_of_questions"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "questions with an empty Nonempty winner, BIRD six candidates (%)",
+   "printed": "4",
+   "key": "bird_pool6_nonempty_empty_winner_share_of_questions"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Nonempty minus Valid on BIRD, four candidates",
+   "printed": "2.67",
+   "key": "bird_pool4_nonempty_minus_valid_all"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider Nonempty minus Valid on nonempty-answer questions, four candidates",
+   "printed": "1.32",
+   "key": "spider_pool4_nonempty_minus_valid_gold_nonempty"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider Nonempty loss on empty-answer questions, four candidates",
+   "printed": "16.33",
+   "key": "spider_pool4_nonempty_minus_valid_gold_empty",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider empty-answer questions",
+   "printed": "49",
+   "key": "spider_pool4_empty_reference_questions"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "net Nonempty minus Valid on Spider",
+   "printed": "+0.48",
+   "key": "spider_pool4_nonempty_minus_valid_all"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Spider empty-answer rate (%)",
+   "printed": "4.74",
+   "key": "spider_pool4_empty_reference_share"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "break-even empty-answer prevalence, six candidates (%)",
+   "printed": "7.18",
+   "key": "spider_pool6_nonempty_break_even_share"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "test-suite databases per question, fewest",
+   "printed": "25",
+   "key": "spider_test_suite_databases_min"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "accuracy drop under test suites, smallest system (pp)",
+   "printed": "8",
+   "key": "ts_drop_min"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "DeepSeek-V4-Pro selector minus Nonempty, test suite",
+   "printed": "3.77",
+   "key": "ts_pool4_deepseek_selector_minus_pool4_nonempty_suite"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "DeepSeek-V4-Pro selector minus Nonempty, single instance",
+   "printed": "2.61",
+   "key": "ts_pool4_deepseek_selector_minus_pool4_nonempty_single"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 7B / 4 candidates",
+   "printed": "+3.37",
+   "key": "bird_pool4_7b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 7B / 4 candidates, 95% CI lower",
+   "printed": "0.06",
+   "key": "bird_pool4_7b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 7B / 4 candidates, 95% CI upper",
+   "printed": "6.16",
+   "key": "bird_pool4_7b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 7B / 4 candidates",
+   "printed": "-1.71",
+   "key": "spider_pool4_7b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 7B / 4 candidates, 95% CI lower",
+   "printed": "-3.26",
+   "key": "spider_pool4_7b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 7B / 4 candidates, 95% CI upper",
+   "printed": "-0.34",
+   "key": "spider_pool4_7b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 32B / 4 candidates",
+   "printed": "+8.24",
+   "key": "bird_pool4_32b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 32B / 4 candidates, 95% CI lower",
+   "printed": "5.98",
+   "key": "bird_pool4_32b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 32B / 4 candidates, 95% CI upper",
+   "printed": "10.80",
+   "key": "bird_pool4_32b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 32B / 4 candidates",
+   "printed": "+0.87",
+   "key": "spider_pool4_32b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 32B / 4 candidates, 95% CI lower",
+   "printed": "-1.80",
+   "key": "spider_pool4_32b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 32B / 4 candidates, 95% CI upper",
+   "printed": "3.58",
+   "key": "spider_pool4_32b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 7B / 6 candidates",
+   "printed": "+3.57",
+   "key": "bird_pool6_7b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 7B / 6 candidates, 95% CI lower",
+   "printed": "-0.02",
+   "key": "bird_pool6_7b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 7B / 6 candidates, 95% CI upper",
+   "printed": "7.47",
+   "key": "bird_pool6_7b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 7B / 6 candidates",
+   "printed": "-3.16",
+   "key": "spider_pool6_7b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 7B / 6 candidates, 95% CI lower",
+   "printed": "-5.21",
+   "key": "spider_pool6_7b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 7B / 6 candidates, 95% CI upper",
+   "printed": "-1.40",
+   "key": "spider_pool6_7b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 32B / 6 candidates",
+   "printed": "+8.70",
+   "key": "bird_pool6_32b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 32B / 6 candidates, 95% CI lower",
+   "printed": "6.41",
+   "key": "bird_pool6_32b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus unfiltered, 32B / 6 candidates, 95% CI upper",
+   "printed": "11.20",
+   "key": "bird_pool6_32b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 32B / 6 candidates",
+   "printed": "-0.10",
+   "key": "spider_pool6_32b_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 32B / 6 candidates, 95% CI lower",
+   "printed": "-2.38",
+   "key": "spider_pool6_32b_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus unfiltered, 32B / 6 candidates, 95% CI upper",
+   "printed": "2.07",
+   "key": "spider_pool6_32b_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 7B / 4 candidates",
+   "printed": "-1.20",
+   "key": "bird_pool4_7b_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 7B / 4 candidates, 95% CI lower",
+   "printed": "-4.48",
+   "key": "bird_pool4_7b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 7B / 4 candidates, 95% CI upper",
+   "printed": "1.82",
+   "key": "bird_pool4_7b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 7B / 4 candidates",
+   "printed": "-2.48",
+   "key": "spider_pool4_7b_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 7B / 4 candidates, 95% CI lower",
+   "printed": "-4.12",
+   "key": "spider_pool4_7b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 7B / 4 candidates, 95% CI upper",
+   "printed": "-1.02",
+   "key": "spider_pool4_7b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 32B / 4 candidates",
+   "printed": "+3.67",
+   "key": "bird_pool4_32b_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 32B / 4 candidates, 95% CI lower",
+   "printed": "1.92",
+   "key": "bird_pool4_32b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 32B / 4 candidates, 95% CI upper",
+   "printed": "5.44",
+   "key": "bird_pool4_32b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 32B / 4 candidates",
+   "printed": "+0.10",
+   "key": "spider_pool4_32b_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 32B / 4 candidates, 95% CI lower",
+   "printed": "-2.64",
+   "key": "spider_pool4_32b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 32B / 4 candidates, 95% CI upper",
+   "printed": "2.87",
+   "key": "spider_pool4_32b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 7B / 6 candidates",
+   "printed": "-1.85",
+   "key": "bird_pool6_7b_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 7B / 6 candidates, 95% CI lower",
+   "printed": "-5.01",
+   "key": "bird_pool6_7b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 7B / 6 candidates, 95% CI upper",
+   "printed": "1.26",
+   "key": "bird_pool6_7b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 7B / 6 candidates",
+   "printed": "-4.51",
+   "key": "spider_pool6_7b_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 7B / 6 candidates, 95% CI lower",
+   "printed": "-6.09",
+   "key": "spider_pool6_7b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 7B / 6 candidates, 95% CI upper",
+   "printed": "-3.03",
+   "key": "spider_pool6_7b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 32B / 6 candidates",
+   "printed": "+3.29",
+   "key": "bird_pool6_32b_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 32B / 6 candidates, 95% CI lower",
+   "printed": "1.63",
+   "key": "bird_pool6_32b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus valid, 32B / 6 candidates, 95% CI upper",
+   "printed": "5.42",
+   "key": "bird_pool6_32b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 32B / 6 candidates",
+   "printed": "-1.45",
+   "key": "spider_pool6_32b_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 32B / 6 candidates, 95% CI lower",
+   "printed": "-3.35",
+   "key": "spider_pool6_32b_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus valid, 32B / 6 candidates, 95% CI upper",
+   "printed": "0.35",
+   "key": "spider_pool6_32b_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 7B / 4 candidates",
+   "printed": "-3.87",
+   "key": "bird_pool4_7b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 7B / 4 candidates, 95% CI lower",
+   "printed": "-7.32",
+   "key": "bird_pool4_7b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 7B / 4 candidates, 95% CI upper",
+   "printed": "-1.22",
+   "key": "bird_pool4_7b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 7B / 4 candidates",
+   "printed": "-2.97",
+   "key": "spider_pool4_7b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 7B / 4 candidates, 95% CI lower",
+   "printed": "-4.70",
+   "key": "spider_pool4_7b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 7B / 4 candidates, 95% CI upper",
+   "printed": "-1.39",
+   "key": "spider_pool4_7b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 32B / 4 candidates",
+   "printed": "+1.00",
+   "key": "bird_pool4_32b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 32B / 4 candidates, 95% CI lower",
+   "printed": "-0.66",
+   "key": "bird_pool4_32b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 32B / 4 candidates, 95% CI upper",
+   "printed": "2.76",
+   "key": "bird_pool4_32b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 32B / 4 candidates",
+   "printed": "-0.39",
+   "key": "spider_pool4_32b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 32B / 4 candidates, 95% CI lower",
+   "printed": "-3.19",
+   "key": "spider_pool4_32b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 32B / 4 candidates, 95% CI upper",
+   "printed": "2.20",
+   "key": "spider_pool4_32b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 7B / 6 candidates",
+   "printed": "-5.18",
+   "key": "bird_pool6_7b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 7B / 6 candidates, 95% CI lower",
+   "printed": "-8.31",
+   "key": "bird_pool6_7b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 7B / 6 candidates, 95% CI upper",
+   "printed": "-2.21",
+   "key": "bird_pool6_7b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 7B / 6 candidates",
+   "printed": "-5.00",
+   "key": "spider_pool6_7b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 7B / 6 candidates, 95% CI lower",
+   "printed": "-6.96",
+   "key": "spider_pool6_7b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 7B / 6 candidates, 95% CI upper",
+   "printed": "-2.76",
+   "key": "spider_pool6_7b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 32B / 6 candidates",
+   "printed": "-0.04",
+   "key": "bird_pool6_32b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 32B / 6 candidates, 95% CI lower",
+   "printed": "-1.57",
+   "key": "bird_pool6_32b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation minus nonempty, 32B / 6 candidates, 95% CI upper",
+   "printed": "1.42",
+   "key": "bird_pool6_32b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 32B / 6 candidates",
+   "printed": "-1.93",
+   "key": "spider_pool6_32b_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 32B / 6 candidates, 95% CI lower",
+   "printed": "-4.10",
+   "key": "spider_pool6_32b_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-q25-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation minus nonempty, 32B / 6 candidates, 95% CI upper",
+   "printed": "0.16",
+   "key": "spider_pool6_32b_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Valid minus Unfiltered, bird pool4",
+   "printed": "4.57",
+   "key": "bird_pool4_valid_minus_unfiltered_all"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Valid minus Unfiltered, bird pool6",
+   "printed": "5.42",
+   "key": "bird_pool6_valid_minus_unfiltered_all"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Valid minus Unfiltered, spider pool4",
+   "printed": "0.77",
+   "key": "spider_pool4_valid_minus_unfiltered_all"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Valid minus Unfiltered, spider pool6",
+   "printed": "1.35",
+   "key": "spider_pool6_valid_minus_unfiltered_all"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B generation minus Valid, BIRD four candidates",
+   "printed": "3.46",
+   "key": "bird_pool4_72b_minus_valid"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B minus Qwen2.5-32B generation, BIRD",
+   "printed": "-0.22",
+   "key": "bird_pool4_72b_minus_32b"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B minus Qwen2.5-32B generation, Spider",
+   "printed": "+0.97",
+   "key": "spider_pool4_72b_minus_32b"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider six-candidate Unfiltered accuracy (%)",
+   "printed": "74.37",
+   "key": "spider_pool6_unfiltered_accuracy"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "Spider six-candidate Qwen2.5-32B generation accuracy (%)",
+   "printed": "74.27",
+   "key": "spider_pool6_32b_generation_accuracy"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "runs where only Unfiltered succeeds",
+   "printed": "114",
+   "key": "spider_pool6_32b_unfiltered_only_runs"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "runs where only generation succeeds",
+   "printed": "111",
+   "key": "spider_pool6_32b_generation_only_runs"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "share of differing outcomes (%)",
+   "printed": "7.25",
+   "key": "spider_pool6_32b_differing_share"
+  },
+  {
+   "label": "sec:s-sql-rules",
+   "tex_file": "supplementary.tex",
+   "where": "paired outcomes",
+   "printed": "3,102",
+   "key": "spider_pool6_32b_runs"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "bird pool4 valid, of questions",
+   "printed": "12.65",
+   "key": "bird_pool4_valid_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "bird pool4 valid, of wrong winners",
+   "printed": "26.47",
+   "key": "bird_pool4_valid_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "bird pool4 nonempty, of questions",
+   "printed": "5.74",
+   "key": "bird_pool4_nonempty_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "bird pool4 nonempty, of wrong winners",
+   "printed": "12.72",
+   "key": "bird_pool4_nonempty_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "bird pool6 valid, of questions",
+   "printed": "12.73",
+   "key": "bird_pool6_valid_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "bird pool6 valid, of wrong winners",
+   "printed": "27.50",
+   "key": "bird_pool6_valid_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "bird pool6 nonempty, of questions",
+   "printed": "4.24",
+   "key": "bird_pool6_nonempty_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "bird pool6 nonempty, of wrong winners",
+   "printed": "9.88",
+   "key": "bird_pool6_nonempty_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "spider pool4 valid, of questions",
+   "printed": "9.09",
+   "key": "spider_pool4_valid_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "spider pool4 valid, of wrong winners",
+   "printed": "17.75",
+   "key": "spider_pool4_valid_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "spider pool4 nonempty, of questions",
+   "printed": "5.51",
+   "key": "spider_pool4_nonempty_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "spider pool4 nonempty, of wrong winners",
+   "printed": "7.38",
+   "key": "spider_pool4_nonempty_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, of questions",
+   "printed": "13.51",
+   "key": "debate_dumad_llama38b_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, of wrong winners",
+   "printed": "29.6",
+   "key": "debate_dumad_llama38b_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, of questions",
+   "printed": "10.86",
+   "key": "debate_dumad_qwen257b_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, of wrong winners",
+   "printed": "26.6",
+   "key": "debate_dumad_qwen257b_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, of questions",
+   "printed": "14.65",
+   "key": "debate_madm2_llama38b_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, of wrong winners",
+   "printed": "30.3",
+   "key": "debate_madm2_llama38b_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, of questions",
+   "printed": "14.90",
+   "key": "debate_madm2_qwen257b_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, of wrong winners",
+   "printed": "29.1",
+   "key": "debate_madm2_qwen257b_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B, of questions",
+   "printed": "17.30",
+   "key": "debate_bccs_llama38b_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Llama-3-8B, of wrong winners",
+   "printed": "28.7",
+   "key": "debate_bccs_llama38b_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B, of questions",
+   "printed": "17.55",
+   "key": "debate_bccs_qwen257b_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS / Qwen2.5-7B, of wrong winners",
+   "printed": "32.6",
+   "key": "debate_bccs_qwen257b_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "MoA references, of questions",
+   "printed": "16.16",
+   "key": "debate_moa_roster_empty_winner_share_of_questions"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "MoA references, of wrong winners",
+   "printed": "27.7",
+   "key": "debate_moa_roster_empty_share_of_wrong_winners"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "Spider empty Valid winners that are correct (note)",
+   "printed": "45",
+   "key": "spider_pool4_valid_empty_winners_correct"
+  },
+  {
+   "label": "tab:s-empty",
+   "tex_file": "supplementary.tex",
+   "where": "Spider empty Valid winners (note)",
+   "printed": "94",
+   "key": "spider_pool4_valid_empty_winners"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Unfiltered vote, 4 candidates, single",
+   "printed": "72.44",
+   "key": "ts_pool4_unfiltered_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Unfiltered vote, 4 candidates, suite",
+   "printed": "62.28",
+   "key": "ts_pool4_unfiltered_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Unfiltered vote, 4 candidates, drop",
+   "printed": "10.2",
+   "key": "ts_pool4_unfiltered_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Unfiltered vote, 6 candidates, single",
+   "printed": "74.37",
+   "key": "ts_pool6_unfiltered_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Unfiltered vote, 6 candidates, suite",
+   "printed": "64.02",
+   "key": "ts_pool6_unfiltered_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid vote, 4 candidates, single",
+   "printed": "73.21",
+   "key": "ts_pool4_valid_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid vote, 4 candidates, suite",
+   "printed": "62.86",
+   "key": "ts_pool4_valid_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid vote, 6 candidates, single",
+   "printed": "75.73",
+   "key": "ts_pool6_valid_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid vote, 6 candidates, suite",
+   "printed": "64.99",
+   "key": "ts_pool6_valid_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid vote, 6 candidates, drop",
+   "printed": "10.7",
+   "key": "ts_pool6_valid_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty vote, 4 candidates, single",
+   "printed": "73.69",
+   "key": "ts_pool4_nonempty_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty vote, 4 candidates, suite",
+   "printed": "63.54",
+   "key": "ts_pool4_nonempty_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty vote, 4 candidates, drop",
+   "printed": "10.2",
+   "key": "ts_pool4_nonempty_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty vote, 6 candidates, single",
+   "printed": "76.21",
+   "key": "ts_pool6_nonempty_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty vote, 6 candidates, suite",
+   "printed": "65.47",
+   "key": "ts_pool6_nonempty_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty vote, 6 candidates, drop",
+   "printed": "10.7",
+   "key": "ts_pool6_nonempty_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation, 4 candidates, single",
+   "printed": "72.11",
+   "key": "ts_pool4_qwen25_generation_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation, 4 candidates, suite",
+   "printed": "64.20",
+   "key": "ts_pool4_qwen25_generation_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation, 4 candidates, drop",
+   "printed": "7.9",
+   "key": "ts_pool4_qwen25_generation_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation, 6 candidates, single",
+   "printed": "72.74",
+   "key": "ts_pool6_qwen25_generation_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation, 6 candidates, suite",
+   "printed": "64.60",
+   "key": "ts_pool6_qwen25_generation_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation, 6 candidates, drop",
+   "printed": "8.1",
+   "key": "ts_pool6_qwen25_generation_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B selector, single",
+   "printed": "74.66",
+   "key": "ts_pool4_qwen3_selector_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B selector, suite",
+   "printed": "66.15",
+   "key": "ts_pool4_qwen3_selector_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B selector, drop",
+   "printed": "8.5",
+   "key": "ts_pool4_qwen3_selector_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B generation, single",
+   "printed": "73.98",
+   "key": "ts_pool4_qwen3_generation_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B generation, suite",
+   "printed": "65.76",
+   "key": "ts_pool4_qwen3_generation_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B generation, drop",
+   "printed": "8.2",
+   "key": "ts_pool4_qwen3_generation_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro selector, single",
+   "printed": "76.31",
+   "key": "ts_pool4_deepseek_selector_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro selector, suite",
+   "printed": "67.31",
+   "key": "ts_pool4_deepseek_selector_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro selector, drop",
+   "printed": "9.0",
+   "key": "ts_pool4_deepseek_selector_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro generation, single",
+   "printed": "75.63",
+   "key": "ts_pool4_deepseek_generation_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro generation, suite",
+   "printed": "64.22",
+   "key": "ts_pool4_deepseek_generation_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro generation, drop",
+   "printed": "11.4",
+   "key": "ts_pool4_deepseek_generation_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid - Unfiltered, four (pp), single",
+   "printed": "+0.77",
+   "key": "ts_pool4_valid_minus_pool4_unfiltered_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid - Unfiltered, four (pp), suite",
+   "printed": "+0.58",
+   "key": "ts_pool4_valid_minus_pool4_unfiltered_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid - Unfiltered, six (pp), single",
+   "printed": "+1.35",
+   "key": "ts_pool6_valid_minus_pool6_unfiltered_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid - Unfiltered, six (pp), suite",
+   "printed": "+0.97",
+   "key": "ts_pool6_valid_minus_pool6_unfiltered_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty - Valid, four (pp), single",
+   "printed": "+0.48",
+   "key": "ts_pool4_nonempty_minus_pool4_valid_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty - Valid, four (pp), suite",
+   "printed": "+0.68",
+   "key": "ts_pool4_nonempty_minus_pool4_valid_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty - Valid, six (pp), single",
+   "printed": "+0.48",
+   "key": "ts_pool6_nonempty_minus_pool6_valid_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty - Valid, six (pp), suite",
+   "printed": "+0.48",
+   "key": "ts_pool6_nonempty_minus_pool6_valid_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation - Valid, four (pp), single",
+   "printed": "-1.10",
+   "key": "ts_pool4_qwen25_generation_minus_pool4_valid_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation - Valid, four (pp), suite",
+   "printed": "+1.34",
+   "key": "ts_pool4_qwen25_generation_minus_pool4_valid_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation - Valid, six (pp), single",
+   "printed": "-2.98",
+   "key": "ts_pool6_qwen25_generation_minus_pool6_valid_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5 generation - Valid, six (pp), suite",
+   "printed": "-0.39",
+   "key": "ts_pool6_qwen25_generation_minus_pool6_valid_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B selector - Valid (pp), single",
+   "printed": "+1.45",
+   "key": "ts_pool4_qwen3_selector_minus_pool4_valid_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B selector - Valid (pp), suite",
+   "printed": "+3.29",
+   "key": "ts_pool4_qwen3_selector_minus_pool4_valid_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro selector - Valid (pp), single",
+   "printed": "+3.09",
+   "key": "ts_pool4_deepseek_selector_minus_pool4_valid_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro selector - Valid (pp), suite",
+   "printed": "+4.45",
+   "key": "ts_pool4_deepseek_selector_minus_pool4_valid_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro selector - Nonempty (pp), single",
+   "printed": "+2.61",
+   "key": "ts_pool4_deepseek_selector_minus_pool4_nonempty_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro selector - Nonempty (pp), suite",
+   "printed": "+3.77",
+   "key": "ts_pool4_deepseek_selector_minus_pool4_nonempty_suite"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro generation - selector (pp), single",
+   "printed": "-0.68",
+   "key": "ts_pool4_deepseek_generation_minus_pool4_deepseek_selector_single"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro generation - selector (pp), suite",
+   "printed": "-3.09",
+   "key": "ts_pool4_deepseek_generation_minus_pool4_deepseek_selector_suite"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "test-suite databases per question, fewest",
+   "printed": "25",
+   "key": "spider_test_suite_databases_min"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "test-suite databases per question, mean",
+   "printed": "38.8",
+   "key": "spider_test_suite_databases_mean"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "result-equal vote groups that split, four candidates (%)",
+   "printed": "20.5",
+   "key": "ts_pool4_vote_groups_split_share"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "Valid winners correct on the single instance only, four candidates (%)",
+   "printed": "10.3",
+   "key": "ts_pool4_valid_single_correct_suite_wrong_share"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "same, highest of four BIRD comparisons (%)",
+   "printed": "91",
+   "key": "bird_gen_only_pool_has_correct_share_max"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "same, highest (%)",
+   "printed": "33",
+   "key": "bird_vote_empty_share_of_wrong_winners_max"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "questions with an empty Nonempty winner, BIRD four candidates (%)",
+   "printed": "6",
+   "key": "bird_pool4_nonempty_empty_winner_share_of_questions"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Nonempty minus Valid on BIRD, six candidates",
+   "printed": "3.33",
+   "key": "bird_pool6_nonempty_minus_valid_all"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "same, six candidates",
+   "printed": "1.42",
+   "key": "spider_pool6_nonempty_minus_valid_gold_nonempty"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "same, six candidates",
+   "printed": "18.37",
+   "key": "spider_pool6_nonempty_minus_valid_gold_empty",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "break-even empty-answer prevalence, four candidates (%)",
+   "printed": "7.48",
+   "key": "spider_pool4_nonempty_break_even_share"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "test-suite databases per question, most",
+   "printed": "60",
+   "key": "spider_test_suite_databases_max"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "accuracy drop under test suites, largest system (pp)",
+   "printed": "11",
+   "key": "ts_drop_max"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "test-suite databases per question, most",
+   "printed": "60",
+   "key": "spider_test_suite_databases_max"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "same, six candidates (%)",
+   "printed": "24.8",
+   "key": "ts_pool6_vote_groups_split_share"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "same, six candidates (%)",
+   "printed": "10.7",
+   "key": "ts_pool6_valid_single_correct_suite_wrong_share"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Unfiltered vote, six candidates: single minus suite (pp)",
+   "printed": "10.3",
+   "key": "ts_pool6_unfiltered_drop"
+  },
+  {
+   "label": "tab:s-testsuite",
+   "tex_file": "supplementary.tex",
+   "where": "Valid vote, four candidates: single minus suite (pp)",
+   "printed": "10.3",
+   "key": "ts_pool4_valid_drop"
+  },
+  {
+   "label": "sec:sql-final-selection",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Unfiltered returns unexecutable queries, six candidates (% of the 1,532 questions scored in both pools)",
+   "printed": "19.1",
+   "key": "bird_pool6_unfiltered_winner_unexecutable_share_paired"
+  }
+ ],
+ "unreproduced": []
+}

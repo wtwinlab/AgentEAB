@@ -1,0 +1,1345 @@
+{
+ "id": "fig_debate-budget",
+ "labels": [
+  "sec:debate-budget",
+  "fig:debate-budget",
+  "sec:s-budget",
+  "tab:s-budget-cost",
+  "tab:s-budget-contrasts",
+  "tab:s-draft-diversity"
+ ],
+ "section": "VIII-E (sec:debate-budget) with Fig. 8; supplementary S8-D (sec:s-budget)",
+ "title": "Allocating a fixed budget: debate rounds and agents against voting over independent drafts",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "six initial answers vs the debate's own output, mean of Du-MAD and MAD-M2",
+   "printed": "10.10",
+   "key": "fixed_exec_minus_final"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "same extraction and execution vote on both sides",
+   "printed": "+1.33",
+   "key": "fixed_exec_minus_last"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "question interval, lower",
+   "printed": "-0.38",
+   "key": "fixed_exec_minus_last_q_lo"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "question interval, upper",
+   "printed": "2.97",
+   "key": "fixed_exec_minus_last_q_hi"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "database interval, lower",
+   "printed": "-0.82",
+   "key": "fixed_exec_minus_last_db_lo"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "database interval, upper",
+   "printed": "3.14",
+   "key": "fixed_exec_minus_last_db_hi"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "protocol extraction and exact-match vote: the vote trails by",
+   "printed": "3.28",
+   "key": "fixed_string_minus_final",
+   "transform": "neg"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "budget sweep: BIRD questions",
+   "printed": "198",
+   "key": "budget_questions"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Llama-3-8B, debate, 6 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": ".84",
+   "key": "fig_llama_debate_6_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Llama-3-8B, debate, 9 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "8.16",
+   "key": "fig_llama_debate_9_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Llama-3-8B, debate, 10 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "6.60",
+   "key": "fig_llama_debate_10_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Llama-3-8B, debate, 12 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "4.80",
+   "key": "fig_llama_debate_12_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Llama-3-8B, independent vote, 6 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "5.04",
+   "key": "fig_llama_vote_6_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Llama-3-8B, independent vote, 9 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "7.56",
+   "key": "fig_llama_vote_9_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Llama-3-8B, independent vote, 10 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "7.56",
+   "key": "fig_llama_vote_10_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Llama-3-8B, independent vote, 12 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "7.56",
+   "key": "fig_llama_vote_12_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Qwen2.5-7B, debate, 6 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "15.72",
+   "key": "fig_qwen_debate_6_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Qwen2.5-7B, debate, 9 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "15.72",
+   "key": "fig_qwen_debate_9_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Qwen2.5-7B, debate, 10 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "17.16",
+   "key": "fig_qwen_debate_10_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Qwen2.5-7B, debate, 12 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "15.12",
+   "key": "fig_qwen_debate_12_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Qwen2.5-7B, independent vote, 6 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "20.88",
+   "key": "fig_qwen_vote_6_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Qwen2.5-7B, independent vote, 9 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "26.28",
+   "key": "fig_qwen_vote_9_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Qwen2.5-7B, independent vote, 10 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "25.68",
+   "key": "fig_qwen_vote_10_y"
+  },
+  {
+   "label": "fig:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Qwen2.5-7B, independent vote, 12 calls: plotted y = 1.2 x (accuracy % at one decimal - 20)",
+   "printed": "25.68",
+   "key": "fig_qwen_vote_12_y"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "MAD-M2 three rounds minus six-call debate, two-backbone mean",
+   "printed": "3.03",
+   "key": "madm2_3x3_minus_base"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "MAD-M2 five agents minus six-call debate, two-backbone mean",
+   "printed": "3.03",
+   "key": "madm2_5x2_minus_base"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "independent voting lead at 9, 10, 12 calls: smallest",
+   "printed": "3.91",
+   "key": "madm2_call_lead_9to12_min"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "independent voting lead at 9, 10, 12 calls: largest",
+   "printed": "5.56",
+   "key": "madm2_call_lead_9to12_max"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "six-call lead of independent voting",
+   "printed": "3.91",
+   "key": "call_madm2_3x2_protocol",
+   "transform": "neg"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "token-matched draft counts: smallest",
+   "printed": "7",
+   "key": "madm2_kstar_min"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "token-matched draft counts: largest",
+   "printed": "17",
+   "key": "madm2_kstar_max"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "token-matched voting lead: smallest",
+   "printed": "3.16",
+   "key": "madm2_token_lead_min"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "token-matched voting lead: largest",
+   "printed": "6.19",
+   "key": "madm2_token_lead_max"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD greedy drafts, Llama-3-8B: vote over 20 minus one draft",
+   "printed": "0.00",
+   "key": "dumad_llama_protocol_vote20_minus_vote1"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD greedy drafts, Qwen2.5-7B: vote over 20 minus one draft",
+   "printed": "+2.53",
+   "key": "dumad_qwen_protocol_vote20_minus_vote1"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD temperature-0.7 drafts, Llama-3-8B: vote over 20 minus one draft",
+   "printed": "10.61",
+   "key": "dumad_llama_t07_vote20_minus_vote1"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD temperature-0.7 drafts, Qwen2.5-7B: vote over 20 minus one draft",
+   "printed": "7.58",
+   "key": "dumad_qwen_t07_vote20_minus_vote1"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD failed runs at the larger budgets",
+   "printed": "117",
+   "key": "dumad_failed_at_larger_budgets"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD four-round comparison: questions with usable repeats",
+   "printed": "155",
+   "key": "dumad_3x4_minus_base_n"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD four rounds minus base, failed runs left out",
+   "printed": "-0.16",
+   "key": "dumad_3x4_minus_base"
+  },
+  {
+   "label": "sec:debate-budget",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD four rounds minus base, failed runs counted as wrong",
+   "printed": "-2.02",
+   "key": "faw_dumad_3x4_minus_base"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: BIRD questions",
+   "printed": "198",
+   "key": "budget_questions"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: four-round Du-MAD mean retains paired questions",
+   "printed": "155",
+   "key": "dumad_3x4_minus_base_n"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD four rounds minus base, failed left out",
+   "printed": "-0.16",
+   "key": "dumad_3x4_minus_base"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD four rounds minus base, failed = wrong",
+   "printed": "-2.02",
+   "key": "faw_dumad_3x4_minus_base"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: both protocols, four rounds minus base, failed left out",
+   "printed": "+1.05",
+   "key": "all4_3x4_minus_base"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: both protocols, four rounds minus base, failed = wrong",
+   "printed": "-0.32",
+   "key": "faw_all4_3x4_minus_base"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x2: calls",
+   "printed": "6",
+   "key": "dumad_llama_3x2_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x2: tokens per run",
+   "printed": "11,021",
+   "key": "dumad_llama_3x2_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x2: failed runs",
+   "printed": "0",
+   "key": "dumad_llama_3x2_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x3: calls",
+   "printed": "9",
+   "key": "dumad_llama_3x3_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x3: tokens per run",
+   "printed": "22,881",
+   "key": "dumad_llama_3x3_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x3: failed runs",
+   "printed": "0",
+   "key": "dumad_llama_3x3_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 5x2: calls",
+   "printed": "10",
+   "key": "dumad_llama_5x2_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 5x2: tokens per run",
+   "printed": "21,816",
+   "key": "dumad_llama_5x2_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 5x2: failed runs",
+   "printed": "0",
+   "key": "dumad_llama_5x2_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x4: calls",
+   "printed": "12",
+   "key": "dumad_llama_3x4_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x4: tokens per run",
+   "printed": "36,878",
+   "key": "dumad_llama_3x4_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 3x4: failed runs",
+   "printed": "33",
+   "key": "dumad_llama_3x4_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x2: calls",
+   "printed": "6",
+   "key": "dumad_qwen_3x2_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x2: tokens per run",
+   "printed": "11,760",
+   "key": "dumad_qwen_3x2_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x2: failed runs",
+   "printed": "0",
+   "key": "dumad_qwen_3x2_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x3: calls",
+   "printed": "9",
+   "key": "dumad_qwen_3x3_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x3: tokens per run",
+   "printed": "25,018",
+   "key": "dumad_qwen_3x3_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x3: failed runs",
+   "printed": "4",
+   "key": "dumad_qwen_3x3_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 5x2: calls",
+   "printed": "10",
+   "key": "dumad_qwen_5x2_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 5x2: tokens per run",
+   "printed": "23,368",
+   "key": "dumad_qwen_5x2_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 5x2: failed runs",
+   "printed": "0",
+   "key": "dumad_qwen_5x2_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x4: calls",
+   "printed": "12",
+   "key": "dumad_qwen_3x4_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x4: tokens per run",
+   "printed": "39,195",
+   "key": "dumad_qwen_3x4_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 3x4: failed runs",
+   "printed": "80",
+   "key": "dumad_qwen_3x4_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x2: calls",
+   "printed": "6",
+   "key": "madm2_llama_3x2_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x2: tokens per run",
+   "printed": "6,604",
+   "key": "madm2_llama_3x2_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x2: failed runs",
+   "printed": "0",
+   "key": "madm2_llama_3x2_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x3: calls",
+   "printed": "9",
+   "key": "madm2_llama_3x3_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x3: tokens per run",
+   "printed": "10,045",
+   "key": "madm2_llama_3x3_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x3: failed runs",
+   "printed": "0",
+   "key": "madm2_llama_3x3_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 5x2: calls",
+   "printed": "10",
+   "key": "madm2_llama_5x2_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 5x2: tokens per run",
+   "printed": "12,653",
+   "key": "madm2_llama_5x2_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 5x2: failed runs",
+   "printed": "0",
+   "key": "madm2_llama_5x2_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x4: calls",
+   "printed": "12",
+   "key": "madm2_llama_3x4_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x4: tokens per run",
+   "printed": "13,348",
+   "key": "madm2_llama_3x4_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 3x4: failed runs",
+   "printed": "0",
+   "key": "madm2_llama_3x4_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x2: calls",
+   "printed": "6",
+   "key": "madm2_qwen_3x2_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x2: tokens per run",
+   "printed": "7,753",
+   "key": "madm2_qwen_3x2_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x2: failed runs",
+   "printed": "0",
+   "key": "madm2_qwen_3x2_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x3: calls",
+   "printed": "9",
+   "key": "madm2_qwen_3x3_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x3: tokens per run",
+   "printed": "12,611",
+   "key": "madm2_qwen_3x3_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x3: failed runs",
+   "printed": "0",
+   "key": "madm2_qwen_3x3_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 5x2: calls",
+   "printed": "10",
+   "key": "madm2_qwen_5x2_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 5x2: tokens per run",
+   "printed": "15,082",
+   "key": "madm2_qwen_5x2_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 5x2: failed runs",
+   "printed": "0",
+   "key": "madm2_qwen_5x2_failed"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x4: calls",
+   "printed": "12",
+   "key": "madm2_qwen_3x4_calls"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x4: tokens per run",
+   "printed": "17,596",
+   "key": "madm2_qwen_3x4_tokens"
+  },
+  {
+   "label": "tab:s-budget-cost",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 3x4: failed runs",
+   "printed": "0",
+   "key": "madm2_qwen_3x4_failed"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 2 rounds: difference",
+   "printed": "-3.91",
+   "key": "call_madm2_3x2_protocol"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 2 rounds: CI questions, lower",
+   "printed": "-7.20",
+   "key": "call_madm2_3x2_protocol_q_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 2 rounds: CI questions, upper",
+   "printed": "-0.76",
+   "key": "call_madm2_3x2_protocol_q_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 2 rounds: CI databases, lower",
+   "printed": "-8.08",
+   "key": "call_madm2_3x2_protocol_db_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 2 rounds: CI databases, upper",
+   "printed": "+0.50",
+   "key": "call_madm2_3x2_protocol_db_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 3 rounds: difference",
+   "printed": "-4.17",
+   "key": "call_madm2_3x3_protocol"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 3 rounds: CI questions, lower",
+   "printed": "-7.45",
+   "key": "call_madm2_3x3_protocol_q_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 3 rounds: CI questions, upper",
+   "printed": "-0.88",
+   "key": "call_madm2_3x3_protocol_q_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 3 rounds: CI databases, lower",
+   "printed": "-5.96",
+   "key": "call_madm2_3x3_protocol_db_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 3 rounds: CI databases, upper",
+   "printed": "-2.44",
+   "key": "call_madm2_3x3_protocol_db_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 5 agents, 2 rounds: difference",
+   "printed": "-3.91",
+   "key": "call_madm2_5x2_protocol"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 5 agents, 2 rounds: CI questions, lower",
+   "printed": "-7.07",
+   "key": "call_madm2_5x2_protocol_q_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 5 agents, 2 rounds: CI questions, upper",
+   "printed": "-0.88",
+   "key": "call_madm2_5x2_protocol_q_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 5 agents, 2 rounds: CI databases, lower",
+   "printed": "-6.31",
+   "key": "call_madm2_5x2_protocol_db_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 5 agents, 2 rounds: CI databases, upper",
+   "printed": "-1.62",
+   "key": "call_madm2_5x2_protocol_db_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 4 rounds: difference",
+   "printed": "-5.56",
+   "key": "call_madm2_3x4_protocol"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 4 rounds: CI questions, lower",
+   "printed": "-8.59",
+   "key": "call_madm2_3x4_protocol_q_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 4 rounds: CI questions, upper",
+   "printed": "-2.65",
+   "key": "call_madm2_3x4_protocol_q_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 4 rounds: CI databases, lower",
+   "printed": "-7.49",
+   "key": "call_madm2_3x4_protocol_db_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Calls, 3 agents, 4 rounds: CI databases, upper",
+   "printed": "-3.39",
+   "key": "call_madm2_3x4_protocol_db_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 2 rounds: difference",
+   "printed": "-6.19",
+   "key": "token_madm2_3x2_protocol"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 2 rounds: CI questions, lower",
+   "printed": "-9.60",
+   "key": "token_madm2_3x2_protocol_q_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 2 rounds: CI questions, upper",
+   "printed": "-2.90",
+   "key": "token_madm2_3x2_protocol_q_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 2 rounds: CI databases, lower",
+   "printed": "-9.88",
+   "key": "token_madm2_3x2_protocol_db_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 2 rounds: CI databases, upper",
+   "printed": "-2.12",
+   "key": "token_madm2_3x2_protocol_db_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 3 rounds: difference",
+   "printed": "-3.16",
+   "key": "token_madm2_3x3_protocol"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 3 rounds: CI questions, lower",
+   "printed": "-6.31",
+   "key": "token_madm2_3x3_protocol_q_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 3 rounds: CI questions, upper",
+   "printed": "+0.00",
+   "key": "token_madm2_3x3_protocol_q_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 3 rounds: CI databases, lower",
+   "printed": "-4.60",
+   "key": "token_madm2_3x3_protocol_db_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 3 rounds: CI databases, upper",
+   "printed": "-1.78",
+   "key": "token_madm2_3x3_protocol_db_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 5 agents, 2 rounds: difference",
+   "printed": "-4.42",
+   "key": "token_madm2_5x2_protocol"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 5 agents, 2 rounds: CI questions, lower",
+   "printed": "-7.58",
+   "key": "token_madm2_5x2_protocol_q_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 5 agents, 2 rounds: CI questions, upper",
+   "printed": "-1.39",
+   "key": "token_madm2_5x2_protocol_q_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 5 agents, 2 rounds: CI databases, lower",
+   "printed": "-7.46",
+   "key": "token_madm2_5x2_protocol_db_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 5 agents, 2 rounds: CI databases, upper",
+   "printed": "-1.49",
+   "key": "token_madm2_5x2_protocol_db_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 4 rounds: difference",
+   "printed": "-6.06",
+   "key": "token_madm2_3x4_protocol"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 4 rounds: CI questions, lower",
+   "printed": "-9.09",
+   "key": "token_madm2_3x4_protocol_q_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 4 rounds: CI questions, upper",
+   "printed": "-3.03",
+   "key": "token_madm2_3x4_protocol_q_hi"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 4 rounds: CI databases, lower",
+   "printed": "-8.21",
+   "key": "token_madm2_3x4_protocol_db_lo"
+  },
+  {
+   "label": "tab:s-budget-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Tokens, 3 agents, 4 rounds: CI databases, upper",
+   "printed": "-3.89",
+   "key": "token_madm2_3x4_protocol_db_hi"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: token-matched draft count, Llama, 3x2",
+   "printed": "7",
+   "key": "kstar_madm2_llama_3x2_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: token-matched draft count, Llama, 3x3",
+   "printed": "11",
+   "key": "kstar_madm2_llama_3x3_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: token-matched draft count, Llama, 5x2",
+   "printed": "13",
+   "key": "kstar_madm2_llama_5x2_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: token-matched draft count, Llama, 3x4",
+   "printed": "14",
+   "key": "kstar_madm2_llama_3x4_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: token-matched draft count, Qwen, 3x2",
+   "printed": "8",
+   "key": "kstar_madm2_qwen_3x2_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: token-matched draft count, Qwen, 3x3",
+   "printed": "13",
+   "key": "kstar_madm2_qwen_3x3_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: token-matched draft count, Qwen, 5x2",
+   "printed": "15",
+   "key": "kstar_madm2_qwen_5x2_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: token-matched draft count, Qwen, 3x4",
+   "printed": "17",
+   "key": "kstar_madm2_qwen_3x4_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD base configuration draft count",
+   "printed": "11",
+   "key": "kstar_dumad_llama_3x2_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD base configuration draft count (Qwen2.5-7B)",
+   "printed": "11",
+   "key": "kstar_dumad_qwen_3x2_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD call-matched difference vs greedy drafts, 3x2",
+   "printed": "+0.63",
+   "key": "call_dumad_3x2_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD call-matched difference vs greedy drafts, 3x3",
+   "printed": "+1.28",
+   "key": "call_dumad_3x3_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD call-matched difference vs greedy drafts, 5x2",
+   "printed": "+0.38",
+   "key": "call_dumad_5x2_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD call-matched difference vs greedy drafts, 3x4",
+   "printed": "+0.32",
+   "key": "call_dumad_3x4_protocol"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD call-matched difference vs temperature-0.7 drafts, 3x2",
+   "printed": "-4.92",
+   "key": "call_dumad_3x2_t07"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD call-matched difference vs temperature-0.7 drafts, 3x3",
+   "printed": "-4.59",
+   "key": "call_dumad_3x3_t07"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD call-matched difference vs temperature-0.7 drafts, 5x2",
+   "printed": "-5.18",
+   "key": "call_dumad_5x2_t07"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Du-MAD call-matched difference vs temperature-0.7 drafts, 3x4",
+   "printed": "-6.13",
+   "key": "call_dumad_3x4_t07"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 0: distinct results",
+   "printed": "0.82",
+   "key": "dumad_llama_protocol_distinct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 0: multiple results (%)",
+   "printed": "9.6",
+   "key": "dumad_llama_protocol_multiple_pct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 0: vote@20 - vote@1",
+   "printed": "0.00",
+   "key": "dumad_llama_protocol_vote20_minus_vote1"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 0: distinct results",
+   "printed": "0.90",
+   "key": "dumad_qwen_protocol_distinct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 0: multiple results (%)",
+   "printed": "10.6",
+   "key": "dumad_qwen_protocol_multiple_pct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 0: vote@20 - vote@1",
+   "printed": "+2.53",
+   "key": "dumad_qwen_protocol_vote20_minus_vote1"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 0.7: distinct results",
+   "printed": "3.19",
+   "key": "dumad_llama_t07_distinct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 0.7: multiple results (%)",
+   "printed": "71.7",
+   "key": "dumad_llama_t07_multiple_pct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, 0.7: vote@20 - vote@1",
+   "printed": "+10.61",
+   "key": "dumad_llama_t07_vote20_minus_vote1"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 0.7: distinct results",
+   "printed": "3.13",
+   "key": "dumad_qwen_t07_distinct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 0.7: multiple results (%)",
+   "printed": "72.7",
+   "key": "dumad_qwen_t07_multiple_pct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, 0.7: vote@20 - vote@1",
+   "printed": "+7.58",
+   "key": "dumad_qwen_t07_vote20_minus_vote1"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 1: distinct results",
+   "printed": "3.21",
+   "key": "madm2_llama_protocol_distinct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 1: multiple results (%)",
+   "printed": "75.3",
+   "key": "madm2_llama_protocol_multiple_pct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, 1: vote@20 - vote@1",
+   "printed": "+15.15",
+   "key": "madm2_llama_protocol_vote20_minus_vote1"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 1: distinct results",
+   "printed": "3.39",
+   "key": "madm2_qwen_protocol_distinct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 1: multiple results (%)",
+   "printed": "74.7",
+   "key": "madm2_qwen_protocol_multiple_pct"
+  },
+  {
+   "label": "tab:s-draft-diversity",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, 1: vote@20 - vote@1",
+   "printed": "+15.15",
+   "key": "madm2_qwen_protocol_vote20_minus_vote1"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: fixed-response vote minus debate, common extractor and execution vote",
+   "printed": "+1.33",
+   "key": "fixed_exec_minus_last"
+  },
+  {
+   "label": "sec:s-budget",
+   "tex_file": "supplementary.tex",
+   "where": "prose: against the protocols' final answers",
+   "printed": "+10.10",
+   "key": "fixed_exec_minus_final"
+  }
+ ],
+ "statements": [
+  {
+   "text": "six initial answers per question in the fixed-response comparison",
+   "key": "fixed_drafts_per_question",
+   "expected": 6
+  },
+  {
+   "text": "fixed-response comparison uses the 198 questions",
+   "key": "fixed_questions",
+   "expected": 198
+  },
+  {
+   "text": "two debate repeats per question",
+   "key": "budget_repeats",
+   "expected": 2
+  },
+  {
+   "text": "every draft set holds 20 drafts for all 198 questions (six sets)",
+   "key": "draft_sets_complete",
+   "expected": 1188
+  },
+  {
+   "text": "lenient extraction and execution vote on both sides: the gap is not detected",
+   "key": "fixed_exec_minus_last_detected",
+   "expected": 0
+  },
+  {
+   "text": "MAD-M2 three rounds minus six-call debate is detected",
+   "key": "madm2_3x3_minus_base_detected",
+   "expected": 1
+  },
+  {
+   "text": "MAD-M2 five agents minus six-call debate is detected",
+   "key": "madm2_5x2_minus_base_detected",
+   "expected": 1
+  },
+  {
+   "text": "three rounds and five agents give the same two-backbone gain",
+   "key": "madm2_3x3_5x2_gain_equal",
+   "expected": 1
+  },
+  {
+   "text": "independent voting leads at 9, 10 and 12 calls, all detected",
+   "key": "madm2_call_9to12_detected",
+   "expected": 3
+  },
+  {
+   "text": "six-call lead not detected (database interval spans zero)",
+   "key": "call_madm2_3x2_protocol_detected",
+   "expected": 0
+  },
+  {
+   "text": "at nine calls Llama-3-8B slightly favors debate",
+   "key": "madm2_call_3x3_llama_debate_ahead",
+   "expected": 1
+  },
+  {
+   "text": "at nine calls Qwen2.5-7B favors independent voting",
+   "key": "madm2_call_3x3_qwen_vote_ahead",
+   "expected": 1
+  },
+  {
+   "text": "six of eight call- and token-based contrasts are detected",
+   "key": "madm2_call_token_detected",
+   "expected": 6
+  },
+  {
+   "text": "exception: three-round token comparison not detected",
+   "key": "token_madm2_3x3_protocol_detected",
+   "expected": 0
+  },
+  {
+   "text": "greedy Du-MAD drafts: neither vote@20 - vote@1 is detected",
+   "key": "dumad_greedy_vote20_detected",
+   "expected": 0
+  },
+  {
+   "text": "temperature-0.7 and temperature-1 vote gains are all detected",
+   "key": "sampled_vote20_detected",
+   "expected": 4
+  },
+  {
+   "text": "the larger Du-MAD debates exceed the 20-draft token budget (two backbones x three configurations)",
+   "key": "dumad_beyond20_larger",
+   "expected": 6
+  },
+  {
+   "text": "Du-MAD failed runs are all at the larger budgets",
+   "key": "dumad_failed_total",
+   "expected": 117
+  },
+  {
+   "text": "MAD-M2 has no failed runs",
+   "key": "madm2_failed_total",
+   "expected": 0
+  },
+  {
+   "text": "Du-MAD call-matched differences against greedy drafts: none detected",
+   "key": "dumad_greedy_call_detected",
+   "expected": 0
+  },
+  {
+   "text": "Du-MAD call-matched differences against temperature-0.7 drafts: all four detected",
+   "key": "dumad_t07_call_detected",
+   "expected": 4
+  },
+  {
+   "text": "Du-MAD four rounds minus base, failed counted as wrong, is detected",
+   "key": "faw_dumad_3x4_minus_base_detected",
+   "expected": 1
+  }
+ ],
+ "unreproduced": []
+}

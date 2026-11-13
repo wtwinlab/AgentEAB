@@ -1,0 +1,63 @@
+diff --git a/core/agents.py b/core/agents.py
+index f74a2ed..e4c3d48 100644
+--- a/core/agents.py
++++ b/core/agents.py
+@@ -273,7 +273,7 @@ class Selector(BaseAgent):
+ 
+ 
+         db_path = f"{self.data_path}/{db_id}/{db_id}.sqlite"
+-        conn = sqlite3.connect(db_path)
++        conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)  # LOCAL PATCH P3: read-only
+         conn.text_factory = lambda b: b.decode(errors="ignore")  # avoid gbk/utf8 error, copied from sql-eval.exec_eval
+         cursor = conn.cursor()
+ 
+@@ -672,7 +672,7 @@ class Refiner(BaseAgent):
+     def _execute_sql(self, sql: str, db_id: str) -> dict:
+         # Get database connection
+         db_path = f"{self.data_path}/{db_id}/{db_id}.sqlite"
+-        conn = sqlite3.connect(db_path)
++        conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)  # LOCAL PATCH P3: read-only
+         conn.text_factory = lambda b: b.decode(errors="ignore")
+         cursor = conn.cursor()
+         try:
+diff --git a/core/api_config.py b/core/api_config.py
+index 63754d3..0a77081 100644
+--- a/core/api_config.py
++++ b/core/api_config.py
+@@ -4,13 +4,12 @@ OPENAI_API_BASE = os.getenv("OPENAI_API_BASE", "your_own_api_base")
+ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "your_own_api_key")
+ 
+ import openai
+-openai.api_type = "azure"
++openai.api_type = "open_ai"  # LOCAL PATCH P1: local OpenAI-compatible server
+ openai.api_base = OPENAI_API_BASE
+-# set your own api_version
+-openai.api_version = "2023-07-01-preview"
++openai.api_version = None
+ openai.api_key = OPENAI_API_KEY
+ 
+-MODEL_NAME = 'gpt-4-1106-preview' # 128k 版本
++MODEL_NAME = os.getenv('MACSQL_MODEL', 'qwen3-32b')  # LOCAL PATCH P1
+ # MODEL_NAME = 'CodeLlama-7b-hf'
+ # MODEL_NAME = 'gpt-4-32k' # 0613版本
+ # MODEL_NAME = 'gpt-4' # 0613版本
+diff --git a/core/llm.py b/core/llm.py
+index 51f65c2..af83329 100644
+--- a/core/llm.py
++++ b/core/llm.py
+@@ -41,10 +41,12 @@ def api_func(prompt:str):
+             messages=[{"role": "user", "content": prompt}]
+         )
+     else:
+-        response = openai.ChatCompletion.create(
+-            engine=MODEL_NAME,
++        response = openai.ChatCompletion.create(  # LOCAL PATCH P2
++            model=MODEL_NAME,
+             messages=[{"role": "user", "content": prompt}],
+-            temperature=0.1
++            temperature=0.1,
++            max_tokens=4096,
++            chat_template_kwargs={"enable_thinking": False}
+         )
+     text = response['choices'][0]['message']['content'].strip()
+     prompt_token = response['usage']['prompt_tokens']

@@ -1,0 +1,897 @@
+{
+ "id": "fig_readout-cells",
+ "labels": [
+  "fig:readout-cells"
+ ],
+ "section": "VI-B (sec:factorial)",
+ "title": "Peer interaction per BIRD protocol-backbone pair under two output rules and three tie rules",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, first-agent ties, estimate",
+   "printed": "-0.51",
+   "key": "du_mad_qwen257b_strict_string_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, first-agent ties, 95% CI lower",
+   "printed": "-4.55",
+   "key": "du_mad_qwen257b_strict_string_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, first-agent ties, 95% CI upper",
+   "printed": "3.54",
+   "key": "du_mad_qwen257b_strict_string_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, last-agent ties, estimate",
+   "printed": "+1.26",
+   "key": "du_mad_qwen257b_strict_string_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, last-agent ties, 95% CI lower",
+   "printed": "-2.53",
+   "key": "du_mad_qwen257b_strict_string_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, last-agent ties, 95% CI upper",
+   "printed": "5.30",
+   "key": "du_mad_qwen257b_strict_string_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, random ties, estimate",
+   "printed": "0.00",
+   "key": "du_mad_qwen257b_strict_string_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, random ties, 95% CI lower",
+   "printed": "-4.04",
+   "key": "du_mad_qwen257b_strict_string_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Qwen2.5-7B, random ties, 95% CI upper",
+   "printed": "4.04",
+   "key": "du_mad_qwen257b_strict_string_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, first-agent ties, estimate",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, first-agent ties, 95% CI lower",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, first-agent ties, 95% CI upper",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, last-agent ties, estimate",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, last-agent ties, 95% CI lower",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, last-agent ties, 95% CI upper",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, random ties, estimate",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, random ties, 95% CI lower",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), Du-MAD/Llama-3-8B, random ties, 95% CI upper",
+   "printed": "0.00",
+   "key": "du_mad_llama38b_strict_string_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, first-agent ties, estimate",
+   "printed": "+8.33",
+   "key": "madm2_objective_qwen257b_strict_string_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, first-agent ties, 95% CI lower",
+   "printed": "3.54",
+   "key": "madm2_objective_qwen257b_strict_string_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, first-agent ties, 95% CI upper",
+   "printed": "13.38",
+   "key": "madm2_objective_qwen257b_strict_string_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, last-agent ties, estimate",
+   "printed": "+1.01",
+   "key": "madm2_objective_qwen257b_strict_string_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, last-agent ties, 95% CI lower",
+   "printed": "-3.54",
+   "key": "madm2_objective_qwen257b_strict_string_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, last-agent ties, 95% CI upper",
+   "printed": "5.81",
+   "key": "madm2_objective_qwen257b_strict_string_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, random ties, estimate",
+   "printed": "-1.01",
+   "key": "madm2_objective_qwen257b_strict_string_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, random ties, 95% CI lower",
+   "printed": "-6.06",
+   "key": "madm2_objective_qwen257b_strict_string_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Qwen2.5-7B, random ties, 95% CI upper",
+   "printed": "4.04",
+   "key": "madm2_objective_qwen257b_strict_string_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, first-agent ties, estimate",
+   "printed": "+4.29",
+   "key": "madm2_objective_llama38b_strict_string_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, first-agent ties, 95% CI lower",
+   "printed": "-1.52",
+   "key": "madm2_objective_llama38b_strict_string_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, first-agent ties, 95% CI upper",
+   "printed": "10.10",
+   "key": "madm2_objective_llama38b_strict_string_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, last-agent ties, estimate",
+   "printed": "+4.29",
+   "key": "madm2_objective_llama38b_strict_string_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, last-agent ties, 95% CI lower",
+   "printed": "-0.76",
+   "key": "madm2_objective_llama38b_strict_string_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, last-agent ties, 95% CI upper",
+   "printed": "9.34",
+   "key": "madm2_objective_llama38b_strict_string_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, random ties, estimate",
+   "printed": "+5.30",
+   "key": "madm2_objective_llama38b_strict_string_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, random ties, 95% CI lower",
+   "printed": "0.00",
+   "key": "madm2_objective_llama38b_strict_string_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), MAD-M2/Llama-3-8B, random ties, 95% CI upper",
+   "printed": "10.61",
+   "key": "madm2_objective_llama38b_strict_string_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, first-agent ties, estimate",
+   "printed": "+1.26",
+   "key": "bccs_qwen257b_strict_string_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, first-agent ties, 95% CI lower",
+   "printed": "-4.29",
+   "key": "bccs_qwen257b_strict_string_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, first-agent ties, 95% CI upper",
+   "printed": "6.82",
+   "key": "bccs_qwen257b_strict_string_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, last-agent ties, estimate",
+   "printed": "+4.80",
+   "key": "bccs_qwen257b_strict_string_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, last-agent ties, 95% CI lower",
+   "printed": "-0.51",
+   "key": "bccs_qwen257b_strict_string_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, last-agent ties, 95% CI upper",
+   "printed": "10.10",
+   "key": "bccs_qwen257b_strict_string_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, random ties, estimate",
+   "printed": "+3.28",
+   "key": "bccs_qwen257b_strict_string_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, random ties, 95% CI lower",
+   "printed": "-2.27",
+   "key": "bccs_qwen257b_strict_string_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Qwen2.5-7B, random ties, 95% CI upper",
+   "printed": "8.59",
+   "key": "bccs_qwen257b_strict_string_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, first-agent ties, estimate",
+   "printed": "+5.05",
+   "key": "bccs_llama38b_strict_string_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, first-agent ties, 95% CI lower",
+   "printed": "1.52",
+   "key": "bccs_llama38b_strict_string_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, first-agent ties, 95% CI upper",
+   "printed": "8.84",
+   "key": "bccs_llama38b_strict_string_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, last-agent ties, estimate",
+   "printed": "+5.56",
+   "key": "bccs_llama38b_strict_string_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, last-agent ties, 95% CI lower",
+   "printed": "1.26",
+   "key": "bccs_llama38b_strict_string_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, last-agent ties, 95% CI upper",
+   "printed": "9.85",
+   "key": "bccs_llama38b_strict_string_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, random ties, estimate",
+   "printed": "+5.05",
+   "key": "bccs_llama38b_strict_string_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, random ties, 95% CI lower",
+   "printed": "1.01",
+   "key": "bccs_llama38b_strict_string_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), BCCS/Llama-3-8B, random ties, 95% CI upper",
+   "printed": "9.34",
+   "key": "bccs_llama38b_strict_string_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, first-agent ties, estimate",
+   "printed": "+3.07",
+   "key": "mean_strict_string_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, first-agent ties, 95% CI lower",
+   "printed": "1.22",
+   "key": "mean_strict_string_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, first-agent ties, 95% CI upper",
+   "printed": "4.92",
+   "key": "mean_strict_string_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, last-agent ties, estimate",
+   "printed": "+2.82",
+   "key": "mean_strict_string_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, last-agent ties, 95% CI lower",
+   "printed": "1.14",
+   "key": "mean_strict_string_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, last-agent ties, 95% CI upper",
+   "printed": "4.50",
+   "key": "mean_strict_string_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, random ties, estimate",
+   "printed": "+2.10",
+   "key": "mean_strict_string_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, random ties, 95% CI lower",
+   "printed": "0.17",
+   "key": "mean_strict_string_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "left panel (protocol extractor, exact-match vote), mean of six, random ties, 95% CI upper",
+   "printed": "4.08",
+   "key": "mean_strict_string_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, first-agent ties, estimate",
+   "printed": "-2.02",
+   "key": "du_mad_qwen257b_lenient_exec_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, first-agent ties, 95% CI lower",
+   "printed": "-5.05",
+   "key": "du_mad_qwen257b_lenient_exec_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, first-agent ties, 95% CI upper",
+   "printed": "0.76",
+   "key": "du_mad_qwen257b_lenient_exec_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, last-agent ties, estimate",
+   "printed": "-2.02",
+   "key": "du_mad_qwen257b_lenient_exec_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, last-agent ties, 95% CI lower",
+   "printed": "-5.05",
+   "key": "du_mad_qwen257b_lenient_exec_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, last-agent ties, 95% CI upper",
+   "printed": "0.76",
+   "key": "du_mad_qwen257b_lenient_exec_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, random ties, estimate",
+   "printed": "-2.02",
+   "key": "du_mad_qwen257b_lenient_exec_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, random ties, 95% CI lower",
+   "printed": "-5.05",
+   "key": "du_mad_qwen257b_lenient_exec_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Qwen2.5-7B, random ties, 95% CI upper",
+   "printed": "0.76",
+   "key": "du_mad_qwen257b_lenient_exec_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, first-agent ties, estimate",
+   "printed": "-5.81",
+   "key": "du_mad_llama38b_lenient_exec_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, first-agent ties, 95% CI lower",
+   "printed": "-10.10",
+   "key": "du_mad_llama38b_lenient_exec_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, first-agent ties, 95% CI upper",
+   "printed": "-2.02",
+   "key": "du_mad_llama38b_lenient_exec_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, last-agent ties, estimate",
+   "printed": "-5.81",
+   "key": "du_mad_llama38b_lenient_exec_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, last-agent ties, 95% CI lower",
+   "printed": "-10.10",
+   "key": "du_mad_llama38b_lenient_exec_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, last-agent ties, 95% CI upper",
+   "printed": "-1.77",
+   "key": "du_mad_llama38b_lenient_exec_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, random ties, estimate",
+   "printed": "-6.57",
+   "key": "du_mad_llama38b_lenient_exec_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, random ties, 95% CI lower",
+   "printed": "-10.86",
+   "key": "du_mad_llama38b_lenient_exec_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), Du-MAD/Llama-3-8B, random ties, 95% CI upper",
+   "printed": "-2.53",
+   "key": "du_mad_llama38b_lenient_exec_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, first-agent ties, estimate",
+   "printed": "+2.02",
+   "key": "madm2_objective_qwen257b_lenient_exec_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, first-agent ties, 95% CI lower",
+   "printed": "-2.53",
+   "key": "madm2_objective_qwen257b_lenient_exec_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, first-agent ties, 95% CI upper",
+   "printed": "6.57",
+   "key": "madm2_objective_qwen257b_lenient_exec_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, last-agent ties, estimate",
+   "printed": "+0.25",
+   "key": "madm2_objective_qwen257b_lenient_exec_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, last-agent ties, 95% CI lower",
+   "printed": "-4.55",
+   "key": "madm2_objective_qwen257b_lenient_exec_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, last-agent ties, 95% CI upper",
+   "printed": "5.30",
+   "key": "madm2_objective_qwen257b_lenient_exec_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, random ties, estimate",
+   "printed": "+0.25",
+   "key": "madm2_objective_qwen257b_lenient_exec_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, random ties, 95% CI lower",
+   "printed": "-4.55",
+   "key": "madm2_objective_qwen257b_lenient_exec_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Qwen2.5-7B, random ties, 95% CI upper",
+   "printed": "4.80",
+   "key": "madm2_objective_qwen257b_lenient_exec_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, first-agent ties, estimate",
+   "printed": "-2.02",
+   "key": "madm2_objective_llama38b_lenient_exec_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, first-agent ties, 95% CI lower",
+   "printed": "-6.57",
+   "key": "madm2_objective_llama38b_lenient_exec_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, first-agent ties, 95% CI upper",
+   "printed": "2.78",
+   "key": "madm2_objective_llama38b_lenient_exec_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, last-agent ties, estimate",
+   "printed": "+3.03",
+   "key": "madm2_objective_llama38b_lenient_exec_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, last-agent ties, 95% CI lower",
+   "printed": "-2.02",
+   "key": "madm2_objective_llama38b_lenient_exec_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, last-agent ties, 95% CI upper",
+   "printed": "8.08",
+   "key": "madm2_objective_llama38b_lenient_exec_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, random ties, estimate",
+   "printed": "-0.25",
+   "key": "madm2_objective_llama38b_lenient_exec_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, random ties, 95% CI lower",
+   "printed": "-5.05",
+   "key": "madm2_objective_llama38b_lenient_exec_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), MAD-M2/Llama-3-8B, random ties, 95% CI upper",
+   "printed": "4.55",
+   "key": "madm2_objective_llama38b_lenient_exec_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, first-agent ties, estimate",
+   "printed": "-2.53",
+   "key": "bccs_qwen257b_lenient_exec_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, first-agent ties, 95% CI lower",
+   "printed": "-6.31",
+   "key": "bccs_qwen257b_lenient_exec_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, first-agent ties, 95% CI upper",
+   "printed": "1.26",
+   "key": "bccs_qwen257b_lenient_exec_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, last-agent ties, estimate",
+   "printed": "-1.77",
+   "key": "bccs_qwen257b_lenient_exec_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, last-agent ties, 95% CI lower",
+   "printed": "-6.06",
+   "key": "bccs_qwen257b_lenient_exec_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, last-agent ties, 95% CI upper",
+   "printed": "2.78",
+   "key": "bccs_qwen257b_lenient_exec_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, random ties, estimate",
+   "printed": "-2.78",
+   "key": "bccs_qwen257b_lenient_exec_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, random ties, 95% CI lower",
+   "printed": "-7.07",
+   "key": "bccs_qwen257b_lenient_exec_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Qwen2.5-7B, random ties, 95% CI upper",
+   "printed": "1.52",
+   "key": "bccs_qwen257b_lenient_exec_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, first-agent ties, estimate",
+   "printed": "+1.26",
+   "key": "bccs_llama38b_lenient_exec_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, first-agent ties, 95% CI lower",
+   "printed": "-2.02",
+   "key": "bccs_llama38b_lenient_exec_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, first-agent ties, 95% CI upper",
+   "printed": "4.55",
+   "key": "bccs_llama38b_lenient_exec_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, last-agent ties, estimate",
+   "printed": "+1.26",
+   "key": "bccs_llama38b_lenient_exec_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, last-agent ties, 95% CI lower",
+   "printed": "-1.77",
+   "key": "bccs_llama38b_lenient_exec_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, last-agent ties, 95% CI upper",
+   "printed": "4.29",
+   "key": "bccs_llama38b_lenient_exec_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, random ties, estimate",
+   "printed": "-0.51",
+   "key": "bccs_llama38b_lenient_exec_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, random ties, 95% CI lower",
+   "printed": "-3.79",
+   "key": "bccs_llama38b_lenient_exec_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), BCCS/Llama-3-8B, random ties, 95% CI upper",
+   "printed": "2.78",
+   "key": "bccs_llama38b_lenient_exec_random_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, first-agent ties, estimate",
+   "printed": "-1.52",
+   "key": "mean_lenient_exec_first"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, first-agent ties, 95% CI lower",
+   "printed": "-2.99",
+   "key": "mean_lenient_exec_first_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, first-agent ties, 95% CI upper",
+   "printed": "-0.04",
+   "key": "mean_lenient_exec_first_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, last-agent ties, estimate",
+   "printed": "-0.84",
+   "key": "mean_lenient_exec_last"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, last-agent ties, 95% CI lower",
+   "printed": "-2.40",
+   "key": "mean_lenient_exec_last_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, last-agent ties, 95% CI upper",
+   "printed": "0.63",
+   "key": "mean_lenient_exec_last_hi"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, random ties, estimate",
+   "printed": "-1.98",
+   "key": "mean_lenient_exec_random"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, random ties, 95% CI lower",
+   "printed": "-3.62",
+   "key": "mean_lenient_exec_random_lo"
+  },
+  {
+   "label": "fig:readout-cells",
+   "tex_file": null,
+   "where": "right panel (lenient extractor, execution vote), mean of six, random ties, 95% CI upper",
+   "printed": "-0.38",
+   "key": "mean_lenient_exec_random_hi"
+  }
+ ],
+ "unreproduced": []
+}

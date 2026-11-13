@@ -1,0 +1,200 @@
+diff --git a/src/database_utils/db_catalog/preprocess.py b/src/database_utils/db_catalog/preprocess.py
+index fa8a53b..7dd835d 100644
+--- a/src/database_utils/db_catalog/preprocess.py
++++ b/src/database_utils/db_catalog/preprocess.py
+@@ -4,11 +4,14 @@ import logging
+ from dotenv import load_dotenv
+ from langchain_chroma import Chroma
+ from langchain.schema.document import Document
+-from langchain_openai import OpenAIEmbeddings
+-from langchain_google_vertexai import VertexAIEmbeddings
+-from google.oauth2 import service_account
+-from google.cloud import aiplatform
+-import vertexai
++from langchain_community.embeddings import HuggingFaceEmbeddings  # LOCAL PATCH
++try:  # LOCAL PATCH: provider SDKs not installed; only the local engine is used
++    from langchain_google_vertexai import VertexAIEmbeddings
++    from google.oauth2 import service_account
++    from google.cloud import aiplatform
++    import vertexai
++except ImportError:
++    VertexAIEmbeddings = service_account = aiplatform = vertexai = None
+ 
+ from database_utils.db_catalog.csv_utils import load_tables_description
+ 
+@@ -28,7 +31,7 @@ if GCP_CREDENTIALS and GCP_PROJECT and GCP_REGION:
+ 
+ 
+ # EMBEDDING_FUNCTION = VertexAIEmbeddings(model_name="text-embedding-004")#OpenAIEmbeddings(model="text-embedding-3-large")
+-EMBEDDING_FUNCTION = OpenAIEmbeddings(model="text-embedding-3-large")
++EMBEDDING_FUNCTION = HuggingFaceEmbeddings(model_name="<HF_HUB>/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a", model_kwargs={"device": "cpu"})  # LOCAL PATCH: upstream OpenAI text-embedding-3-large
+ 
+ 
+ def make_db_context_vec_db(db_directory_path: str, **kwargs) -> None:
+diff --git a/src/database_utils/execution.py b/src/database_utils/execution.py
+index a85470d..d66e730 100644
+--- a/src/database_utils/execution.py
++++ b/src/database_utils/execution.py
+@@ -26,7 +26,7 @@ def execute_sql(db_path: str, sql: str, fetch: Union[str, int] = "all", timeout:
+ 
+         def run(self):
+             try:
+-                with sqlite3.connect(db_path, timeout=60) as conn:
++                with sqlite3.connect(f"file:{db_path}?mode=ro", uri=True, timeout=60) as conn:  # LOCAL PATCH: read-only
+                     cursor = conn.cursor()
+                     cursor.execute(sql)
+                     if fetch == "all":
+diff --git a/src/llm/engine_configs.py b/src/llm/engine_configs.py
+index 735c3bf..8a29514 100644
+--- a/src/llm/engine_configs.py
++++ b/src/llm/engine_configs.py
+@@ -1,12 +1,22 @@
+ from langchain_openai import ChatOpenAI
+-from langchain_google_genai import ChatGoogleGenerativeAI
+-from langchain_anthropic import ChatAnthropic
+-from langchain_google_vertexai import VertexAI
+-from google.oauth2 import service_account
+-from google.cloud import aiplatform
++try:  # LOCAL PATCH: provider SDKs not installed; only the local engine is used
++    from langchain_google_genai import ChatGoogleGenerativeAI
++    from langchain_anthropic import ChatAnthropic
++    from langchain_google_vertexai import VertexAI
++    from google.oauth2 import service_account
++    from google.cloud import aiplatform
++except ImportError:
++    ChatGoogleGenerativeAI = ChatAnthropic = VertexAI = service_account = aiplatform = None
+ from typing import Dict, Any
+-import vertexai
+-from langchain_google_vertexai import HarmBlockThreshold, HarmCategory
++try:  # LOCAL PATCH: provider SDKs not installed; only the local engine is used
++    import vertexai
++    from langchain_google_vertexai import HarmBlockThreshold, HarmCategory
++except ImportError:
++    vertexai = None
++    class _Any:
++        def __getattr__(self, k):
++            return k
++    HarmBlockThreshold = HarmCategory = _Any()
+ import os
+ 
+ safety_settings = {
+@@ -36,6 +46,14 @@ Each configuration includes a constructor, parameters, and an optional preproces
+ """
+ 
+ ENGINE_CONFIGS: Dict[str, Dict[str, Any]] = {
++    # LOCAL PATCH: local OpenAI-compatible server (through the logging/budget proxy); thinking off; no seed
++    "qwen3-32b-local": {
++        "constructor": ChatOpenAI,
++        "params": {"model": "qwen3-32b", "openai_api_key": "EMPTY",
++                   "openai_api_base": os.getenv("LOCAL_LLM_BASE", "http://127.0.0.1:8066/v1"),
++                   "max_tokens": 4096, "temperature": 0, "request_timeout": 900,
++                   "extra_body": {"chat_template_kwargs": {"enable_thinking": False}}}
++    },
+     "gemini-pro": {
+         "constructor": ChatGoogleGenerativeAI,
+         "params": {"model": "gemini-pro", "temperature": 0},
+diff --git a/src/llm/models.py b/src/llm/models.py
+index 8ecfbf4..95613c9 100644
+--- a/src/llm/models.py
++++ b/src/llm/models.py
+@@ -1,3 +1,5 @@
++import os  # LOCAL PATCH R2c
++import re  # LOCAL PATCH R1
+ from typing import Any, Dict, List
+ 
+ from langchain_core.exceptions import OutputParserException
+@@ -28,7 +30,10 @@ def get_llm_chain(engine_name: str, temperature: float = 0, base_uri: str = None
+     config = ENGINE_CONFIGS[engine_name]
+     constructor = config["constructor"]
+     params = config["params"]
+-    if temperature:
++    if os.getenv("CHESS_TEMPERATURE_MODE", "upstream") == "configured":  # LOCAL PATCH R2c (opt-in)
++        params = dict(params)
++        params["temperature"] = temperature
++    elif temperature:
+         params["temperature"] = temperature
+     
+     # Adjust base_uri if provided
+@@ -71,11 +76,11 @@ def call_llm_chain(prompt: Any, engine: Any, parser: Any, request_kwargs: Dict[s
+             output = chain.invoke(request_kwargs)
+             if isinstance(output, str):
+                 if output.strip() == "":
+-                    engine = get_llm_chain("gemini-1.5-flash")
++                    engine = get_llm_chain("qwen3-32b-local")  # LOCAL PATCH: upstream gemini-1.5-flash
+                     raise OutputParserException("Empty output")
+             else:
+                 if output.content.strip() == "":    
+-                    engine = get_llm_chain("gemini-1.5-flash")
++                    engine = get_llm_chain("qwen3-32b-local")  # LOCAL PATCH: upstream gemini-1.5-flash
+                     raise OutputParserException("Empty output")
+             output = parser.invoke(output)
+             logger.log_conversation(
+@@ -180,7 +185,7 @@ def call_engine(message: str, engine: Any, max_attempts: int = 12, backoff_base:
+     for attempt in range(max_attempts):
+         try:
+             output = engine.invoke(message)
+-            return output.content
++            return re.sub(r"</?think>", "", output.content).split("</agent>")[0]  # LOCAL PATCH R1: strip Qwen3 think tags; R3: end the agent turn at </agent>
+         except Exception as e:
+             # if attempt < max_attempts - 1:
+             #     logger.log(f"Failed to invoke the chain {attempt + 1} times.\n{type(e)}\n{e}", "warning")
+diff --git a/src/llm/parsers.py b/src/llm/parsers.py
+index 31b260e..5393792 100644
+--- a/src/llm/parsers.py
++++ b/src/llm/parsers.py
+@@ -253,6 +253,8 @@ class TestCaseGenerationOutput(BaseOutputParser):
+             output = output.split("<Answer>")[1].split(
+             "</Answer>"
+             )[0]
++        elif "<Answer>" in output:  # LOCAL PATCH R2b: closing tag omitted by the model
++            output = output.split("<Answer>")[1]
+         else:
+             raise OutputParserException("Your answer is not in the correct format. Please make sure to include your answer in the format <Answer>...</Answer>")
+         try:
+diff --git a/src/workflow/agents/agent.py b/src/workflow/agents/agent.py
+index 4379928..6352c55 100644
+--- a/src/workflow/agents/agent.py
++++ b/src/workflow/agents/agent.py
+@@ -75,7 +75,10 @@ class Agent:
+         """
+         Get the next tool to call based on the response.
+         """
+-        tool_name = response.split("<tool_call>")[1].split("</tool_call>")[0].strip()
++        # LOCAL PATCH R2a: first <tool_call> followed by a known tool name; closing tag not required
++        import re as _re
++        m = _re.search(r"<tool_call>\s*([A-Za-z_][A-Za-z0-9_]*)", response)
++        tool_name = m.group(1) if m else response.split("<tool_call>")[1].split("</tool_call>")[0].strip()
+         if tool_name not in self.tools:
+             raise ValueError(f"Tool {tool_name} not found")
+         return tool_name
+diff --git a/src/workflow/agents/information_retriever/tool_kit/retrieve_entity.py b/src/workflow/agents/information_retriever/tool_kit/retrieve_entity.py
+index d98d59e..e29e4be 100644
+--- a/src/workflow/agents/information_retriever/tool_kit/retrieve_entity.py
++++ b/src/workflow/agents/information_retriever/tool_kit/retrieve_entity.py
+@@ -2,10 +2,13 @@ import numpy as np
+ import difflib
+ from typing import List, Dict, Any, Tuple, Optional
+ 
+-from langchain_openai import OpenAIEmbeddings
+-from google.oauth2 import service_account
+-from google.cloud import aiplatform
+-import vertexai
++from langchain_community.embeddings import HuggingFaceEmbeddings  # LOCAL PATCH
++try:  # LOCAL PATCH: provider SDKs not installed; only the local engine is used
++    from google.oauth2 import service_account
++    from google.cloud import aiplatform
++    import vertexai
++except ImportError:
++    service_account = aiplatform = vertexai = None
+ import os
+ 
+ GCP_PROJECT = os.getenv("GCP_PROJECT")
+@@ -31,7 +34,7 @@ class RetrieveEntity(Tool):
+ 
+     def __init__(self):
+         super().__init__()
+-        self.embedding_function = OpenAIEmbeddings(model="text-embedding-3-small")
++        self.embedding_function = HuggingFaceEmbeddings(model_name="<HF_HUB>/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a", model_kwargs={"device": "cpu"})  # LOCAL PATCH: upstream OpenAI text-embedding-3-small
+         self.edit_distance_threshold = 0.3
+         self.embedding_similarity_threshold = 0.6
+         

@@ -1,0 +1,690 @@
+{
+ "id": "tab_family-sharing",
+ "labels": [
+  "tab:family-sharing",
+  "sec:matching-access",
+  "tab:s-first-decode",
+  "sec:s-first-decode",
+  "tab:s-qa-transitions",
+  "sec:s-qa-transitions"
+ ],
+ "section": "V-B (sec:matching-access); Supplementary S4-C (sec:s-first-decode), S5-B (sec:s-qa-transitions)",
+ "title": "QA with fixed peer responses: sharing effects, first decodes, transitions and peer quality",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, Qwen3: estimate",
+   "printed": "-1.43",
+   "key": "qwen3_full_none"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, Qwen3: 95% CI lower",
+   "printed": "-3.99",
+   "key": "qwen3_full_none_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, Qwen3: 95% CI upper",
+   "printed": "1.26",
+   "key": "qwen3_full_none_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, gpt-oss: estimate",
+   "printed": "+0.16",
+   "key": "gptoss_full_none"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, gpt-oss: 95% CI lower",
+   "printed": "-2.11",
+   "key": "gptoss_full_none_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, gpt-oss: 95% CI upper",
+   "printed": "2.38",
+   "key": "gptoss_full_none_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, Gemma: estimate",
+   "printed": "-4.17",
+   "key": "gemma_full_none"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, Gemma: 95% CI lower",
+   "printed": "-6.35",
+   "key": "gemma_full_none_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Full-none row, Gemma: 95% CI upper",
+   "printed": "-2.05",
+   "key": "gemma_full_none_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, Qwen3: estimate",
+   "printed": "+2.19",
+   "key": "qwen3_answers_none"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, Qwen3: 95% CI lower",
+   "printed": "-0.04",
+   "key": "qwen3_answers_none_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, Qwen3: 95% CI upper",
+   "printed": "4.47",
+   "key": "qwen3_answers_none_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, gpt-oss: estimate",
+   "printed": "+6.20",
+   "key": "gptoss_answers_none"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, gpt-oss: 95% CI lower",
+   "printed": "4.13",
+   "key": "gptoss_answers_none_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, gpt-oss: 95% CI upper",
+   "printed": "8.25",
+   "key": "gptoss_answers_none_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, Gemma: estimate",
+   "printed": "-2.85",
+   "key": "gemma_answers_none"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, Gemma: 95% CI lower",
+   "printed": "-4.83",
+   "key": "gemma_answers_none_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-none row, Gemma: 95% CI upper",
+   "printed": "-0.94",
+   "key": "gemma_answers_none_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, Qwen3: estimate",
+   "printed": "+3.36",
+   "key": "qwen3_answers_full"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, Qwen3: 95% CI lower",
+   "printed": "1.32",
+   "key": "qwen3_answers_full_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, Qwen3: 95% CI upper",
+   "printed": "5.40",
+   "key": "qwen3_answers_full_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, gpt-oss: estimate",
+   "printed": "+5.99",
+   "key": "gptoss_answers_full"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, gpt-oss: 95% CI lower",
+   "printed": "4.23",
+   "key": "gptoss_answers_full_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, gpt-oss: 95% CI upper",
+   "printed": "7.76",
+   "key": "gptoss_answers_full_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, Gemma: estimate",
+   "printed": "+1.32",
+   "key": "gemma_answers_full"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, Gemma: 95% CI lower",
+   "printed": "-0.38",
+   "key": "gemma_answers_full_lo"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Answers-full row, Gemma: 95% CI upper",
+   "printed": "3.02",
+   "key": "gemma_answers_full_hi"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "No peers (%) row, Qwen3",
+   "printed": "69.91",
+   "key": "qwen3_nopeer_acc"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "No peers (%) row, gpt-oss",
+   "printed": "73.76",
+   "key": "gptoss_nopeer_acc"
+  },
+  {
+   "label": "tab:family-sharing",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "No peers (%) row, Gemma",
+   "printed": "82.19",
+   "key": "gemma_nopeer_acc"
+  },
+  {
+   "label": "sec:matching-access",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: answers-only raises gpt-oss by",
+   "printed": "6.20",
+   "key": "gptoss_answers_none"
+  },
+  {
+   "label": "sec:matching-access",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: answers-only lowers Gemma by",
+   "printed": "2.85",
+   "key": "gemma_answers_none",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:matching-access",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: Gemma full-none loss",
+   "printed": "4.17",
+   "key": "gemma_full_none",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:matching-access",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: 480 QA tasks",
+   "printed": "480",
+   "key": "qa_tasks"
+  },
+  {
+   "label": "sec:matching-access",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: distinct peer answers",
+   "printed": "2,880",
+   "key": "peer_distinct_answers"
+  },
+  {
+   "label": "sec:matching-access",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: peer answer accuracy (%)",
+   "printed": "54.51",
+   "key": "peer_distinct_accuracy"
+  },
+  {
+   "label": "sec:matching-access",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: recipient-benchmark comparisons with peers below recipient",
+   "printed": "12",
+   "key": "peer_below_recipient_comparisons"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Full - no peers: difference",
+   "printed": "-4.17",
+   "key": "fd_gemma_full_none"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Full - no peers: 95% CI lower",
+   "printed": "-6.32",
+   "key": "fd_gemma_full_none_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Full - no peers: 95% CI upper",
+   "printed": "-2.01",
+   "key": "fd_gemma_full_none_hi"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - no peers: difference",
+   "printed": "-2.85",
+   "key": "fd_gemma_answers_none"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - no peers: 95% CI lower",
+   "printed": "-4.83",
+   "key": "fd_gemma_answers_none_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - no peers: 95% CI upper",
+   "printed": "-0.97",
+   "key": "fd_gemma_answers_none_hi"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - full: difference",
+   "printed": "+1.32",
+   "key": "fd_gemma_answers_full"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - full: 95% CI lower",
+   "printed": "-0.38",
+   "key": "fd_gemma_answers_full_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - full: 95% CI upper",
+   "printed": "3.02",
+   "key": "fd_gemma_answers_full_hi"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Full - no peers: difference",
+   "printed": "+0.17",
+   "key": "fd_gptoss_full_none"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Full - no peers: 95% CI lower",
+   "printed": "-2.08",
+   "key": "fd_gptoss_full_none_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Full - no peers: 95% CI upper",
+   "printed": "2.43",
+   "key": "fd_gptoss_full_none_hi"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - no peers: difference",
+   "printed": "+6.18",
+   "key": "fd_gptoss_answers_none"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - no peers: 95% CI lower",
+   "printed": "4.20",
+   "key": "fd_gptoss_answers_none_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - no peers: 95% CI upper",
+   "printed": "8.26",
+   "key": "fd_gptoss_answers_none_hi"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - full: difference",
+   "printed": "+6.01",
+   "key": "fd_gptoss_answers_full"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - full: 95% CI lower",
+   "printed": "4.24",
+   "key": "fd_gptoss_answers_full_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - full: 95% CI upper",
+   "printed": "7.74",
+   "key": "fd_gptoss_answers_full_hi"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Full - no peers: difference",
+   "printed": "-1.39",
+   "key": "fd_qwen3_full_none"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Full - no peers: 95% CI lower",
+   "printed": "-4.03",
+   "key": "fd_qwen3_full_none_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Full - no peers: 95% CI upper",
+   "printed": "1.25",
+   "key": "fd_qwen3_full_none_hi"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - no peers: difference",
+   "printed": "+1.94",
+   "key": "fd_qwen3_answers_none"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - no peers: 95% CI lower",
+   "printed": "-0.35",
+   "key": "fd_qwen3_answers_none_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - no peers: 95% CI upper",
+   "printed": "4.20",
+   "key": "fd_qwen3_answers_none_hi"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - full: difference",
+   "printed": "+3.33",
+   "key": "fd_qwen3_answers_full"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - full: 95% CI lower",
+   "printed": "1.25",
+   "key": "fd_qwen3_answers_full_lo"
+  },
+  {
+   "label": "tab:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - full: 95% CI upper",
+   "printed": "5.42",
+   "key": "fd_qwen3_answers_full_hi"
+  },
+  {
+   "label": "sec:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "prose: first-decode observations per recipient",
+   "printed": "2,880",
+   "key": "fd_gptoss_paired"
+  },
+  {
+   "label": "sec:s-first-decode",
+   "tex_file": "supplementary.tex",
+   "where": "prose: no difference changes by more than",
+   "printed": "0.25",
+   "key": "fd_max_abs_change"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma row, q",
+   "printed": "82.19",
+   "key": "tr_gemma_q"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma row, c",
+   "printed": "25.34",
+   "key": "tr_gemma_c"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma row, r",
+   "printed": "8.96",
+   "key": "tr_gemma_r"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma row, recovered",
+   "printed": "4.51",
+   "key": "tr_gemma_recovered"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma row, lost",
+   "printed": "7.36",
+   "key": "tr_gemma_lost"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma row, net",
+   "printed": "-2.85",
+   "key": "tr_gemma_net"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss row, q",
+   "printed": "73.82",
+   "key": "tr_gptoss_q"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss row, c",
+   "printed": "40.88",
+   "key": "tr_gptoss_c"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss row, r",
+   "printed": "6.10",
+   "key": "tr_gptoss_r"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss row, recovered",
+   "printed": "10.70",
+   "key": "tr_gptoss_recovered"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss row, lost",
+   "printed": "4.50",
+   "key": "tr_gptoss_lost"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss row, net",
+   "printed": "+6.20",
+   "key": "tr_gptoss_net"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3 row, q",
+   "printed": "70.16",
+   "key": "tr_qwen3_q"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3 row, c",
+   "printed": "40.08",
+   "key": "tr_qwen3_c"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3 row, r",
+   "printed": "13.92",
+   "key": "tr_qwen3_r"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3 row, recovered",
+   "printed": "11.96",
+   "key": "tr_qwen3_recovered"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3 row, lost",
+   "printed": "9.77",
+   "key": "tr_qwen3_lost"
+  },
+  {
+   "label": "tab:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3 row, net",
+   "printed": "+2.19",
+   "key": "tr_qwen3_net"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: regression rate with both peers wrong, Gemma",
+   "printed": "29.75",
+   "key": "tr0_gemma_r"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: regression rate with both peers wrong, gpt-oss",
+   "printed": "19.63",
+   "key": "tr0_gptoss_r"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: regression rate with both peers wrong, Qwen3",
+   "printed": "40.77",
+   "key": "tr0_qwen3_r"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: distinct peer answers",
+   "printed": "2,880",
+   "key": "peer_distinct_answers"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: peer answer accuracy (%)",
+   "printed": "54.51",
+   "key": "peer_distinct_accuracy"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: recipient-benchmark comparisons",
+   "printed": "12",
+   "key": "peer_below_recipient_comparisons"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: task and peer-set combinations per recipient",
+   "printed": "960",
+   "key": "overlap_gemma_cells"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "prose: recipient correct while peer majority wrong, lower end (%)",
+   "printed": "25",
+   "key": "overlap_min_pct"
+  },
+  {
+   "label": "sec:s-qa-transitions",
+   "tex_file": "supplementary.tex",
+   "printed": "32",
+   "key": "overlap_max_pct",
+   "where": "prose: recipient correct while peer majority wrong, upper end (%)"
+  }
+ ],
+ "unreproduced": [],
+ "statements": [
+  {
+   "text": "Answers-only minus no peers survives the nine-comparison Holm correction for gpt-oss",
+   "key": "gptoss_answers_none_holm9",
+   "expected": 1
+  },
+  {
+   "text": "Answers-only minus no peers survives the nine-comparison Holm correction for Gemma",
+   "key": "gemma_answers_none_holm9",
+   "expected": 1
+  },
+  {
+   "text": "Restricting all conditions to first generations changes no Holm decision",
+   "key": "fd_holm_decisions_changed",
+   "expected": 0
+  }
+ ]
+}

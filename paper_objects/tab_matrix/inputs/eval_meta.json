@@ -1,0 +1,16 @@
+{
+ "runs": 38592,
+ "by_source": {
+  "orig": 3200,
+  "rx": 35392
+ },
+ "new_signatures": 51041,
+ "new_verdicts": 51041,
+ "gold_failed_units": {
+  "bird|518": 6,
+  "bird|701": 3,
+  "bird|646": 1
+ },
+ "wall_s": 467.7,
+ "utc": "2026-11-06T14:59:33Z"
+}

@@ -1,0 +1,17 @@
+protocol,backbone,candidate_set,runs,correct,a_generation,b_format,c_selection
+BCCS,llama3-8b,initial_and_last_round,396,38,264,48,46
+BCCS,qwen2.5-7b,initial_and_last_round,396,95,194,17,90
+Du-MAD,llama3-8b,initial_and_last_round,396,0,295,101,0
+Du-MAD,qwen2.5-7b,initial_and_last_round,396,135,242,0,19
+FORD,roster,initial_and_last_round,396,113,261,0,22
+MAD-M2,llama3-8b,initial_and_last_round,396,61,273,3,59
+MAD-M2,qwen2.5-7b,initial_and_last_round,396,118,228,0,50
+MoA,roster,initial_and_last_round,396,155,147,0,94
+BCCS,llama3-8b,every_round,396,38,262,44,52
+BCCS,qwen2.5-7b,every_round,396,95,193,15,93
+Du-MAD,llama3-8b,every_round,396,0,295,101,0
+Du-MAD,qwen2.5-7b,every_round,396,135,242,0,19
+FORD,roster,every_round,396,113,258,0,25
+MAD-M2,llama3-8b,every_round,396,61,273,3,59
+MAD-M2,qwen2.5-7b,every_round,396,118,228,0,50
+MoA,roster,every_round,396,155,147,0,94

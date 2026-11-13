@@ -1,0 +1,1362 @@
+{
+ "4cell|agent_LOSS": {
+  "db_ci": [
+   -2.01,
+   -0.79
+  ],
+  "detected": true,
+  "est": -1.35,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.77,
+   -0.93
+  ]
+ },
+ "4cell|agent_REC": {
+  "db_ci": [
+   -1.01,
+   -0.09
+  ],
+  "detected": true,
+  "est": -0.57,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.03,
+   -0.09
+  ]
+ },
+ "4cell|agent_net": {
+  "db_ci": [
+   0.06,
+   1.66
+  ],
+  "detected": true,
+  "est": 0.78,
+  "n_questions": 1531,
+  "q_ci": [
+   0.14,
+   1.43
+  ]
+ },
+ "4cell|cond_loss": {
+  "diff": {
+   "db_ci": [
+    -7.36,
+    -3.58
+   ],
+   "detected": true,
+   "est": -5.24,
+   "q_ci": [
+    -6.53,
+    -3.9
+   ]
+  },
+  "n_questions": 1531,
+  "with_": {
+   "db_ci": [
+    17.9,
+    23.42
+   ],
+   "detected": true,
+   "est": 20.25,
+   "q_ci": [
+    19.11,
+    21.42
+   ]
+  },
+  "without": {
+   "db_ci": [
+    22.92,
+    29.63
+   ],
+   "detected": true,
+   "est": 25.49,
+   "q_ci": [
+    24.19,
+    26.83
+   ]
+  }
+ },
+ "4cell|cond_rec": {
+  "diff": {
+   "db_ci": [
+    -1.54,
+    -0.48
+   ],
+   "detected": true,
+   "est": -1.04,
+   "q_ci": [
+    -1.72,
+    -0.35
+   ]
+  },
+  "n_questions": 1531,
+  "with_": {
+   "db_ci": [
+    7.98,
+    11.9
+   ],
+   "detected": true,
+   "est": 9.65,
+   "q_ci": [
+    8.93,
+    10.39
+   ]
+  },
+  "without": {
+   "db_ci": [
+    9.03,
+    12.89
+   ],
+   "detected": true,
+   "est": 10.69,
+   "q_ci": [
+    9.83,
+    11.59
+   ]
+  }
+ },
+ "4cell|dpeer|first": {
+  "db_ci": [
+   -2.32,
+   -0.43
+  ],
+  "detected": true,
+  "est": -1.37,
+  "n_questions": 1531,
+  "q_ci": [
+   -2.25,
+   -0.51
+  ]
+ },
+ "4cell|dpeer|first|1333": {
+  "db_ci": [
+   -2.33,
+   -0.34
+  ],
+  "detected": true,
+  "est": -1.3,
+  "n_questions": 1333,
+  "q_ci": [
+   -2.25,
+   -0.35
+  ]
+ },
+ "4cell|dpeer|first|198": {
+  "db_ci": [
+   -3.27,
+   -0.32
+  ],
+  "detected": false,
+  "est": -1.83,
+  "n_questions": 198,
+  "q_ci": [
+   -3.79,
+   0.13
+  ]
+ },
+ "4cell|dpeer|last": {
+  "db_ci": [
+   -1.6,
+   -0.01
+  ],
+  "detected": false,
+  "est": -0.79,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.67,
+   0.1
+  ]
+ },
+ "4cell|dpeer|random": {
+  "db_ci": [
+   -1.84,
+   -0.24
+  ],
+  "detected": true,
+  "est": -1.05,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.92,
+   -0.19
+  ]
+ },
+ "4cell|last_diff": {
+  "db_ci": [
+   -1.76,
+   0.18
+  ],
+  "detected": false,
+  "est": -0.87,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.63,
+   -0.13
+  ]
+ },
+ "4cell|r0_diff": {
+  "db_ci": [
+   -0.05,
+   1.11
+  ],
+  "detected": false,
+  "est": 0.5,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.03,
+   1.04
+  ]
+ },
+ "DuMAD_2cell|agent_LOSS": {
+  "db_ci": [
+   -1.94,
+   -0.35
+  ],
+  "detected": true,
+  "est": -1.12,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.71,
+   -0.54
+  ]
+ },
+ "DuMAD_2cell|agent_REC": {
+  "db_ci": [
+   -3.43,
+   -2.26
+  ],
+  "detected": true,
+  "est": -2.84,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.55,
+   -2.16
+  ]
+ },
+ "DuMAD_2cell|agent_net": {
+  "db_ci": [
+   -2.46,
+   -0.95
+  ],
+  "detected": true,
+  "est": -1.73,
+  "n_questions": 1531,
+  "q_ci": [
+   -2.65,
+   -0.81
+  ]
+ },
+ "DuMAD_2cell|cond_loss": {
+  "diff": {
+   "db_ci": [
+    -5.51,
+    -1.22
+   ],
+   "detected": true,
+   "est": -3.26,
+   "q_ci": [
+    -4.97,
+    -1.58
+   ]
+  },
+  "n_questions": 1531,
+  "with_": {
+   "db_ci": [
+    4.59,
+    7.47
+   ],
+   "detected": true,
+   "est": 5.98,
+   "q_ci": [
+    4.86,
+    7.16
+   ]
+  },
+  "without": {
+   "db_ci": [
+    6.91,
+    12.04
+   ],
+   "detected": true,
+   "est": 9.24,
+   "q_ci": [
+    7.6,
+    10.94
+   ]
+  }
+ },
+ "DuMAD_2cell|cond_rec": {
+  "diff": {
+   "db_ci": [
+    -5.15,
+    -3.51
+   ],
+   "detected": true,
+   "est": -4.33,
+   "q_ci": [
+    -5.43,
+    -3.27
+   ]
+  },
+  "n_questions": 1531,
+  "with_": {
+   "db_ci": [
+    3.97,
+    5.78
+   ],
+   "detected": true,
+   "est": 4.75,
+   "q_ci": [
+    3.98,
+    5.55
+   ]
+  },
+  "without": {
+   "db_ci": [
+    7.77,
+    10.7
+   ],
+   "detected": true,
+   "est": 9.08,
+   "q_ci": [
+    7.91,
+    10.29
+   ]
+  }
+ },
+ "DuMAD_2cell|dpeer|first": {
+  "db_ci": [
+   -3.46,
+   -2.01
+  ],
+  "detected": true,
+  "est": -2.74,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.77,
+   -1.73
+  ]
+ },
+ "DuMAD_2cell|dpeer|first|1333": {
+  "db_ci": [
+   -3.62,
+   -1.55
+  ],
+  "detected": true,
+  "est": -2.61,
+  "n_questions": 1333,
+  "q_ci": [
+   -3.69,
+   -1.5
+  ]
+ },
+ "DuMAD_2cell|dpeer|first|198": {
+  "db_ci": [
+   -6.19,
+   -1.36
+  ],
+  "detected": true,
+  "est": -3.66,
+  "n_questions": 198,
+  "q_ci": [
+   -6.57,
+   -1.01
+  ]
+ },
+ "DuMAD_2cell|dpeer|last": {
+  "db_ci": [
+   -3.49,
+   -1.93
+  ],
+  "detected": true,
+  "est": -2.73,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.76,
+   -1.7
+  ]
+ },
+ "DuMAD_2cell|dpeer|random": {
+  "db_ci": [
+   -3.41,
+   -1.89
+  ],
+  "detected": true,
+  "est": -2.68,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.71,
+   -1.65
+  ]
+ },
+ "DuMAD_2cell|last_diff": {
+  "db_ci": [
+   -3.18,
+   -1.39
+  ],
+  "detected": true,
+  "est": -2.3,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.36,
+   -1.31
+  ]
+ },
+ "DuMAD_2cell|r0_diff": {
+  "db_ci": [
+   0.11,
+   0.77
+  ],
+  "detected": false,
+  "est": 0.44,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.03,
+   0.91
+  ]
+ },
+ "MADM2_2cell|agent_LOSS": {
+  "db_ci": [
+   -2.33,
+   -0.89
+  ],
+  "detected": true,
+  "est": -1.58,
+  "n_questions": 1531,
+  "q_ci": [
+   -2.17,
+   -0.99
+  ]
+ },
+ "MADM2_2cell|agent_REC": {
+  "db_ci": [
+   1.22,
+   2.21
+  ],
+  "detected": true,
+  "est": 1.71,
+  "n_questions": 1531,
+  "q_ci": [
+   1.12,
+   2.31
+  ]
+ },
+ "MADM2_2cell|agent_net": {
+  "db_ci": [
+   2.36,
+   4.38
+  ],
+  "detected": true,
+  "est": 3.29,
+  "n_questions": 1531,
+  "q_ci": [
+   2.43,
+   4.15
+  ]
+ },
+ "MADM2_2cell|cond_loss": {
+  "diff": {
+   "db_ci": [
+    -10.15,
+    -4.7
+   ],
+   "detected": true,
+   "est": -7.22,
+   "q_ci": [
+    -9.13,
+    -5.22
+   ]
+  },
+  "n_questions": 1531,
+  "with_": {
+   "db_ci": [
+    30.53,
+    39.83
+   ],
+   "detected": true,
+   "est": 34.52,
+   "q_ci": [
+    32.71,
+    36.38
+   ]
+  },
+  "without": {
+   "db_ci": [
+    37.39,
+    48.41
+   ],
+   "detected": true,
+   "est": 41.74,
+   "q_ci": [
+    39.98,
+    43.5
+   ]
+  }
+ },
+ "MADM2_2cell|cond_rec": {
+  "diff": {
+   "db_ci": [
+    1.55,
+    3.15
+   ],
+   "detected": true,
+   "est": 2.25,
+   "q_ci": [
+    1.43,
+    3.08
+   ]
+  },
+  "n_questions": 1531,
+  "with_": {
+   "db_ci": [
+    11.85,
+    18.09
+   ],
+   "detected": true,
+   "est": 14.55,
+   "q_ci": [
+    13.56,
+    15.57
+   ]
+  },
+  "without": {
+   "db_ci": [
+    10.1,
+    15.18
+   ],
+   "detected": true,
+   "est": 12.3,
+   "q_ci": [
+    11.39,
+    13.23
+   ]
+  }
+ },
+ "MADM2_2cell|dpeer|first": {
+  "db_ci": [
+   -1.5,
+   1.46
+  ],
+  "detected": false,
+  "est": 0.0,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.36,
+   1.34
+  ]
+ },
+ "MADM2_2cell|dpeer|first|1333": {
+  "db_ci": [
+   -1.5,
+   1.32
+  ],
+  "detected": false,
+  "est": 0.0,
+  "n_questions": 1333,
+  "q_ci": [
+   -1.43,
+   1.44
+  ]
+ },
+ "MADM2_2cell|dpeer|first|198": {
+  "db_ci": [
+   -2.84,
+   3.35
+  ],
+  "detected": false,
+  "est": 0.0,
+  "n_questions": 198,
+  "q_ci": [
+   -3.16,
+   3.28
+  ]
+ },
+ "MADM2_2cell|dpeer|last": {
+  "db_ci": [
+   0.12,
+   2.23
+  ],
+  "detected": false,
+  "est": 1.14,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.28,
+   2.55
+  ]
+ },
+ "MADM2_2cell|dpeer|random": {
+  "db_ci": [
+   -0.32,
+   1.51
+  ],
+  "detected": false,
+  "est": 0.57,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.77,
+   1.89
+  ]
+ },
+ "MADM2_2cell|last_diff": {
+  "db_ci": [
+   -0.77,
+   2.1
+  ],
+  "detected": false,
+  "est": 0.56,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.52,
+   1.62
+  ]
+ },
+ "MADM2_2cell|r0_diff": {
+  "db_ci": [
+   -0.38,
+   1.59
+  ],
+  "detected": false,
+  "est": 0.56,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.39,
+   1.52
+  ]
+ },
+ "cell_du_mad|llama3-8b|agent_LOSS": {
+  "db_ci": [
+   -2.14,
+   -0.37
+  ],
+  "detected": true,
+  "est": -1.24,
+  "n_questions": 1531,
+  "q_ci": [
+   -2.17,
+   -0.37
+  ]
+ },
+ "cell_du_mad|llama3-8b|agent_REC": {
+  "db_ci": [
+   -5.01,
+   -2.75
+  ],
+  "detected": true,
+  "est": -3.86,
+  "n_questions": 1531,
+  "q_ci": [
+   -4.96,
+   -2.79
+  ]
+ },
+ "cell_du_mad|llama3-8b|agent_net": {
+  "db_ci": [
+   -3.82,
+   -1.36
+  ],
+  "detected": true,
+  "est": -2.62,
+  "n_questions": 1531,
+  "q_ci": [
+   -4.03,
+   -1.24
+  ]
+ },
+ "cell_du_mad|llama3-8b|dpeer|first": {
+  "db_ci": [
+   -4.43,
+   -1.78
+  ],
+  "detected": true,
+  "est": -3.14,
+  "n_questions": 1531,
+  "q_ci": [
+   -4.7,
+   -1.57
+  ]
+ },
+ "cell_du_mad|llama3-8b|dpeer|first|1333": {
+  "db_ci": [
+   -4.47,
+   -0.97
+  ],
+  "detected": true,
+  "est": -2.81,
+  "n_questions": 1333,
+  "q_ci": [
+   -4.5,
+   -1.16
+  ]
+ },
+ "cell_du_mad|llama3-8b|dpeer|first|198": {
+  "db_ci": [
+   -9.75,
+   -1.01
+  ],
+  "detected": true,
+  "est": -5.3,
+  "n_questions": 198,
+  "q_ci": [
+   -10.1,
+   -0.76
+  ]
+ },
+ "cell_du_mad|llama3-8b|dpeer|last": {
+  "db_ci": [
+   -4.44,
+   -1.75
+  ],
+  "detected": true,
+  "est": -3.14,
+  "n_questions": 1531,
+  "q_ci": [
+   -4.7,
+   -1.57
+  ]
+ },
+ "cell_du_mad|llama3-8b|dpeer|random": {
+  "db_ci": [
+   -4.4,
+   -1.72
+  ],
+  "detected": true,
+  "est": -3.1,
+  "n_questions": 1531,
+  "q_ci": [
+   -4.67,
+   -1.53
+  ]
+ },
+ "cell_du_mad|llama3-8b|last_diff": {
+  "db_ci": [
+   -4.16,
+   -1.71
+  ],
+  "detected": true,
+  "est": -2.97,
+  "n_questions": 1531,
+  "q_ci": [
+   -4.54,
+   -1.47
+  ]
+ },
+ "cell_du_mad|llama3-8b|r0_diff": {
+  "db_ci": [
+   -0.34,
+   0.66
+  ],
+  "detected": false,
+  "est": 0.16,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.46,
+   0.78
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|agent_LOSS": {
+  "db_ci": [
+   -2.08,
+   0.01
+  ],
+  "detected": false,
+  "est": -0.99,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.72,
+   -0.28
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|agent_REC": {
+  "db_ci": [
+   -2.16,
+   -1.51
+  ],
+  "detected": true,
+  "est": -1.82,
+  "n_questions": 1531,
+  "q_ci": [
+   -2.72,
+   -0.96
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|agent_net": {
+  "db_ci": [
+   -1.97,
+   0.41
+  ],
+  "detected": false,
+  "est": -0.83,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.95,
+   0.29
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|dpeer|first": {
+  "db_ci": [
+   -3.59,
+   -1.19
+  ],
+  "detected": true,
+  "est": -2.35,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.66,
+   -1.05
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|dpeer|first|1333": {
+  "db_ci": [
+   -3.88,
+   -1.1
+  ],
+  "detected": true,
+  "est": -2.4,
+  "n_questions": 1333,
+  "q_ci": [
+   -3.79,
+   -1.01
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|dpeer|first|198": {
+  "db_ci": [
+   -6.19,
+   1.5
+  ],
+  "detected": false,
+  "est": -2.02,
+  "n_questions": 198,
+  "q_ci": [
+   -5.56,
+   1.01
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|dpeer|last": {
+  "db_ci": [
+   -3.65,
+   -1.03
+  ],
+  "detected": true,
+  "est": -2.32,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.59,
+   -1.05
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|dpeer|random": {
+  "db_ci": [
+   -3.55,
+   -1.04
+  ],
+  "detected": true,
+  "est": -2.25,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.53,
+   -0.98
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|last_diff": {
+  "db_ci": [
+   -2.85,
+   -0.36
+  ],
+  "detected": true,
+  "est": -1.63,
+  "n_questions": 1531,
+  "q_ci": [
+   -2.91,
+   -0.36
+  ]
+ },
+ "cell_du_mad|qwen2.5-7b|r0_diff": {
+  "db_ci": [
+   0.15,
+   1.36
+  ],
+  "detected": false,
+  "est": 0.72,
+  "n_questions": 1531,
+  "q_ci": [
+   0.0,
+   1.44
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|agent_LOSS": {
+  "db_ci": [
+   -4.36,
+   -1.77
+  ],
+  "detected": true,
+  "est": -2.83,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.71,
+   -1.98
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|agent_REC": {
+  "db_ci": [
+   2.18,
+   4.15
+  ],
+  "detected": true,
+  "est": 3.18,
+  "n_questions": 1531,
+  "q_ci": [
+   2.32,
+   4.05
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|agent_net": {
+  "db_ci": [
+   4.34,
+   8.21
+  ],
+  "detected": true,
+  "est": 6.01,
+  "n_questions": 1531,
+  "q_ci": [
+   4.76,
+   7.3
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|dpeer|first": {
+  "db_ci": [
+   -0.41,
+   4.41
+  ],
+  "detected": false,
+  "est": 1.89,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.26,
+   3.98
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|dpeer|first|1333": {
+  "db_ci": [
+   0.38,
+   4.81
+  ],
+  "detected": true,
+  "est": 2.48,
+  "n_questions": 1333,
+  "q_ci": [
+   0.15,
+   4.76
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|dpeer|first|198": {
+  "db_ci": [
+   -7.61,
+   3.2
+  ],
+  "detected": false,
+  "est": -2.02,
+  "n_questions": 198,
+  "q_ci": [
+   -6.57,
+   2.78
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|dpeer|last": {
+  "db_ci": [
+   2.13,
+   5.03
+  ],
+  "detected": true,
+  "est": 3.56,
+  "n_questions": 1531,
+  "q_ci": [
+   1.44,
+   5.72
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|dpeer|random": {
+  "db_ci": [
+   1.61,
+   4.54
+  ],
+  "detected": true,
+  "est": 3.0,
+  "n_questions": 1531,
+  "q_ci": [
+   0.88,
+   5.13
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|last_diff": {
+  "db_ci": [
+   0.58,
+   4.7
+  ],
+  "detected": true,
+  "est": 2.51,
+  "n_questions": 1531,
+  "q_ci": [
+   0.78,
+   4.25
+  ]
+ },
+ "cell_madm2_objective|llama3-8b|r0_diff": {
+  "db_ci": [
+   -0.82,
+   2.12
+  ],
+  "detected": false,
+  "est": 0.62,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.82,
+   2.12
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|agent_LOSS": {
+  "db_ci": [
+   -1.23,
+   0.63
+  ],
+  "detected": false,
+  "est": -0.33,
+  "n_questions": 1531,
+  "q_ci": [
+   -1.13,
+   0.47
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|agent_REC": {
+  "db_ci": [
+   -0.28,
+   0.74
+  ],
+  "detected": false,
+  "est": 0.24,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.53,
+   1.0
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|agent_net": {
+  "db_ci": [
+   -0.28,
+   1.51
+  ],
+  "detected": false,
+  "est": 0.57,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.56,
+   1.64
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|dpeer|first": {
+  "db_ci": [
+   -3.34,
+   -0.69
+  ],
+  "detected": true,
+  "est": -1.89,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.56,
+   -0.2
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|dpeer|first|1333": {
+  "db_ci": [
+   -4.09,
+   -1.25
+  ],
+  "detected": true,
+  "est": -2.48,
+  "n_questions": 1333,
+  "q_ci": [
+   -4.24,
+   -0.71
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|dpeer|first|198": {
+  "db_ci": [
+   -2.67,
+   6.35
+  ],
+  "detected": false,
+  "est": 2.02,
+  "n_questions": 198,
+  "q_ci": [
+   -2.53,
+   6.57
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|dpeer|last": {
+  "db_ci": [
+   -2.2,
+   -0.34
+  ],
+  "detected": false,
+  "est": -1.27,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.01,
+   0.49
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|dpeer|random": {
+  "db_ci": [
+   -3.15,
+   -0.65
+  ],
+  "detected": true,
+  "est": -1.86,
+  "n_questions": 1531,
+  "q_ci": [
+   -3.49,
+   -0.23
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|last_diff": {
+  "db_ci": [
+   -2.47,
+   -0.31
+  ],
+  "detected": true,
+  "est": -1.4,
+  "n_questions": 1531,
+  "q_ci": [
+   -2.78,
+   -0.07
+  ]
+ },
+ "cell_madm2_objective|qwen2.5-7b|r0_diff": {
+  "db_ci": [
+   -0.58,
+   1.89
+  ],
+  "detected": false,
+  "est": 0.49,
+  "n_questions": 1531,
+  "q_ci": [
+   -0.69,
+   1.67
+  ]
+ },
+ "s198|4cell|lenient|exec|first|dpeer": {
+  "db_ci": [
+   -3.35,
+   -0.38
+  ],
+  "detected": false,
+  "est": -1.96,
+  "q_ci": [
+   -3.85,
+   0.0
+  ]
+ },
+ "s198|4cell|lenient|exec|last|dpeer": {
+  "db_ci": [
+   -2.21,
+   -0.13
+  ],
+  "detected": false,
+  "est": -1.14,
+  "q_ci": [
+   -3.28,
+   0.95
+  ]
+ },
+ "s198|4cell|lenient|exec|random|dpeer": {
+  "db_ci": [
+   -3.65,
+   -0.81
+  ],
+  "detected": true,
+  "est": -2.15,
+  "q_ci": [
+   -4.17,
+   -0.25
+  ]
+ },
+ "s198|4cell|strict|string|first|dpeer": {
+  "db_ci": [
+   1.15,
+   4.94
+  ],
+  "detected": true,
+  "est": 3.03,
+  "q_ci": [
+   0.95,
+   5.11
+  ]
+ },
+ "s198|4cell|strict|string|last|dpeer": {
+  "db_ci": [
+   0.38,
+   2.9
+  ],
+  "detected": false,
+  "est": 1.64,
+  "q_ci": [
+   -0.13,
+   3.47
+  ]
+ },
+ "s198|4cell|strict|string|random|dpeer": {
+  "db_ci": [
+   -0.13,
+   2.28
+  ],
+  "detected": false,
+  "est": 1.07,
+  "q_ci": [
+   -1.01,
+   3.28
+  ]
+ },
+ "s198|DuMAD_2cell|lenient|exec|first|dpeer": {
+  "db_ci": [
+   -5.9,
+   -2.1
+  ],
+  "detected": true,
+  "est": -3.91,
+  "q_ci": [
+   -6.69,
+   -1.39
+  ]
+ },
+ "s198|DuMAD_2cell|lenient|exec|last|dpeer": {
+  "db_ci": [
+   -6.18,
+   -1.64
+  ],
+  "detected": true,
+  "est": -3.91,
+  "q_ci": [
+   -6.69,
+   -1.39
+  ]
+ },
+ "s198|DuMAD_2cell|lenient|exec|random|dpeer": {
+  "db_ci": [
+   -6.57,
+   -2.03
+  ],
+  "detected": true,
+  "est": -4.29,
+  "q_ci": [
+   -7.07,
+   -1.64
+  ]
+ },
+ "s198|DuMAD_2cell|strict|string|first|dpeer": {
+  "db_ci": [
+   -2.31,
+   1.72
+  ],
+  "detected": false,
+  "est": -0.25,
+  "q_ci": [
+   -2.27,
+   1.77
+  ]
+ },
+ "s198|DuMAD_2cell|strict|string|last|dpeer": {
+  "db_ci": [
+   -1.52,
+   2.69
+  ],
+  "detected": false,
+  "est": 0.63,
+  "q_ci": [
+   -1.26,
+   2.65
+  ]
+ },
+ "s198|DuMAD_2cell|strict|string|random|dpeer": {
+  "db_ci": [
+   -1.92,
+   1.86
+  ],
+  "detected": false,
+  "est": 0.0,
+  "q_ci": [
+   -2.02,
+   2.02
+  ]
+ },
+ "s198|MADM2_2cell|lenient|exec|first|dpeer": {
+  "db_ci": [
+   -2.84,
+   3.35
+  ],
+  "detected": false,
+  "est": 0.0,
+  "q_ci": [
+   -3.16,
+   3.28
+  ]
+ },
+ "s198|MADM2_2cell|lenient|exec|last|dpeer": {
+  "db_ci": [
+   -1.86,
+   5.08
+  ],
+  "detected": false,
+  "est": 1.64,
+  "q_ci": [
+   -2.02,
+   5.43
+  ]
+ },
+ "s198|MADM2_2cell|lenient|exec|random|dpeer": {
+  "db_ci": [
+   -3.02,
+   3.28
+  ],
+  "detected": false,
+  "est": 0.0,
+  "q_ci": [
+   -3.41,
+   3.41
+  ]
+ },
+ "s198|MADM2_2cell|strict|string|first|dpeer": {
+  "db_ci": [
+   2.85,
+   10.46
+  ],
+  "detected": true,
+  "est": 6.31,
+  "q_ci": [
+   2.53,
+   10.1
+  ]
+ },
+ "s198|MADM2_2cell|strict|string|last|dpeer": {
+  "db_ci": [
+   -0.61,
+   6.16
+  ],
+  "detected": false,
+  "est": 2.65,
+  "q_ci": [
+   -0.38,
+   5.81
+  ]
+ },
+ "s198|MADM2_2cell|strict|string|random|dpeer": {
+  "db_ci": [
+   -0.48,
+   4.88
+  ],
+  "detected": false,
+  "est": 2.15,
+  "q_ci": [
+   -1.52,
+   5.93
+  ]
+ }
+}

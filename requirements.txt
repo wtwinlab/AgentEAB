@@ -1,0 +1,8 @@
+# Paper objects and their checks
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+# Figure scripts (paper_objects/fig_*/code/plot.py)
+matplotlib>=3.8
+# Tests of share_eval_suite/
+pytest>=8.0

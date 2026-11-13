@@ -1,0 +1,427 @@
+{
+ "id": "tab_answer-content",
+ "labels": [
+  "tab:answer-content",
+  "sec:peer-flow",
+  "sec:s-peer-flow",
+  "tab:s-answer-transitions"
+ ],
+ "section": "VI-D answer-only paragraph (sec:peer-flow) with Table VI; supplementary S6-B with Table S15",
+ "title": "Full peer responses, peers' extracted SQL only, and no peers: Du-MAD and MAD-M2 on 198 BIRD questions",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answer-only paragraph: sampled questions",
+   "printed": "198",
+   "key": "n_questions"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers-only minus full responses, round-to-round change",
+   "printed": "-0.25",
+   "key": "E1|4cell|ANSWER_ONLY-FULL"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "MAD-M2/Qwen2.5-7B conditional loss of initially correct answers, full responses (%)",
+   "printed": "23.7",
+   "key": "cond_loss|madm2_objective|qwen2.5-7b|FULL"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "MAD-M2/Qwen2.5-7B conditional loss of initially correct answers, answers only (%)",
+   "printed": "59.9",
+   "key": "cond_loss|madm2_objective|qwen2.5-7b|ANSWER_ONLY"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "MAD-M2/Qwen2.5-7B vote-level peer interaction effect, answers only below full responses",
+   "printed": "5.05",
+   "key": "E1|madm2_objective|qwen2.5-7b|ANSWER_ONLY-FULL",
+   "transform": "abs"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - full, effect (pp)",
+   "printed": "-0.25",
+   "key": "E1|4cell|ANSWER_ONLY-FULL"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - full, CI questions, lower",
+   "printed": "-2.08",
+   "key": "E1|4cell|ANSWER_ONLY-FULL_q_lo"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - full, CI questions, upper",
+   "printed": "1.58",
+   "key": "E1|4cell|ANSWER_ONLY-FULL_q_hi"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - full, CI databases, lower",
+   "printed": "-2.08",
+   "key": "E1|4cell|ANSWER_ONLY-FULL_db_lo"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - full, CI databases, upper",
+   "printed": "1.40",
+   "key": "E1|4cell|ANSWER_ONLY-FULL_db_hi"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - no peers, effect (pp)",
+   "printed": "-3.60",
+   "key": "E1|4cell|ANSWER_ONLY-NOPEER"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - no peers, CI questions, lower",
+   "printed": "-5.93",
+   "key": "E1|4cell|ANSWER_ONLY-NOPEER_q_lo"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - no peers, CI questions, upper",
+   "printed": "-1.39",
+   "key": "E1|4cell|ANSWER_ONLY-NOPEER_q_hi"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - no peers, CI databases, lower",
+   "printed": "-5.30",
+   "key": "E1|4cell|ANSWER_ONLY-NOPEER_db_lo"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "answers - no peers, CI databases, upper",
+   "printed": "-1.70",
+   "key": "E1|4cell|ANSWER_ONLY-NOPEER_db_hi"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "full - no peers, effect (pp)",
+   "printed": "-3.35",
+   "key": "E1|4cell|FULL-NOPEER"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "full - no peers, CI questions, lower",
+   "printed": "-5.43",
+   "key": "E1|4cell|FULL-NOPEER_q_lo"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "full - no peers, CI questions, upper",
+   "printed": "-1.39",
+   "key": "E1|4cell|FULL-NOPEER_q_hi"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "full - no peers, CI databases, lower",
+   "printed": "-5.03",
+   "key": "E1|4cell|FULL-NOPEER_db_lo"
+  },
+  {
+   "label": "tab:answer-content",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "full - no peers, CI databases, upper",
+   "printed": "-1.73",
+   "key": "E1|4cell|FULL-NOPEER_db_hi"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "answer-only comparison: questions",
+   "printed": "198",
+   "key": "n_questions"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "answer-only comparison: runs, all complete",
+   "printed": "4,752",
+   "key": "n_runs"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, full responses, loss (%)",
+   "printed": "8.7",
+   "key": "cond_loss|du_mad|llama3-8b|FULL"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, full responses, recovery (%)",
+   "printed": "1.4",
+   "key": "cond_rec|du_mad|llama3-8b|FULL"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, answers only, loss (%)",
+   "printed": "5.7",
+   "key": "cond_loss|du_mad|llama3-8b|ANSWER_ONLY"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, answers only, recovery (%)",
+   "printed": "2.9",
+   "key": "cond_rec|du_mad|llama3-8b|ANSWER_ONLY"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, no peers, loss (%)",
+   "printed": "16.1",
+   "key": "cond_loss|du_mad|llama3-8b|NOPEER"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Llama-3-8B, no peers, recovery (%)",
+   "printed": "10.7",
+   "key": "cond_rec|du_mad|llama3-8b|NOPEER"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, full responses, loss (%)",
+   "printed": "4.8",
+   "key": "cond_loss|du_mad|qwen2.5-7b|FULL"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, full responses, recovery (%)",
+   "printed": "5.0",
+   "key": "cond_rec|du_mad|qwen2.5-7b|FULL"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, answers only, loss (%)",
+   "printed": "3.5",
+   "key": "cond_loss|du_mad|qwen2.5-7b|ANSWER_ONLY"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, answers only, recovery (%)",
+   "printed": "3.5",
+   "key": "cond_rec|du_mad|qwen2.5-7b|ANSWER_ONLY"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, no peers, loss (%)",
+   "printed": "4.4",
+   "key": "cond_loss|du_mad|qwen2.5-7b|NOPEER"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, Qwen2.5-7B, no peers, recovery (%)",
+   "printed": "4.9",
+   "key": "cond_rec|du_mad|qwen2.5-7b|NOPEER"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, full responses, loss (%)",
+   "printed": "51.9",
+   "key": "cond_loss|madm2_objective|llama3-8b|FULL"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, full responses, recovery (%)",
+   "printed": "9.5",
+   "key": "cond_rec|madm2_objective|llama3-8b|FULL"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, answers only, loss (%)",
+   "printed": "65.3",
+   "key": "cond_loss|madm2_objective|llama3-8b|ANSWER_ONLY"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, answers only, recovery (%)",
+   "printed": "7.5",
+   "key": "cond_rec|madm2_objective|llama3-8b|ANSWER_ONLY"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, no peers, loss (%)",
+   "printed": "56.5",
+   "key": "cond_loss|madm2_objective|llama3-8b|NOPEER"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Llama-3-8B, no peers, recovery (%)",
+   "printed": "7.4",
+   "key": "cond_rec|madm2_objective|llama3-8b|NOPEER"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, full responses, loss (%)",
+   "printed": "23.7",
+   "key": "cond_loss|madm2_objective|qwen2.5-7b|FULL"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, full responses, recovery (%)",
+   "printed": "11.1",
+   "key": "cond_rec|madm2_objective|qwen2.5-7b|FULL"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, answers only, loss (%)",
+   "printed": "59.9",
+   "key": "cond_loss|madm2_objective|qwen2.5-7b|ANSWER_ONLY"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, answers only, recovery (%)",
+   "printed": "5.0",
+   "key": "cond_rec|madm2_objective|qwen2.5-7b|ANSWER_ONLY"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, no peers, loss (%)",
+   "printed": "33.1",
+   "key": "cond_loss|madm2_objective|qwen2.5-7b|NOPEER"
+  },
+  {
+   "label": "tab:s-answer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, Qwen2.5-7B, no peers, recovery (%)",
+   "printed": "12.0",
+   "key": "cond_rec|madm2_objective|qwen2.5-7b|NOPEER"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "answers-only minus full peer interaction effect, Du-MAD",
+   "printed": "+0.38",
+   "key": "E1|DuMAD_2cell|ANSWER_ONLY-FULL"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "answers-only minus full peer interaction effect, MAD-M2",
+   "printed": "-0.88",
+   "key": "E1|MADM2_2cell|ANSWER_ONLY-FULL"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2/Qwen2.5-7B answers-only minus full",
+   "printed": "-5.05",
+   "key": "E1|madm2_objective|qwen2.5-7b|ANSWER_ONLY-FULL"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD/Llama-3-8B returned accuracy under protocol extraction, full responses (%)",
+   "printed": "0.25",
+   "key": "final|du_mad|llama3-8b|FULL"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD/Llama-3-8B returned accuracy under protocol extraction, answers only (%)",
+   "printed": "23.74",
+   "key": "final|du_mad|llama3-8b|ANSWER_ONLY"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD/Llama-3-8B leniently read last-round vote, full responses (%)",
+   "printed": "21.46",
+   "key": "last|du_mad|llama3-8b|FULL"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD/Llama-3-8B leniently read last-round vote, answers only (%)",
+   "printed": "23.74",
+   "key": "last|du_mad|llama3-8b|ANSWER_ONLY"
+  }
+ ],
+ "statements": [
+  {
+   "text": "Section VI-D: answers-only minus full, question interval spans zero",
+   "key": "E1|4cell|ANSWER_ONLY-FULL_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-D: answers-only lags no peers (detected)",
+   "key": "E1|4cell|ANSWER_ONLY-NOPEER_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-D: full responses lag no peers (detected)",
+   "key": "E1|4cell|FULL-NOPEER_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-D: MAD-M2/Qwen2.5-7B answers-only minus full detected",
+   "key": "E1|madm2_objective|qwen2.5-7b|ANSWER_ONLY-FULL_detected",
+   "expected": true
+  },
+  {
+   "text": "Supplement S6-B: Du-MAD answers-only minus full not detected",
+   "key": "E1|DuMAD_2cell|ANSWER_ONLY-FULL_detected",
+   "expected": false
+  },
+  {
+   "text": "Supplement S6-B: MAD-M2 answers-only minus full not detected",
+   "key": "E1|MADM2_2cell|ANSWER_ONLY-FULL_detected",
+   "expected": false
+  },
+  {
+   "text": "Supplement S6-B: MAD-M2/Qwen2.5-7B answers-only minus full detected",
+   "key": "E1|madm2_objective|qwen2.5-7b|ANSWER_ONLY-FULL_detected",
+   "expected": true
+  }
+ ],
+ "unreproduced": []
+}

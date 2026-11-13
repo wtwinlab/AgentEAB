@@ -1,0 +1,1447 @@
+{
+ "id": "tab_factorial",
+ "labels": [
+  "tab:factorial",
+  "sec:factorial",
+  "sec:peer-controls",
+  "sec:replacement-cost",
+  "tab:replacement-cost",
+  "sec:s-contrasts",
+  "tab:s-contrasts",
+  "tab:s-levels",
+  "sec:s-inference"
+ ],
+ "section": "VI-B (sec:factorial); also VI-C, VII-A; Supplementary S2-B, S4-A and S6-G",
+ "title": "Extraction and voting on fixed BIRD debate responses (198 questions)",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Lenient extractor row, Du-MAD and MAD-M2 (exact replay) column",
+   "printed": "+5.56",
+   "key": "rb_E_mean4_est"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Lenient extractor row, Including BCCS column",
+   "printed": "+4.17",
+   "key": "single_lenient"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Execution vote row, Du-MAD and MAD-M2 column",
+   "printed": "+2.97",
+   "key": "rb_I_mean4_est"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Execution vote row, Including BCCS column",
+   "printed": "+2.86",
+   "key": "single_exec_vote"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Both row, Du-MAD and MAD-M2 column",
+   "printed": "+8.78",
+   "key": "rb_EI_mean4_est"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Both row, Including BCCS column",
+   "printed": "+8.00",
+   "key": "joint_EI"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum row, Du-MAD and MAD-M2 column",
+   "printed": "+0.25",
+   "key": "rb_nonadd_EI_mean4_est"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum row, Including BCCS column",
+   "printed": "+0.97",
+   "key": "nonadd_EI"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum, 95% CI over questions, Du-MAD and MAD-M2, lower",
+   "printed": "-0.06",
+   "key": "rb_nonadd_EI_mean4_lo"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum, 95% CI over questions, Du-MAD and MAD-M2, upper",
+   "printed": "0.69",
+   "key": "rb_nonadd_EI_mean4_hi"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum, 95% CI over questions, Including BCCS, lower",
+   "printed": "0.46",
+   "key": "nonadd_EI_lo"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum, 95% CI over questions, Including BCCS, upper",
+   "printed": "1.52",
+   "key": "nonadd_EI_hi"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum, 95% CI over databases, Du-MAD and MAD-M2, lower",
+   "printed": "0.00",
+   "key": "rb_nonadd_EI_mean4_db_lo"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum, 95% CI over databases, Du-MAD and MAD-M2, upper",
+   "printed": "0.56",
+   "key": "rb_nonadd_EI_mean4_db_hi"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum, 95% CI over databases, Including BCCS, lower",
+   "printed": "0.47",
+   "key": "rb_nonadd_EI_mean6_db_lo"
+  },
+  {
+   "label": "tab:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Joint minus sum, 95% CI over databases, Including BCCS, upper",
+   "printed": "1.48",
+   "key": "rb_nonadd_EI_mean6_db_hi"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "lenient extraction alone raises Du-MAD/Llama-3-8B accuracy to (%)",
+   "printed": "21.97",
+   "key": "level_du_mad_llama38b_lenient_string_last_full"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "runs the two changes correct across the four Du-MAD and MAD-M2 pairs",
+   "printed": "141",
+   "key": "runs_EI_corrected_mean4"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "gain of the two changes, Du-MAD and MAD-M2",
+   "printed": "8.78",
+   "key": "rb_EI_mean4_est"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "gain of the two changes, question interval, lower",
+   "printed": "6.82",
+   "key": "rb_EI_mean4_lo"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "gain of the two changes, question interval, upper",
+   "printed": "10.80",
+   "key": "rb_EI_mean4_hi"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "gain of the two changes, database interval, lower",
+   "printed": "6.00",
+   "key": "rb_EI_mean4_db_lo"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "gain of the two changes, database interval, upper",
+   "printed": "11.74",
+   "key": "rb_EI_mean4_db_hi"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "extractor-vote interaction over Du-MAD and MAD-M2",
+   "printed": "0.25",
+   "key": "rb_nonadd_EI_mean4_est"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "extractor-vote interaction including BCCS",
+   "printed": "0.97",
+   "key": "nonadd_EI"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "six-configuration deployment bound for the joint gain, lower",
+   "printed": "-13.80",
+   "key": "rb_EI_mean6_bound_lo"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "six-configuration deployment bound for the joint gain, upper",
+   "printed": "29.34",
+   "key": "rb_EI_mean6_bound_hi"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "extraction, voting and round changed jointly minus the sum of the three changes (Du-MAD, MAD-M2)",
+   "printed": "4.10",
+   "key": "rb_nonadd_EIR_mean4_est"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "same, question interval, lower",
+   "printed": "2.27",
+   "key": "rb_nonadd_EIR_mean4_lo"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "same, question interval, upper",
+   "printed": "5.93",
+   "key": "rb_nonadd_EIR_mean4_hi"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "same, database interval, lower",
+   "printed": "1.89",
+   "key": "rb_nonadd_EIR_mean4_db_lo"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "same, database interval, upper",
+   "printed": "5.81",
+   "key": "rb_nonadd_EIR_mean4_db_hi"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "BCCS baseline vote above its returned answer, lower end (Llama-3-8B)",
+   "printed": "6.6",
+   "key": "rb_ref_minus_final_bccs_llama38b_est"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "BCCS baseline vote above its returned answer, upper end (Qwen2.5-7B)",
+   "printed": "7.3",
+   "key": "rb_ref_minus_final_bccs_qwen257b_est"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "BCCS runs that change a continuation decision under lenient extraction and execution voting, lower end (%)",
+   "printed": "53",
+   "key": "diverge_EI_min_pct"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "same, upper end (%)",
+   "printed": "85",
+   "key": "diverge_EI_max_pct"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "six-configuration peer-effect deployment bound, lower",
+   "printed": "-16.3",
+   "key": "rb_dpeer_EI_mean6_bound_lo"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "six-configuration peer-effect deployment bound, upper",
+   "printed": "+17.6",
+   "key": "rb_dpeer_EI_mean6_bound_hi"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "initial-answer vote exceeds the six configurations' baseline answers by (pp)",
+   "printed": "10.86",
+   "key": "final_minus_exec_r0_6",
+   "transform": "neg"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "token share the vote retains, lower end (%)",
+   "printed": "27",
+   "key": "kept_token_share_min_pct"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "token share the vote retains, upper end (%)",
+   "printed": "44",
+   "key": "kept_token_share_max_pct"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "three-query vote gain, Du-MAD and MAD-M2 (pp)",
+   "printed": "9.15",
+   "key": "rb_final_minus_EIr0_mean4_est",
+   "transform": "neg"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "last-minus-initial difference under the same extractor and vote, Du-MAD and MAD-M2",
+   "printed": "-0.38",
+   "key": "rb_later_EI_mean4_est"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "same, question interval, lower",
+   "printed": "-1.96",
+   "key": "rb_later_EI_mean4_lo"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "same, question interval, upper",
+   "printed": "1.20",
+   "key": "rb_later_EI_mean4_hi"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Debate to initial-answer vote row, Tasks",
+   "printed": "198",
+   "key": "n_questions"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Debate row, calls per question removed, lower end",
+   "printed": "3",
+   "key": "removed_calls_min"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Debate row, calls per question removed, upper end",
+   "printed": "10.4",
+   "key": "removed_calls_max"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Debate row, tokens saved, lower end (%)",
+   "printed": "56",
+   "key": "removed_token_share_min_pct"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Debate row, tokens saved, upper end (%)",
+   "printed": "73",
+   "key": "removed_token_share_max_pct"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Debate row, Delta (stage minus rule)",
+   "printed": "-10.86",
+   "key": "final_minus_exec_r0_6"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Debate row, 95% CI, lower",
+   "printed": "-13.13",
+   "key": "final_minus_exec_r0_6_lo"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Debate row, 95% CI, upper",
+   "printed": "-8.71",
+   "key": "final_minus_exec_r0_6_hi"
+  },
+  {
+   "label": "sec:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "number of replacement contrasts classified (section title and first sentence)",
+   "printed": "24",
+   "key": "contrasts_total"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R1 replay estimate",
+   "printed": "-10.86",
+   "key": "final_minus_exec_r0_6"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R1, CI lower",
+   "printed": "-13.13",
+   "key": "final_minus_exec_r0_6_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R1, CI upper",
+   "printed": "-8.71",
+   "key": "final_minus_exec_r0_6_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R3 MoA final - execution vote, ties first",
+   "printed": "-0.51",
+   "key": "moa_final_minus_exec_r0_first"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R3 MoA final - execution vote, ties last",
+   "printed": "-14.65",
+   "key": "moa_final_minus_exec_r0_last"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R3 MoA final - execution vote, ties random",
+   "printed": "-6.31",
+   "key": "moa_final_minus_exec_r0_random"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 extractor, four cells",
+   "printed": "+5.56",
+   "key": "rb_E_mean4_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 extractor, four cells, CI lower",
+   "printed": "+4.17",
+   "key": "rb_E_mean4_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 extractor, four cells, CI upper",
+   "printed": "+7.01",
+   "key": "rb_E_mean4_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 vote, four cells",
+   "printed": "+2.97",
+   "key": "rb_I_mean4_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 vote, four cells, CI lower",
+   "printed": "+1.96",
+   "key": "rb_I_mean4_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 vote, four cells, CI upper",
+   "printed": "+4.04",
+   "key": "rb_I_mean4_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 both, four cells",
+   "printed": "+8.78",
+   "key": "rb_EI_mean4_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 both, four cells, CI lower",
+   "printed": "+6.82",
+   "key": "rb_EI_mean4_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R4 both, four cells, CI upper",
+   "printed": "+10.80",
+   "key": "rb_EI_mean4_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 diverging share with peers, Llama-3-8B",
+   "printed": "0.854",
+   "key": "diverge_llama38b_FULL_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 unrecoverable share, Llama-3-8B",
+   "printed": "0.745",
+   "key": "diverge_unrec_llama38b_FULL_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 tasks with any divergence, CI lower, Llama-3-8B",
+   "printed": "0.94",
+   "key": "diverge_tasks_cp_lo_llama38b_FULL_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 diverging share with peers, Qwen2.5-7B",
+   "printed": "0.790",
+   "key": "diverge_qwen257b_FULL_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 unrecoverable share, Qwen2.5-7B",
+   "printed": "0.523",
+   "key": "diverge_unrec_qwen257b_FULL_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 tasks with any divergence, CI lower, Qwen2.5-7B",
+   "printed": "0.88",
+   "key": "diverge_tasks_cp_lo_qwen257b_FULL_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 both, BCCS/Llama-3-8B",
+   "printed": "+8.59",
+   "key": "rb_EI_bccs_llama38b_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 both, BCCS/Llama-3-8B, CI lower",
+   "printed": "+5.30",
+   "key": "rb_EI_bccs_llama38b_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 both, BCCS/Llama-3-8B, CI upper",
+   "printed": "+11.87",
+   "key": "rb_EI_bccs_llama38b_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 both, BCCS/Qwen2.5-7B",
+   "printed": "+4.29",
+   "key": "rb_EI_bccs_qwen257b_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 both, BCCS/Qwen2.5-7B, CI lower",
+   "printed": "+1.77",
+   "key": "rb_EI_bccs_qwen257b_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 both, BCCS/Qwen2.5-7B, CI upper",
+   "printed": "+6.82",
+   "key": "rb_EI_bccs_qwen257b_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 Llama-3-8B bound, lower",
+   "printed": "-74.75",
+   "key": "rb_EI_bccs_llama38b_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 Llama-3-8B bound, upper",
+   "printed": "+81.57",
+   "key": "rb_EI_bccs_llama38b_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 Llama-3-8B bound CI, lower",
+   "printed": "-79.80",
+   "key": "rb_EI_bccs_llama38b_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 Llama-3-8B bound CI, upper",
+   "printed": "+85.35",
+   "key": "rb_EI_bccs_llama38b_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 Qwen2.5-7B bound, lower",
+   "printed": "-43.18",
+   "key": "rb_EI_bccs_qwen257b_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 Qwen2.5-7B bound, upper",
+   "printed": "+59.34",
+   "key": "rb_EI_bccs_qwen257b_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 Qwen2.5-7B bound CI, lower",
+   "printed": "-49.24",
+   "key": "rb_EI_bccs_qwen257b_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 Qwen2.5-7B bound CI, upper",
+   "printed": "+64.65",
+   "key": "rb_EI_bccs_qwen257b_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 extractor, six cells",
+   "printed": "+4.17",
+   "key": "rb_E_mean6_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 extractor, six cells, CI lower",
+   "printed": "+3.03",
+   "key": "rb_E_mean6_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 extractor, six cells, CI upper",
+   "printed": "+5.35",
+   "key": "rb_E_mean6_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 vote, six cells",
+   "printed": "+2.86",
+   "key": "rb_I_mean6_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 vote, six cells, CI lower",
+   "printed": "+2.02",
+   "key": "rb_I_mean6_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 vote, six cells, CI upper",
+   "printed": "+3.75",
+   "key": "rb_I_mean6_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 both, six cells",
+   "printed": "+8.00",
+   "key": "rb_EI_mean6_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 extractor bound, lower",
+   "printed": "-17.51",
+   "key": "rb_E_mean6_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 extractor bound, upper",
+   "printed": "+25.38",
+   "key": "rb_E_mean6_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 extractor bound CI, lower",
+   "printed": "-19.36",
+   "key": "rb_E_mean6_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 extractor bound CI, upper",
+   "printed": "+26.94",
+   "key": "rb_E_mean6_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 vote bound, lower",
+   "printed": "-20.83",
+   "key": "rb_I_mean6_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 vote bound, upper",
+   "printed": "+27.10",
+   "key": "rb_I_mean6_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 vote bound CI, lower",
+   "printed": "-22.31",
+   "key": "rb_I_mean6_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 vote bound CI, upper",
+   "printed": "+28.41",
+   "key": "rb_I_mean6_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 both bound, lower",
+   "printed": "-13.80",
+   "key": "rb_EI_mean6_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 both bound, upper",
+   "printed": "+29.34",
+   "key": "rb_EI_mean6_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 both bound CI, lower",
+   "printed": "-16.08",
+   "key": "rb_EI_mean6_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R6 both bound CI, upper",
+   "printed": "+31.10",
+   "key": "rb_EI_mean6_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 BCCS diverging share with peers, Llama-3-8B",
+   "printed": "0.818",
+   "key": "diverge_llama38b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 BCCS diverging share with peers, Qwen2.5-7B",
+   "printed": "0.503",
+   "key": "diverge_qwen257b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 joint extractor+vote+round",
+   "printed": "+8.54",
+   "key": "joint_EIR"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 sum of single changes",
+   "printed": "+3.70",
+   "key": "sum_EIR"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 non-additivity, six cells",
+   "printed": "+4.84",
+   "key": "rb_nonadd_EIR_mean6_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 non-additivity, six cells, CI lower",
+   "printed": "+3.28",
+   "key": "rb_nonadd_EIR_mean6_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 non-additivity, six cells, CI upper",
+   "printed": "+6.44",
+   "key": "rb_nonadd_EIR_mean6_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 non-additivity, four cells",
+   "printed": "+4.10",
+   "key": "rb_nonadd_EIR_mean4_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 non-additivity, four cells, CI lower",
+   "printed": "+2.27",
+   "key": "rb_nonadd_EIR_mean4_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 non-additivity, four cells, CI upper",
+   "printed": "+5.93",
+   "key": "rb_nonadd_EIR_mean4_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 non-additivity, four cells, database CI lower",
+   "printed": "1.89",
+   "key": "rb_nonadd_EIR_mean4_db_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 non-additivity, four cells, database CI upper",
+   "printed": "5.81",
+   "key": "rb_nonadd_EIR_mean4_db_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 six cells bound, lower",
+   "printed": "-40.61",
+   "key": "rb_nonadd_EIR_mean6_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 six cells bound, upper",
+   "printed": "+50.21",
+   "key": "rb_nonadd_EIR_mean6_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 six cells bound CI, lower",
+   "printed": "-43.43",
+   "key": "rb_nonadd_EIR_mean6_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R7 six cells bound CI, upper",
+   "printed": "+53.16",
+   "key": "rb_nonadd_EIR_mean6_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 diverging share, no peers, Llama-3-8B",
+   "printed": "0.616",
+   "key": "diverge_llama38b_NOPEER_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 diverging share, no peers, Qwen2.5-7B",
+   "printed": "0.530",
+   "key": "diverge_qwen257b_NOPEER_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 interaction effect, six cells",
+   "printed": "-1.52",
+   "key": "rb_dpeer_EI_mean6_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 interaction effect, six cells, CI lower",
+   "printed": "-2.99",
+   "key": "rb_dpeer_EI_mean6_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 interaction effect, six cells, CI upper",
+   "printed": "-0.04",
+   "key": "rb_dpeer_EI_mean6_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 interaction effect, four cells",
+   "printed": "-1.96",
+   "key": "rb_dpeer_EI_mean4_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 interaction effect, four cells, CI lower",
+   "printed": "-3.85",
+   "key": "rb_dpeer_EI_mean4_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 interaction effect, four cells, CI upper",
+   "printed": "0.00",
+   "key": "rb_dpeer_EI_mean4_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 four cells, database CI lower",
+   "printed": "-3.35",
+   "key": "rb_dpeer_EI_mean4_db_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 four cells, database CI upper",
+   "printed": "-0.38",
+   "key": "rb_dpeer_EI_mean4_db_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 six cells bound, lower",
+   "printed": "-16.29",
+   "key": "rb_dpeer_EI_mean6_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 six cells bound, upper",
+   "printed": "+17.59",
+   "key": "rb_dpeer_EI_mean6_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 six cells bound CI, lower",
+   "printed": "-18.27",
+   "key": "rb_dpeer_EI_mean6_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R8 six cells bound CI, upper",
+   "printed": "+19.70",
+   "key": "rb_dpeer_EI_mean6_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 later rounds, six cells",
+   "printed": "-0.55",
+   "key": "rb_later_EI_mean6_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 later rounds, six cells, CI lower",
+   "printed": "-1.77",
+   "key": "rb_later_EI_mean6_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 later rounds, six cells, CI upper",
+   "printed": "+0.63",
+   "key": "rb_later_EI_mean6_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 later rounds, four cells",
+   "printed": "-0.38",
+   "key": "rb_later_EI_mean4_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 later rounds, four cells, CI lower",
+   "printed": "-1.96",
+   "key": "rb_later_EI_mean4_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 later rounds, four cells, CI upper",
+   "printed": "+1.20",
+   "key": "rb_later_EI_mean4_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 six cells bound, lower",
+   "printed": "-4.71",
+   "key": "rb_later_EI_mean6_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 six cells bound, upper",
+   "printed": "+16.41",
+   "key": "rb_later_EI_mean6_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 six cells bound CI, lower",
+   "printed": "-6.14",
+   "key": "rb_later_EI_mean6_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R9 six cells bound CI, upper",
+   "printed": "+18.31",
+   "key": "rb_later_EI_mean6_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 diverging share, ties to the last agent, Llama-3-8B",
+   "printed": "0.828",
+   "key": "diverge_llama38b_FULL_ref_tie_last"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 diverging share, ties to the last agent, Qwen2.5-7B",
+   "printed": "0.538",
+   "key": "diverge_qwen257b_FULL_ref_tie_last"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 MAD-M2/Qwen2.5-7B, ties to the first agent",
+   "printed": "+8.33",
+   "key": "dpeer_madm2_qwen_strict_string_first"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 six cells",
+   "printed": "+3.07",
+   "key": "rb_dpeer_ref_mean6_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 six cells, CI lower",
+   "printed": "+1.22",
+   "key": "rb_dpeer_ref_mean6_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 six cells, CI upper",
+   "printed": "+4.92",
+   "key": "rb_dpeer_ref_mean6_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 four cells",
+   "printed": "+3.03",
+   "key": "rb_dpeer_ref_mean4_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 four cells, CI lower",
+   "printed": "+0.95",
+   "key": "rb_dpeer_ref_mean4_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 four cells, CI upper",
+   "printed": "+5.11",
+   "key": "rb_dpeer_ref_mean4_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 six cells bound, lower",
+   "printed": "-14.65",
+   "key": "rb_dpeer_ref_mean6_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 six cells bound, upper",
+   "printed": "+22.56",
+   "key": "rb_dpeer_ref_mean6_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 six cells bound CI, lower",
+   "printed": "-16.92",
+   "key": "rb_dpeer_ref_mean6_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R10 six cells bound CI, upper",
+   "printed": "+24.58",
+   "key": "rb_dpeer_ref_mean6_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 diverging share, Llama-3-8B",
+   "printed": "0.818",
+   "key": "diverge_llama38b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 unrecoverable share, Llama-3-8B",
+   "printed": "0.818",
+   "key": "diverge_unrec_llama38b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 tasks with any divergence, CI lower, Llama-3-8B",
+   "printed": "0.90",
+   "key": "diverge_tasks_cp_lo_llama38b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 tasks with any divergence, CI lower, Qwen2.5-7B",
+   "printed": "0.63",
+   "key": "diverge_tasks_cp_lo_qwen257b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 contrast, lower end",
+   "printed": "+6.6",
+   "key": "rb_ref_minus_final_bccs_llama38b_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 contrast, upper end",
+   "printed": "+7.3",
+   "key": "rb_ref_minus_final_bccs_qwen257b_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Llama-3-8B",
+   "printed": "+6.57",
+   "key": "rb_ref_minus_final_bccs_llama38b_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Llama-3-8B, CI lower",
+   "printed": "+4.29",
+   "key": "rb_ref_minus_final_bccs_llama38b_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Llama-3-8B, CI upper",
+   "printed": "+9.09",
+   "key": "rb_ref_minus_final_bccs_llama38b_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Qwen2.5-7B",
+   "printed": "+7.32",
+   "key": "rb_ref_minus_final_bccs_qwen257b_est"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Qwen2.5-7B, CI lower",
+   "printed": "+4.55",
+   "key": "rb_ref_minus_final_bccs_qwen257b_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Qwen2.5-7B, CI upper",
+   "printed": "+10.35",
+   "key": "rb_ref_minus_final_bccs_qwen257b_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Llama-3-8B bound, lower",
+   "printed": "-5.05",
+   "key": "rb_ref_minus_final_bccs_llama38b_bound_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Llama-3-8B bound, upper",
+   "printed": "+76.77",
+   "key": "rb_ref_minus_final_bccs_llama38b_bound_hi"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Llama-3-8B bound CI, lower",
+   "printed": "-7.32",
+   "key": "rb_ref_minus_final_bccs_llama38b_bound_ci_lo"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 Llama-3-8B bound CI, upper",
+   "printed": "+81.06",
+   "key": "rb_ref_minus_final_bccs_llama38b_bound_ci_hi"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, initial answers",
+   "printed": "23.23",
+   "key": "level_du_mad_llama38b_lenient_exec_r0_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, last round",
+   "printed": "22.98",
+   "key": "level_du_mad_llama38b_lenient_exec_last_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Llama-3-8B, final answer",
+   "printed": "0.0",
+   "key": "level_du_mad_llama38b_final_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, initial answers",
+   "printed": "23.99",
+   "key": "level_madm2_objective_llama38b_lenient_exec_r0_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, last round",
+   "printed": "22.47",
+   "key": "level_madm2_objective_llama38b_lenient_exec_last_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Llama-3-8B, final answer",
+   "printed": "15.4",
+   "key": "level_madm2_objective_llama38b_final_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, initial answers",
+   "printed": "35.86",
+   "key": "level_du_mad_qwen257b_lenient_exec_r0_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, last round",
+   "printed": "35.35",
+   "key": "level_du_mad_qwen257b_lenient_exec_last_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD / Qwen2.5-7B, final answer",
+   "printed": "34.1",
+   "key": "level_du_mad_qwen257b_final_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, initial answers",
+   "printed": "32.83",
+   "key": "level_madm2_objective_qwen257b_lenient_exec_r0_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, last round",
+   "printed": "33.59",
+   "key": "level_madm2_objective_qwen257b_lenient_exec_last_full"
+  },
+  {
+   "label": "tab:s-levels",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 / Qwen2.5-7B, final answer",
+   "printed": "29.8",
+   "key": "level_madm2_objective_qwen257b_final_full"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 tasks with any divergence, CI upper, Llama-3-8B (0.94--0.99)",
+   "printed": "0.99",
+   "key": "diverge_tasks_cp_hi_llama38b_FULL_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R5 tasks with any divergence, CI upper, Qwen2.5-7B (0.88--0.96)",
+   "printed": "0.96",
+   "key": "diverge_tasks_cp_hi_qwen257b_FULL_EI"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 tasks with any divergence, CI upper, Llama-3-8B (0.90--0.97)",
+   "printed": "0.97",
+   "key": "diverge_tasks_cp_hi_llama38b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 tasks with any divergence, CI upper, Qwen2.5-7B (0.63--0.76)",
+   "printed": "0.76",
+   "key": "diverge_tasks_cp_hi_qwen257b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 diverging share with peers, Qwen2.5-7B",
+   "printed": "0.503",
+   "key": "diverge_qwen257b_FULL_ref"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R11 unrecoverable share, Qwen2.5-7B",
+   "printed": "0.503",
+   "key": "diverge_unrec_qwen257b_FULL_ref"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS dependency checks: answer verdicts reproduced from the logged prefix",
+   "printed": "3,553",
+   "key": "bccs_verdicts_reproduced"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS dependency checks: stopping decisions reproduced",
+   "printed": "2,688",
+   "key": "bccs_stop_flags_reproduced"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS dependency checks: peer choices reproduced",
+   "printed": "1,969",
+   "key": "bccs_peer_choices_reproduced"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "protocol and pipeline contrasts classified under Lemma 1",
+   "printed": "24",
+   "key": "contrasts_total"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "contrasts that satisfy exact-replay conditions",
+   "printed": "12",
+   "key": "contrasts_exact"
+  }
+ ],
+ "unreproduced": [],
+ "statements": [
+  {
+   "text": "Every recomputed BCCS read (verdict, stopping decision, peer choice) equals the logged one",
+   "key": "bccs_reads_not_reproduced",
+   "expected": 0
+  },
+  {
+   "text": "Of the 24 contrasts, four hold on average",
+   "key": "contrasts_average",
+   "expected": 4
+  },
+  {
+   "text": "Of the 24 contrasts, three require bounds",
+   "key": "contrasts_bounded",
+   "expected": 3
+  },
+  {
+   "text": "Of the 24 contrasts, five support deployment conclusions for Du-MAD and MAD-M2 alone",
+   "key": "contrasts_partly",
+   "expected": 5
+  }
+ ]
+}

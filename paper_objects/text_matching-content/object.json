@@ -1,0 +1,1404 @@
+{
+ "id": "text_matching-content",
+ "labels": [
+  "sec:matching-content",
+  "sec:qa-candidate-traces",
+  "sec:s-content",
+  "tab:s-confusion",
+  "tab:s-content-choice",
+  "sec:s-qa-traces",
+  "tab:s-traces",
+  "tab:matrix"
+ ],
+ "section": "V-C (sec:matching-content), VI-E (sec:qa-candidate-traces); Supplementary S5-C (sec:s-content), S6-I (sec:s-qa-traces); Table II (tab:matrix)",
+ "title": "What peers share: field comparisons in matching and QA debate traces",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:matching-content",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "Amazon-Google test F1 lowered by adding field comparisons to the peer decision, upper end of 0.98--9.94 (Qwen3)",
+   "printed": "9.94",
+   "key": "ag_qwen3_decision_minus_fields"
+  },
+  {
+   "label": "sec:matching-content",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "same, lower end (Gemma)",
+   "printed": "0.98",
+   "key": "ag_gemma_decision_minus_fields"
+  },
+  {
+   "label": "sec:matching-content",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: newly incorrect decisions that follow the peer (Qwen3)",
+   "printed": "140",
+   "key": "ag_fields_c2w_follow_peer"
+  },
+  {
+   "label": "sec:matching-content",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: newly incorrect decisions (Qwen3)",
+   "printed": "143",
+   "key": "ag_fields_correct_to_wrong"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "no_peer row, tp",
+   "printed": "378",
+   "key": "ag_qwen3_no_peer_tp"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "no_peer row, fp",
+   "printed": "31",
+   "key": "ag_qwen3_no_peer_fp"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "no_peer row, fn",
+   "printed": "122",
+   "key": "ag_qwen3_no_peer_fn"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "no_peer row, recall",
+   "printed": "75.60",
+   "key": "ag_qwen3_no_peer_recall"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "no_peer row, f1",
+   "printed": "83.17",
+   "key": "ag_qwen3_no_peer_f1"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "peer_decision row, tp",
+   "printed": "343",
+   "key": "ag_qwen3_peer_decision_tp"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "peer_decision row, fp",
+   "printed": "30",
+   "key": "ag_qwen3_peer_decision_fp"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "peer_decision row, fn",
+   "printed": "157",
+   "key": "ag_qwen3_peer_decision_fn"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "peer_decision row, recall",
+   "printed": "68.60",
+   "key": "ag_qwen3_peer_decision_recall"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "peer_decision row, f1",
+   "printed": "78.58",
+   "key": "ag_qwen3_peer_decision_f1"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "decision_plus_fields row, tp",
+   "printed": "279",
+   "key": "ag_qwen3_decision_plus_fields_tp"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "decision_plus_fields row, fp",
+   "printed": "34",
+   "key": "ag_qwen3_decision_plus_fields_fp"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "decision_plus_fields row, fn",
+   "printed": "221",
+   "key": "ag_qwen3_decision_plus_fields_fn"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "decision_plus_fields row, recall",
+   "printed": "55.80",
+   "key": "ag_qwen3_decision_plus_fields_recall"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "full_explanation row, tp",
+   "printed": "287",
+   "key": "ag_qwen3_full_explanation_tp"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "full_explanation row, fp",
+   "printed": "29",
+   "key": "ag_qwen3_full_explanation_fp"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "full_explanation row, fn",
+   "printed": "213",
+   "key": "ag_qwen3_full_explanation_fn"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "full_explanation row, recall",
+   "printed": "57.40",
+   "key": "ag_qwen3_full_explanation_recall"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "full_explanation row, f1",
+   "printed": "70.34",
+   "key": "ag_qwen3_full_explanation_f1"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "table note: matches per input",
+   "printed": "500",
+   "key": "ag_true_matches"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "table note: non-matches per input",
+   "printed": "500",
+   "key": "ag_true_nonmatches"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Amazon-Google test pairs",
+   "printed": "1,000",
+   "key": "ag_fields_test_pairs"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: correct no-peer judgments that become incorrect",
+   "printed": "143",
+   "key": "ag_fields_correct_to_wrong"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: incorrect judgments that become correct",
+   "printed": "41",
+   "key": "ag_fields_wrong_to_correct"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: losses that are true matches changed to non-match",
+   "printed": "125",
+   "key": "ag_fields_c2w_true_match_to_nonmatch"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: shown peer rejects true matches",
+   "printed": "224",
+   "key": "ag_peer_rejects_true_matches"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: true matches",
+   "printed": "500",
+   "key": "ag_true_matches"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: losses that follow the shown decision",
+   "printed": "140",
+   "key": "ag_fields_c2w_follow_peer"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: corrections that follow the shown decision",
+   "printed": "41",
+   "key": "ag_fields_w2c_follow_peer"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Amazon-Google loss avoided against full explanations, Qwen3",
+   "printed": "12.83",
+   "key": "ag_qwen3_selected_minus_full"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Amazon-Google loss avoided against full explanations, gpt-oss",
+   "printed": "3.90",
+   "key": "ag_gptoss_selected_minus_full"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Amazon-Google loss avoided against full explanations, Gemma",
+   "printed": "3.20",
+   "key": "ag_gemma_selected_minus_full"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: DBLP-ACM gap of the selected input to the best tested input, Qwen3",
+   "printed": "0.26",
+   "key": "da_qwen3_best_minus_selected"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: DBLP-ACM gap of the selected input to the best tested input, gpt-oss",
+   "printed": "0.12",
+   "key": "da_gptoss_best_minus_selected"
+  },
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: DBLP-ACM gap of the selected input to the best tested input, Gemma",
+   "printed": "0.85",
+   "key": "da_gemma_best_minus_selected"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM block heading: test pairs",
+   "printed": "800",
+   "key": "da_qwen3_no_peer_pairs"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google block heading: test pairs",
+   "printed": "1,000",
+   "key": "ag_qwen3_no_peer_pairs"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, no_peer row, Qwen3",
+   "printed": "99.12",
+   "key": "da_qwen3_no_peer_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, no_peer row, gpt-oss",
+   "printed": "99.00",
+   "key": "da_gptoss_no_peer_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, no_peer row, Gemma",
+   "printed": "98.52",
+   "key": "da_gemma_no_peer_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, peer_decision row, gpt-oss",
+   "printed": "99.12",
+   "key": "da_gptoss_peer_decision_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, peer_decision row, Gemma",
+   "printed": "99.37",
+   "key": "da_gemma_peer_decision_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, decision_plus_fields row, Qwen3",
+   "printed": "97.04",
+   "key": "da_qwen3_decision_plus_fields_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, decision_plus_fields row, gpt-oss",
+   "printed": "98.23",
+   "key": "da_gptoss_decision_plus_fields_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, decision_plus_fields row, Gemma",
+   "printed": "99.25",
+   "key": "da_gemma_decision_plus_fields_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, full_explanation row, Qwen3",
+   "printed": "98.48",
+   "key": "da_qwen3_full_explanation_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, full_explanation row, gpt-oss",
+   "printed": "96.93",
+   "key": "da_gptoss_full_explanation_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, full_explanation row, Gemma",
+   "printed": "99.25",
+   "key": "da_gemma_full_explanation_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, no_peer row, Qwen3",
+   "printed": "83.17",
+   "key": "ag_qwen3_no_peer_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, no_peer row, gpt-oss",
+   "printed": "91.02",
+   "key": "ag_gptoss_no_peer_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, no_peer row, Gemma",
+   "printed": "91.63",
+   "key": "ag_gemma_no_peer_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, peer_decision row, Qwen3",
+   "printed": "78.58",
+   "key": "ag_qwen3_peer_decision_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, peer_decision row, gpt-oss",
+   "printed": "90.56",
+   "key": "ag_gptoss_peer_decision_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, peer_decision row, Gemma",
+   "printed": "90.27",
+   "key": "ag_gemma_peer_decision_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, decision_plus_fields row, gpt-oss",
+   "printed": "86.47",
+   "key": "ag_gptoss_decision_plus_fields_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, decision_plus_fields row, Gemma",
+   "printed": "89.29",
+   "key": "ag_gemma_decision_plus_fields_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, full_explanation row, Qwen3",
+   "printed": "70.34",
+   "key": "ag_qwen3_full_explanation_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, full_explanation row, gpt-oss",
+   "printed": "87.12",
+   "key": "ag_gptoss_full_explanation_f1"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Planned",
+   "printed": "3,000",
+   "key": "tr_du-mad_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Traced",
+   "printed": "2,995",
+   "key": "tr_du-mad_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Missing",
+   "printed": "5",
+   "key": "tr_du-mad_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Lost",
+   "printed": "61",
+   "key": "tr_du-mad_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Retained failures",
+   "printed": "43",
+   "key": "tr_du-mad_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Loss numerator",
+   "printed": "61",
+   "key": "tr_du-mad_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Loss denominator",
+   "printed": "1,686",
+   "key": "tr_du-mad_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Miss numerator",
+   "printed": "64",
+   "key": "tr_du-mad_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD row, Miss denominator",
+   "printed": "1,736",
+   "key": "tr_du-mad_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Planned",
+   "printed": "800",
+   "key": "tr_bccs_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Traced",
+   "printed": "800",
+   "key": "tr_bccs_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Missing",
+   "printed": "0",
+   "key": "tr_bccs_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Lost",
+   "printed": "26",
+   "key": "tr_bccs_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Retained failures",
+   "printed": "101",
+   "key": "tr_bccs_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Loss numerator",
+   "printed": "26",
+   "key": "tr_bccs_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Loss denominator",
+   "printed": "534",
+   "key": "tr_bccs_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Miss numerator",
+   "printed": "107",
+   "key": "tr_bccs_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "BCCS row, Miss denominator",
+   "printed": "518",
+   "key": "tr_bccs_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Planned",
+   "printed": "800",
+   "key": "tr_dmad_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Traced",
+   "printed": "800",
+   "key": "tr_dmad_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Missing",
+   "printed": "0",
+   "key": "tr_dmad_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Lost",
+   "printed": "132",
+   "key": "tr_dmad_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Retained failures",
+   "printed": "11",
+   "key": "tr_dmad_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Loss numerator",
+   "printed": "132",
+   "key": "tr_dmad_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Loss denominator",
+   "printed": "522",
+   "key": "tr_dmad_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Miss numerator",
+   "printed": "11",
+   "key": "tr_dmad_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DMAD row, Miss denominator",
+   "printed": "402",
+   "key": "tr_dmad_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Planned",
+   "printed": "800",
+   "key": "tr_dov_debate_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Traced",
+   "printed": "501",
+   "key": "tr_dov_debate_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Missing",
+   "printed": "299",
+   "key": "tr_dov_debate_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Lost",
+   "printed": "25",
+   "key": "tr_dov_debate_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Retained failures",
+   "printed": "5",
+   "key": "tr_dov_debate_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Loss numerator",
+   "printed": "25",
+   "key": "tr_dov_debate_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Loss denominator",
+   "printed": "341",
+   "key": "tr_dov_debate_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Miss numerator",
+   "printed": "6",
+   "key": "tr_dov_debate_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 1 row, Miss denominator",
+   "printed": "333",
+   "key": "tr_dov_debate_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Planned",
+   "printed": "800",
+   "key": "tr_dov_vote_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Traced",
+   "printed": "502",
+   "key": "tr_dov_vote_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Missing",
+   "printed": "298",
+   "key": "tr_dov_vote_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Lost",
+   "printed": "25",
+   "key": "tr_dov_vote_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Retained failures",
+   "printed": "3",
+   "key": "tr_dov_vote_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Loss numerator",
+   "printed": "25",
+   "key": "tr_dov_vote_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Loss denominator",
+   "printed": "349",
+   "key": "tr_dov_vote_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Miss numerator",
+   "printed": "1",
+   "key": "tr_dov_vote_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "DoV-style debate, collection 2 row, Miss denominator",
+   "printed": "342",
+   "key": "tr_dov_vote_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Planned",
+   "printed": "800",
+   "key": "tr_madm2_naive_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Traced",
+   "printed": "800",
+   "key": "tr_madm2_naive_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Missing",
+   "printed": "0",
+   "key": "tr_madm2_naive_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Lost",
+   "printed": "29",
+   "key": "tr_madm2_naive_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Retained failures",
+   "printed": "94",
+   "key": "tr_madm2_naive_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Loss numerator",
+   "printed": "29",
+   "key": "tr_madm2_naive_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Loss denominator",
+   "printed": "563",
+   "key": "tr_madm2_naive_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Miss numerator",
+   "printed": "109",
+   "key": "tr_madm2_naive_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, all peers row, Miss denominator",
+   "printed": "566",
+   "key": "tr_madm2_naive_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Planned",
+   "printed": "1,200",
+   "key": "tr_madm2_objective_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Traced",
+   "printed": "1,200",
+   "key": "tr_madm2_objective_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Missing",
+   "printed": "0",
+   "key": "tr_madm2_objective_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Lost",
+   "printed": "43",
+   "key": "tr_madm2_objective_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Retained failures",
+   "printed": "130",
+   "key": "tr_madm2_objective_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Loss numerator",
+   "printed": "43",
+   "key": "tr_madm2_objective_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Loss denominator",
+   "printed": "758",
+   "key": "tr_madm2_objective_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Miss numerator",
+   "printed": "169",
+   "key": "tr_madm2_objective_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter row, Miss denominator",
+   "printed": "778",
+   "key": "tr_madm2_objective_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Planned",
+   "printed": "1,500",
+   "key": "tr_du-mad-roster_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Traced",
+   "printed": "1,497",
+   "key": "tr_du-mad-roster_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Missing",
+   "printed": "3",
+   "key": "tr_du-mad-roster_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Lost",
+   "printed": "81",
+   "key": "tr_du-mad-roster_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Retained failures",
+   "printed": "119",
+   "key": "tr_du-mad-roster_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Loss numerator",
+   "printed": "81",
+   "key": "tr_du-mad-roster_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Loss denominator",
+   "printed": "1,152",
+   "key": "tr_du-mad-roster_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Miss numerator",
+   "printed": "145",
+   "key": "tr_du-mad-roster_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, mixed models row, Miss denominator",
+   "printed": "1,107",
+   "key": "tr_du-mad-roster_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Planned",
+   "printed": "1,200",
+   "key": "tr_madm2_objective_roster_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Traced",
+   "printed": "1,200",
+   "key": "tr_madm2_objective_roster_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Missing",
+   "printed": "0",
+   "key": "tr_madm2_objective_roster_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Lost",
+   "printed": "72",
+   "key": "tr_madm2_objective_roster_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Retained failures",
+   "printed": "195",
+   "key": "tr_madm2_objective_roster_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Loss numerator",
+   "printed": "72",
+   "key": "tr_madm2_objective_roster_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Loss denominator",
+   "printed": "864",
+   "key": "tr_madm2_objective_roster_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Miss numerator",
+   "printed": "226",
+   "key": "tr_madm2_objective_roster_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "MAD, objective filter, mixed models row, Miss denominator",
+   "printed": "841",
+   "key": "tr_madm2_objective_roster_miss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Planned",
+   "printed": "10,900",
+   "key": "tr_ALL_planned"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Traced",
+   "printed": "10,295",
+   "key": "tr_ALL_traced"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Missing",
+   "printed": "605",
+   "key": "tr_ALL_missing"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Lost",
+   "printed": "494",
+   "key": "tr_ALL_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Retained failures",
+   "printed": "701",
+   "key": "tr_ALL_retained"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Loss numerator",
+   "printed": "494",
+   "key": "tr_ALL_lost"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Loss denominator",
+   "printed": "6,769",
+   "key": "tr_ALL_loss_den"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Miss numerator",
+   "printed": "838",
+   "key": "tr_ALL_miss_num"
+  },
+  {
+   "label": "tab:s-traces",
+   "tex_file": "supplementary.tex",
+   "where": "All row, Miss denominator",
+   "printed": "6,623",
+   "key": "tr_ALL_miss_den"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: traced runs",
+   "printed": "10,295",
+   "key": "tr_ALL_traced"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: planned runs",
+   "printed": "10,900",
+   "key": "tr_ALL_planned"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: missing traces in the two DoV-style collections",
+   "printed": "597",
+   "key": "tr_missing_in_dov"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: missing traces",
+   "printed": "605",
+   "key": "tr_ALL_missing"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: traced successes",
+   "printed": "5,785",
+   "key": "tr_ALL_successes"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: successes with a correct answer before interaction",
+   "printed": "5,574",
+   "key": "tr_ALL_initial_correct_success"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: share of successes with a correct initial answer (%)",
+   "printed": "96.4",
+   "key": "tr_success_initial_correct_pct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: runs that start with a correct candidate",
+   "printed": "7,044",
+   "key": "tr_ALL_initial_correct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: of those, failures",
+   "printed": "1,470",
+   "key": "tr_ALL_failures"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: failures that still hold a correct candidate",
+   "printed": "701",
+   "key": "tr_ALL_retained"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: failures that lose every correct candidate",
+   "printed": "494",
+   "key": "tr_ALL_lost"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: failures with undetermined availability",
+   "printed": "275",
+   "key": "tr_ALL_unresolved"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: availability loss (%)",
+   "printed": "7.30",
+   "key": "tr_loss_pct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: evaluable endpoints",
+   "printed": "6,769",
+   "key": "tr_ALL_loss_den"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: availability loss including undetermined, lower end (%)",
+   "printed": "7.01",
+   "key": "tr_loss_bound_lo_pct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: runs whose initial candidates are all wrong",
+   "printed": "2,224",
+   "key": "tr_initial_all_wrong"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: of those, later contain a correct answer",
+   "printed": "198",
+   "key": "tr_initial_all_wrong_later_correct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: share later containing a correct answer (%)",
+   "printed": "8.90",
+   "key": "tr_initial_all_wrong_later_correct_pct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: of those, return a correct answer",
+   "printed": "106",
+   "key": "tr_initial_all_wrong_returned"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: share returning a correct answer (%)",
+   "printed": "4.77",
+   "key": "tr_initial_all_wrong_returned_pct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: primary Miss numerator",
+   "printed": "838",
+   "key": "tr_ALL_miss_num"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: primary Miss denominator",
+   "printed": "6,623",
+   "key": "tr_ALL_miss_den"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: primary Miss rate (%)",
+   "printed": "12.65",
+   "key": "tr_miss_pct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Miss numerator with unscorable answers as failures",
+   "printed": "852",
+   "key": "tr_ALL_miss_incl_unscorable_num"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Miss denominator with unscorable answers",
+   "printed": "6,637",
+   "key": "tr_ALL_miss_incl_unscorable_den"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Miss rate with unscorable answers as failures (%)",
+   "printed": "12.84",
+   "key": "tr_miss_incl_unscorable_pct"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: unscorable final answers",
+   "printed": "14",
+   "key": "tr_ALL_unscorable"
+  },
+  {
+   "label": "tab:matrix",
+   "tex_file": "sections/03_setup.tex",
+   "where": "QA debate traces row: traces",
+   "printed": "10,295",
+   "key": "tr_ALL_traced"
+  },
+  {
+   "label": "sec:s-qa-traces",
+   "tex_file": "supplementary.tex",
+   "where": "prose: availability loss including undetermined, upper end (%)",
+   "printed": "10.92",
+   "key": "tr_loss_bound_hi_pct"
+  },
+  {
+   "label": "tab:s-confusion",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, decision plus fields, Qwen3: pair F1",
+   "printed": "68.63",
+   "key": "ag_qwen3_decision_plus_fields_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "DBLP-ACM, peer decision, Qwen3: pair F1",
+   "printed": "98.87",
+   "key": "da_qwen3_peer_decision_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, full explanation, Gemma: pair F1",
+   "printed": "88.43",
+   "key": "ag_gemma_full_explanation_f1"
+  },
+  {
+   "label": "tab:s-content-choice",
+   "tex_file": "supplementary.tex",
+   "where": "Amazon-Google, decision plus fields, Qwen3: pair F1 (content-choice table)",
+   "printed": "68.63",
+   "key": "ag_qwen3_decision_plus_fields_f1"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "traced runs that start with a correct candidate",
+   "printed": "7,044",
+   "key": "tr_ALL_initial_correct"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "of those, runs that fail",
+   "printed": "1,470",
+   "key": "tr_ALL_failures"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "failures that still contain a correct candidate at final selection",
+   "printed": "701",
+   "key": "tr_ALL_retained"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "failures that lose every correct candidate",
+   "printed": "494",
+   "key": "tr_ALL_lost"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "failures with undetermined terminal availability",
+   "printed": "275",
+   "key": "tr_ALL_unresolved"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "runs whose initial candidates are all wrong",
+   "printed": "2,224",
+   "key": "tr_initial_all_wrong"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "of those, later contain a correct answer",
+   "printed": "198",
+   "key": "tr_initial_all_wrong_later_correct"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "of those, return a correct answer",
+   "printed": "106",
+   "key": "tr_initial_all_wrong_returned"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "trace coverage: traced runs",
+   "printed": "10,295",
+   "key": "tr_ALL_traced"
+  },
+  {
+   "label": "sec:qa-candidate-traces",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "trace coverage: planned runs",
+   "printed": "10,900",
+   "key": "tr_ALL_planned"
+  },
+  {
+   "label": "tab:matrix",
+   "tex_file": "sections/03_setup.tex",
+   "where": "Shared content row: DBLP-ACM and Amazon-Google test pairs",
+   "printed": "1,800",
+   "key": "shared_content_test_pairs"
+  }
+ ],
+ "not_checked": [
+  {
+   "label": "sec:s-content",
+   "tex_file": "supplementary.tex",
+   "where": "prose: one loss is unreadable",
+   "printed": "one",
+   "key": "ag_fields_c2w_to_unreadable",
+   "reason": "printed as a word; computed 1."
+  }
+ ],
+ "unreproduced": []
+}

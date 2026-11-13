@@ -1,0 +1,275 @@
+{
+ "id": "tab_sensitivity-census",
+ "labels": [
+  "tab:sensitivity-census",
+  "sec:s-census"
+ ],
+ "section": "Supplementary S7-G (sec:s-census)",
+ "title": "How often alternative output rules change the conclusion",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD sharing effect, Cases",
+   "printed": "6",
+   "key": "bird_sharing_cases"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD sharing effect, Sign",
+   "printed": "3",
+   "key": "bird_sharing_sign"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD sharing effect, Detect.",
+   "printed": "3",
+   "key": "bird_sharing_detect"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD sharing effect, Stable",
+   "printed": "2",
+   "key": "bird_sharing_stable"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD Delta_peer, Cases",
+   "printed": "5",
+   "key": "bird_dpeer_cases"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD Delta_peer, Sign",
+   "printed": "2",
+   "key": "bird_dpeer_sign"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD Delta_peer, Detect.",
+   "printed": "2",
+   "key": "bird_dpeer_detect"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD Delta_peer, Stable",
+   "printed": "1",
+   "key": "bird_dpeer_stable"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD final answer - initial-answer vote, Cases",
+   "printed": "7",
+   "key": "bird_final_vs_vote_cases"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD final answer - initial-answer vote, Sign",
+   "printed": "4",
+   "key": "bird_final_vs_vote_sign"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD final answer - initial-answer vote, Detect.",
+   "printed": "6",
+   "key": "bird_final_vs_vote_detect"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD final answer - initial-answer vote, Stable",
+   "printed": "1",
+   "key": "bird_final_vs_vote_stable"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "EM, QA: final answer - initial answers, Cases",
+   "printed": "80",
+   "key": "em_qa_cases"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "EM, QA: final answer - initial answers, Sign",
+   "printed": "7",
+   "key": "em_qa_sign"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "EM, QA: final answer - initial answers, Detect.",
+   "printed": "5",
+   "key": "em_qa_detect"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "EM, QA: final answer - initial answers, Stable",
+   "printed": "70",
+   "key": "em_qa_stable"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "cases where the extractor finds every answer, Cases",
+   "printed": "27",
+   "key": "control_cases"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "cases where the extractor finds every answer, Sign",
+   "printed": "0",
+   "key": "control_sign"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "cases where the extractor finds every answer, Detect.",
+   "printed": "0",
+   "key": "control_detect"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "cases where the extractor finds every answer, Stable",
+   "printed": "27",
+   "key": "control_stable"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "Return rule to majority, ties to first agent, Cases",
+   "printed": "40",
+   "key": "return_first_cases"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "Return rule to majority, ties to first agent, Sign",
+   "printed": "8",
+   "key": "return_first_sign"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "Return rule to majority, ties to first agent, Detect.",
+   "printed": "7",
+   "key": "return_first_detect"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "Return rule to majority, ties to first agent, Stable",
+   "printed": "27",
+   "key": "return_first_stable"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "ties to last agent / kept, Cases",
+   "printed": "40",
+   "key": "return_last_cases"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "ties to last agent, Sign",
+   "printed": "3",
+   "key": "return_last_sign"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "ties kept, Sign",
+   "printed": "2",
+   "key": "return_kept_sign"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "ties to last agent, Detect.",
+   "printed": "4",
+   "key": "return_last_detect"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "ties kept, Detect.",
+   "printed": "3",
+   "key": "return_kept_detect"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "ties to last agent, Stable",
+   "printed": "33",
+   "key": "return_last_stable"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "ties kept, Stable",
+   "printed": "35",
+   "key": "return_kept_stable"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "Pair F1 to cluster F1, Cases",
+   "printed": "990",
+   "key": "grouping_cases"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "Pair F1 to cluster F1, Sign",
+   "printed": "34",
+   "key": "grouping_reversals"
+  },
+  {
+   "label": "tab:sensitivity-census",
+   "tex_file": "supplementary.tex",
+   "where": "Pair F1 to cluster F1, Stable",
+   "printed": "927",
+   "key": "grouping_stable"
+  },
+  {
+   "label": "sec:s-census",
+   "tex_file": "supplementary.tex",
+   "where": "alternative output rules change the conclusion in ... cases",
+   "printed": "24",
+   "key": "measurement_changed"
+  },
+  {
+   "label": "sec:s-census",
+   "tex_file": "supplementary.tex",
+   "where": "... of 98 eligible cases",
+   "printed": "98",
+   "key": "measurement_eligible"
+  },
+  {
+   "label": "sec:s-census",
+   "tex_file": "supplementary.tex",
+   "where": "all 27 cases whose extractor finds every answer stay stable",
+   "printed": "27",
+   "key": "control_stable"
+  }
+ ],
+ "unreproduced": []
+}
