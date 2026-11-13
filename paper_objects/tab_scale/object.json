@@ -1,0 +1,529 @@
+{
+ "id": "tab_scale",
+ "labels": [
+  "tab:scale",
+  "sec:scale",
+  "tab:s-scale-contrasts",
+  "sec:s-spend-scale"
+ ],
+ "section": "VIII-D (sec:scale); Supplementary S8-C (sec:s-spend-scale)",
+ "title": "Interaction effect across Qwen2.5 backbone sizes on BIRD",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD row, 7B column",
+   "printed": "-2.02",
+   "key": "dpeer_dumad_7B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD row, 14B column",
+   "printed": "-3.03",
+   "key": "dpeer_dumad_14B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD row, 32B column",
+   "printed": "-1.01",
+   "key": "dpeer_dumad_32B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Du-MAD row, 72B column",
+   "printed": "0.00",
+   "key": "dpeer_dumad_72B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "MAD-M2 row, 7B column",
+   "printed": "+2.02",
+   "key": "dpeer_madm2_7B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "MAD-M2 row, 14B column",
+   "printed": "-3.54",
+   "key": "dpeer_madm2_14B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "MAD-M2 row, 32B column",
+   "printed": "+0.51",
+   "key": "dpeer_madm2_32B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "MAD-M2 row, 72B column",
+   "printed": "+1.01",
+   "key": "dpeer_madm2_72B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Mean of the two row, 7B column",
+   "printed": "0.00",
+   "key": "dpeer_mean_7B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Mean of the two row, 14B column",
+   "printed": "-3.28",
+   "key": "dpeer_mean_14B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Mean of the two row, 32B column",
+   "printed": "-0.25",
+   "key": "dpeer_mean_32B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Mean of the two row, 72B column",
+   "printed": "+0.51",
+   "key": "dpeer_mean_72B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "BCCS row, 7B column",
+   "printed": "-2.53",
+   "key": "dpeer_bccs_7B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "BCCS row, 14B column",
+   "printed": "-4.04",
+   "key": "dpeer_bccs_14B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "BCCS row, 32B column",
+   "printed": "-0.25",
+   "key": "dpeer_bccs_32B_est"
+  },
+  {
+   "label": "tab:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "BCCS row, 72B column",
+   "printed": "+1.01",
+   "key": "dpeer_bccs_72B_est"
+  },
+  {
+   "label": "sec:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "the Du-MAD and MAD-M2 mean changes by +0.51 pp from Qwen2.5-7B to 72B (\\QfScaleTestId)",
+   "printed": "+0.51",
+   "key": "contrast_72b_7b_est"
+  },
+  {
+   "label": "sec:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "both intervals exclude gains above +3.41 pp (\\ScaleUpper, upper end of the question interval)",
+   "printed": "+3.41",
+   "key": "contrast_72b_7b_q_hi"
+  },
+  {
+   "label": "sec:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "the +3.79-pp 72B-minus-14B contrast does not survive the five-comparison Holm adjustment",
+   "printed": "+3.79",
+   "key": "contrast_72b_14b_est"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "same 198 BIRD questions",
+   "printed": "198",
+   "key": "n_questions"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "over the 11 databases",
+   "printed": "11",
+   "key": "n_databases"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "equivalence cell MAD-M2 at 72B",
+   "printed": "+1.01",
+   "key": "equiv_madm2_72B_est"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "equivalence cell, 90% CI lower",
+   "printed": "-1.52",
+   "key": "equiv_madm2_72B_ci90_lo"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "equivalence cell, 90% CI upper",
+   "printed": "+3.79",
+   "key": "equiv_madm2_72B_ci90_hi"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "equivalence cell, repeat 1",
+   "printed": "+3.03",
+   "key": "equiv_madm2_72B_repeat1"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "equivalence cell, repeat 2",
+   "printed": "-1.01",
+   "key": "equiv_madm2_72B_repeat2"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 7B row, difference",
+   "printed": "+0.51",
+   "key": "contrast_72b_7b_est"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 7B row, CI over questions, lower",
+   "printed": "-2.40",
+   "key": "contrast_72b_7b_q_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 7B row, CI over questions, upper",
+   "printed": "+3.41",
+   "key": "contrast_72b_7b_q_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 7B row, CI over databases, lower",
+   "printed": "-1.62",
+   "key": "contrast_72b_7b_db_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 7B row, CI over databases, upper",
+   "printed": "+2.69",
+   "key": "contrast_72b_7b_db_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 7B row, p",
+   "printed": "0.760",
+   "key": "contrast_72b_7b_p"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 7B row, Holm-adjusted p",
+   "printed": "1.000",
+   "key": "contrast_72b_7b_p_holm"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "14B - 7B row, difference",
+   "printed": "-3.28",
+   "key": "contrast_14b_7b_est"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "14B - 7B row, CI over questions, lower",
+   "printed": "-7.32",
+   "key": "contrast_14b_7b_q_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "14B - 7B row, CI over questions, upper",
+   "printed": "+0.63",
+   "key": "contrast_14b_7b_q_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "14B - 7B row, CI over databases, lower",
+   "printed": "-5.65",
+   "key": "contrast_14b_7b_db_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "14B - 7B row, CI over databases, upper",
+   "printed": "-0.76",
+   "key": "contrast_14b_7b_db_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "14B - 7B row, p",
+   "printed": "0.113",
+   "key": "contrast_14b_7b_p"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "14B - 7B row, Holm-adjusted p",
+   "printed": "0.446",
+   "key": "contrast_14b_7b_p_holm"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "32B - 14B row, difference",
+   "printed": "+3.03",
+   "key": "contrast_32b_14b_est"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "32B - 14B row, CI over questions, lower",
+   "printed": "-0.63",
+   "key": "contrast_32b_14b_q_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "32B - 14B row, CI over questions, upper",
+   "printed": "+6.82",
+   "key": "contrast_32b_14b_q_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "32B - 14B row, CI over databases, lower",
+   "printed": "-0.88",
+   "key": "contrast_32b_14b_db_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "32B - 14B row, CI over databases, upper",
+   "printed": "+6.76",
+   "key": "contrast_32b_14b_db_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "32B - 14B row, p",
+   "printed": "0.112",
+   "key": "contrast_32b_14b_p"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "32B - 14B row, Holm-adjusted p",
+   "printed": "0.446",
+   "key": "contrast_32b_14b_p_holm"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 32B row, difference",
+   "printed": "+0.76",
+   "key": "contrast_72b_32b_est"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 32B row, CI over questions, lower",
+   "printed": "-2.15",
+   "key": "contrast_72b_32b_q_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 32B row, CI over questions, upper",
+   "printed": "+3.66",
+   "key": "contrast_72b_32b_q_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 32B row, CI over databases, lower",
+   "printed": "-2.64",
+   "key": "contrast_72b_32b_db_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 32B row, CI over databases, upper",
+   "printed": "+4.29",
+   "key": "contrast_72b_32b_db_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 32B row, p",
+   "printed": "0.633",
+   "key": "contrast_72b_32b_p"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 32B row, Holm-adjusted p",
+   "printed": "1.000",
+   "key": "contrast_72b_32b_p_holm"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 14B row, difference",
+   "printed": "+3.79",
+   "key": "contrast_72b_14b_est"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 14B row, CI over questions, lower",
+   "printed": "+0.63",
+   "key": "contrast_72b_14b_q_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 14B row, CI over questions, upper",
+   "printed": "+7.07",
+   "key": "contrast_72b_14b_q_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 14B row, CI over databases, lower",
+   "printed": "+1.80",
+   "key": "contrast_72b_14b_db_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 14B row, CI over databases, upper",
+   "printed": "+5.80",
+   "key": "contrast_72b_14b_db_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 14B row, p",
+   "printed": "0.018",
+   "key": "contrast_72b_14b_p"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "72B - 14B row, Holm-adjusted p",
+   "printed": "0.092",
+   "key": "contrast_72b_14b_p_holm"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss 120B - 20B row, difference",
+   "printed": "-1.77",
+   "key": "contrast_gptoss_120b_20b_est"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss 120B - 20B row, CI over questions, lower",
+   "printed": "-5.68",
+   "key": "contrast_gptoss_120b_20b_q_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss 120B - 20B row, CI over questions, upper",
+   "printed": "+2.02",
+   "key": "contrast_gptoss_120b_20b_q_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss 120B - 20B row, CI over databases, lower",
+   "printed": "-5.20",
+   "key": "contrast_gptoss_120b_20b_db_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss 120B - 20B row, CI over databases, upper",
+   "printed": "+1.55",
+   "key": "contrast_gptoss_120b_20b_db_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss 120B - 20B row, p",
+   "printed": "0.386",
+   "key": "contrast_gptoss_120b_20b_p"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Llama 3.3-70B - 3-8B row, difference",
+   "printed": "+4.04",
+   "key": "contrast_llama_70b_8b_est"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Llama 3.3-70B - 3-8B row, CI over questions, lower",
+   "printed": "+0.13",
+   "key": "contrast_llama_70b_8b_q_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Llama 3.3-70B - 3-8B row, CI over questions, upper",
+   "printed": "+7.95",
+   "key": "contrast_llama_70b_8b_q_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Llama 3.3-70B - 3-8B row, CI over databases, lower",
+   "printed": "+0.62",
+   "key": "contrast_llama_70b_8b_db_lo"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Llama 3.3-70B - 3-8B row, CI over databases, upper",
+   "printed": "+7.14",
+   "key": "contrast_llama_70b_8b_db_hi"
+  },
+  {
+   "label": "tab:s-scale-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "Llama 3.3-70B - 3-8B row, p",
+   "printed": "0.049",
+   "key": "contrast_llama_70b_8b_p"
+  }
+ ],
+ "unreproduced": []
+}

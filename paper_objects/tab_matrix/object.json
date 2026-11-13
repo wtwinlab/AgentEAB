@@ -1,0 +1,93 @@
+{
+ "id": "tab_matrix",
+ "labels": [
+  "sec:setup",
+  "tab:matrix"
+ ],
+ "section": "IV (sec:setup), Table II (tab:matrix)",
+ "title": "BIRD debate populations: the 198 sampled and the 1,531 development questions",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "BIRD debates score 198 of 200 sampled questions: scored",
+   "printed": "198",
+   "key": "n_questions_sample"
+  },
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "BIRD debates score 198 of 200 sampled questions: sampled",
+   "printed": "200",
+   "key": "n_sample_drawn"
+  },
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "databases the sample is drawn from",
+   "printed": "11",
+   "key": "n_sample_databases"
+  },
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "sampled questions, simple",
+   "printed": "68",
+   "key": "sample_simple"
+  },
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "sampled questions, moderate",
+   "printed": "68",
+   "key": "sample_moderate"
+  },
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "sampled questions, challenging",
+   "printed": "62",
+   "key": "sample_challenging"
+  },
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "over-representation of challenging questions relative to the development set (sample share / development share)",
+   "printed": "3.3",
+   "key": "challenging_overrepresentation"
+  },
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "full-development comparison: scored questions",
+   "printed": "1,531",
+   "key": "n_questions_fulldev"
+  },
+  {
+   "label": "sec:setup",
+   "tex_file": "sections/03_setup.tex",
+   "where": "full-development comparison: development questions; SQL candidate pools cover all of them",
+   "printed": "1,534",
+   "key": "n_bird_dev"
+  },
+  {
+   "label": "tab:matrix",
+   "tex_file": "sections/03_setup.tex",
+   "where": "Complete protocols and Debate controls rows: sampled BIRD questions",
+   "printed": "198",
+   "key": "n_questions_sample"
+  },
+  {
+   "label": "tab:matrix",
+   "tex_file": "sections/03_setup.tex",
+   "where": "Debate controls row: full-development BIRD questions",
+   "printed": "1,531",
+   "key": "n_questions_fulldev"
+  }
+ ],
+ "unreproduced": []
+}

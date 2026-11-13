@@ -1,0 +1,260 @@
+{
+ "audit": "sql_lenient_reader_blind_audit2_20261107",
+ "auditor": "W",
+ "exported_at": "2026-11-07T00:32:34.057Z",
+ "n_items": 50,
+ "n_labelled": 50,
+ "rule": "Is the highlighted SQL the model's intended final answer in this reply? yes/no/unsure; correctness is not judged.",
+ "items": [
+  {
+   "item_id": "B01",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B02",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B03",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B04",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B05",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B06",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B07",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B08",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B09",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B10",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B11",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B12",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B13",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B14",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B15",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B16",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B17",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B18",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B19",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B20",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B21",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B22",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B23",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B24",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B25",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B26",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B27",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B28",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B29",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B30",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B31",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B32",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B33",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B34",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B35",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B36",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B37",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B38",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B39",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B40",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B41",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B42",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B43",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B44",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B45",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B46",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B47",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B48",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B49",
+   "label": "yes",
+   "note": ""
+  },
+  {
+   "item_id": "B50",
+   "label": "yes",
+   "note": ""
+  }
+ ]
+}

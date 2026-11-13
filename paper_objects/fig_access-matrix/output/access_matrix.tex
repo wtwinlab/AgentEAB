@@ -1,0 +1,15 @@
+\begingroup\scriptsize
+\setlength{\tabcolsep}{1pt}\setlength{\fboxsep}{0.3pt}\renewcommand{\arraystretch}{0.9}
+\newcommand{\effectcell}[2]{\colorbox{#1}{\makebox[18pt]{$#2$}}}
+\begin{tabular}{@{}l*{8}{c}@{}}
+& FORD & MoA & \multicolumn{2}{c}{Du-MAD} & \multicolumn{2}{c}{\mad{}} & \multicolumn{2}{c}{BCCS}\\
+& mixed & mixed & L8 & Q7 & L8 & Q7 & L8 & Q7\\\midrule
+GSM8K & \effectcell{asrun!38}{28.5} & \effectcell{asrun!8}{6.0} & \effectcell{asrun!20}{15.0} & \effectcell{asrun!1}{0.5} & \effectcell{rulec!3}{-2.0} & \effectcell{asrun!4}{3.0} & \effectcell{asrun!3}{2.0} & \effectcell{asrun!0}{0.0}\\
+StrategyQA & \effectcell{rulec!1}{-1.0} & \effectcell{asrun!2}{1.5} & \effectcell{rulec!2}{-1.5} & \effectcell{rulec!4}{-3.0} & \effectcell{asrun!22}{16.5} & \effectcell{rulec!6}{-4.5} & \effectcell{rulec!5}{-3.5} & \effectcell{asrun!4}{3.0}\\
+MMLU-Pro & \effectcell{asrun!18}{13.5} & \effectcell{asrun!19}{14.0} & \effectcell{rulec!3}{-2.5} & \effectcell{rulec!1}{-0.5} & \effectcell{asrun!7}{5.0} & \effectcell{rulec!3}{-2.0} & \effectcell{asrun!9}{6.5} & \effectcell{rulec!1}{-1.0}\\
+GPQA & \effectcell{asrun!0}{0.0} & \effectcell{asrun!24}{18.0} & \effectcell{asrun!9}{6.5} & \effectcell{asrun!5}{3.5} & \effectcell{asrun!4}{3.0} & \effectcell{rulec!1}{-1.0} & \effectcell{asrun!8}{6.0} & \effectcell{asrun!2}{1.5}\\
+WDC & \effectcell{asrun!35}{26.2} & \effectcell{asrun!20}{15.0} & \effectcell{rulec!2}{-1.3^{\dagger}} & \effectcell{asrun!0}{0.0} & \effectcell{rulec!1}{-0.9^{\dagger}} & \effectcell{rulec!5}{-3.4^{\dagger}} & --- & ---\\
+Settlements & \effectcell{asrun!24}{18.3} & \effectcell{asrun!36}{27.0} & \effectcell{asrun!3}{2.0^{\dagger}} & \effectcell{asrun!1}{0.8} & \effectcell{rulec!2}{-1.3^{\dagger}} & \effectcell{asrun!8}{5.8^{\dagger}} & --- & ---\\
+BIRD & \effectcell{rulec!4}{-2.8} & \effectcell{asrun!14}{10.2} & \effectcell{asrun!0}{0.0^{\S}} & \effectcell{rulec!1}{-0.5} & \effectcell{asrun!8}{5.8} & \effectcell{asrun!5}{3.8} & \effectcell{asrun!10}{7.5} & \effectcell{asrun!24}{18.0}\\
+\end{tabular}
+\endgroup

@@ -1,0 +1,1218 @@
+{
+ "id": "tab_replacement-cost",
+ "labels": [
+  "tab:replacement-cost",
+  "sec:replacement-cost",
+  "sec:chess",
+  "tab:s-chess",
+  "tab:s-chess-resources",
+  "sec:s-chess",
+  "tab:s-exec-cost",
+  "sec:s-exec"
+ ],
+ "section": "VII-A (sec:replacement-cost, sec:chess); Supplementary S7-B (sec:s-chess), S7-D (sec:s-exec)",
+ "title": "Rules with no LLM call in place of a stage: quality change and LLM work removed",
+ "scope_note": "Covers every row of Table replacement-cost except 'Debate rounds and final vote', which is a separate object; in Table S-exec-cost only the execution-cost table (not the empty-winner or test-suite tables).",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, BIRD: tasks",
+   "printed": "1,534",
+   "key": "refiner_q3_bird_tasks"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, BIRD: calls",
+   "printed": "351",
+   "key": "refiner_q3_bird_calls"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, BIRD: tokens in (k)",
+   "printed": "461",
+   "key": "refiner_q3_bird_tok_in_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, BIRD: tokens out (k)",
+   "printed": "141",
+   "key": "refiner_q3_bird_tok_out_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, BIRD: GPU-s share (%)",
+   "printed": "20.6",
+   "key": "refiner_q3_bird_gpu_share"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, BIRD: stage minus rule (pp)",
+   "printed": "+1.83",
+   "key": "refiner_q3_bird_delta"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, BIRD: 95% CI lower end",
+   "printed": "1.00",
+   "key": "refiner_q3_bird_delta_lo"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, BIRD: 95% CI upper end",
+   "printed": "2.70",
+   "key": "refiner_q3_bird_delta_hi"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, BIRD: tasks",
+   "printed": "1,534",
+   "key": "refiner_q72_bird_tasks"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, BIRD: calls",
+   "printed": "432",
+   "key": "refiner_q72_bird_calls"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, BIRD: tokens in (k)",
+   "printed": "534",
+   "key": "refiner_q72_bird_tok_in_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, BIRD: tokens out (k)",
+   "printed": "198",
+   "key": "refiner_q72_bird_tok_out_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, BIRD: GPU-s share (%)",
+   "printed": "25.8",
+   "key": "refiner_q72_bird_gpu_share"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, BIRD: stage minus rule (pp)",
+   "printed": "+3.46",
+   "key": "refiner_q72_bird_delta"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, BIRD: 95% CI lower end",
+   "printed": "2.06",
+   "key": "refiner_q72_bird_delta_lo"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, BIRD: 95% CI upper end",
+   "printed": "5.01",
+   "key": "refiner_q72_bird_delta_hi"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, Spider: tasks",
+   "printed": "1,034",
+   "key": "refiner_q3_spider_tasks"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, Spider: calls",
+   "printed": "8",
+   "key": "refiner_q3_spider_calls"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, Spider: tokens in (k)",
+   "printed": "8.9",
+   "key": "refiner_q3_spider_tok_in_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, Spider: tokens out (k)",
+   "printed": "0.9",
+   "key": "refiner_q3_spider_tok_out_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, Spider: GPU-s share (%)",
+   "printed": "1.1",
+   "key": "refiner_q3_spider_gpu_share"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, Spider: stage minus rule (pp)",
+   "printed": "+0.39",
+   "key": "refiner_q3_spider_delta"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, Spider: 95% CI lower end",
+   "printed": "0.00",
+   "key": "refiner_q3_spider_delta_lo"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen3-32B, Spider: 95% CI upper end",
+   "printed": "0.84",
+   "key": "refiner_q3_spider_delta_hi"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, Spider: tasks",
+   "printed": "1,034",
+   "key": "refiner_q72_spider_tasks"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, Spider: calls",
+   "printed": "19",
+   "key": "refiner_q72_spider_calls"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, Spider: tokens in (k)",
+   "printed": "20.7",
+   "key": "refiner_q72_spider_tok_in_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, Spider: tokens out (k)",
+   "printed": "6.9",
+   "key": "refiner_q72_spider_tok_out_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, Spider: GPU-s share (%)",
+   "printed": "6.9",
+   "key": "refiner_q72_spider_gpu_share"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, Spider: stage minus rule (pp)",
+   "printed": "+0.97",
+   "key": "refiner_q72_spider_delta"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, Spider: 95% CI lower end",
+   "printed": "0.00",
+   "key": "refiner_q72_spider_delta_lo"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "MAC-SQL Refiner, Qwen2.5-72B, Spider: 95% CI upper end",
+   "printed": "2.13",
+   "key": "refiner_q72_spider_delta_hi"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen3-32B: tasks",
+   "printed": "3,200",
+   "key": "selector_q3_tasks"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen3-32B: calls",
+   "printed": "3,200",
+   "key": "selector_q3_calls"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen3-32B: tokens in (k)",
+   "printed": "680",
+   "key": "selector_q3_tok_in_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen3-32B: tokens out (k)",
+   "printed": "9.6",
+   "key": "selector_q3_tok_out_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen3-32B: stage minus rule (pp)",
+   "printed": "+5.19",
+   "key": "selector_q3_delta"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen3-32B: 95% CI lower end",
+   "printed": "3.53",
+   "key": "selector_q3_delta_lo"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen3-32B: 95% CI upper end",
+   "printed": "6.84",
+   "key": "selector_q3_delta_hi"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen2.5-7B: tasks",
+   "printed": "3,200",
+   "key": "selector_q7_tasks"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen2.5-7B: calls",
+   "printed": "3,200",
+   "key": "selector_q7_calls"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen2.5-7B: tokens in (k)",
+   "printed": "734",
+   "key": "selector_q7_tok_in_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen2.5-7B: tokens out (k)",
+   "printed": "9.6",
+   "key": "selector_q7_tok_out_k"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen2.5-7B: stage minus rule (pp)",
+   "printed": "+1.31",
+   "key": "selector_q7_delta"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen2.5-7B: 95% CI lower end",
+   "printed": "-0.44",
+   "key": "selector_q7_delta_lo"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM selector, Qwen2.5-7B: 95% CI upper end",
+   "printed": "3.06",
+   "key": "selector_q7_delta_hi"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "CHESS Unit Tester vs self-consistency, Qwen3-32B, BIRD: tasks",
+   "printed": "147",
+   "key": "chess_tasks"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "CHESS Unit Tester vs self-consistency, Qwen3-32B, BIRD: calls",
+   "printed": "2,599",
+   "key": "chess_ut_calls"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "CHESS Unit Tester vs self-consistency, Qwen3-32B, BIRD: tokens in (M)",
+   "printed": "9.78",
+   "key": "chess_ut_tok_in_M"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "CHESS Unit Tester vs self-consistency, Qwen3-32B, BIRD: tokens out (M)",
+   "printed": "2.11",
+   "key": "chess_ut_tok_out_M"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "CHESS Unit Tester vs self-consistency, Qwen3-32B, BIRD: GPU-s share (%)",
+   "printed": "51.9",
+   "key": "ut_gpu_share"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "CHESS Unit Tester vs self-consistency, Qwen3-32B, BIRD: stage minus rule (pp)",
+   "printed": "-1.36",
+   "key": "ut_sc_delta"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "CHESS Unit Tester vs self-consistency, Qwen3-32B, BIRD: 95% CI lower end",
+   "printed": "-5.71",
+   "key": "ut_sc_delta_lo"
+  },
+  {
+   "label": "tab:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "CHESS Unit Tester vs self-consistency, Qwen3-32B, BIRD: 95% CI upper end",
+   "printed": "2.88",
+   "key": "ut_sc_delta_hi"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Execution voting takes 0.02--0.26 s of single-threaded SQLite per question (lowest)",
+   "printed": "0.02",
+   "key": "exec_sql_s_per_q_min"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Replacing the Unit Tester removes 37.1% of calls",
+   "printed": "37.1",
+   "key": "chess_ut_call_share"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Refiner on BIRD returns 46.5 additional correct questions per million tokens (Qwen3-32B)",
+   "printed": "46.5",
+   "key": "refiner_q3_bird_per_million_tokens"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "72.4 (Qwen2.5-72B)",
+   "printed": "72.4",
+   "key": "refiner_q72_bird_per_million_tokens"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "voting rules return 85 (self-consistency)",
+   "printed": "85",
+   "key": "chess_SC_official_correct"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "85 (Valid)",
+   "printed": "85",
+   "key": "chess_Valid_vote_correct"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "88 (Nonempty)",
+   "printed": "88",
+   "key": "chess_Nonempty_vote_correct"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "against the Unit Tester's 83",
+   "printed": "83",
+   "key": "chess_UT_correct"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "agree with its execution result on 114--116 (self-consistency)",
+   "printed": "114",
+   "key": "chess_same_result_SC_official"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "of the 147 questions",
+   "printed": "147",
+   "key": "chess_tasks"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester (returned): correct",
+   "printed": "83",
+   "key": "chess_UT_correct"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester (returned): accuracy (%)",
+   "printed": "56.46",
+   "key": "chess_UT_acc"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Self-consistency: correct",
+   "printed": "85",
+   "key": "chess_SC_official_correct"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Self-consistency: accuracy (%)",
+   "printed": "57.82",
+   "key": "chess_SC_official_acc"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Valid: correct",
+   "printed": "85",
+   "key": "chess_Valid_vote_correct"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Valid: accuracy (%)",
+   "printed": "57.82",
+   "key": "chess_Valid_vote_acc"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty: correct",
+   "printed": "88",
+   "key": "chess_Nonempty_vote_correct"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty: accuracy (%)",
+   "printed": "59.86",
+   "key": "chess_Nonempty_vote_acc"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Any correct candidate: correct",
+   "printed": "105",
+   "key": "chess_Any_correct_correct"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Any correct candidate: accuracy (%)",
+   "printed": "71.43",
+   "key": "chess_Any_correct_acc"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester (returned): stage calls",
+   "printed": "2,599",
+   "key": "chess_ut_calls"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Self-cons., all 147, question weights",
+   "printed": "-1.36",
+   "key": "chess_UT_minus_SC_official_all_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Self-cons., 95% CI low",
+   "printed": "-5.71",
+   "key": "chess_UT_minus_SC_official_all_q_lo"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Self-cons., 95% CI high",
+   "printed": "2.88",
+   "key": "chess_UT_minus_SC_official_all_q_hi"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Self-cons., flagged scored as failures",
+   "printed": "-2.04",
+   "key": "chess_UT_fail0_minus_SC_official_all_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Self-cons., entered only (145)",
+   "printed": "-1.38",
+   "key": "chess_UT_minus_SC_official_entered_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Self-cons., all 147, database weights",
+   "printed": "-1.85",
+   "key": "chess_UT_minus_SC_official_all_db"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Valid, all 147, question weights",
+   "printed": "-1.36",
+   "key": "chess_UT_minus_Valid_vote_all_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Valid, 95% CI low",
+   "printed": "-5.71",
+   "key": "chess_UT_minus_Valid_vote_all_q_lo"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Valid, 95% CI high",
+   "printed": "2.88",
+   "key": "chess_UT_minus_Valid_vote_all_q_hi"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Valid, flagged scored as failures",
+   "printed": "-2.04",
+   "key": "chess_UT_fail0_minus_Valid_vote_all_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Valid, entered only (145)",
+   "printed": "-1.38",
+   "key": "chess_UT_minus_Valid_vote_entered_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Valid, all 147, database weights",
+   "printed": "-1.85",
+   "key": "chess_UT_minus_Valid_vote_all_db"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Nonempty, all 147, question weights",
+   "printed": "-3.40",
+   "key": "chess_UT_minus_Nonempty_vote_all_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Nonempty, 95% CI low",
+   "printed": "-7.69",
+   "key": "chess_UT_minus_Nonempty_vote_all_q_lo"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Nonempty, 95% CI high",
+   "printed": "0.00",
+   "key": "chess_UT_minus_Nonempty_vote_all_q_hi"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Nonempty, flagged scored as failures",
+   "printed": "-4.08",
+   "key": "chess_UT_fail0_minus_Nonempty_vote_all_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Nonempty, entered only (145)",
+   "printed": "-3.45",
+   "key": "chess_UT_minus_Nonempty_vote_entered_q"
+  },
+  {
+   "label": "tab:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester - Nonempty, all 147, database weights",
+   "printed": "-4.43",
+   "key": "chess_UT_minus_Nonempty_vote_all_db"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "The Unit Tester is entered on 145 of them",
+   "printed": "145",
+   "key": "chess_ut_entered"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "The returned branch therefore has 83 correct answers",
+   "printed": "83",
+   "key": "chess_UT_correct"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "or 82 if the three flagged outcomes are scored as failures",
+   "printed": "82",
+   "key": "chess_UT_fail0_correct"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "agree with the Unit Tester's execution result on 114 (self-consistency)",
+   "printed": "114",
+   "key": "chess_same_result_SC_official"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "115 (Valid)",
+   "printed": "115",
+   "key": "chess_same_result_Valid_vote"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "116 (Nonempty)",
+   "printed": "116",
+   "key": "chess_same_result_Nonempty_vote"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "SQL strings agree on only 94 (self-consistency)",
+   "printed": "94",
+   "key": "chess_same_sql_SC_official"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "10 (Valid)",
+   "printed": "10",
+   "key": "chess_same_sql_Valid_vote"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "8 (Nonempty)",
+   "printed": "8",
+   "key": "chess_same_sql_Nonempty_vote"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "437 tool-choice calls",
+   "printed": "437",
+   "key": "chess_ut_tool_choice_calls"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "102 test-generation calls",
+   "printed": "102",
+   "key": "chess_ut_test_generation_calls"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "2,060 evaluation calls",
+   "printed": "2,060",
+   "key": "chess_ut_evaluation_calls"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "37.1% of the 7,001 calls",
+   "printed": "37.1",
+   "key": "chess_ut_call_share"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "of the 7,001 calls",
+   "printed": "7,001",
+   "key": "chess_all_calls"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "53.5% of the completion tokens",
+   "printed": "53.5",
+   "key": "chess_ut_completion_share"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "candidate executions take at most 3.53 s for one question",
+   "printed": "3.53",
+   "key": "chess_sql_s_max"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "median wall time per question is 112 s",
+   "printed": "112",
+   "key": "chess_wall_median_s"
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "maximum 287 s",
+   "printed": "287",
+   "key": "chess_wall_max_s"
+  },
+  {
+   "label": "tab:s-chess-resources",
+   "tex_file": "supplementary.tex",
+   "where": "Shared prefix: calls",
+   "printed": "4,402",
+   "key": "chess_prefix_calls"
+  },
+  {
+   "label": "tab:s-chess-resources",
+   "tex_file": "supplementary.tex",
+   "where": "Shared prefix: input tokens",
+   "printed": "38,073,165",
+   "key": "chess_prefix_tok_in"
+  },
+  {
+   "label": "tab:s-chess-resources",
+   "tex_file": "supplementary.tex",
+   "where": "Shared prefix: output tokens",
+   "printed": "1,829,855",
+   "key": "chess_prefix_tok_out"
+  },
+  {
+   "label": "tab:s-chess-resources",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester: calls",
+   "printed": "2,599",
+   "key": "chess_ut_calls"
+  },
+  {
+   "label": "tab:s-chess-resources",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester: input tokens",
+   "printed": "9,780,449",
+   "key": "chess_ut_tok_in"
+  },
+  {
+   "label": "tab:s-chess-resources",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester: output tokens",
+   "printed": "2,108,548",
+   "key": "chess_ut_tok_out"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, four-model pool: questions",
+   "printed": "1,534",
+   "key": "pool_bird_questions"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Valid vote EX %",
+   "printed": "52.15",
+   "key": "pool_bird_valid_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Nonempty vote EX %",
+   "printed": "54.82",
+   "key": "pool_bird_nonempty_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: vote SQL s per question",
+   "printed": "0.104",
+   "key": "pool_bird_sql_s"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Qwen3-32B selector EX %",
+   "printed": "55.93",
+   "key": "pool_bird_q3_selector_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Qwen3-32B generation EX %",
+   "printed": "58.28",
+   "key": "pool_bird_q3_generation_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Qwen3-32B selector tokens",
+   "printed": "2,494",
+   "key": "pool_bird_q3_selector_tokens"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Qwen3-32B generation tokens",
+   "printed": "2,147",
+   "key": "pool_bird_q3_generation_tokens"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Qwen3-32B selector GPU-s",
+   "printed": "27.8",
+   "key": "pool_bird_q3_selector_gpu_s"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Qwen3-32B generation GPU-s",
+   "printed": "21.1",
+   "key": "pool_bird_q3_generation_gpu_s"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, four-model pool: questions",
+   "printed": "1,034",
+   "key": "pool_spider_questions"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: Valid vote EX %",
+   "printed": "73.31",
+   "key": "pool_spider_valid_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: Nonempty vote EX %",
+   "printed": "73.79",
+   "key": "pool_spider_nonempty_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: vote SQL s per question",
+   "printed": "0.018",
+   "key": "pool_spider_sql_s"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: Qwen3-32B selector EX %",
+   "printed": "74.66",
+   "key": "pool_spider_q3_selector_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: Qwen3-32B generation EX %",
+   "printed": "73.98",
+   "key": "pool_spider_q3_generation_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: Qwen3-32B selector tokens",
+   "printed": "1,820",
+   "key": "pool_spider_q3_selector_tokens"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: Qwen3-32B generation tokens",
+   "printed": "1,360",
+   "key": "pool_spider_q3_generation_tokens"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: Qwen3-32B selector GPU-s",
+   "printed": "24.7",
+   "key": "pool_spider_q3_selector_gpu_s"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: Qwen3-32B generation GPU-s",
+   "printed": "15.9",
+   "key": "pool_spider_q3_generation_gpu_s"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: Qwen3-32B selector LLM calls",
+   "printed": "1",
+   "key": "selector_q3_calls_per_task"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: DeepSeek-V4-Pro selector EX %",
+   "printed": "56.84",
+   "key": "pool_bird_ds_selector_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: DeepSeek-V4-Pro generation EX %",
+   "printed": "62.97",
+   "key": "pool_bird_ds_generation_ex"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: DeepSeek-V4-Pro selector tokens",
+   "printed": "3,592",
+   "key": "pool_bird_ds_selector_tokens"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD: DeepSeek-V4-Pro generation tokens",
+   "printed": "3,615",
+   "key": "pool_bird_ds_generation_tokens"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "CHESS: questions",
+   "printed": "147",
+   "key": "chess_tasks"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "CHESS: Valid vote EX %",
+   "printed": "57.82",
+   "key": "chess_Valid_vote_acc"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "CHESS: Nonempty vote EX %",
+   "printed": "59.86",
+   "key": "chess_Nonempty_vote_acc"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "CHESS: Unit Tester EX %",
+   "printed": "56.46",
+   "key": "chess_UT_acc"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "CHESS: Unit Tester LLM calls per question",
+   "printed": "17.68",
+   "key": "chess_ut_calls_per_q"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "CHESS: Unit Tester LLM tokens per question",
+   "printed": "80,878",
+   "key": "chess_ut_tokens_per_q"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "CHESS: Unit Tester GPU-s per question",
+   "printed": "287.8",
+   "key": "chess_ut_gpu_s_per_q"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates with peers: questions",
+   "printed": "198",
+   "key": "debate_questions"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates: execution vote over initial answers EX % (lowest cell)",
+   "printed": "23.2",
+   "key": "debate_vote_min"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates: execution vote SQL s per question (lowest cell)",
+   "printed": "0.02",
+   "key": "debate_sql_min"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates: final answer EX % (lowest cell)",
+   "printed": "0.0",
+   "key": "debate_final_min"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates: later-round LLM calls per question (fewest)",
+   "printed": "+1",
+   "key": "debate_calls_min"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Execution voting takes 0.02--0.26 s of single-threaded SQLite per question (highest, CHESS)",
+   "printed": "0.26",
+   "key": "exec_sql_s_per_q_max",
+   "computed": 0.258472
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "agree with its execution result on 114--116 (Nonempty)",
+   "printed": "116",
+   "key": "chess_same_result_Nonempty_vote",
+   "computed": 116.0
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates: execution vote SQL s per question (highest cell)",
+   "printed": "0.19",
+   "key": "debate_sql_max",
+   "computed": 0.194106
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates: final answer EX % (highest cell)",
+   "printed": "39.1",
+   "key": "debate_final_max",
+   "computed": 39.141414
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "footnote: GPU-s 2.0--26.9 when batched (highest, CHESS)",
+   "printed": "26.9",
+   "key": "chess_ut_gpu_s_per_q_batched",
+   "computed": 26.852381
+  },
+  {
+   "label": "sec:s-chess",
+   "tex_file": "supplementary.tex",
+   "where": "server occupancy of the CHESS workflow, GPU-hours on three Qwen3-32B replicas",
+   "printed": "5.2",
+   "key": "chess_server_gpu_hours"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "CHESS row, SQL s per question",
+   "printed": "0.258",
+   "key": "chess_sql_s"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates, execution vote over initial answers, EX % (upper end)",
+   "printed": "39.6",
+   "key": "debate_vote_max"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates with peers, later-round LLM calls per question (most)",
+   "printed": "+10.4",
+   "key": "debate_calls_max"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates with peers, later-round tokens per question in thousands (fewest)",
+   "printed": "+1.8",
+   "key": "debate_tokens_min_k"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD debates with peers, later-round tokens per question in thousands (most)",
+   "printed": "+21.0",
+   "key": "debate_tokens_max_k"
+  },
+  {
+   "label": "tab:s-exec-cost",
+   "tex_file": "supplementary.tex",
+   "where": "GPU-s per question when batched, lower end (1.5--26.9)",
+   "printed": "1.5",
+   "key": "batched_gpu_s_per_q_min"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "GPU-time estimation: Qwen3-32B decoding rates are 49.97--51.70 tokens/s (lower end)",
+   "printed": "49.97",
+   "key": "rate_Qwen3-32B_decode_single_min"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "GPU-time estimation: Qwen3-32B decoding rates are 49.97--51.70 tokens/s (upper end)",
+   "printed": "51.70",
+   "key": "rate_Qwen3-32B_decode_single_max"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "GPU-time estimation: Qwen2.5-72B-AWQ decoding rates are 40.21--40.56 tokens/s (lower end)",
+   "printed": "40.21",
+   "key": "rate_Qwen2.5-72B-AWQ_decode_single_min"
+  },
+  {
+   "label": "sec:s-exec",
+   "tex_file": "supplementary.tex",
+   "where": "GPU-time estimation: Qwen2.5-72B-AWQ decoding rates are 40.21--40.56 tokens/s (upper end)",
+   "printed": "40.56",
+   "key": "rate_Qwen2.5-72B-AWQ_decode_single_max"
+  }
+ ],
+ "unreproduced": []
+}

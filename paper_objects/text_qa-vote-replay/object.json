@@ -1,0 +1,89 @@
+{
+ "id": "text_qa-vote-replay",
+ "labels": [
+  "sec:qa-vote-replay",
+  "sec:s-return"
+ ],
+ "section": "VII-D (sec:qa-vote-replay, QA part); Supplementary S7-F (sec:s-return, QA part)",
+ "title": "QA return rules replayed on fixed post-update answers",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "prose: QA tasks",
+   "printed": "112",
+   "key": "tasks"
+  },
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "prose: sets of three post-update answers",
+   "printed": "1,680",
+   "key": "sets"
+  },
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "prose: abstentions recovered",
+   "printed": "53",
+   "key": "recovered_that_had_abstained"
+  },
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "prose: accuracy gain (pp)",
+   "printed": "3.15",
+   "key": "gain_pp"
+  },
+  {
+   "label": "sec:s-return",
+   "tex_file": "supplementary.tex",
+   "where": "prose: QA tasks",
+   "printed": "112",
+   "key": "tasks"
+  },
+  {
+   "label": "sec:s-return",
+   "tex_file": "supplementary.tex",
+   "where": "prose: sets of post-update answers",
+   "printed": "1,680",
+   "key": "sets"
+  },
+  {
+   "label": "sec:s-return",
+   "tex_file": "supplementary.tex",
+   "where": "prose: accuracy difference (pp)",
+   "printed": "+3.15",
+   "key": "gain_pp"
+  },
+  {
+   "label": "sec:s-return",
+   "tex_file": "supplementary.tex",
+   "where": "prose: 95% CI lower",
+   "printed": "1.90",
+   "key": "gain_lo_pp"
+  },
+  {
+   "label": "sec:s-return",
+   "tex_file": "supplementary.tex",
+   "where": "prose: 95% CI upper",
+   "printed": "4.58",
+   "key": "gain_hi_pp"
+  }
+ ],
+ "not_checked": [
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "prose: five fixed sets, three update repeats, no success overturned",
+   "printed": "five / three / no",
+   "key": "initial_sets_per_task, repeats, successes_overturned",
+   "reason": "printed as words; computed 5, 3 and 0 (output/values.json)."
+  }
+ ],
+ "unreproduced": []
+}

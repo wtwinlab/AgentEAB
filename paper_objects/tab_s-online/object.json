@@ -1,0 +1,325 @@
+{
+ "id": "tab_s-online",
+ "labels": [
+  "tab:s-online",
+  "sec:s-online-bound",
+  "sec:s-spend-scale",
+  "sec:evaluation-checks"
+ ],
+ "section": "Supplementary S2-C (sec:s-online-bound) and the online check of S8-C (sec:s-spend-scale); replay-accuracy check of IV (sec:evaluation-checks)",
+ "title": "BCCS run online with execution voting, Qwen2.5-7B",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "First agent row, Delta_peer",
+   "printed": "-2.78",
+   "key": "dpeer_tie_first_est"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "First agent row, 95% CI lower",
+   "printed": "-6.82",
+   "key": "dpeer_tie_first_q_lo"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "First agent row, 95% CI upper",
+   "printed": "+1.26",
+   "key": "dpeer_tie_first_q_hi"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "Last agent row, Delta_peer",
+   "printed": "-1.01",
+   "key": "dpeer_tie_last_est"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "Last agent row, 95% CI lower",
+   "printed": "-5.05",
+   "key": "dpeer_tie_last_q_lo"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "Last agent row, 95% CI upper",
+   "printed": "+3.03",
+   "key": "dpeer_tie_last_q_hi"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "Random row, Delta_peer",
+   "printed": "-1.01",
+   "key": "dpeer_tie_random_est"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "Random row, 95% CI lower",
+   "printed": "-4.80",
+   "key": "dpeer_tie_random_q_lo"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "Random row, 95% CI upper",
+   "printed": "+2.78",
+   "key": "dpeer_tie_random_q_hi"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "First agent, single-answer stops excluded row, Delta_peer",
+   "printed": "-3.51",
+   "key": "dpeer_excl_single_est"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "First agent, single-answer stops excluded row, 95% CI lower",
+   "printed": "-7.57",
+   "key": "dpeer_excl_single_q_lo"
+  },
+  {
+   "label": "tab:s-online",
+   "tex_file": "supplementary.tex",
+   "where": "First agent, single-answer stops excluded row, 95% CI upper",
+   "printed": "+0.54",
+   "key": "dpeer_excl_single_q_hi"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "online check, ties to the first agent",
+   "printed": "-2.78",
+   "key": "dpeer_tie_first_est"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "online check, database-cluster interval lower",
+   "printed": "-7.44",
+   "key": "dpeer_tie_first_db_lo"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "online check, database-cluster interval upper",
+   "printed": "+1.99",
+   "key": "dpeer_tie_first_db_hi"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "online check, ties to the last agent or at random",
+   "printed": "-1.01",
+   "key": "dpeer_tie_last_est"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "online check, ties at random",
+   "printed": "-1.01",
+   "key": "dpeer_tie_random_est"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "online check, single-answer stops excluded",
+   "printed": "-3.51",
+   "key": "dpeer_excl_single_est"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "of the 11 databases",
+   "printed": "11",
+   "key": "n_databases"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online minus replay, with peers",
+   "printed": "-0.25",
+   "key": "online_minus_replay_peers_est"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online minus replay, with peers, 95% CI lower",
+   "printed": "-3.03",
+   "key": "online_minus_replay_peers_q_lo"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online minus replay, with peers, 95% CI upper",
+   "printed": "+2.53",
+   "key": "online_minus_replay_peers_q_hi"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online minus replay, without peers",
+   "printed": "+0.25",
+   "key": "online_minus_replay_nopeers_est"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online minus replay, without peers, 95% CI lower",
+   "printed": "-3.28",
+   "key": "online_minus_replay_nopeers_q_lo"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online minus replay, without peers, 95% CI upper",
+   "printed": "+3.79",
+   "key": "online_minus_replay_nopeers_q_hi"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "no-peer questions whose only divergence is recoverable",
+   "printed": "65",
+   "key": "online_minus_replay_nopeers_recoverable_only_n"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online below replay on those questions (magnitude)",
+   "printed": "3.08",
+   "key": "online_minus_replay_nopeers_recoverable_only_est",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online below replay on those questions, 95% CI lower",
+   "printed": "-6.15",
+   "key": "online_minus_replay_nopeers_recoverable_only_q_lo"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "online below replay on those questions, 95% CI upper",
+   "printed": "-0.77",
+   "key": "online_minus_replay_nopeers_recoverable_only_q_hi"
+  },
+  {
+   "label": "sec:evaluation-checks",
+   "tex_file": "sections/02_implementation.tex",
+   "where": "replay accuracy: online execution voting minus replay, with peers (pp)",
+   "printed": "-0.25",
+   "key": "online_minus_replay_peers_est"
+  },
+  {
+   "label": "sec:evaluation-checks",
+   "tex_file": "sections/02_implementation.tex",
+   "where": "replay accuracy: online execution voting minus replay, without peers (pp)",
+   "printed": "+0.25",
+   "key": "online_minus_replay_nopeers_est"
+  },
+  {
+   "label": "sec:evaluation-checks",
+   "tex_file": "sections/02_implementation.tex",
+   "where": "worst-case bound allows a gap of (pp), with peers",
+   "printed": "79",
+   "key": "diverging_runs_peers_pct"
+  },
+  {
+   "label": "sec:evaluation-checks",
+   "tex_file": "sections/02_implementation.tex",
+   "where": "worst-case bound allows a gap of (pp), without peers",
+   "printed": "53",
+   "key": "diverging_runs_nopeers_pct"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "run-level outcome disagreement between online and replay, with peers (%)",
+   "printed": "11.4",
+   "key": "run_disagreement_peers_pct"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "run-level outcome disagreement between online and replay, without peers (%)",
+   "printed": "9.8",
+   "key": "run_disagreement_nopeers_pct"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "repeat-to-repeat disagreement within a collection, lowest (%)",
+   "printed": "7.6",
+   "key": "repeat_disagreement_min_pct"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "repeat-to-repeat disagreement within a collection, highest (%)",
+   "printed": "13.6",
+   "key": "repeat_disagreement_max_pct"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "gap the bound allows, with peers (pp)",
+   "printed": "79.0",
+   "key": "diverging_runs_peers_pct"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "gap the bound allows, without peers (pp)",
+   "printed": "53.0",
+   "key": "diverging_runs_nopeers_pct"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "observed accuracy gap, with peers (pp)",
+   "printed": "0.25",
+   "key": "online_minus_replay_peers_est",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:s-online-bound",
+   "tex_file": "supplementary.tex",
+   "where": "observed accuracy gap, without peers (pp)",
+   "printed": "0.25",
+   "key": "online_minus_replay_nopeers_est",
+   "transform": "abs"
+  }
+ ],
+ "unreproduced": [],
+ "statements": [
+  {
+   "text": "The online last-round accuracy lies inside the deployment bounds of Lemma 1 with peers",
+   "key": "online_inside_bounds_peers",
+   "expected": 1
+  },
+  {
+   "text": "The online last-round accuracy lies inside the deployment bounds of Lemma 1 without peers",
+   "key": "online_inside_bounds_nopeers",
+   "expected": 1
+  },
+  {
+   "text": "The per-database online peer interaction effect is positive in four of the 11 databases",
+   "key": "n_databases_positive_dpeer",
+   "expected": 4
+  }
+ ]
+}

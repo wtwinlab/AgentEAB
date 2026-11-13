@@ -1,0 +1,647 @@
+{
+ "id": "fig_stage-act",
+ "labels": [
+  "fig:stage-act",
+  "sec:decomposition",
+  "sec:replacement-cost",
+  "sec:chess",
+  "tab:s-decomposition",
+  "sec:s-stages"
+ ],
+ "section": "VII-A (sec:replacement-cost, sec:chess); Supplementary S7-A (sec:s-stages)",
+ "title": "Where extra stages change the result",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "fig:stage-act",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "the Refiner changes 8--10% of BIRD results (Qwen3-32B, lower end)",
+   "printed": "8",
+   "key": "refiner_q3_bird_P_A"
+  },
+  {
+   "label": "fig:stage-act",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "the Refiner changes 8--10% of BIRD results (Qwen2.5-72B, upper end)",
+   "printed": "10",
+   "key": "refiner_q72_bird_P_A"
+  },
+  {
+   "label": "fig:stage-act",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "and gains 23--33 pp on those questions (Qwen3-32B, lower end)",
+   "printed": "23",
+   "key": "refiner_q3_bird_E_D_A"
+  },
+  {
+   "label": "fig:stage-act",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "and gains 23--33 pp on those questions (Qwen2.5-72B, upper end)",
+   "printed": "33",
+   "key": "refiner_q72_bird_E_D_A"
+  },
+  {
+   "label": "fig:stage-act",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "On Spider, fewer than 2% change (Qwen3-32B)",
+   "printed": "2",
+   "key": "refiner_q3_spider_P_A",
+   "relation": "le"
+  },
+  {
+   "label": "fig:stage-act",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "On Spider, fewer than 2% change (Qwen2.5-72B)",
+   "printed": "2",
+   "key": "refiner_q72_spider_P_A",
+   "relation": "le"
+  },
+  {
+   "label": "fig:stage-act",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "and gains remain below 1 pp (Qwen3-32B, Spider)",
+   "printed": "1",
+   "key": "refiner_q3_spider_total",
+   "relation": "le"
+  },
+  {
+   "label": "fig:stage-act",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "and gains remain below 1 pp (Qwen2.5-72B, Spider)",
+   "printed": "1",
+   "key": "refiner_q72_spider_total",
+   "relation": "le"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Relative to self-consistency, the Unit Tester changes 15.65% of results",
+   "printed": "15.65",
+   "key": "ut_sc_P_A"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "with 4 gains",
+   "printed": "4",
+   "key": "ut_sc_gains"
+  },
+  {
+   "label": "sec:chess",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "and 6 losses",
+   "printed": "6",
+   "key": "ut_sc_losses"
+  },
+  {
+   "label": "sec:replacement-cost",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "ComEM's Qwen3-32B selector improves query-record accuracy by 5.19 pp",
+   "printed": "5.19",
+   "key": "selector_q3_total"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: n",
+   "printed": "1,534",
+   "key": "refiner_q3_bird_n"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: changed %",
+   "printed": "8.08",
+   "key": "refiner_q3_bird_P_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: changed n",
+   "printed": "124",
+   "key": "refiner_q3_bird_n_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: gains",
+   "printed": "36",
+   "key": "refiner_q3_bird_gains"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: losses",
+   "printed": "8",
+   "key": "refiner_q3_bird_losses"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: both wrong",
+   "printed": "80",
+   "key": "refiner_q3_bird_both_wrong"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: gain if changed",
+   "printed": "+22.58",
+   "key": "refiner_q3_bird_E_D_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: stage minus rule",
+   "printed": "+1.83",
+   "key": "refiner_q3_bird_total"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: stage minus rule, 95% CI low",
+   "printed": "1.00",
+   "key": "refiner_q3_bird_total_lo"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: stage minus rule, 95% CI high",
+   "printed": "2.70",
+   "key": "refiner_q3_bird_total_hi"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: share of calls",
+   "printed": "10.9",
+   "key": "refiner_q3_bird_call_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, BIRD: share of tokens",
+   "printed": "6.1",
+   "key": "refiner_q3_bird_token_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: n",
+   "printed": "1,534",
+   "key": "refiner_q72_bird_n"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: changed %",
+   "printed": "10.43",
+   "key": "refiner_q72_bird_P_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: changed n",
+   "printed": "160",
+   "key": "refiner_q72_bird_n_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: gains",
+   "printed": "63",
+   "key": "refiner_q72_bird_gains"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: losses",
+   "printed": "10",
+   "key": "refiner_q72_bird_losses"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: both wrong",
+   "printed": "87",
+   "key": "refiner_q72_bird_both_wrong"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: gain if changed",
+   "printed": "+33.12",
+   "key": "refiner_q72_bird_E_D_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: stage minus rule",
+   "printed": "+3.46",
+   "key": "refiner_q72_bird_total"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: stage minus rule, 95% CI low",
+   "printed": "2.06",
+   "key": "refiner_q72_bird_total_lo"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: stage minus rule, 95% CI high",
+   "printed": "5.01",
+   "key": "refiner_q72_bird_total_hi"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: share of calls",
+   "printed": "13.1",
+   "key": "refiner_q72_bird_call_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, BIRD: share of tokens",
+   "printed": "7.3",
+   "key": "refiner_q72_bird_token_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: n",
+   "printed": "1,034",
+   "key": "refiner_q3_spider_n"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: changed %",
+   "printed": "0.77",
+   "key": "refiner_q3_spider_P_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: changed n",
+   "printed": "8",
+   "key": "refiner_q3_spider_n_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: gains",
+   "printed": "4",
+   "key": "refiner_q3_spider_gains"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: losses",
+   "printed": "0",
+   "key": "refiner_q3_spider_losses"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: both wrong",
+   "printed": "4",
+   "key": "refiner_q3_spider_both_wrong"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: stage minus rule",
+   "printed": "+0.39",
+   "key": "refiner_q3_spider_total"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: stage minus rule, 95% CI low",
+   "printed": "0.00",
+   "key": "refiner_q3_spider_total_lo"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: stage minus rule, 95% CI high",
+   "printed": "0.84",
+   "key": "refiner_q3_spider_total_hi"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: share of calls",
+   "printed": "0.6",
+   "key": "refiner_q3_spider_call_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen3-32B, Spider: share of tokens",
+   "printed": "0.4",
+   "key": "refiner_q3_spider_token_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: n",
+   "printed": "1,034",
+   "key": "refiner_q72_spider_n"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: changed %",
+   "printed": "1.84",
+   "key": "refiner_q72_spider_P_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: changed n",
+   "printed": "19",
+   "key": "refiner_q72_spider_n_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: gains",
+   "printed": "10",
+   "key": "refiner_q72_spider_gains"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: losses",
+   "printed": "0",
+   "key": "refiner_q72_spider_losses"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: both wrong",
+   "printed": "9",
+   "key": "refiner_q72_spider_both_wrong"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: stage minus rule",
+   "printed": "+0.97",
+   "key": "refiner_q72_spider_total"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: stage minus rule, 95% CI low",
+   "printed": "0.00",
+   "key": "refiner_q72_spider_total_lo"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: stage minus rule, 95% CI high",
+   "printed": "2.13",
+   "key": "refiner_q72_spider_total_hi"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: share of calls",
+   "printed": "1.4",
+   "key": "refiner_q72_spider_call_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Refiner, Qwen2.5-72B, Spider: share of tokens",
+   "printed": "1.0",
+   "key": "refiner_q72_spider_token_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: n",
+   "printed": "147",
+   "key": "ut_sc_n"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: changed %",
+   "printed": "15.65",
+   "key": "ut_sc_P_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: changed n",
+   "printed": "23",
+   "key": "ut_sc_n_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: gains",
+   "printed": "4",
+   "key": "ut_sc_gains"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: losses",
+   "printed": "6",
+   "key": "ut_sc_losses"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: both wrong",
+   "printed": "13",
+   "key": "ut_sc_both_wrong"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: stage minus rule",
+   "printed": "-1.36",
+   "key": "ut_sc_total"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: stage minus rule, 95% CI low",
+   "printed": "-5.71",
+   "key": "ut_sc_total_lo"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: stage minus rule, 95% CI high",
+   "printed": "2.88",
+   "key": "ut_sc_total_hi"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: share of calls",
+   "printed": "37.1",
+   "key": "ut_sc_call_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "Unit Tester vs self-consistency: share of tokens",
+   "printed": "23.0",
+   "key": "ut_sc_token_share"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: n",
+   "printed": "3,200",
+   "key": "selector_q3_n"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: changed %",
+   "printed": "26.66",
+   "key": "selector_q3_P_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: changed n",
+   "printed": "853",
+   "key": "selector_q3_n_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: gains",
+   "printed": "466",
+   "key": "selector_q3_gains"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: losses",
+   "printed": "300",
+   "key": "selector_q3_losses"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: both wrong",
+   "printed": "87",
+   "key": "selector_q3_both_wrong"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: gain if changed",
+   "printed": "+19.46",
+   "key": "selector_q3_E_D_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: stage minus rule",
+   "printed": "+5.19",
+   "key": "selector_q3_total"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: stage minus rule, 95% CI low",
+   "printed": "3.53",
+   "key": "selector_q3_total_lo"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen3-32B: stage minus rule, 95% CI high",
+   "printed": "6.84",
+   "key": "selector_q3_total_hi"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: n",
+   "printed": "3,200",
+   "key": "selector_q7_n"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: changed %",
+   "printed": "30.53",
+   "key": "selector_q7_P_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: changed n",
+   "printed": "977",
+   "key": "selector_q7_n_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: gains",
+   "printed": "456",
+   "key": "selector_q7_gains"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: losses",
+   "printed": "414",
+   "key": "selector_q7_losses"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: both wrong",
+   "printed": "107",
+   "key": "selector_q7_both_wrong"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: gain if changed",
+   "printed": "+4.30",
+   "key": "selector_q7_E_D_A"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: stage minus rule",
+   "printed": "+1.31",
+   "key": "selector_q7_total"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: stage minus rule, 95% CI low",
+   "printed": "-0.44",
+   "key": "selector_q7_total_lo"
+  },
+  {
+   "label": "tab:s-decomposition",
+   "tex_file": "supplementary.tex",
+   "where": "ComEM selector, Qwen2.5-7B: stage minus rule, 95% CI high",
+   "printed": "3.06",
+   "key": "selector_q7_total_hi"
+  }
+ ],
+ "unreproduced": []
+}

@@ -1,0 +1,762 @@
+{
+ "id": "tab_s-cross-family",
+ "labels": [
+  "tab:s-cross-family",
+  "sec:scale",
+  "sec:s-spend-scale"
+ ],
+ "section": "VIII-D (sec:scale), cross-family paragraph; Supplementary S8-C (sec:s-spend-scale)",
+ "title": "Cross-family BIRD debates: later rounds with peers and the peer interaction effect",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Agentar-SQL-32B, later rounds",
+   "printed": "+0.13",
+   "key": "agentar_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Agentar-SQL-32B, later rounds, 95% CI lower",
+   "printed": "-1.26",
+   "key": "agentar_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Agentar-SQL-32B, later rounds, 95% CI upper",
+   "printed": "+1.64",
+   "key": "agentar_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Agentar-SQL-32B, Delta_peer",
+   "printed": "+0.63",
+   "key": "agentar_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Agentar-SQL-32B, Delta_peer, 95% CI lower",
+   "printed": "-1.52",
+   "key": "agentar_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Agentar-SQL-32B, Delta_peer, 95% CI upper",
+   "printed": "+2.90",
+   "key": "agentar_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B-A4B, later rounds",
+   "printed": "-1.14",
+   "key": "gemma4_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B-A4B, later rounds, 95% CI lower",
+   "printed": "-3.91",
+   "key": "gemma4_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B-A4B, later rounds, 95% CI upper",
+   "printed": "+1.52",
+   "key": "gemma4_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B-A4B, Delta_peer",
+   "printed": "-1.52",
+   "key": "gemma4_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B-A4B, Delta_peer, 95% CI lower",
+   "printed": "-4.29",
+   "key": "gemma4_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B-A4B, Delta_peer, 95% CI upper",
+   "printed": "+1.14",
+   "key": "gemma4_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "GLM-4.7-Flash, later rounds",
+   "printed": "+1.89",
+   "key": "glm47_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "GLM-4.7-Flash, later rounds, 95% CI lower",
+   "printed": "-0.25",
+   "key": "glm47_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "GLM-4.7-Flash, later rounds, 95% CI upper",
+   "printed": "+4.04",
+   "key": "glm47_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "GLM-4.7-Flash, Delta_peer",
+   "printed": "+2.15",
+   "key": "glm47_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "GLM-4.7-Flash, Delta_peer, 95% CI lower",
+   "printed": "-1.01",
+   "key": "glm47_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "GLM-4.7-Flash, Delta_peer, 95% CI upper",
+   "printed": "+5.43",
+   "key": "glm47_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, later rounds",
+   "printed": "-2.15",
+   "key": "gptoss120b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, later rounds, 95% CI lower",
+   "printed": "-4.04",
+   "key": "gptoss120b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, later rounds, 95% CI upper",
+   "printed": "-0.38",
+   "key": "gptoss120b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, Delta_peer",
+   "printed": "-2.27",
+   "key": "gptoss120b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, Delta_peer, 95% CI lower",
+   "printed": "-5.05",
+   "key": "gptoss120b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, Delta_peer, 95% CI upper",
+   "printed": "+0.38",
+   "key": "gptoss120b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-20b, later rounds",
+   "printed": "-4.55",
+   "key": "gptoss20b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-20b, later rounds, 95% CI lower",
+   "printed": "-7.07",
+   "key": "gptoss20b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-20b, later rounds, 95% CI upper",
+   "printed": "-2.15",
+   "key": "gptoss20b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-20b, Delta_peer",
+   "printed": "-0.51",
+   "key": "gptoss20b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-20b, Delta_peer, 95% CI lower",
+   "printed": "-3.41",
+   "key": "gptoss20b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-20b, Delta_peer, 95% CI upper",
+   "printed": "+2.40",
+   "key": "gptoss20b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3-8B, later rounds",
+   "printed": "-0.88",
+   "key": "llama3_8b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3-8B, later rounds, 95% CI lower",
+   "printed": "-3.03",
+   "key": "llama3_8b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3-8B, later rounds, 95% CI upper",
+   "printed": "+1.14",
+   "key": "llama3_8b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3-8B, Delta_peer",
+   "printed": "-3.91",
+   "key": "llama3_8b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3-8B, Delta_peer, 95% CI lower",
+   "printed": "-6.94",
+   "key": "llama3_8b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3-8B, Delta_peer, 95% CI upper",
+   "printed": "-0.88",
+   "key": "llama3_8b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3.3-70B, later rounds",
+   "printed": "-0.51",
+   "key": "llama33_70b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3.3-70B, later rounds, 95% CI lower",
+   "printed": "-2.27",
+   "key": "llama33_70b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3.3-70B, later rounds, 95% CI upper",
+   "printed": "+1.14",
+   "key": "llama33_70b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3.3-70B, Delta_peer",
+   "printed": "+0.13",
+   "key": "llama33_70b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3.3-70B, Delta_peer, 95% CI lower",
+   "printed": "-2.27",
+   "key": "llama33_70b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Llama-3.3-70B, Delta_peer, 95% CI upper",
+   "printed": "+2.40",
+   "key": "llama33_70b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "MiniMax-M2.5, later rounds",
+   "printed": "+6.31",
+   "key": "minimax_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "MiniMax-M2.5, later rounds, 95% CI lower",
+   "printed": "+3.03",
+   "key": "minimax_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "MiniMax-M2.5, later rounds, 95% CI upper",
+   "printed": "+9.60",
+   "key": "minimax_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "MiniMax-M2.5, Delta_peer",
+   "printed": "-4.29",
+   "key": "minimax_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "MiniMax-M2.5, Delta_peer, 95% CI lower",
+   "printed": "-9.34",
+   "key": "minimax_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "MiniMax-M2.5, Delta_peer, 95% CI upper",
+   "printed": "+0.76",
+   "key": "minimax_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Mistral-Small-3.2, later rounds",
+   "printed": "-1.01",
+   "key": "mistral32_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Mistral-Small-3.2, later rounds, 95% CI lower",
+   "printed": "-2.65",
+   "key": "mistral32_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Mistral-Small-3.2, later rounds, 95% CI upper",
+   "printed": "+0.63",
+   "key": "mistral32_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Mistral-Small-3.2, Delta_peer",
+   "printed": "-0.13",
+   "key": "mistral32_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Mistral-Small-3.2, Delta_peer, 95% CI lower",
+   "printed": "-3.03",
+   "key": "mistral32_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Mistral-Small-3.2, Delta_peer, 95% CI upper",
+   "printed": "+2.78",
+   "key": "mistral32_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, later rounds",
+   "printed": "+0.13",
+   "key": "qwen25_7b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, later rounds, 95% CI lower",
+   "printed": "-2.02",
+   "key": "qwen25_7b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, later rounds, 95% CI upper",
+   "printed": "+2.27",
+   "key": "qwen25_7b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, Delta_peer",
+   "printed": "0.00",
+   "key": "qwen25_7b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, Delta_peer, 95% CI lower",
+   "printed": "-2.90",
+   "key": "qwen25_7b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, Delta_peer, 95% CI upper",
+   "printed": "+2.78",
+   "key": "qwen25_7b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-14B, later rounds",
+   "printed": "-1.52",
+   "key": "qwen25_14b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-14B, later rounds, 95% CI lower",
+   "printed": "-3.66",
+   "key": "qwen25_14b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-14B, later rounds, 95% CI upper",
+   "printed": "+0.51",
+   "key": "qwen25_14b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-14B, Delta_peer",
+   "printed": "-3.28",
+   "key": "qwen25_14b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-14B, Delta_peer, 95% CI lower",
+   "printed": "-6.06",
+   "key": "qwen25_14b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-14B, Delta_peer, 95% CI upper",
+   "printed": "-0.63",
+   "key": "qwen25_14b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, later rounds",
+   "printed": "-0.88",
+   "key": "qwen25_32b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, later rounds, 95% CI lower",
+   "printed": "-2.53",
+   "key": "qwen25_32b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, later rounds, 95% CI upper",
+   "printed": "+0.76",
+   "key": "qwen25_32b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, Delta_peer",
+   "printed": "-0.25",
+   "key": "qwen25_32b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, Delta_peer, 95% CI lower",
+   "printed": "-2.78",
+   "key": "qwen25_32b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, Delta_peer, 95% CI upper",
+   "printed": "+2.27",
+   "key": "qwen25_32b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B, later rounds",
+   "printed": "-0.51",
+   "key": "qwen25_72b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B, later rounds, 95% CI lower",
+   "printed": "-1.64",
+   "key": "qwen25_72b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B, later rounds, 95% CI upper",
+   "printed": "+0.63",
+   "key": "qwen25_72b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B, Delta_peer",
+   "printed": "+0.51",
+   "key": "qwen25_72b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B, Delta_peer, 95% CI lower",
+   "printed": "-1.01",
+   "key": "qwen25_72b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-72B, Delta_peer, 95% CI upper",
+   "printed": "+2.15",
+   "key": "qwen25_72b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, later rounds",
+   "printed": "-0.38",
+   "key": "qwen3_32b_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, later rounds, 95% CI lower",
+   "printed": "-2.40",
+   "key": "qwen3_32b_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, later rounds, 95% CI upper",
+   "printed": "+1.64",
+   "key": "qwen3_32b_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, Delta_peer",
+   "printed": "-1.26",
+   "key": "qwen3_32b_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, Delta_peer, 95% CI lower",
+   "printed": "-4.04",
+   "key": "qwen3_32b_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, Delta_peer, 95% CI upper",
+   "printed": "+1.39",
+   "key": "qwen3_32b_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.6-35B-A3B, later rounds",
+   "printed": "-0.88",
+   "key": "qwen36_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.6-35B-A3B, later rounds, 95% CI lower",
+   "printed": "-2.65",
+   "key": "qwen36_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.6-35B-A3B, later rounds, 95% CI upper",
+   "printed": "+0.88",
+   "key": "qwen36_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.6-35B-A3B, Delta_peer",
+   "printed": "-1.14",
+   "key": "qwen36_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.6-35B-A3B, Delta_peer, 95% CI lower",
+   "printed": "-3.03",
+   "key": "qwen36_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.6-35B-A3B, Delta_peer, 95% CI upper",
+   "printed": "+0.76",
+   "key": "qwen36_dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.8-27B, later rounds",
+   "printed": "-1.01",
+   "key": "qwen38_rounds_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.8-27B, later rounds, 95% CI lower",
+   "printed": "-2.78",
+   "key": "qwen38_rounds_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.8-27B, later rounds, 95% CI upper",
+   "printed": "+0.76",
+   "key": "qwen38_rounds_q_hi"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.8-27B, Delta_peer",
+   "printed": "-1.01",
+   "key": "qwen38_dpeer_est"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.8-27B, Delta_peer, 95% CI lower",
+   "printed": "-3.41",
+   "key": "qwen38_dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-cross-family",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3.8-27B, Delta_peer, 95% CI upper",
+   "printed": "+1.39",
+   "key": "qwen38_dpeer_q_hi"
+  },
+  {
+   "label": "sec:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Across 16 models on the same questions and output rules",
+   "printed": "16",
+   "key": "n_models"
+  },
+  {
+   "label": "sec:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "peer interaction effects range from -4.29 to +2.15 pp (lower end)",
+   "printed": "-4.29",
+   "key": "dpeer_min"
+  },
+  {
+   "label": "sec:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "peer interaction effects range from -4.29 to +2.15 pp (upper end)",
+   "printed": "+2.15",
+   "key": "dpeer_max"
+  },
+  {
+   "label": "sec:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "MiniMax-M2.5 gains 6.31 pp with peers and 10.61 pp without (with peers, later rounds)",
+   "printed": "6.31",
+   "key": "minimax_rounds_est"
+  },
+  {
+   "label": "sec:scale",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "MiniMax-M2.5 gains 6.31 pp with peers and 10.61 pp without (without peers)",
+   "printed": "10.61",
+   "key": "minimax_rounds_nopeer_est"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "cross-family Holm, MiniMax-M2.5",
+   "printed": "0.909",
+   "key": "minimax_dpeer_p_holm"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "cross-family Holm, every other model",
+   "printed": "1.0",
+   "key": "holm_max_except_minimax"
+  },
+  {
+   "label": "sec:s-spend-scale",
+   "tex_file": "supplementary.tex",
+   "where": "the same 198 BIRD questions",
+   "printed": "198",
+   "key": "n_questions"
+  }
+ ],
+ "unreproduced": [],
+ "statements": [
+  {
+   "text": "Llama-3-8B and Qwen2.5-14B are the two models whose negative peer interaction effects are detected under both pointwise intervals",
+   "key": "n_detected_both_intervals",
+   "expected": 2
+  },
+  {
+   "text": "no positive peer interaction effect is detected",
+   "key": "n_positive_dpeer_q_ci_excluding_zero",
+   "expected": 0
+  },
+  {
+   "text": "the cross-family Holm family has nine models",
+   "key": "holm_family_size",
+   "expected": 9
+  }
+ ]
+}

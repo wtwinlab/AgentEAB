@@ -1,0 +1,33 @@
+Minimal threshold fix for MALLM, against the release base a57c4a77d37f (v1.0.6, 2026-06-15).
+
+WHY. `ThresholdConsensus.make_decision` decides consensus from the position of the most recent entry
+carrying a non-empty `solution`. That encoding was paired with `Agent.improve()` writing `solution=""`
+when an agent agrees (commit a26495a, 2024-09-30 — the predicate and the writer were changed together
+and are equivalent). Commit e20d40c (2024-10-16, "consensus voting") changed the writer's agreeing
+branch to `agreements[-1].solution` without changing the predicate. Since then every entry carries a
+solution, so `num_agreements` is always 1 and the threshold cannot be met for any threshold above 1/n.
+Every tagged release from v1.0.0 (2024-11-09) onward is after that commit.
+
+WHAT. One line. The predicate reads the per-agent stance boolean again, which is the semantics of the
+author's own commit 24567a0 (2024-07-21) and the semantics the paper describes.
+
+WHY NOT THE OTHER DIRECTION. Restoring `improve()` to write `""` would also work, but
+`current_agreement.solution` is returned as the delivered answer (consensus.py:95,103), so changing the
+writer changes which solution is returned. Patching the predicate leaves the writer, and therefore the
+output, exactly as the release has it.
+
+SCOPE. This is our variant, not the published artifact. It is labelled as such everywhere, the
+unmodified release is retained as the comparison, and the whole-version difference is not attributed to
+this single line.
+
+--- a/mallm/decision_protocols/consensus.py
++++ b/mallm/decision_protocols/consensus.py
+@@ -64,7 +64,7 @@
+             (
+                 (i, agreement)
+                 for i, agreement in enumerate(reversed_agreements, 1)
+-                if agreement.solution
++                if not agreement.agreement
+             ),
+             (None, None),
+         )

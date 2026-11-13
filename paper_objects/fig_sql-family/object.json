@@ -1,0 +1,435 @@
+{
+ "id": "fig_sql-family",
+ "labels": [
+  "fig:sql-family",
+  "sec:sql-feedback",
+  "tab:s-family-sql",
+  "sec:s-spend-pool"
+ ],
+ "section": "VIII-A (sec:sql-feedback, first paragraphs); Supplementary S8-A (sec:s-spend-pool)",
+ "title": "Generation minus voting by generator and voting rule",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "plot": [
+  "python3",
+  "code/plot.py"
+ ],
+ "values": [
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Unfiltered",
+   "printed": "+10.82",
+   "key": "bird_qwen3_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Unfiltered, 95% CI lower",
+   "printed": "8.25",
+   "key": "bird_qwen3_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Unfiltered, 95% CI upper",
+   "printed": "13.30",
+   "key": "bird_qwen3_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Unfiltered, 95% CI lower",
+   "printed": "-1.46",
+   "key": "spider_qwen3_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Unfiltered, 95% CI upper",
+   "printed": "4.07",
+   "key": "spider_qwen3_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Unfiltered",
+   "printed": "+9.62",
+   "key": "bird_gptoss_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Unfiltered, 95% CI lower",
+   "printed": "7.40",
+   "key": "bird_gptoss_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Unfiltered, 95% CI upper",
+   "printed": "11.90",
+   "key": "bird_gptoss_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Unfiltered, 95% CI lower",
+   "printed": "-2.71",
+   "key": "spider_gptoss_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Unfiltered, 95% CI upper",
+   "printed": "3.09",
+   "key": "spider_gptoss_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Unfiltered",
+   "printed": "+13.25",
+   "key": "bird_gemma_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Unfiltered, 95% CI lower",
+   "printed": "10.36",
+   "key": "bird_gemma_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Unfiltered, 95% CI upper",
+   "printed": "16.01",
+   "key": "bird_gemma_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Unfiltered",
+   "printed": "+5.13",
+   "key": "spider_gemma_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Unfiltered, 95% CI lower",
+   "printed": "1.80",
+   "key": "spider_gemma_gen_minus_unfiltered_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Unfiltered, 95% CI upper",
+   "printed": "8.08",
+   "key": "spider_gemma_gen_minus_unfiltered_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Valid",
+   "printed": "+6.35",
+   "key": "bird_qwen3_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Valid, 95% CI lower",
+   "printed": "4.26",
+   "key": "bird_qwen3_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Valid, 95% CI upper",
+   "printed": "8.44",
+   "key": "bird_qwen3_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Valid",
+   "printed": "+0.05",
+   "key": "spider_qwen3_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Valid, 95% CI lower",
+   "printed": "-2.69",
+   "key": "spider_qwen3_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Valid, 95% CI upper",
+   "printed": "2.69",
+   "key": "spider_qwen3_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Valid",
+   "printed": "+5.15",
+   "key": "bird_gptoss_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Valid, 95% CI lower",
+   "printed": "2.47",
+   "key": "bird_gptoss_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Valid, 95% CI upper",
+   "printed": "7.82",
+   "key": "bird_gptoss_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Valid",
+   "printed": "-0.94",
+   "key": "spider_gptoss_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Valid, 95% CI lower",
+   "printed": "-4.04",
+   "key": "spider_gptoss_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Valid, 95% CI upper",
+   "printed": "2.10",
+   "key": "spider_gptoss_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Valid",
+   "printed": "+8.78",
+   "key": "bird_gemma_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Valid, 95% CI lower",
+   "printed": "6.63",
+   "key": "bird_gemma_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Valid, 95% CI upper",
+   "printed": "10.87",
+   "key": "bird_gemma_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Valid",
+   "printed": "+3.93",
+   "key": "spider_gemma_gen_minus_valid"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Valid, 95% CI lower",
+   "printed": "0.85",
+   "key": "spider_gemma_gen_minus_valid_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Valid, 95% CI upper",
+   "printed": "6.60",
+   "key": "spider_gemma_gen_minus_valid_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Nonempty",
+   "printed": "+3.61",
+   "key": "bird_qwen3_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Nonempty, 95% CI upper",
+   "printed": "5.22",
+   "key": "bird_qwen3_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Qwen3 generation minus Nonempty, 95% CI lower",
+   "printed": "1.84",
+   "key": "bird_qwen3_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Nonempty",
+   "printed": "-0.43",
+   "key": "spider_qwen3_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Nonempty, 95% CI lower",
+   "printed": "-3.13",
+   "key": "spider_qwen3_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Nonempty, 95% CI upper",
+   "printed": "2.12",
+   "key": "spider_qwen3_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Nonempty",
+   "printed": "+2.41",
+   "key": "bird_gptoss_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Nonempty, 95% CI lower",
+   "printed": "-0.01",
+   "key": "bird_gptoss_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, gpt-oss generation minus Nonempty, 95% CI upper",
+   "printed": "4.57",
+   "key": "bird_gptoss_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Nonempty, 95% CI lower",
+   "printed": "-4.39",
+   "key": "spider_gptoss_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Nonempty, 95% CI upper",
+   "printed": "1.59",
+   "key": "spider_gptoss_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Nonempty",
+   "printed": "+6.04",
+   "key": "bird_gemma_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Nonempty, 95% CI lower",
+   "printed": "3.93",
+   "key": "bird_gemma_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Gemma generation minus Nonempty, 95% CI upper",
+   "printed": "8.20",
+   "key": "bird_gemma_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Nonempty",
+   "printed": "+3.44",
+   "key": "spider_gemma_gen_minus_nonempty"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Nonempty, 95% CI lower",
+   "printed": "0.74",
+   "key": "spider_gemma_gen_minus_nonempty_lo"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Gemma generation minus Nonempty, 95% CI upper",
+   "printed": "5.91",
+   "key": "spider_gemma_gen_minus_nonempty_hi"
+  },
+  {
+   "label": "fig:sql-family",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "adding execution status, errors, and result details raises Qwen2.5-7B generation accuracy by 3.66 pp",
+   "printed": "3.66",
+   "key": "bird_qwen25_7b_feedback_minus_queries_only"
+  },
+  {
+   "label": "fig:sql-family",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "On 1,532 paired BIRD questions (execution feedback)",
+   "printed": "1,532",
+   "key": "bird_feedback_paired_questions"
+  },
+  {
+   "label": "fig:sql-family",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "On Spider, Gemma's 3.44-pp gain over Nonempty is the largest point estimate",
+   "printed": "3.44",
+   "key": "spider_gemma_gen_minus_nonempty"
+  },
+  {
+   "label": "fig:sql-family",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "one Holm correction over 18 contrasts",
+   "printed": "18",
+   "key": "joint_family_contrasts"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "contrasts in the joint Holm family (note)",
+   "printed": "18",
+   "key": "joint_family_contrasts"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Qwen3 generation minus Unfiltered",
+   "printed": "+1.26",
+   "key": "spider_qwen3_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Unfiltered",
+   "printed": "+0.26",
+   "key": "spider_gptoss_gen_minus_unfiltered"
+  },
+  {
+   "label": "tab:s-family-sql",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, gpt-oss generation minus Nonempty",
+   "printed": "-1.42",
+   "key": "spider_gptoss_gen_minus_nonempty"
+  }
+ ],
+ "unreproduced": []
+}

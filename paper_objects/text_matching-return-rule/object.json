@@ -1,0 +1,86 @@
+{
+ "id": "text_matching-return-rule",
+ "labels": [
+  "sec:qa-vote-replay",
+  "tab:s-contrasts"
+ ],
+ "section": "VII-D (sec:qa-vote-replay, matching sentence); Supplementary S2-B (tab:s-contrasts)",
+ "title": "Return rules on stored matching runs",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "largest move of a matching sharing effect over the three tie conventions",
+   "printed": "1.98",
+   "key": "max_abs_move_pp"
+  },
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Du-MAD/Settlements sharing effect, protocol's return rule",
+   "printed": "-0.14",
+   "key": "settlements_dumad_nopeer_effect_protocol_pp"
+  },
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Du-MAD/Settlements sharing effect, majority with ties to the last agent",
+   "printed": "+0.10",
+   "key": "settlements_dumad_nopeer_effect_majority_last_pp"
+  },
+  {
+   "label": "sec:qa-vote-replay",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "Du-MAD/Settlements sharing effect, majority with ties kept",
+   "printed": "+0.10",
+   "key": "settlements_dumad_nopeer_effect_majority_kept_pp"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R20: largest move of the matching sharing effect under the all-round majority (pp)",
+   "printed": "1.98",
+   "key": "max_abs_move_pp"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R20: smallest move across the three tie rules (pp)",
+   "printed": "0.004",
+   "key": "min_abs_move_pp"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R20: MAD-M2/Settlements sharing effect, protocol's return rule (pp)",
+   "printed": "+2.21",
+   "key": "settlements_madm2_nopeer_effect_protocol_pp"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R20: same under the all-round majority, ties to the first agent",
+   "printed": "+0.23",
+   "key": "settlements_madm2_nopeer_effect_majority_first_pp"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R20: same, ties to the last agent",
+   "printed": "+0.45",
+   "key": "settlements_madm2_nopeer_effect_majority_last_pp"
+  },
+  {
+   "label": "tab:s-contrasts",
+   "tex_file": "supplementary.tex",
+   "where": "R20: same, ties keep the earlier answer",
+   "printed": "+0.78",
+   "key": "settlements_madm2_nopeer_effect_majority_kept_pp"
+  }
+ ],
+ "unreproduced": []
+}

@@ -1,0 +1,13 @@
+{
+ "gain_hi_pp": 4.583333333333333,
+ "gain_lo_pp": 1.9047619047619049,
+ "gain_pp": 3.1547619047619047,
+ "initial_sets": 560,
+ "initial_sets_per_task": 5,
+ "recovered": 53,
+ "recovered_that_had_abstained": 53,
+ "repeats": 3,
+ "sets": 1680,
+ "successes_overturned": 0,
+ "tasks": 112
+}

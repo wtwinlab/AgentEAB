@@ -1,0 +1,341 @@
+{
+ "id": "tab_s-pool-strata",
+ "labels": [
+  "sec:pool-availability",
+  "sec:s-pool-strata",
+  "tab:s-pool-strata"
+ ],
+ "section": "VIII-B (sec:pool-availability); supplementary S8-B (sec:s-pool-strata)",
+ "title": "BIRD generation gains by correct-candidate availability across generators and candidate pools",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:pool-availability",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "DeepSeek-V4-Pro, four-model pool: contribution of questions without a correct candidate",
+   "printed": "8.16",
+   "key": "ds_pool4_absent"
+  },
+  {
+   "label": "sec:pool-availability",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "DeepSeek-V4-Pro, four-model pool: generation minus Nonempty, all questions",
+   "printed": "8.87",
+   "key": "ds_pool4_total"
+  },
+  {
+   "label": "sec:pool-availability",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "DeepSeek-V4-Pro: contribution of questions with a correct candidate, vs Nonempty",
+   "printed": "+0.72",
+   "key": "ds_pool4_present"
+  },
+  {
+   "label": "sec:pool-availability",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "DeepSeek-V4-Pro: contribution of questions with a correct candidate, vs LLM selection",
+   "printed": "-1.51",
+   "key": "ds_pool4_present_minus_selector"
+  },
+  {
+   "label": "sec:pool-availability",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "nine comparisons: smallest missing-candidate contribution",
+   "printed": "+0.72",
+   "key": "absent_min"
+  },
+  {
+   "label": "sec:pool-availability",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "nine comparisons: largest missing-candidate contribution",
+   "printed": "+8.16",
+   "key": "absent_max"
+  },
+  {
+   "label": "sec:pool-availability",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "nine comparisons: smallest correct-candidate contribution",
+   "printed": "-6.75",
+   "key": "present_min"
+  },
+  {
+   "label": "sec:pool-availability",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "nine comparisons: largest correct-candidate contribution",
+   "printed": "+0.72",
+   "key": "present_max"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro, four-model: Total",
+   "printed": "+8.87",
+   "key": "ds_pool4_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro, four-model: Correct candidate present",
+   "printed": "+0.72",
+   "key": "ds_pool4_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro, four-model: Correct candidate absent",
+   "printed": "+8.16",
+   "key": "ds_pool4_absent"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, four-model: Total",
+   "printed": "+3.61",
+   "key": "q3_pool4_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, four-model: Correct candidate present",
+   "printed": "-0.01",
+   "key": "q3_pool4_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, four-model: Correct candidate absent",
+   "printed": "+3.62",
+   "key": "q3_pool4_absent"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, Qwen3/GLM: Total",
+   "printed": "-0.03",
+   "key": "q3_glm_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, Qwen3/GLM: Correct candidate present",
+   "printed": "-0.75",
+   "key": "q3_glm_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B, Qwen3/GLM: Correct candidate absent",
+   "printed": "+0.72",
+   "key": "q3_glm_absent"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, four-model: Total",
+   "printed": "-4.50",
+   "key": "q25_7b_pool4_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, four-model: Correct candidate present",
+   "printed": "-5.49",
+   "key": "q25_7b_pool4_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, four-model: Correct candidate absent",
+   "printed": "+0.99",
+   "key": "q25_7b_pool4_absent"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, four-model: Total",
+   "printed": "+1.04",
+   "key": "q25_32b_pool4_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, four-model: Correct candidate present",
+   "printed": "-0.92",
+   "key": "q25_32b_pool4_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, four-model: Correct candidate absent",
+   "printed": "+1.96",
+   "key": "q25_32b_pool4_absent"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, six candidates: Total",
+   "printed": "-5.56",
+   "key": "q25_7b_pool6_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, six candidates: Correct candidate present",
+   "printed": "-6.75",
+   "key": "q25_7b_pool6_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-7B, six candidates: Correct candidate absent",
+   "printed": "+1.19",
+   "key": "q25_7b_pool6_absent"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, six candidates: Total",
+   "printed": "+0.09",
+   "key": "q25_32b_pool6_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, six candidates: Correct candidate present",
+   "printed": "-0.93",
+   "key": "q25_32b_pool6_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen2.5-32B, six candidates: Correct candidate absent",
+   "printed": "+1.02",
+   "key": "q25_32b_pool6_absent"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B, four-model: Total",
+   "printed": "+6.04",
+   "key": "gemma_pool4_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B, four-model: Correct candidate present",
+   "printed": "+0.23",
+   "key": "gemma_pool4_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma-4-26B, four-model: Correct candidate absent",
+   "printed": "+5.82",
+   "key": "gemma_pool4_absent"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, four-model: Total",
+   "printed": "+2.41",
+   "key": "gptoss_pool4_total"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, four-model: Correct candidate present",
+   "printed": "-2.43",
+   "key": "gptoss_pool4_present"
+  },
+  {
+   "label": "tab:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss-120b, four-model: Correct candidate absent",
+   "printed": "+4.85",
+   "key": "gptoss_pool4_absent"
+  },
+  {
+   "label": "sec:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5 rows, four-model pool questions",
+   "printed": "1,533",
+   "key": "q25_7b_pool4_questions"
+  },
+  {
+   "label": "sec:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5 rows, six-candidate pool questions",
+   "printed": "1,532",
+   "key": "q25_7b_pool6_questions"
+  },
+  {
+   "label": "sec:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "prose: other rows, questions",
+   "printed": "1,534",
+   "key": "ds_pool4_questions"
+  },
+  {
+   "label": "sec:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "prose: absent-candidate questions of the four-model pool",
+   "printed": "557",
+   "key": "ds_pool4_absent_questions"
+  },
+  {
+   "label": "sec:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "prose: DeepSeek generation gain without the two questions lacking a reference result",
+   "printed": "8.88",
+   "key": "ds_pool4_with_reference_total"
+  },
+  {
+   "label": "sec:s-pool-strata",
+   "tex_file": "supplementary.tex",
+   "where": "prose: of which from absent-candidate questions",
+   "printed": "8.16",
+   "key": "ds_pool4_with_reference_absent"
+  }
+ ],
+ "statements": [
+  {
+   "text": "nine generator-pool comparisons",
+   "key": "comparisons",
+   "expected": 9
+  },
+  {
+   "text": "every absent-candidate contribution is detected by both intervals",
+   "key": "absent_detected_count",
+   "expected": 9
+  },
+  {
+   "text": "no present-candidate contribution is detectably positive",
+   "key": "present_detected_positive_count",
+   "expected": 0
+  },
+  {
+   "text": "DeepSeek-V4-Pro, correct candidate present, vs Nonempty: both intervals span zero",
+   "key": "ds_pool4_present_any_interval_excludes_zero",
+   "expected": 0
+  },
+  {
+   "text": "DeepSeek-V4-Pro, correct candidate present, generation minus LLM selection is detected",
+   "key": "ds_pool4_present_minus_selector_detected",
+   "expected": 1
+  },
+  {
+   "text": "two absent-candidate questions have no completed reference result",
+   "key": "ds_pool4_absent_without_reference",
+   "expected": 2
+  },
+  {
+   "text": "Qwen2.5 rows average three generations per question",
+   "key": "q25_7b_pool4_generation_runs",
+   "expected": 3
+  }
+ ],
+ "unreproduced": []
+}

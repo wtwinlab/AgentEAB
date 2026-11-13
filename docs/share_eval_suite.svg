@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="572" viewBox="0 0 1200 572" role="img" aria-labelledby="t d" font-family="'Times New Roman', Times, 'Nimbus Roman', 'STIX Two Text', serif">
+<title id="t">SHARE-Eval suite overview</title>
+<desc id="d">Protocol and task adapters run multi-agent consensus workflows and log execution records. Stage evaluation and alternative comparisons read these records and produce reports on stage metrics, final quality, cost, and confidence intervals. Comparisons replay recorded inputs when dependencies permit and otherwise execute the workflow again.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F1F1F"/></marker><marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A78D6"/></marker><marker id="aho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#EB6834"/></marker></defs>
+<rect width="1200" height="572" fill="white"/>
+<rect x="14" y="30" width="258" height="422" rx="4" fill="#F6F9FE" stroke="#2A78D6" stroke-width="1.6"/>
+<rect x="24" y="19" width="96" height="20" fill="white"/>
+<text x="29" y="36" font-size="19" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Adapters</text>
+<g fill="#1F1F1F"><line x1="44" y1="71.0" x2="44" y2="76.0" stroke="#1F1F1F" stroke-width="1.6"/><circle cx="44" cy="70.5" r="2.2"/><rect x="33.0" y="76.0" width="22.0" height="16.0" rx="4.0"/><rect x="29.8" y="81.0" width="2.4" height="6.0" rx="1.0"/><rect x="55.8" y="81.0" width="2.4" height="6.0" rx="1.0"/><circle cx="39.0" cy="83.0" r="2.6" fill="white"/><circle cx="49.0" cy="83.0" r="2.6" fill="white"/><rect x="40.0" y="88.0" width="8.0" height="1.6" fill="white"/></g>
+<g fill="#1F1F1F"><line x1="76" y1="71.0" x2="76" y2="76.0" stroke="#1F1F1F" stroke-width="1.6"/><circle cx="76" cy="70.5" r="2.2"/><rect x="65.0" y="76.0" width="22.0" height="16.0" rx="4.0"/><rect x="61.8" y="81.0" width="2.4" height="6.0" rx="1.0"/><rect x="87.8" y="81.0" width="2.4" height="6.0" rx="1.0"/><circle cx="71.0" cy="83.0" r="2.6" fill="white"/><circle cx="81.0" cy="83.0" r="2.6" fill="white"/><rect x="72.0" y="88.0" width="8.0" height="1.6" fill="white"/></g>
+<path d="M57,84 h6" stroke="#2A78D6" stroke-width="1.8"/>
+<text x="106" y="80" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Protocol adapters</text>
+<text x="106" y="100" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">workflow structure</text>
+<rect x="28" y="116" width="230" height="36" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="143.0" y="140" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Debate and consensus methods</text>
+<rect x="28" y="162" width="230" height="36" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="143.0" y="186" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Multi-stage LLM pipelines</text>
+<g fill="#1F1F1F"><path d="M48.45,240.975 v7.3500000000000005 a11.55,4.41 0 0 0 23.1,0 v-7.3500000000000005 a11.55,4.41 0 0 1 -23.1,0z"/><path d="M48.45,250.005 v5.67 a11.55,4.41 0 0 0 23.1,0 v-5.67 a11.55,4.41 0 0 1 -23.1,0z"/><path d="M48.45,257.35499999999996 v5.67 a11.55,4.41 0 0 0 23.1,0 v-5.67 a11.55,4.41 0 0 1 -23.1,0z"/><ellipse cx="60" cy="240.975" rx="11.55" ry="4.41"/></g>
+<text x="106" y="248" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Task adapters</text>
+<text x="106" y="268" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">inputs and scorers</text>
+<rect x="28" y="286" width="230" height="36" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="143.0" y="310" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Question answering</text>
+<rect x="28" y="332" width="230" height="36" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="143.0" y="356" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Text-to-SQL</text>
+<rect x="28" y="378" width="230" height="36" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="143.0" y="402" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Entity matching</text>
+<rect x="312" y="30" width="210" height="422" rx="4" fill="#F6F9FE" stroke="#2A78D6" stroke-width="1.6"/>
+<rect x="322" y="19" width="172" height="20" fill="white"/>
+<text x="327" y="36" font-size="19" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Execution records</text>
+<g><rect x="342.85" y="68.675" width="18.900000000000002" height="24.150000000000002" rx="1.5750000000000002" fill="white" stroke="#1F1F1F" stroke-width="1.47"/><rect x="339.7" y="71.3" width="18.900000000000002" height="24.150000000000002" rx="1.5750000000000002" fill="white" stroke="#1F1F1F" stroke-width="1.47"/><rect x="336.55" y="73.925" width="18.900000000000002" height="24.150000000000002" rx="1.5750000000000002" fill="#1F1F1F"/><rect x="340.225" y="79.175" width="11.55" height="1.6800000000000002" fill="white"/><rect x="340.225" y="84.005" width="11.55" height="1.6800000000000002" fill="white"/><rect x="340.225" y="88.835" width="11.55" height="1.6800000000000002" fill="white"/><rect x="340.225" y="93.66499999999999" width="6.930000000000001" height="1.6800000000000002" fill="white"/></g>
+<text x="374" y="80" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">logged per task,</text>
+<text x="374" y="100" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">agent, and round</text>
+<rect x="326" y="116" width="182" height="290" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="340" y="151" font-size="18" font-weight="normal" font-style="normal" text-anchor="start" fill="#1F1F1F">Agent responses</text>
+<line x1="326" y1="174" x2="508" y2="174" stroke="#D6D6D6" stroke-width="1"/>
+<text x="340" y="209" font-size="18" font-weight="normal" font-style="normal" text-anchor="start" fill="#1F1F1F">Candidate answers</text>
+<line x1="326" y1="232" x2="508" y2="232" stroke="#D6D6D6" stroke-width="1"/>
+<text x="340" y="267" font-size="18" font-weight="normal" font-style="normal" text-anchor="start" fill="#1F1F1F">Decisions, stopping</text>
+<line x1="326" y1="290" x2="508" y2="290" stroke="#D6D6D6" stroke-width="1"/>
+<text x="340" y="325" font-size="18" font-weight="normal" font-style="normal" text-anchor="start" fill="#1F1F1F">Task scores</text>
+<line x1="326" y1="348" x2="508" y2="348" stroke="#D6D6D6" stroke-width="1"/>
+<text x="340" y="383" font-size="18" font-weight="normal" font-style="normal" text-anchor="start" fill="#1F1F1F">LLM calls, tokens</text>
+<path d="M274,241 H309" fill="none" stroke="#1F1F1F" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="292.0" y="231" font-size="17" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5A5A5A">run</text>
+<rect x="566" y="30" width="440" height="204" rx="4" fill="#F6F9FE" stroke="#2A78D6" stroke-width="1.6"/>
+<rect x="576" y="19" width="158" height="20" fill="white"/>
+<text x="581" y="36" font-size="19" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Stage evaluation</text>
+<rect x="580" y="58" width="90" height="38" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="625.0" y="83" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Generation</text>
+<path d="M671,77 H681.6666666666666" fill="none" stroke="#1F1F1F" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="682.6666666666666" y="58" width="78" height="38" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="721.6666666666666" y="83" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Revision</text>
+<path d="M761.6666666666666,77 H772.3333333333333" fill="none" stroke="#1F1F1F" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="773.3333333333333" y="58" width="88" height="38" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="817.3333333333333" y="83" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Extraction</text>
+<path d="M862.3333333333333,77 H872.9999999999999" fill="none" stroke="#1F1F1F" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="873.9999999999999" y="58" width="118" height="38" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="932.9999999999999" y="83" font-size="17" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Final Decision</text>
+<circle cx="611.0" cy="114" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="625.0" cy="114" r="4.3" fill="white" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="639.0" cy="114" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="707.6666666666666" cy="114" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="721.6666666666666" cy="114" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="735.6666666666666" cy="114" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="803.3333333333333" cy="114" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="817.3333333333333" cy="114" r="4.3" fill="white" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="831.3333333333333" cy="114" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<circle cx="932.9999999999999" cy="114" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<path d="M631.0,125 C661.0,141 685.6666666666666,141 715.6666666666666,125" fill="none" stroke="#2A78D6" stroke-width="1.3" stroke-dasharray="3 2.5" marker-end="url(#ahb)"/>
+<text x="584" y="180" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Candidate availability</text>
+<text x="774" y="180" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">correct answer still present?</text>
+<text x="584" y="210" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Answer changes</text>
+<text x="774" y="210" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">where gains are kept or lost</text>
+<circle cx="787.3333333333333" cy="140" r="4.3" fill="#2A78D6" stroke="#2A78D6" stroke-width="1.3"/>
+<text x="796.3333333333333" y="145" font-size="16" font-weight="normal" font-style="normal" text-anchor="start" fill="#5A5A5A">correct</text>
+<circle cx="861.3333333333333" cy="140" r="4.3" fill="white" stroke="#2A78D6" stroke-width="1.3"/>
+<text x="870.3333333333333" y="145" font-size="16" font-weight="normal" font-style="normal" text-anchor="start" fill="#5A5A5A">wrong candidate</text>
+<rect x="566" y="262" width="440" height="190" rx="4" fill="#FEF7F3" stroke="#EB6834" stroke-width="1.6"/>
+<rect x="576" y="251" width="210" height="20" fill="white"/>
+<text x="581" y="268" font-size="19" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Alternative comparisons</text>
+<g fill="#1F1F1F"><line x1="588" y1="290.2" x2="588" y2="293.2" stroke="#1F1F1F" stroke-width="0.96"/><circle cx="588" cy="289.9" r="1.32"/><rect x="581.4" y="293.2" width="13.2" height="9.6" rx="2.4"/><rect x="579.48" y="296.2" width="1.44" height="3.5999999999999996" rx="0.6"/><rect x="595.08" y="296.2" width="1.44" height="3.5999999999999996" rx="0.6"/><circle cx="585.0" cy="297.4" r="1.56" fill="white"/><circle cx="591.0" cy="297.4" r="1.56" fill="white"/><rect x="585.6" y="300.4" width="4.8" height="0.96" fill="white"/></g>
+<g fill="#1F1F1F"><line x1="610" y1="290.2" x2="610" y2="293.2" stroke="#1F1F1F" stroke-width="0.96"/><circle cx="610" cy="289.9" r="1.32"/><rect x="603.4" y="293.2" width="13.2" height="9.6" rx="2.4"/><rect x="601.48" y="296.2" width="1.44" height="3.5999999999999996" rx="0.6"/><rect x="617.08" y="296.2" width="1.44" height="3.5999999999999996" rx="0.6"/><circle cx="607.0" cy="297.4" r="1.56" fill="white"/><circle cx="613.0" cy="297.4" r="1.56" fill="white"/><rect x="607.6" y="300.4" width="4.8" height="0.96" fill="white"/></g>
+<path d="M596,298 h6" stroke="#EB6834" stroke-width="1.5"/>
+<text x="628" y="303" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Peer inputs</text>
+<text x="814" y="303" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">with vs. without peers</text>
+<rect x="579" y="325" width="12" height="12" rx="1.5" fill="white" stroke="#1F1F1F" stroke-width="1.3"/>
+<path d="M593,331 h7" stroke="#1F1F1F" stroke-width="1.3" marker-end="url(#ah)"/>
+<rect x="605" y="325" width="12" height="12" rx="1.5" fill="#EB6834"/>
+<text x="628" y="337" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Stage replacements</text>
+<text x="814" y="337" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">LLM stage vs. rule</text>
+<g><ellipse cx="590" cy="369.25" rx="5.95" ry="2.38" fill="#1F1F1F" stroke="white" stroke-width="0.765"/><ellipse cx="590" cy="365.425" rx="5.95" ry="2.38" fill="#1F1F1F" stroke="white" stroke-width="0.765"/><ellipse cx="590" cy="361.6" rx="5.95" ry="2.38" fill="#1F1F1F" stroke="white" stroke-width="0.765"/></g>
+<path d="M604,365 h12 M610,359 v12" stroke="#EB6834" stroke-width="2.2"/>
+<text x="628" y="371" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Added computation</text>
+<text x="814" y="371" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">calls, drafts, backbones</text>
+<circle cx="593" cy="399" r="7.5" fill="none" stroke="#1F1F1F" stroke-width="1.3"/><circle cx="603" cy="399" r="7.5" fill="#EB6834" fill-opacity="0.35" stroke="#1F1F1F" stroke-width="1.3"/>
+<text x="628" y="405" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Interactions</text>
+<text x="814" y="405" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">joint stage choices</text>
+<path d="M581,433 l5,5 l9,-10" fill="none" stroke="#1F1F1F" stroke-width="2"/><path d="M601,426 h14 M601,433 h14 M601,440 h9" stroke="#1F1F1F" stroke-width="1.4"/>
+<text x="628" y="439" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Dependency checks</text>
+<text x="814" y="439" font-size="17" font-weight="normal" font-style="italic" text-anchor="start" fill="#5A5A5A">is replay valid?</text>
+<path d="M524,241 H544" fill="none" stroke="#1F1F1F" stroke-width="1.4"/>
+<path d="M544,241 V162.0 Q544,152.0 554,152.0 H563" fill="none" stroke="#1F1F1F" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M544,241 V347.0 Q544,357.0 554,357.0 H563" fill="none" stroke="#1F1F1F" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="1040" y="30" width="146" height="422" rx="4" fill="#FAFAFA" stroke="#1F1F1F" stroke-width="1.6"/>
+<rect x="1050" y="19" width="88" height="20" fill="white"/>
+<text x="1055" y="36" font-size="19" font-weight="bold" font-style="normal" text-anchor="start" fill="#1F1F1F">Reports</text>
+<g><path d="M1094.8,73.69999999999999 V102.3 H1131.2" fill="none" stroke="#1F1F1F" stroke-width="2.08"/><rect x="1100.0" y="90.6" width="6.5" height="11.700000000000001" fill="#1F1F1F"/><path d="M1103.25,85.39999999999999 V90.6 M1101.04,85.39999999999999 H1105.46" stroke="#1F1F1F" stroke-width="1.4300000000000002"/><rect x="1110.4" y="82.8" width="6.5" height="19.5" fill="#1F1F1F"/><path d="M1113.65,77.6 V82.8 M1111.44,77.6 H1115.8600000000001" stroke="#1F1F1F" stroke-width="1.4300000000000002"/><rect x="1120.8" y="86.69999999999999" width="6.5" height="15.600000000000001" fill="#1F1F1F"/><path d="M1124.05,81.49999999999999 V86.69999999999999 M1121.84,81.49999999999999 H1126.26" stroke="#1F1F1F" stroke-width="1.4300000000000002"/></g>
+<rect x="1054" y="130" width="118" height="60" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="1113.0" y="166" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Stage metrics</text>
+<rect x="1054" y="206" width="118" height="60" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="1113.0" y="242" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Final quality</text>
+<rect x="1054" y="282" width="118" height="60" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="1113.0" y="308" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Cost</text>
+<text x="1113.0" y="329" font-size="17" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5A5A5A">calls, tokens</text>
+<rect x="1054" y="358" width="118" height="60" rx="2" fill="white" stroke="#8A8A8A" stroke-width="1.1"/>
+<text x="1113.0" y="384" font-size="18" font-weight="normal" font-style="normal" text-anchor="middle" fill="#1F1F1F">Confidence</text>
+<text x="1113.0" y="405" font-size="17" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5A5A5A">intervals</text>
+<path d="M1008,152.0 H1037" fill="none" stroke="#1F1F1F" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M1008,357.0 H1037" fill="none" stroke="#1F1F1F" stroke-width="1.4" marker-end="url(#ah)"/>
+<path d="M866,454 V498 H417.0 V457" fill="none" stroke="#2A78D6" stroke-width="1.7" marker-end="url(#ahb)"/>
+<path d="M936,454 V546 H143.0 V457" fill="none" stroke="#EB6834" stroke-width="1.7" stroke-dasharray="7 4" marker-end="url(#aho)"/>
+<text x="439.0" y="489" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#2A78D6">Replay recorded inputs</text>
+<text x="625.0" y="489" font-size="18" font-weight="normal" font-style="italic" text-anchor="start" fill="#1F1F1F">when dependencies permit</text>
+<text x="165.0" y="537" font-size="18" font-weight="bold" font-style="normal" text-anchor="start" fill="#EB6834">Execute the workflow again</text>
+<text x="389.0" y="537" font-size="18" font-weight="normal" font-style="italic" text-anchor="start" fill="#1F1F1F">when a change alters later inputs</text>
+</svg>

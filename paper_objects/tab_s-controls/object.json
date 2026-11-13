@@ -1,0 +1,1690 @@
+{
+ "id": "tab_s-controls",
+ "labels": [
+  "tab:s-controls",
+  "sec:s-controls",
+  "sec:peer-controls"
+ ],
+ "section": "Supplementary S6-E (sec:s-controls); controls paragraphs of VI-C (sec:peer-controls)",
+ "title": "Controls on the four Du-MAD and MAD-M2 cells, Llama-3-8B and Qwen2.5-7B agents",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "1,333 remaining questions",
+   "printed": "-1.30",
+   "key": "1333|4cell|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "1,333 remaining questions, CI questions, lower",
+   "printed": "-2.25",
+   "key": "1333|4cell|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "1,333 remaining questions, CI questions, upper",
+   "printed": "-0.35",
+   "key": "1333|4cell|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "1,333 remaining questions, CI databases, lower",
+   "printed": "-2.33",
+   "key": "1333|4cell|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "1,333 remaining questions, CI databases, upper",
+   "printed": "-0.34",
+   "key": "1333|4cell|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "all 1,531 questions",
+   "printed": "-1.37",
+   "key": "1531|4cell|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "all 1,531 questions, CI questions, lower",
+   "printed": "-2.25",
+   "key": "1531|4cell|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "all 1,531 questions, CI questions, upper",
+   "printed": "-0.51",
+   "key": "1531|4cell|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "all 1,531 questions, CI databases, lower",
+   "printed": "-2.32",
+   "key": "1531|4cell|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "all 1,531 questions, CI databases, upper",
+   "printed": "-0.43",
+   "key": "1531|4cell|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, DuMAD_2cell",
+   "printed": "-2.74",
+   "key": "1531|DuMAD_2cell|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, DuMAD_2cell, CI questions, lower",
+   "printed": "-3.77",
+   "key": "1531|DuMAD_2cell|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, DuMAD_2cell, CI questions, upper",
+   "printed": "-1.73",
+   "key": "1531|DuMAD_2cell|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, DuMAD_2cell, CI databases, lower",
+   "printed": "-3.46",
+   "key": "1531|DuMAD_2cell|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, DuMAD_2cell, CI databases, upper",
+   "printed": "-2.01",
+   "key": "1531|DuMAD_2cell|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, MADM2_2cell",
+   "printed": "0.00",
+   "key": "1531|MADM2_2cell|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, MADM2_2cell, CI questions, lower",
+   "printed": "-1.36",
+   "key": "1531|MADM2_2cell|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, MADM2_2cell, CI questions, upper",
+   "printed": "+1.34",
+   "key": "1531|MADM2_2cell|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, MADM2_2cell, CI databases, lower",
+   "printed": "-1.50",
+   "key": "1531|MADM2_2cell|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, MADM2_2cell, CI databases, upper",
+   "printed": "+1.46",
+   "key": "1531|MADM2_2cell|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|llama3-8b",
+   "printed": "-3.14",
+   "key": "1531|cell_du_mad|llama3-8b|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|llama3-8b, CI questions, lower",
+   "printed": "-4.70",
+   "key": "1531|cell_du_mad|llama3-8b|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|llama3-8b, CI questions, upper",
+   "printed": "-1.57",
+   "key": "1531|cell_du_mad|llama3-8b|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|llama3-8b, CI databases, lower",
+   "printed": "-4.43",
+   "key": "1531|cell_du_mad|llama3-8b|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|llama3-8b, CI databases, upper",
+   "printed": "-1.78",
+   "key": "1531|cell_du_mad|llama3-8b|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|qwen2.5-7b",
+   "printed": "-2.35",
+   "key": "1531|cell_du_mad|qwen2.5-7b|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|qwen2.5-7b, CI questions, lower",
+   "printed": "-3.66",
+   "key": "1531|cell_du_mad|qwen2.5-7b|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|qwen2.5-7b, CI questions, upper",
+   "printed": "-1.05",
+   "key": "1531|cell_du_mad|qwen2.5-7b|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|qwen2.5-7b, CI databases, lower",
+   "printed": "-3.59",
+   "key": "1531|cell_du_mad|qwen2.5-7b|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_du_mad|qwen2.5-7b, CI databases, upper",
+   "printed": "-1.19",
+   "key": "1531|cell_du_mad|qwen2.5-7b|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|llama3-8b",
+   "printed": "+1.89",
+   "key": "1531|cell_madm2_objective|llama3-8b|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|llama3-8b, CI questions, lower",
+   "printed": "-0.26",
+   "key": "1531|cell_madm2_objective|llama3-8b|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|llama3-8b, CI questions, upper",
+   "printed": "+3.98",
+   "key": "1531|cell_madm2_objective|llama3-8b|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|llama3-8b, CI databases, lower",
+   "printed": "-0.41",
+   "key": "1531|cell_madm2_objective|llama3-8b|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|llama3-8b, CI databases, upper",
+   "printed": "+4.41",
+   "key": "1531|cell_madm2_objective|llama3-8b|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|qwen2.5-7b",
+   "printed": "-1.89",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|qwen2.5-7b, CI questions, lower",
+   "printed": "-3.56",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|qwen2.5-7b, CI questions, upper",
+   "printed": "-0.20",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|qwen2.5-7b, CI databases, lower",
+   "printed": "-3.34",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, 1,531 questions, cell_madm2_objective|qwen2.5-7b, CI databases, upper",
+   "printed": "-0.69",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, simple questions",
+   "printed": "-1.80",
+   "key": "stratum_simple"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, simple questions, CI questions, lower",
+   "printed": "-2.96",
+   "key": "stratum_simple_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, simple questions, CI questions, upper",
+   "printed": "-0.64",
+   "key": "stratum_simple_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, simple questions, CI databases, lower",
+   "printed": "-2.93",
+   "key": "stratum_simple_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, simple questions, CI databases, upper",
+   "printed": "-0.66",
+   "key": "stratum_simple_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "number of simple questions",
+   "printed": "924",
+   "key": "stratum_simple_n"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, moderate questions",
+   "printed": "-0.84",
+   "key": "stratum_moderate"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, moderate questions, CI questions, lower",
+   "printed": "-2.38",
+   "key": "stratum_moderate_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, moderate questions, CI questions, upper",
+   "printed": "+0.73",
+   "key": "stratum_moderate_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, moderate questions, CI databases, lower",
+   "printed": "-2.33",
+   "key": "stratum_moderate_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, moderate questions, CI databases, upper",
+   "printed": "+0.54",
+   "key": "stratum_moderate_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "number of moderate questions",
+   "printed": "463",
+   "key": "stratum_moderate_n"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, challenging questions",
+   "printed": "-0.35",
+   "key": "stratum_challenging"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, challenging questions, CI questions, lower",
+   "printed": "-2.95",
+   "key": "stratum_challenging_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, challenging questions, CI questions, upper",
+   "printed": "+2.17",
+   "key": "stratum_challenging_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, challenging questions, CI databases, lower",
+   "printed": "-4.17",
+   "key": "stratum_challenging_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "interaction effect, challenging questions, CI databases, upper",
+   "printed": "+3.56",
+   "key": "stratum_challenging_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "number of challenging questions",
+   "printed": "144",
+   "key": "stratum_challenging_n"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, 4cell",
+   "printed": "-0.87",
+   "key": "1531|4cell|last_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, 4cell, CI questions, lower",
+   "printed": "-1.63",
+   "key": "1531|4cell|last_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, 4cell, CI questions, upper",
+   "printed": "-0.13",
+   "key": "1531|4cell|last_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, 4cell, CI databases, lower",
+   "printed": "-1.76",
+   "key": "1531|4cell|last_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, 4cell, CI databases, upper",
+   "printed": "+0.18",
+   "key": "1531|4cell|last_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, DuMAD_2cell",
+   "printed": "-2.30",
+   "key": "1531|DuMAD_2cell|last_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, DuMAD_2cell, CI questions, lower",
+   "printed": "-3.36",
+   "key": "1531|DuMAD_2cell|last_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, DuMAD_2cell, CI questions, upper",
+   "printed": "-1.31",
+   "key": "1531|DuMAD_2cell|last_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, DuMAD_2cell, CI databases, lower",
+   "printed": "-3.18",
+   "key": "1531|DuMAD_2cell|last_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, DuMAD_2cell, CI databases, upper",
+   "printed": "-1.39",
+   "key": "1531|DuMAD_2cell|last_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, MADM2_2cell",
+   "printed": "+0.56",
+   "key": "1531|MADM2_2cell|last_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, MADM2_2cell, CI questions, lower",
+   "printed": "-0.52",
+   "key": "1531|MADM2_2cell|last_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, MADM2_2cell, CI questions, upper",
+   "printed": "+1.62",
+   "key": "1531|MADM2_2cell|last_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, MADM2_2cell, CI databases, lower",
+   "printed": "-0.77",
+   "key": "1531|MADM2_2cell|last_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, MADM2_2cell, CI databases, upper",
+   "printed": "+2.10",
+   "key": "1531|MADM2_2cell|last_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|llama3-8b",
+   "printed": "-2.97",
+   "key": "1531|cell_du_mad|llama3-8b|last_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|llama3-8b, CI questions, lower",
+   "printed": "-4.54",
+   "key": "1531|cell_du_mad|llama3-8b|last_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|llama3-8b, CI questions, upper",
+   "printed": "-1.47",
+   "key": "1531|cell_du_mad|llama3-8b|last_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|llama3-8b, CI databases, lower",
+   "printed": "-4.16",
+   "key": "1531|cell_du_mad|llama3-8b|last_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|llama3-8b, CI databases, upper",
+   "printed": "-1.71",
+   "key": "1531|cell_du_mad|llama3-8b|last_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|qwen2.5-7b",
+   "printed": "-1.63",
+   "key": "1531|cell_du_mad|qwen2.5-7b|last_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|qwen2.5-7b, CI questions, lower",
+   "printed": "-2.91",
+   "key": "1531|cell_du_mad|qwen2.5-7b|last_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|qwen2.5-7b, CI questions, upper",
+   "printed": "-0.36",
+   "key": "1531|cell_du_mad|qwen2.5-7b|last_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|qwen2.5-7b, CI databases, lower",
+   "printed": "-2.85",
+   "key": "1531|cell_du_mad|qwen2.5-7b|last_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_du_mad|qwen2.5-7b, CI databases, upper",
+   "printed": "-0.36",
+   "key": "1531|cell_du_mad|qwen2.5-7b|last_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|llama3-8b",
+   "printed": "+2.51",
+   "key": "1531|cell_madm2_objective|llama3-8b|last_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|llama3-8b, CI questions, lower",
+   "printed": "+0.78",
+   "key": "1531|cell_madm2_objective|llama3-8b|last_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|llama3-8b, CI questions, upper",
+   "printed": "+4.25",
+   "key": "1531|cell_madm2_objective|llama3-8b|last_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|llama3-8b, CI databases, lower",
+   "printed": "+0.58",
+   "key": "1531|cell_madm2_objective|llama3-8b|last_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|llama3-8b, CI databases, upper",
+   "printed": "+4.70",
+   "key": "1531|cell_madm2_objective|llama3-8b|last_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|qwen2.5-7b",
+   "printed": "-1.40",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|last_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|qwen2.5-7b, CI questions, lower",
+   "printed": "-2.78",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|last_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|qwen2.5-7b, CI questions, upper",
+   "printed": "-0.07",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|last_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|qwen2.5-7b, CI databases, lower",
+   "printed": "-2.47",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|last_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "last-round difference, 1,531 questions, cell_madm2_objective|qwen2.5-7b, CI databases, upper",
+   "printed": "-0.31",
+   "key": "1531|cell_madm2_objective|qwen2.5-7b|last_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "initial answers, with - without",
+   "printed": "+0.50",
+   "key": "1531|4cell|r0_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "initial answers, with - without, CI questions, lower",
+   "printed": "-0.03",
+   "key": "1531|4cell|r0_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "initial answers, with - without, CI questions, upper",
+   "printed": "+1.04",
+   "key": "1531|4cell|r0_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "initial answers, with - without, CI databases, lower",
+   "printed": "-0.05",
+   "key": "1531|4cell|r0_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "initial answers, with - without, CI databases, upper",
+   "printed": "+1.11",
+   "key": "1531|4cell|r0_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four cells, last-round difference",
+   "printed": "-0.69",
+   "key": "198|4cell|last_diff"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four cells, last-round difference, CI questions, lower",
+   "printed": "-2.59",
+   "key": "198|4cell|last_diff_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four cells, last-round difference, CI questions, upper",
+   "printed": "+1.20",
+   "key": "198|4cell|last_diff_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four cells, last-round difference, CI databases, lower",
+   "printed": "-1.93",
+   "key": "198|4cell|last_diff_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four cells, last-round difference, CI databases, upper",
+   "printed": "+0.57",
+   "key": "198|4cell|last_diff_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, Du-MAD two cells, interaction effect",
+   "printed": "-3.91",
+   "key": "198|DuMAD_2cell|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, Du-MAD two cells, interaction effect, CI questions, lower",
+   "printed": "-6.69",
+   "key": "198|DuMAD_2cell|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, Du-MAD two cells, interaction effect, CI questions, upper",
+   "printed": "-1.39",
+   "key": "198|DuMAD_2cell|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, Du-MAD two cells, interaction effect, CI databases, lower",
+   "printed": "-5.90",
+   "key": "198|DuMAD_2cell|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, Du-MAD two cells, interaction effect, CI databases, upper",
+   "printed": "-2.10",
+   "key": "198|DuMAD_2cell|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, four cells",
+   "printed": "-0.57",
+   "key": "placebo|4cell|real_minus_placebo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, four cells, CI questions, lower",
+   "printed": "-2.97",
+   "key": "placebo|4cell|real_minus_placebo_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, four cells, CI questions, upper",
+   "printed": "+1.77",
+   "key": "placebo|4cell|real_minus_placebo_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, four cells, CI databases, lower",
+   "printed": "-2.81",
+   "key": "placebo|4cell|real_minus_placebo_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, four cells, CI databases, upper",
+   "printed": "+1.72",
+   "key": "placebo|4cell|real_minus_placebo_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|llama3-8b",
+   "printed": "-5.30",
+   "key": "placebo|du_mad|llama3-8b|real_minus_placebo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|llama3-8b, CI questions, lower",
+   "printed": "-8.59",
+   "key": "placebo|du_mad|llama3-8b|real_minus_placebo_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|llama3-8b, CI questions, upper",
+   "printed": "-2.53",
+   "key": "placebo|du_mad|llama3-8b|real_minus_placebo_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|llama3-8b, CI databases, lower",
+   "printed": "-7.81",
+   "key": "placebo|du_mad|llama3-8b|real_minus_placebo_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|llama3-8b, CI databases, upper",
+   "printed": "-2.82",
+   "key": "placebo|du_mad|llama3-8b|real_minus_placebo_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|qwen2.5-7b",
+   "printed": "-4.80",
+   "key": "placebo|du_mad|qwen2.5-7b|real_minus_placebo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|qwen2.5-7b, CI questions, lower",
+   "printed": "-8.59",
+   "key": "placebo|du_mad|qwen2.5-7b|real_minus_placebo_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|qwen2.5-7b, CI questions, upper",
+   "printed": "-1.52",
+   "key": "placebo|du_mad|qwen2.5-7b|real_minus_placebo_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|qwen2.5-7b, CI databases, lower",
+   "printed": "-7.87",
+   "key": "placebo|du_mad|qwen2.5-7b|real_minus_placebo_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|qwen2.5-7b, CI databases, upper",
+   "printed": "-1.77",
+   "key": "placebo|du_mad|qwen2.5-7b|real_minus_placebo_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|llama3-8b",
+   "printed": "+2.53",
+   "key": "placebo|madm2_objective|llama3-8b|real_minus_placebo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|llama3-8b, CI questions, lower",
+   "printed": "-2.78",
+   "key": "placebo|madm2_objective|llama3-8b|real_minus_placebo_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|llama3-8b, CI questions, upper",
+   "printed": "+7.83",
+   "key": "placebo|madm2_objective|llama3-8b|real_minus_placebo_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|llama3-8b, CI databases, lower",
+   "printed": "-2.03",
+   "key": "placebo|madm2_objective|llama3-8b|real_minus_placebo_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|llama3-8b, CI databases, upper",
+   "printed": "+6.75",
+   "key": "placebo|madm2_objective|llama3-8b|real_minus_placebo_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|qwen2.5-7b",
+   "printed": "+5.30",
+   "key": "placebo|madm2_objective|qwen2.5-7b|real_minus_placebo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|qwen2.5-7b, CI questions, lower",
+   "printed": "0.00",
+   "key": "placebo|madm2_objective|qwen2.5-7b|real_minus_placebo_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|qwen2.5-7b, CI questions, upper",
+   "printed": "+10.61",
+   "key": "placebo|madm2_objective|qwen2.5-7b|real_minus_placebo_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|qwen2.5-7b, CI databases, lower",
+   "printed": "-1.00",
+   "key": "placebo|madm2_objective|qwen2.5-7b|real_minus_placebo_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|qwen2.5-7b, CI databases, upper",
+   "printed": "+10.80",
+   "key": "placebo|madm2_objective|qwen2.5-7b|real_minus_placebo_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, four cells",
+   "printed": "-1.26",
+   "key": "placebo|4cell|placebo_minus_nopeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, four cells, CI questions, lower",
+   "printed": "-3.79",
+   "key": "placebo|4cell|placebo_minus_nopeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, four cells, CI questions, upper",
+   "printed": "+1.26",
+   "key": "placebo|4cell|placebo_minus_nopeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, four cells, CI databases, lower",
+   "printed": "-3.35",
+   "key": "placebo|4cell|placebo_minus_nopeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, four cells, CI databases, upper",
+   "printed": "+1.01",
+   "key": "placebo|4cell|placebo_minus_nopeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|llama3-8b",
+   "printed": "0.00",
+   "key": "placebo|du_mad|llama3-8b|placebo_minus_nopeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|llama3-8b, CI questions, lower",
+   "printed": "-4.55",
+   "key": "placebo|du_mad|llama3-8b|placebo_minus_nopeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|llama3-8b, CI questions, upper",
+   "printed": "+4.80",
+   "key": "placebo|du_mad|llama3-8b|placebo_minus_nopeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|llama3-8b, CI databases, lower",
+   "printed": "-4.21",
+   "key": "placebo|du_mad|llama3-8b|placebo_minus_nopeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|llama3-8b, CI databases, upper",
+   "printed": "+4.50",
+   "key": "placebo|du_mad|llama3-8b|placebo_minus_nopeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|qwen2.5-7b",
+   "printed": "+2.78",
+   "key": "placebo|du_mad|qwen2.5-7b|placebo_minus_nopeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|qwen2.5-7b, CI questions, lower",
+   "printed": "-0.76",
+   "key": "placebo|du_mad|qwen2.5-7b|placebo_minus_nopeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|qwen2.5-7b, CI questions, upper",
+   "printed": "+6.57",
+   "key": "placebo|du_mad|qwen2.5-7b|placebo_minus_nopeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|qwen2.5-7b, CI databases, lower",
+   "printed": "-1.30",
+   "key": "placebo|du_mad|qwen2.5-7b|placebo_minus_nopeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, du_mad|qwen2.5-7b, CI databases, upper",
+   "printed": "+6.70",
+   "key": "placebo|du_mad|qwen2.5-7b|placebo_minus_nopeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|llama3-8b",
+   "printed": "-4.55",
+   "key": "placebo|madm2_objective|llama3-8b|placebo_minus_nopeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|llama3-8b, CI questions, lower",
+   "printed": "-9.85",
+   "key": "placebo|madm2_objective|llama3-8b|placebo_minus_nopeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|llama3-8b, CI questions, upper",
+   "printed": "+0.51",
+   "key": "placebo|madm2_objective|llama3-8b|placebo_minus_nopeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|llama3-8b, CI databases, lower",
+   "printed": "-9.38",
+   "key": "placebo|madm2_objective|llama3-8b|placebo_minus_nopeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|llama3-8b, CI databases, upper",
+   "printed": "+0.75",
+   "key": "placebo|madm2_objective|llama3-8b|placebo_minus_nopeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|qwen2.5-7b",
+   "printed": "-3.28",
+   "key": "placebo|madm2_objective|qwen2.5-7b|placebo_minus_nopeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|qwen2.5-7b, CI questions, lower",
+   "printed": "-9.09",
+   "key": "placebo|madm2_objective|qwen2.5-7b|placebo_minus_nopeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|qwen2.5-7b, CI questions, upper",
+   "printed": "+2.53",
+   "key": "placebo|madm2_objective|qwen2.5-7b|placebo_minus_nopeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|qwen2.5-7b, CI databases, lower",
+   "printed": "-8.04",
+   "key": "placebo|madm2_objective|qwen2.5-7b|placebo_minus_nopeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: placebo - no peers, madm2_objective|qwen2.5-7b, CI databases, upper",
+   "printed": "+1.73",
+   "key": "placebo|madm2_objective|qwen2.5-7b|placebo_minus_nopeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, Du-MAD",
+   "printed": "-3.79",
+   "key": "t07|DuMAD_2cell|dpeer"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, Du-MAD, CI questions, lower",
+   "printed": "-7.07",
+   "key": "t07|DuMAD_2cell|dpeer_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, Du-MAD, CI questions, upper",
+   "printed": "-0.51",
+   "key": "t07|DuMAD_2cell|dpeer_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, Du-MAD, CI databases, lower",
+   "printed": "-7.13",
+   "key": "t07|DuMAD_2cell|dpeer_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, Du-MAD, CI databases, upper",
+   "printed": "-0.37",
+   "key": "t07|DuMAD_2cell|dpeer_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, drafts disagree",
+   "printed": "-3.37",
+   "key": "t07|DuMAD_2cell|dpeer_drafts_disagree"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, drafts disagree, CI questions, lower",
+   "printed": "-8.54",
+   "key": "t07|DuMAD_2cell|dpeer_drafts_disagree_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, drafts disagree, CI questions, upper",
+   "printed": "+1.57",
+   "key": "t07|DuMAD_2cell|dpeer_drafts_disagree_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, drafts disagree, CI databases, lower",
+   "printed": "-7.60",
+   "key": "t07|DuMAD_2cell|dpeer_drafts_disagree_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, drafts disagree, CI databases, upper",
+   "printed": "+1.33",
+   "key": "t07|DuMAD_2cell|dpeer_drafts_disagree_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, diverse share, 0.7 - greedy",
+   "printed": "+28.03",
+   "key": "t07|DuMAD_2cell|diverse_share_change"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, diverse share, 0.7 - greedy, CI questions, lower",
+   "printed": "23.99",
+   "key": "t07|DuMAD_2cell|diverse_share_change_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, diverse share, 0.7 - greedy, CI questions, upper",
+   "printed": "32.32",
+   "key": "t07|DuMAD_2cell|diverse_share_change_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, diverse share, 0.7 - greedy, CI databases, lower",
+   "printed": "23.23",
+   "key": "t07|DuMAD_2cell|diverse_share_change_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, diverse share, 0.7 - greedy, CI databases, upper",
+   "printed": "33.09",
+   "key": "t07|DuMAD_2cell|diverse_share_change_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy under the protocol's own extractor",
+   "printed": "+5.24",
+   "key": "fmt|4cell|final_change"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy under the protocol's own extractor, CI questions, lower",
+   "printed": "3.09",
+   "key": "fmt|4cell|final_change_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy under the protocol's own extractor, CI questions, upper",
+   "printed": "7.39",
+   "key": "fmt|4cell|final_change_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy under the protocol's own extractor, CI databases, lower",
+   "printed": "2.95",
+   "key": "fmt|4cell|final_change_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy under the protocol's own extractor, CI databases, upper",
+   "printed": "7.73",
+   "key": "fmt|4cell|final_change_db_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, interaction effect change",
+   "printed": "-0.06",
+   "key": "fmt|4cell|dpeer_change"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, interaction effect change, CI questions, lower",
+   "printed": "-2.97",
+   "key": "fmt|4cell|dpeer_change_q_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, interaction effect change, CI questions, upper",
+   "printed": "+2.90",
+   "key": "fmt|4cell|dpeer_change_q_hi"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, interaction effect change, CI databases, lower",
+   "printed": "-3.19",
+   "key": "fmt|4cell|dpeer_change_db_lo"
+  },
+  {
+   "label": "tab:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, interaction effect change, CI databases, upper",
+   "printed": "+3.22",
+   "key": "fmt|4cell|dpeer_change_db_hi"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four-configuration MDE at 80% power, lower end (databases)",
+   "printed": "2.1",
+   "key": "mde80_db_198"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, single-configuration MDE, lower end",
+   "printed": "3.6",
+   "key": "cell_mde80_min_198"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "1,531 questions, four-configuration MDE, lower end (questions)",
+   "printed": "1.25",
+   "key": "mde80_q_1531"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 initial-answer correctness agreement across conditions, lower end",
+   "printed": "80",
+   "key": "r0_correct_agree_m2_min"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD initial replies identical across conditions, lower end",
+   "printed": "25",
+   "key": "r0_reply_identical_du_min"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD initial-answer correctness agreement across conditions, lower end",
+   "printed": "94.7",
+   "key": "r0_correct_agree_du_min"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "initial-answer difference over the four cells",
+   "printed": "+0.50",
+   "key": "1531|4cell|r0_diff"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four-configuration last-round difference",
+   "printed": "-0.69",
+   "key": "198|4cell|last_diff"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four-configuration interaction effect",
+   "printed": "-1.96",
+   "key": "198|4cell|dpeer"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, Du-MAD two-backbone interaction effect",
+   "printed": "-3.91",
+   "key": "198|DuMAD_2cell|dpeer"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "leave one database out, 1,531 questions, lowest",
+   "printed": "-1.70",
+   "key": "lodo1531_min"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "leave one database out, 1,531 questions, highest",
+   "printed": "-1.17",
+   "key": "lodo1531_max"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "leave one database out, 198 questions, lowest",
+   "printed": "-2.50",
+   "key": "lodo198_min"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "leave one database out, 198 questions, highest",
+   "printed": "-1.66",
+   "key": "lodo198_max"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "leave one database out, 198 questions, database interval excludes zero (cases)",
+   "printed": "11",
+   "key": "lodo198_n_db_excl0"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "leave one database out, 198 questions, question interval excludes zero (cases)",
+   "printed": "3",
+   "key": "lodo198_n_q_excl0"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo round-1 prompt length ratio, lower end",
+   "printed": "1.01",
+   "key": "placebo_token_ratio_min"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|llama3-8b",
+   "printed": "-5.30",
+   "key": "placebo|du_mad|llama3-8b|real_minus_placebo"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, du_mad|qwen2.5-7b",
+   "printed": "-4.80",
+   "key": "placebo|du_mad|qwen2.5-7b|real_minus_placebo"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|llama3-8b",
+   "printed": "+2.53",
+   "key": "placebo|madm2_objective|llama3-8b|real_minus_placebo"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, madm2_objective|qwen2.5-7b",
+   "printed": "+5.30",
+   "key": "placebo|madm2_objective|qwen2.5-7b|real_minus_placebo"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo: real - placebo, four-configuration mean",
+   "printed": "-0.57",
+   "key": "placebo|4cell|real_minus_placebo"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, share of runs with distinct initial results, Llama-3-8B (%)",
+   "printed": "32.1",
+   "key": "diverse_share|llama3-8b|t07"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, share of runs with distinct initial results, Qwen2.5-7B (%)",
+   "printed": "35.6",
+   "key": "diverse_share|qwen2.5-7b|t07"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "greedy, share of runs with distinct initial results, Llama-3-8B (%)",
+   "printed": "4.0",
+   "key": "diverse_share|llama3-8b|greedy"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "greedy, share of runs with distinct initial results, Qwen2.5-7B (%)",
+   "printed": "7.6",
+   "key": "diverse_share|qwen2.5-7b|greedy"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, Llama-3-8B",
+   "printed": "-2.53",
+   "key": "t07|llama3-8b|dpeer"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "temperature 0.7, interaction effect, Qwen2.5-7B",
+   "printed": "-5.05",
+   "key": "t07|qwen2.5-7b|dpeer"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy change, Du-MAD/Llama-3-8B",
+   "printed": "+22.47",
+   "key": "fmt|du_mad|llama3-8b|final_change"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, Du-MAD/Llama-3-8B final-answer accuracy with the format (%)",
+   "printed": "22.5",
+   "key": "fmt|du_mad|llama3-8b|final_level_fmt"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy change, Du-MAD/Qwen2.5-7B",
+   "printed": "-3.79",
+   "key": "fmt|du_mad|qwen2.5-7b|final_change"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy change, MAD-M2/Llama-3-8B",
+   "printed": "+4.80",
+   "key": "fmt|madm2_objective|llama3-8b|final_change"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, final-answer accuracy change, MAD-M2/Qwen2.5-7B",
+   "printed": "-2.53",
+   "key": "fmt|madm2_objective|qwen2.5-7b|final_change"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, change in the share of initial replies the protocol's extractor finds, du_mad|llama3-8b (pp)",
+   "printed": "100",
+   "key": "fmt|du_mad|llama3-8b|r0_reader_share_change"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, change in the share of initial replies the protocol's extractor finds, du_mad|qwen2.5-7b (pp)",
+   "printed": "29",
+   "key": "fmt|du_mad|qwen2.5-7b|r0_reader_share_change"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, change in the share of initial replies the protocol's extractor finds, madm2_objective|llama3-8b (pp)",
+   "printed": "9",
+   "key": "fmt|madm2_objective|llama3-8b|r0_reader_share_change"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "unified format, change in the share of initial replies the protocol's extractor finds, madm2_objective|qwen2.5-7b (pp)",
+   "printed": "0.3",
+   "key": "fmt|madm2_objective|qwen2.5-7b|r0_reader_share_change"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "controls paragraphs, real - placebo, du_mad|llama3-8b",
+   "printed": "-5.30",
+   "key": "placebo|du_mad|llama3-8b|real_minus_placebo"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "controls paragraphs, real - placebo, du_mad|qwen2.5-7b",
+   "printed": "-4.80",
+   "key": "placebo|du_mad|qwen2.5-7b|real_minus_placebo"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "controls paragraphs, real - placebo, madm2_objective|llama3-8b",
+   "printed": "+2.53",
+   "key": "placebo|madm2_objective|llama3-8b|real_minus_placebo"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "controls paragraphs, real - placebo, madm2_objective|qwen2.5-7b",
+   "printed": "+5.30",
+   "key": "placebo|madm2_objective|qwen2.5-7b|real_minus_placebo"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Du-MAD runs whose initial queries return two or more distinct results, greedy, Llama-3-8B, with peers (%), lower end of 4--8",
+   "printed": "4",
+   "key": "diverse_share|llama3-8b|greedy"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "same, temperature 0.7, Llama-3-8B, with peers (%), lower end of 32--36",
+   "printed": "32",
+   "key": "diverse_share|llama3-8b|t07"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "controls paragraphs, temperature 0.7 interaction effect",
+   "printed": "-3.79",
+   "key": "t07|DuMAD_2cell|dpeer"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "controls paragraphs, temperature 0.7, drafts disagree",
+   "printed": "-3.37",
+   "key": "t07|DuMAD_2cell|dpeer_drafts_disagree"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "controls paragraphs, unified format raises final-answer accuracy (protocol's own extractors)",
+   "printed": "5.24",
+   "key": "fmt|4cell|final_change"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "controls paragraphs, unified format, interaction effect change",
+   "printed": "-0.06",
+   "key": "fmt|4cell|dpeer_change"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, four-configuration MDE at 80% power, upper end (questions)",
+   "printed": "2.8",
+   "key": "mde80_q_198"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "198 questions, single-configuration MDE, upper end",
+   "printed": "7.8",
+   "key": "cell_mde80_max_198"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "1,531 questions, four-configuration MDE, upper end (databases)",
+   "printed": "1.35",
+   "key": "mde80_db_1531"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2 initial-answer correctness agreement across conditions, upper end (%)",
+   "printed": "88",
+   "key": "r0_correct_agree_m2_max"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD initial replies identical across conditions, upper end (%)",
+   "printed": "38",
+   "key": "r0_reply_identical_du_max"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD initial-answer correctness agreement across conditions, upper end (%)",
+   "printed": "98.5",
+   "key": "r0_correct_agree_du_max"
+  },
+  {
+   "label": "sec:s-controls",
+   "tex_file": "supplementary.tex",
+   "where": "placebo round-1 prompt length ratio, upper end",
+   "printed": "1.02",
+   "key": "placebo_token_ratio_max"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "same, greedy, Qwen2.5-7B, with peers (%), upper end of 4--8",
+   "printed": "8",
+   "key": "diverse_share|qwen2.5-7b|greedy"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "same, temperature 0.7, Qwen2.5-7B, with peers (%), upper end of 32--36",
+   "printed": "36",
+   "key": "diverse_share|qwen2.5-7b|t07"
+  }
+ ],
+ "unreproduced": []
+}

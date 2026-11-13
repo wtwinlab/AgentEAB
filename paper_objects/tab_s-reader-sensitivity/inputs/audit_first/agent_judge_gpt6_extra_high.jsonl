@@ -1,0 +1,500 @@
+{"id": "J001", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J002", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J003", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J004", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J005", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J006", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J007", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J008", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J009", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J010", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J011", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J012", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J013", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J014", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J015", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J016", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J017", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J018", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J019", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J020", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J021", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J022", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J023", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J024", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J025", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J026", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J027", "label": "no", "reason": "This is only an explanatory inner query, not the answer query."}
+{"id": "J028", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J029", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J030", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J031", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J032", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J033", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J034", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J035", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J036", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J037", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J038", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J039", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J040", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J041", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J042", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J043", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J044", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J045", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J046", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J047", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J048", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J049", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J050", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J051", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J052", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J053", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J054", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J055", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J056", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J057", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J058", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J059", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J060", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J061", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J062", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J063", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J064", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J065", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J066", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J067", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J068", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J069", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J070", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J071", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J072", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J073", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J074", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J075", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J076", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J077", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J078", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J079", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J080", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J081", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J082", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J083", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J084", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J085", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J086", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J087", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J088", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J089", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J090", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J091", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J092", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J093", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J094", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J095", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J096", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J097", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J098", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J099", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J100", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J101", "label": "no", "reason": "The recovered text is a result placeholder rather than SQL."}
+{"id": "J102", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J103", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J104", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J105", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J106", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J107", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J108", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J109", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J110", "label": "no", "reason": "This intermediate query is followed by a different final query."}
+{"id": "J111", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J112", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J113", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J114", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J115", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J116", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J117", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J118", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J119", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J120", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J121", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J122", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J123", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J124", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J125", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J126", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J127", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J128", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J129", "label": "no", "reason": "The recovered expression is a fragment rather than a SQL query."}
+{"id": "J130", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J131", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J132", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J133", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J134", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J135", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J136", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J137", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J138", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J139", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J140", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J141", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J142", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J143", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J144", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J145", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J146", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J147", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J148", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J149", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J150", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J151", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J152", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J153", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J154", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J155", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J156", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J157", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J158", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J159", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J160", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J161", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J162", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J163", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J164", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J165", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J166", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J167", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J168", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J169", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J170", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J171", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J172", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J173", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J174", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J175", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J176", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J177", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J178", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J179", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J180", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J181", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J182", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J183", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J184", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J185", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J186", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J187", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J188", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J189", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J190", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J191", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J192", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J193", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J194", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J195", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J196", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J197", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J198", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J199", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J200", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J201", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J202", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J203", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J204", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J205", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J206", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J207", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J208", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J209", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J210", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J211", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J212", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J213", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J214", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J215", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J216", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J217", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J218", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J219", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J220", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J221", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J222", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J223", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J224", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J225", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J226", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J227", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J228", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J229", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J230", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J231", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J232", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J233", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J234", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J235", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J236", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J237", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J238", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J239", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J240", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J241", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J242", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J243", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J244", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J245", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J246", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J247", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J248", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J249", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J250", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J251", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J252", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J253", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J254", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J255", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J256", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J257", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J258", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J259", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J260", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J261", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J262", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J263", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J264", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J265", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J266", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J267", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J268", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J269", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J270", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J271", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J272", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J273", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J274", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J275", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J276", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J277", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J278", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J279", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J280", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J281", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J282", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J283", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J284", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J285", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J286", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J287", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J288", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J289", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J290", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J291", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J292", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J293", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J294", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J295", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J296", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J297", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J298", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J299", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J300", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J301", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J302", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J303", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J304", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J305", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J306", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J307", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J308", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J309", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J310", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J311", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J312", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J313", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J314", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J315", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J316", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J317", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J318", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J319", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J320", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J321", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J322", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J323", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J324", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J325", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J326", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J327", "label": "no", "reason": "The recovered text is a result placeholder rather than SQL."}
+{"id": "J328", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J329", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J330", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J331", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J332", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J333", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J334", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J335", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J336", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J337", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J338", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J339", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J340", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J341", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J342", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J343", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J344", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J345", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J346", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J347", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J348", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J349", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J350", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J351", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J352", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J353", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J354", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J355", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J356", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J357", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J358", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J359", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J360", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J361", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J362", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J363", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J364", "label": "no", "reason": "The recovered text is an example result table, not SQL."}
+{"id": "J365", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J366", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J367", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J368", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J369", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J370", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J371", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J372", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J373", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J374", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J375", "label": "no", "reason": "The recovered text is a numeric answer, not a SQL query."}
+{"id": "J376", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J377", "label": "no", "reason": "This optional extension is not the original answer query."}
+{"id": "J378", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J379", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J380", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J381", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J382", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J383", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J384", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J385", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J386", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J387", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J388", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J389", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J390", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J391", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J392", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J393", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J394", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J395", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J396", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J397", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J398", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J399", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J400", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J401", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J402", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J403", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J404", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J405", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J406", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J407", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J408", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J409", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J410", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J411", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J412", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J413", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J414", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J415", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J416", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J417", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J418", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J419", "label": "no", "reason": "This is a component of the earlier full query, not the final SQL."}
+{"id": "J420", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J421", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J422", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J423", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J424", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J425", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J426", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J427", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J428", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J429", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J430", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J431", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J432", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J433", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J434", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J435", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J436", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J437", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J438", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J439", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J440", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J441", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J442", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J443", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J444", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J445", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J446", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J447", "label": "no", "reason": "The recovered text is only a trailing subquery fragment."}
+{"id": "J448", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J449", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J450", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J451", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J452", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J453", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J454", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J455", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J456", "label": "no", "reason": "The recovered text is an empty boxed placeholder, not SQL."}
+{"id": "J457", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J458", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J459", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J460", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J461", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J462", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J463", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J464", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J465", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J466", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J467", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J468", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J469", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J470", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J471", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J472", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J473", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J474", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J475", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J476", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J477", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J478", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J479", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J480", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J481", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J482", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J483", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J484", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J485", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J486", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J487", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J488", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J489", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J490", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J491", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J492", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J493", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J494", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J495", "label": "yes", "reason": "The reply presents this as its chosen final SQL query."}
+{"id": "J496", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J497", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J498", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J499", "label": "yes", "reason": "The reply gives this SQL query as its answer."}
+{"id": "J500", "label": "yes", "reason": "The reply gives this SQL query as its answer."}

@@ -1,0 +1,373 @@
+{
+ "id": "text_grouping-rules",
+ "labels": [
+  "sec:grouping-rules",
+  "sec:s-grouping-menu"
+ ],
+ "section": "VII-C (sec:grouping-rules); Supplementary S7-E (sec:s-grouping-menu)",
+ "title": "Grouping rules on fixed judgments",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "settings in the grouping menu",
+   "printed": "15",
+   "key": "menu_settings"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "configurations per domain",
+   "printed": "24",
+   "key": "settlements_configurations"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "highest mean test gap of development selection over the datasets",
+   "printed": "0.069",
+   "key": "selected_mean_regret_max_over_datasets_pp"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "always connected components, Settlements mean gap",
+   "printed": "4.23",
+   "key": "settlements_fixed_connected_components_mean_regret_pp"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "always center clustering, MusicBrainz mean gap",
+   "printed": "7.88",
+   "key": "musicbrainz_fixed_center_mean_regret_pp"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "seconds per configuration, lowest",
+   "printed": "0.027",
+   "key": "dev_seconds_all_settings_min"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "seconds per configuration, highest",
+   "printed": "0.171",
+   "key": "dev_seconds_all_settings_max"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "sampled development entities, Settlements",
+   "printed": "21",
+   "key": "settlements_devsize_frac0.05_entities"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "development entities, Settlements",
+   "printed": "419",
+   "key": "settlements_dev_entities"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "mean test gap with all development entities",
+   "printed": "0.028",
+   "key": "settlements_devsize_419_entities_mean_regret_pp"
+  },
+  {
+   "label": "sec:grouping-rules",
+   "tex_file": "sections/06_q3_replacements.tex",
+   "where": "mean test gap with 21 development entities",
+   "printed": "4.01",
+   "key": "settlements_devsize_21_entities_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "settings in the menu",
+   "printed": "15",
+   "key": "menu_settings"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "WDC: connected components selected",
+   "printed": "20",
+   "key": "wdc_selected_connected_components"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "WDC: configurations",
+   "printed": "24",
+   "key": "wdc_configurations"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements: greedy correlation selected",
+   "printed": "23",
+   "key": "settlements_selected_correlation_greedy"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "MusicBrainz: connected components selected",
+   "printed": "13",
+   "key": "musicbrainz_selected_connected_components"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "MusicBrainz: Markov clustering selected",
+   "printed": "10",
+   "key": "musicbrainz_selected_markov"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "MusicBrainz: greedy correlation selected",
+   "printed": "1",
+   "key": "musicbrainz_selected_correlation_greedy"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "mean test gap, WDC",
+   "printed": "0.023",
+   "key": "wdc_selected_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "mean test gap, Settlements",
+   "printed": "0.028",
+   "key": "settlements_selected_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "mean test gap, MusicBrainz",
+   "printed": "0.069",
+   "key": "musicbrainz_selected_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "largest test gap, WDC",
+   "printed": "0.244",
+   "key": "wdc_selected_max_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "largest test gap, Settlements",
+   "printed": "0.185",
+   "key": "settlements_selected_max_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "largest test gap, MusicBrainz",
+   "printed": "0.205",
+   "key": "musicbrainz_selected_max_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "development entities, Settlements",
+   "printed": "419",
+   "key": "settlements_dev_entities"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "development records, Settlements",
+   "printed": "1,560",
+   "key": "settlements_dev_records"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "development entities, WDC",
+   "printed": "254",
+   "key": "wdc_dev_entities"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "development records, WDC",
+   "printed": "2,936",
+   "key": "wdc_dev_records"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "development entities, MusicBrainz",
+   "printed": "2,031",
+   "key": "musicbrainz_dev_entities"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "development records, MusicBrainz",
+   "printed": "3,981",
+   "key": "musicbrainz_dev_records"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "seconds for all 15 settings, Settlements, lowest",
+   "printed": "0.095",
+   "key": "settlements_dev_seconds_all_settings_min"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "seconds for all 15 settings, Settlements, highest",
+   "printed": "0.130",
+   "key": "settlements_dev_seconds_all_settings_max"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "seconds for all 15 settings, WDC, lowest",
+   "printed": "0.027",
+   "key": "wdc_dev_seconds_all_settings_min"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "seconds for all 15 settings, WDC, highest",
+   "printed": "0.052",
+   "key": "wdc_dev_seconds_all_settings_max"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "seconds for all 15 settings, MusicBrainz, lowest",
+   "printed": "0.124",
+   "key": "musicbrainz_dev_seconds_all_settings_min"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "seconds for all 15 settings, MusicBrainz, highest",
+   "printed": "0.171",
+   "key": "musicbrainz_dev_seconds_all_settings_max"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements mean test gap, 21 development entities",
+   "printed": "4.009",
+   "key": "settlements_devsize_21_entities_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements mean test gap, 84 development entities",
+   "printed": "2.624",
+   "key": "settlements_devsize_84_entities_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements mean test gap, 126 development entities",
+   "printed": "1.244",
+   "key": "settlements_devsize_126_entities_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements mean test gap, 210 development entities",
+   "printed": "0.315",
+   "key": "settlements_devsize_210_entities_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements mean test gap, 419 development entities",
+   "printed": "0.028",
+   "key": "settlements_devsize_419_entities_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "sampled entities at 5%",
+   "printed": "21",
+   "key": "settlements_devsize_frac0.05_entities"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "sampled entities at 20%",
+   "printed": "84",
+   "key": "settlements_devsize_frac0.20_entities"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "sampled entities at 30%",
+   "printed": "126",
+   "key": "settlements_devsize_frac0.30_entities"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "sampled entities at 50%",
+   "printed": "210",
+   "key": "settlements_devsize_frac0.50_entities"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "fixed center clustering, Settlements mean test gap",
+   "printed": "1.782",
+   "key": "settlements_fixed_center_mean_regret_pp"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "connected components, false pairs at full size",
+   "printed": "200.2",
+   "key": "settlements_cc_false_pairs_frac1.00"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "connected components, false pairs at half size",
+   "printed": "51.4",
+   "key": "settlements_cc_false_pairs_frac0.50"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "connected components, false pairs at one tenth",
+   "printed": "1.5",
+   "key": "settlements_cc_false_pairs_frac0.10"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "connected components, recall at full size",
+   "printed": "0.96",
+   "key": "settlements_cc_recall_frac1.00"
+  },
+  {
+   "label": "sec:s-grouping-menu",
+   "tex_file": "supplementary.tex",
+   "where": "connected components, recall at one tenth",
+   "printed": "0.96",
+   "key": "settlements_cc_recall_frac0.10"
+  }
+ ],
+ "unreproduced": []
+}

@@ -1,0 +1,16 @@
+Data and documentation licence
+
+The data in this repository (the tables under paper_objects/*/inputs/ and
+paper_objects/*/output/, and data/external/), the data in the linked Google Drive
+folder, and the documentation (README.md and the other Markdown files, and
+paper/supplementary.pdf) are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0):
+
+    https://creativecommons.org/licenses/by/4.0/
+
+Copyright (c) 2026 The AgentEAB authors.
+
+Third-party benchmark content contained in these data (BIRD, Spider, GSM8K,
+StrategyQA, MMLU-Pro, GPQA identifiers, WDC Products, Geographic Settlements,
+DBLP-ACM, Amazon-Google) keeps its original licence; see LICENSING.md.
+The code is licensed under the MIT License (LICENSE).

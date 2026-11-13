@@ -1,0 +1,6002 @@
+[
+{
+"family": "S1",
+"cell": "bccs|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 7.58,
+"naive_ci": [
+4.8,
+10.35
+],
+"controlled": -1.26,
+"controlled_ci": [
+-4.8,
+2.02
+],
+"controlled_minus_naive": -8.84,
+"cmn_ci": [
+-13.38,
+-4.8
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S2",
+"cell": "bccs|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 5.05,
+"naive_ci": [
+1.52,
+8.84
+],
+"controlled": 1.26,
+"controlled_ci": [
+-2.02,
+4.55
+],
+"controlled_minus_naive": -3.79,
+"cmn_ci": [
+-8.33,
+0.51
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S3",
+"cell": "bccs|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": -1.52,
+"naive_ci": [
+-5.05,
+1.77
+],
+"controlled": -14.9,
+"controlled_ci": [
+-19.19,
+-10.61
+],
+"controlled_minus_naive": -13.38,
+"cmn_ci": [
+-17.68,
+-9.34
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S1",
+"cell": "bccs|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 18.18,
+"naive_ci": [
+13.13,
+23.23
+],
+"controlled": -2.78,
+"controlled_ci": [
+-6.57,
+1.01
+],
+"controlled_minus_naive": -20.96,
+"cmn_ci": [
+-26.26,
+-15.66
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S2",
+"cell": "bccs|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 1.26,
+"naive_ci": [
+-4.29,
+6.82
+],
+"controlled": -2.53,
+"controlled_ci": [
+-6.31,
+1.26
+],
+"controlled_minus_naive": -3.79,
+"cmn_ci": [
+-8.59,
+0.76
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S3",
+"cell": "bccs|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": -6.31,
+"naive_ci": [
+-10.86,
+-2.02
+],
+"controlled": -13.64,
+"controlled_ci": [
+-17.93,
+-9.34
+],
+"controlled_minus_naive": -7.32,
+"cmn_ci": [
+-11.11,
+-3.79
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S1",
+"cell": "du_mad|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 0.0,
+"naive_ci": [
+0.0,
+0.0
+],
+"controlled": -4.8,
+"controlled_ci": [
+-9.09,
+-0.51
+],
+"controlled_minus_naive": -4.8,
+"cmn_ci": [
+-9.09,
+-0.51
+],
+"naive_undefined": true,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S2",
+"cell": "du_mad|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 0.0,
+"naive_ci": [
+0.0,
+0.0
+],
+"controlled": -5.81,
+"controlled_ci": [
+-10.1,
+-2.02
+],
+"controlled_minus_naive": -5.81,
+"cmn_ci": [
+-10.1,
+-2.02
+],
+"naive_undefined": true,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S3",
+"cell": "du_mad|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 0.0,
+"naive_ci": [
+0.0,
+0.0
+],
+"controlled": -23.23,
+"controlled_ci": [
+-29.29,
+-17.68
+],
+"controlled_minus_naive": -23.23,
+"cmn_ci": [
+-29.29,
+-17.68
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S1",
+"cell": "du_mad|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": -0.51,
+"naive_ci": [
+-3.28,
+2.27
+],
+"controlled": 0.25,
+"controlled_ci": [
+-2.53,
+3.03
+],
+"controlled_minus_naive": 0.76,
+"cmn_ci": [
+-0.76,
+2.27
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S2",
+"cell": "du_mad|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": -0.51,
+"naive_ci": [
+-4.55,
+3.54
+],
+"controlled": -2.02,
+"controlled_ci": [
+-5.05,
+0.76
+],
+"controlled_minus_naive": -1.52,
+"cmn_ci": [
+-5.05,
+1.77
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S3",
+"cell": "du_mad|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 8.84,
+"naive_ci": [
+4.29,
+13.64
+],
+"controlled": -1.77,
+"controlled_ci": [
+-5.05,
+1.26
+],
+"controlled_minus_naive": -10.61,
+"cmn_ci": [
+-14.9,
+-6.57
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S1",
+"cell": "madm2_objective|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 5.81,
+"naive_ci": [
+1.77,
+9.85
+],
+"controlled": 1.26,
+"controlled_ci": [
+-2.53,
+5.05
+],
+"controlled_minus_naive": -4.55,
+"cmn_ci": [
+-8.33,
+-1.01
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S2",
+"cell": "madm2_objective|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 4.29,
+"naive_ci": [
+-1.52,
+10.1
+],
+"controlled": -2.02,
+"controlled_ci": [
+-6.57,
+2.78
+],
+"controlled_minus_naive": -6.31,
+"cmn_ci": [
+-11.87,
+-0.76
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S3",
+"cell": "madm2_objective|llama3-8b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 1.26,
+"naive_ci": [
+-2.27,
+4.8
+],
+"controlled": -8.59,
+"controlled_ci": [
+-12.37,
+-4.8
+],
+"controlled_minus_naive": -9.85,
+"cmn_ci": [
+-13.13,
+-6.82
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S1",
+"cell": "madm2_objective|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 3.79,
+"naive_ci": [
+-0.25,
+7.83
+],
+"controlled": 0.51,
+"controlled_ci": [
+-2.78,
+3.79
+],
+"controlled_minus_naive": -3.28,
+"cmn_ci": [
+-6.57,
+0.0
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S2",
+"cell": "madm2_objective|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 8.33,
+"naive_ci": [
+3.54,
+13.38
+],
+"controlled": 2.02,
+"controlled_ci": [
+-2.53,
+6.57
+],
+"controlled_minus_naive": -6.31,
+"cmn_ci": [
+-10.86,
+-1.77
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S3",
+"cell": "madm2_objective|qwen2.5-7b",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 3.79,
+"naive_ci": [
+0.25,
+7.32
+],
+"controlled": -3.03,
+"controlled_ci": [
+-6.31,
+0.0
+],
+"controlled_minus_naive": -6.82,
+"cmn_ci": [
+-9.85,
+-4.04
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S1",
+"cell": "moa|roster",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 10.35,
+"naive_ci": [
+5.81,
+15.15
+],
+"controlled": 10.35,
+"controlled_ci": [
+5.81,
+15.15
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": [
+0.0,
+0.0
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S3",
+"cell": "moa|roster",
+"dataset": "BIRD",
+"n": 198,
+"metric": "EX pp",
+"naive": 16.92,
+"naive_ci": [
+11.87,
+21.97
+],
+"controlled": -0.51,
+"controlled_ci": [
+-5.3,
+4.04
+],
+"controlled_minus_naive": -17.42,
+"cmn_ci": [
+-22.22,
+-12.88
+],
+"naive_undefined": false,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|FULL",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -0.62,
+"naive_ci": [
+-1.88,
+0.65
+],
+"controlled": 0.28,
+"controlled_ci": [
+-0.89,
+1.46
+],
+"controlled_minus_naive": 0.9,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.4836,
+"contract_final_present": 0.9635,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|FULL",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 0.09,
+"naive_ci": [
+-0.84,
+1.01
+],
+"controlled": 0.4,
+"controlled_ci": [
+-0.46,
+1.25
+],
+"controlled_minus_naive": 0.31,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9609,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 1.08,
+"naive_ci": [
+0.06,
+2.09
+],
+"controlled": 1.9,
+"controlled_ci": [
+0.66,
+3.15
+],
+"controlled_minus_naive": 0.82,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.4943,
+"contract_final_present": 0.97,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 0.02,
+"naive_ci": [
+-0.81,
+0.85
+],
+"controlled": 0.07,
+"controlled_ci": [
+-0.72,
+0.87
+],
+"controlled_minus_naive": 0.05,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9606,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|FULL",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -1.45,
+"naive_ci": [
+-2.64,
+-0.26
+],
+"controlled": 0.71,
+"controlled_ci": [
+-0.51,
+1.93
+],
+"controlled_minus_naive": 2.16,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.2275,
+"contract_final_present": 0.2825,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|FULL",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -0.13,
+"naive_ci": [
+-0.39,
+0.14
+],
+"controlled": -0.13,
+"controlled_ci": [
+-0.39,
+0.14
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 0.9993,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -1.17,
+"naive_ci": [
+-2.55,
+0.2
+],
+"controlled": -1.47,
+"controlled_ci": [
+-4.39,
+1.44
+],
+"controlled_minus_naive": -0.3,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.2353,
+"contract_final_present": 0.31,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -1.13,
+"naive_ci": [
+-2.15,
+-0.11
+],
+"controlled": -1.13,
+"controlled_ci": [
+-2.15,
+-0.11
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 0.9987,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|FULL",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -2.3,
+"naive_ci": [
+-4.74,
+0.14
+],
+"controlled": -2.3,
+"controlled_ci": [
+-4.74,
+0.14
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -20.53,
+"naive_ci": [
+-25.1,
+-15.96
+],
+"controlled": -20.53,
+"controlled_ci": [
+-25.1,
+-15.96
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|FULL",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 10.89,
+"naive_ci": [
+8.19,
+13.58
+],
+"controlled": 12.09,
+"controlled_ci": [
+9.42,
+14.76
+],
+"controlled_minus_naive": 1.2,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9325,
+"contract_final_present": 0.9995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|FULL",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 2.39,
+"naive_ci": [
+1.01,
+3.77
+],
+"controlled": 2.52,
+"controlled_ci": [
+1.13,
+3.91
+],
+"controlled_minus_naive": 0.13,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9905,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 11.86,
+"naive_ci": [
+9.01,
+14.71
+],
+"controlled": 12.82,
+"controlled_ci": [
+9.92,
+15.71
+],
+"controlled_minus_naive": 0.96,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.932,
+"contract_final_present": 0.9975,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -3.12,
+"naive_ci": [
+-4.75,
+-1.49
+],
+"controlled": -3.31,
+"controlled_ci": [
+-4.95,
+-1.66
+],
+"controlled_minus_naive": -0.19,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9913,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|FULL",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -1.04,
+"naive_ci": [
+-2.54,
+0.47
+],
+"controlled": -1.46,
+"controlled_ci": [
+-2.74,
+-0.19
+],
+"controlled_minus_naive": -0.42,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9795,
+"contract_final_present": 0.986,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "moa|roster|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -29.18,
+"naive_ci": [
+-33.63,
+-24.74
+],
+"controlled": -28.95,
+"controlled_ci": [
+-33.44,
+-24.45
+],
+"controlled_minus_naive": 0.23,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9812,
+"contract_final_present": 0.9895,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|FULL",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -0.5,
+"naive_ci": [
+-4.0,
+3.0
+],
+"controlled": -1.0,
+"controlled_ci": [
+-4.5,
+2.5
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.86,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|FULL",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -1.5,
+"naive_ci": [
+-4.5,
+1.0
+],
+"controlled": -1.5,
+"controlled_ci": [
+-4.5,
+1.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 0.5,
+"naive_ci": [
+-3.5,
+4.5
+],
+"controlled": 0.5,
+"controlled_ci": [
+-2.5,
+3.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.8614,
+"contract_final_present": 0.995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -1.0,
+"naive_ci": [
+-2.5,
+0.0
+],
+"controlled": -1.0,
+"controlled_ci": [
+-2.5,
+0.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 0.9957,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|FULL",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 0.0,
+"naive_ci": [
+-3.5,
+3.0
+],
+"controlled": 0.0,
+"controlled_ci": [
+-3.5,
+3.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|FULL",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 1.0,
+"naive_ci": [
+-1.0,
+3.5
+],
+"controlled": 1.0,
+"controlled_ci": [
+-1.0,
+3.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -14.5,
+"naive_ci": [
+-23.5,
+-5.5
+],
+"controlled": -14.5,
+"controlled_ci": [
+-23.5,
+-5.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 0.0,
+"naive_ci": [
+-2.5,
+2.0
+],
+"controlled": 0.0,
+"controlled_ci": [
+-2.5,
+2.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|FULL",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 40.0,
+"naive_ci": [
+30.0,
+50.0
+],
+"controlled": 40.0,
+"controlled_ci": [
+30.0,
+50.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 11.5,
+"naive_ci": [
+3.0,
+20.5
+],
+"controlled": 11.5,
+"controlled_ci": [
+3.0,
+20.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|FULL",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -5.5,
+"naive_ci": [
+-10.0,
+-1.5
+],
+"controlled": -5.0,
+"controlled_ci": [
+-9.5,
+-0.5
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9,
+"contract_final_present": 0.995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|FULL",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -4.5,
+"naive_ci": [
+-8.0,
+-1.5
+],
+"controlled": -4.5,
+"controlled_ci": [
+-8.0,
+-1.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 0.9983,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 1.0,
+"naive_ci": [
+-4.5,
+7.0
+],
+"controlled": 1.0,
+"controlled_ci": [
+-4.5,
+7.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9067,
+"contract_final_present": 0.995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -6.5,
+"naive_ci": [
+-11.5,
+-2.0
+],
+"controlled": -7.0,
+"controlled_ci": [
+-12.0,
+-2.0
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|FULL",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 0.5,
+"naive_ci": [
+-2.5,
+3.5
+],
+"controlled": 0.5,
+"controlled_ci": [
+-2.5,
+3.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -4.5,
+"naive_ci": [
+-9.5,
+0.0
+],
+"controlled": -4.5,
+"controlled_ci": [
+-9.5,
+0.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|FULL",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -0.5,
+"naive_ci": [
+-5.5,
+4.5
+],
+"controlled": 0.0,
+"controlled_ci": [
+-4.0,
+4.0
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.4386,
+"contract_final_present": 0.82,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|FULL",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 0.0,
+"naive_ci": [
+-4.5,
+4.5
+],
+"controlled": 0.0,
+"controlled_ci": [
+-4.5,
+4.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.6179,
+"contract_final_present": 0.7,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 3.0,
+"naive_ci": [
+-3.0,
+9.5
+],
+"controlled": 4.5,
+"controlled_ci": [
+-0.5,
+9.5
+],
+"controlled_minus_naive": 1.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.4343,
+"contract_final_present": 0.835,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -2.5,
+"naive_ci": [
+-6.0,
+0.5
+],
+"controlled": -1.0,
+"controlled_ci": [
+-4.0,
+1.5
+],
+"controlled_minus_naive": 1.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.6164,
+"contract_final_present": 0.71,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|FULL",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 1.0,
+"naive_ci": [
+-4.5,
+6.5
+],
+"controlled": -2.0,
+"controlled_ci": [
+-8.51,
+4.5
+],
+"controlled_minus_naive": -3.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.8867,
+"contract_final_present": 0.975,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|FULL",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -3.0,
+"naive_ci": [
+-7.0,
+0.5
+],
+"controlled": -3.0,
+"controlled_ci": [
+-7.0,
+0.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 0.9983,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 3.5,
+"naive_ci": [
+-3.0,
+10.0
+],
+"controlled": 5.0,
+"controlled_ci": [
+-1.5,
+12.0
+],
+"controlled_minus_naive": 1.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.89,
+"contract_final_present": 0.915,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 0.5,
+"naive_ci": [
+-4.0,
+5.0
+],
+"controlled": 0.5,
+"controlled_ci": [
+-4.0,
+5.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 0.9967,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|FULL",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 8.5,
+"naive_ci": [
+3.0,
+15.0
+],
+"controlled": 8.5,
+"controlled_ci": [
+3.0,
+15.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -3.0,
+"naive_ci": [
+-12.0,
+6.0
+],
+"controlled": -3.0,
+"controlled_ci": [
+-12.0,
+6.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|FULL",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -2.5,
+"naive_ci": [
+-9.0,
+4.0
+],
+"controlled": -2.5,
+"controlled_ci": [
+-9.0,
+4.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9783,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|FULL",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -4.5,
+"naive_ci": [
+-10.5,
+1.5
+],
+"controlled": -4.5,
+"controlled_ci": [
+-10.5,
+1.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9783,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -3.0,
+"naive_ci": [
+-10.0,
+4.0
+],
+"controlled": -3.0,
+"controlled_ci": [
+-10.0,
+4.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9633,
+"contract_final_present": 0.995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -5.0,
+"naive_ci": [
+-10.5,
+0.0
+],
+"controlled": -5.0,
+"controlled_ci": [
+-10.5,
+0.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9783,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|FULL",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 4.5,
+"naive_ci": [
+-2.0,
+10.51
+],
+"controlled": 5.0,
+"controlled_ci": [
+-1.0,
+11.0
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9867,
+"contract_final_present": 0.96,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -6.5,
+"naive_ci": [
+-14.5,
+1.5
+],
+"controlled": -7.0,
+"controlled_ci": [
+-15.0,
+1.0
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9917,
+"contract_final_present": 0.995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|FULL",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -1.0,
+"naive_ci": [
+-5.5,
+3.0
+],
+"controlled": -2.5,
+"controlled_ci": [
+-6.5,
+1.0
+],
+"controlled_minus_naive": -1.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.5543,
+"contract_final_present": 0.89,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|FULL",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -5.5,
+"naive_ci": [
+-9.0,
+-2.0
+],
+"controlled": -3.0,
+"controlled_ci": [
+-6.0,
+0.0
+],
+"controlled_minus_naive": 2.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.605,
+"contract_final_present": 0.875,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 1.5,
+"naive_ci": [
+-2.0,
+5.5
+],
+"controlled": -1.0,
+"controlled_ci": [
+-6.0,
+4.0
+],
+"controlled_minus_naive": -2.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.5829,
+"contract_final_present": 0.93,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 2.5,
+"naive_ci": [
+-0.5,
+5.5
+],
+"controlled": 0.0,
+"controlled_ci": [
+-3.0,
+3.0
+],
+"controlled_minus_naive": -2.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.6064,
+"contract_final_present": 0.935,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|FULL",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 7.5,
+"naive_ci": [
+0.5,
+14.5
+],
+"controlled": 7.5,
+"controlled_ci": [
+0.5,
+14.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.8533,
+"contract_final_present": 0.995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|FULL",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 1.5,
+"naive_ci": [
+-0.51,
+4.5
+],
+"controlled": 1.5,
+"controlled_ci": [
+-0.51,
+4.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 9.5,
+"naive_ci": [
+1.0,
+18.0
+],
+"controlled": 9.5,
+"controlled_ci": [
+1.0,
+18.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.865,
+"contract_final_present": 0.99,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 3.5,
+"naive_ci": [
+0.0,
+8.0
+],
+"controlled": 3.5,
+"controlled_ci": [
+0.0,
+8.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|FULL",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 0.0,
+"naive_ci": [
+-4.5,
+4.5
+],
+"controlled": 0.0,
+"controlled_ci": [
+-4.5,
+4.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.99,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 1.0,
+"naive_ci": [
+-6.0,
+8.0
+],
+"controlled": 1.0,
+"controlled_ci": [
+-6.0,
+8.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|FULL",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -2.0,
+"naive_ci": [
+-7.0,
+3.5
+],
+"controlled": -2.0,
+"controlled_ci": [
+-7.0,
+3.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.665,
+"contract_final_present": 0.9,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|FULL",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -4.0,
+"naive_ci": [
+-8.5,
+0.5
+],
+"controlled": -4.0,
+"controlled_ci": [
+-8.5,
+0.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.7283,
+"contract_final_present": 0.885,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -9.0,
+"naive_ci": [
+-16.0,
+-2.5
+],
+"controlled": -9.5,
+"controlled_ci": [
+-16.5,
+-3.0
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.655,
+"contract_final_present": 0.8,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": 2.5,
+"naive_ci": [
+-4.0,
+9.0
+],
+"controlled": 2.0,
+"controlled_ci": [
+-4.5,
+8.5
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.7617,
+"contract_final_present": 0.92,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|FULL",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -3.5,
+"naive_ci": [
+-8.5,
+1.5
+],
+"controlled": -3.5,
+"controlled_ci": [
+-8.5,
+1.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9517,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "accuracy pp",
+"naive": -3.5,
+"naive_ci": [
+-10.0,
+3.0
+],
+"controlled": -3.5,
+"controlled_ci": [
+-10.0,
+3.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.955,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|FULL",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -4.5,
+"naive_ci": [
+-7.31,
+-1.7
+],
+"controlled": 1.36,
+"controlled_ci": [
+-1.57,
+4.3
+],
+"controlled_minus_naive": 5.86,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.5126,
+"contract_final_present": 0.9665,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|FULL",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 0.54,
+"naive_ci": [
+-1.27,
+2.36
+],
+"controlled": 0.43,
+"controlled_ci": [
+-1.44,
+2.3
+],
+"controlled_minus_naive": -0.11,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9339,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "bccs|llama3-8b|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 1.43,
+"naive_ci": [
+-1.7,
+4.57
+],
+"controlled": 4.17,
+"controlled_ci": [
+0.8,
+7.53
+],
+"controlled_minus_naive": 2.74,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.516,
+"contract_final_present": 0.981,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "bccs|qwen2.5-7b|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -0.04,
+"naive_ci": [
+-1.94,
+1.87
+],
+"controlled": 0.39,
+"controlled_ci": [
+-1.57,
+2.34
+],
+"controlled_minus_naive": 0.43,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9262,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|FULL",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -1.88,
+"naive_ci": [
+-4.18,
+0.43
+],
+"controlled": -1.15,
+"controlled_ci": [
+-3.4,
+1.1
+],
+"controlled_minus_naive": 0.73,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.4842,
+"contract_final_present": 0.5725,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|FULL",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -0.33,
+"naive_ci": [
+-0.79,
+0.13
+],
+"controlled": -0.33,
+"controlled_ci": [
+-0.79,
+0.13
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "du_mad|llama3-8b|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 0.25,
+"naive_ci": [
+-3.7,
+4.2
+],
+"controlled": -0.09,
+"controlled_ci": [
+-4.6,
+4.41
+],
+"controlled_minus_naive": -0.34,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.4712,
+"contract_final_present": 0.591,
+"label": "measurement correction",
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S4",
+"cell": "du_mad|qwen2.5-7b|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -0.48,
+"naive_ci": [
+-1.99,
+1.03
+],
+"controlled": -0.48,
+"controlled_ci": [
+-1.99,
+1.03
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|FULL",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -0.15,
+"naive_ci": [
+-2.27,
+1.97
+],
+"controlled": -0.15,
+"controlled_ci": [
+-2.27,
+1.97
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "ford|roster|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -27.29,
+"naive_ci": [
+-33.59,
+-20.98
+],
+"controlled": -27.29,
+"controlled_ci": [
+-33.59,
+-20.98
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": true,
+"contract_extraction_r0": 1.0,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|FULL",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 13.08,
+"naive_ci": [
+8.57,
+17.59
+],
+"controlled": 15.24,
+"controlled_ci": [
+10.69,
+19.8
+],
+"controlled_minus_naive": 2.16,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9403,
+"contract_final_present": 0.9995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|FULL",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -1.76,
+"naive_ci": [
+-4.21,
+0.7
+],
+"controlled": -1.68,
+"controlled_ci": [
+-4.06,
+0.69
+],
+"controlled_minus_naive": 0.08,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9938,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|llama3-8b|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 11.76,
+"naive_ci": [
+6.63,
+16.89
+],
+"controlled": 14.48,
+"controlled_ci": [
+9.14,
+19.83
+],
+"controlled_minus_naive": 2.72,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9463,
+"contract_final_present": 0.997,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "madm2_objective|qwen2.5-7b|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": 0.09,
+"naive_ci": [
+-2.74,
+2.93
+],
+"controlled": 0.36,
+"controlled_ci": [
+-2.52,
+3.24
+],
+"controlled_minus_naive": 0.27,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9918,
+"contract_final_present": 1.0,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|FULL",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -13.24,
+"naive_ci": [
+-16.68,
+-9.81
+],
+"controlled": -14.45,
+"controlled_ci": [
+-17.87,
+-11.03
+],
+"controlled_minus_naive": -1.21,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.9558,
+"contract_final_present": 0.995,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S4",
+"cell": "moa|roster|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1 pp",
+"naive": -26.71,
+"naive_ci": [
+-31.47,
+-21.94
+],
+"controlled": -27.9,
+"controlled_ci": [
+-32.71,
+-23.08
+],
+"controlled_minus_naive": -1.19,
+"cmn_ci": null,
+"naive_undefined": false,
+"negative_control": false,
+"contract_extraction_r0": 0.958,
+"contract_final_present": 0.997,
+"label": "measurement correction",
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 26.226,
+"naive_ci": [
+20.614,
+31.838
+],
+"controlled": -0.904,
+"controlled_ci": [
+-3.344,
+1.537
+],
+"controlled_minus_naive": -27.13,
+"cmn_ci": null,
+"tie_share_arm": 0.1665,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 26.226,
+"naive_ci": [
+20.614,
+31.838
+],
+"controlled": 26.226,
+"controlled_ci": [
+20.614,
+31.838
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.1665,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 26.226,
+"naive_ci": [
+20.614,
+31.838
+],
+"controlled": 26.226,
+"controlled_ci": [
+20.614,
+31.838
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.1665,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 23.162,
+"naive_ci": [
+17.824,
+28.501
+],
+"controlled": 22.871,
+"controlled_ci": [
+17.665,
+28.076
+],
+"controlled_minus_naive": -0.291,
+"cmn_ci": null,
+"tie_share_arm": 0.0035,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 23.162,
+"naive_ci": [
+17.824,
+28.501
+],
+"controlled": 23.162,
+"controlled_ci": [
+17.824,
+28.501
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.0035,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 23.162,
+"naive_ci": [
+17.824,
+28.501
+],
+"controlled": 23.162,
+"controlled_ci": [
+17.824,
+28.501
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.0035,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.896,
+"naive_ci": [
+-4.228,
+0.436
+],
+"controlled": -1.341,
+"controlled_ci": [
+-2.748,
+0.067
+],
+"controlled_minus_naive": 0.555,
+"cmn_ci": null,
+"tie_share_arm": 0.0393,
+"tie_share_full": 0.014,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.896,
+"naive_ci": [
+-4.228,
+0.436
+],
+"controlled": -2.105,
+"controlled_ci": [
+-4.36,
+0.15
+],
+"controlled_minus_naive": -0.209,
+"cmn_ci": null,
+"tie_share_arm": 0.0393,
+"tie_share_full": 0.014,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.896,
+"naive_ci": [
+-4.228,
+0.436
+],
+"controlled": -2.333,
+"controlled_ci": [
+-4.571,
+-0.095
+],
+"controlled_minus_naive": -0.437,
+"cmn_ci": null,
+"tie_share_arm": 0.0393,
+"tie_share_full": 0.014,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -3.447,
+"naive_ci": [
+-5.519,
+-1.376
+],
+"controlled": -2.575,
+"controlled_ci": [
+-4.273,
+-0.876
+],
+"controlled_minus_naive": 0.872,
+"cmn_ci": null,
+"tie_share_arm": 0.0103,
+"tie_share_full": 0.014,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -3.447,
+"naive_ci": [
+-5.519,
+-1.376
+],
+"controlled": -3.189,
+"controlled_ci": [
+-5.257,
+-1.121
+],
+"controlled_minus_naive": 0.258,
+"cmn_ci": null,
+"tie_share_arm": 0.0103,
+"tie_share_full": 0.014,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -3.447,
+"naive_ci": [
+-5.519,
+-1.376
+],
+"controlled": -3.081,
+"controlled_ci": [
+-5.09,
+-1.073
+],
+"controlled_minus_naive": 0.366,
+"cmn_ci": null,
+"tie_share_arm": 0.0103,
+"tie_share_full": 0.014,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -2.236,
+"naive_ci": [
+-4.806,
+0.334
+],
+"controlled": -2.428,
+"controlled_ci": [
+-4.808,
+-0.049
+],
+"controlled_minus_naive": -0.192,
+"cmn_ci": null,
+"tie_share_arm": 0.0385,
+"tie_share_full": 0.057,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -2.236,
+"naive_ci": [
+-4.806,
+0.334
+],
+"controlled": -3.118,
+"controlled_ci": [
+-5.462,
+-0.774
+],
+"controlled_minus_naive": -0.882,
+"cmn_ci": null,
+"tie_share_arm": 0.0385,
+"tie_share_full": 0.057,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -2.236,
+"naive_ci": [
+-4.806,
+0.334
+],
+"controlled": -2.232,
+"controlled_ci": [
+-4.725,
+0.262
+],
+"controlled_minus_naive": 0.004,
+"cmn_ci": null,
+"tie_share_arm": 0.0385,
+"tie_share_full": 0.057,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -3.831,
+"naive_ci": [
+-6.147,
+-1.515
+],
+"controlled": -1.989,
+"controlled_ci": [
+-4.556,
+0.579
+],
+"controlled_minus_naive": 1.842,
+"cmn_ci": null,
+"tie_share_arm": 0.04,
+"tie_share_full": 0.057,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -3.831,
+"naive_ci": [
+-6.147,
+-1.515
+],
+"controlled": -3.627,
+"controlled_ci": [
+-6.068,
+-1.186
+],
+"controlled_minus_naive": 0.204,
+"cmn_ci": null,
+"tie_share_arm": 0.04,
+"tie_share_full": 0.057,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -3.831,
+"naive_ci": [
+-6.147,
+-1.515
+],
+"controlled": -3.019,
+"controlled_ci": [
+-5.399,
+-0.638
+],
+"controlled_minus_naive": 0.812,
+"cmn_ci": null,
+"tie_share_arm": 0.04,
+"tie_share_full": 0.057,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -2.858,
+"naive_ci": [
+-4.787,
+-0.93
+],
+"controlled": -3.573,
+"controlled_ci": [
+-5.267,
+-1.88
+],
+"controlled_minus_naive": -0.715,
+"cmn_ci": null,
+"tie_share_arm": 0.0222,
+"tie_share_full": 0.0125,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -2.858,
+"naive_ci": [
+-4.787,
+-0.93
+],
+"controlled": -3.186,
+"controlled_ci": [
+-4.936,
+-1.436
+],
+"controlled_minus_naive": -0.328,
+"cmn_ci": null,
+"tie_share_arm": 0.0222,
+"tie_share_full": 0.0125,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|access|NOPEER",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -2.858,
+"naive_ci": [
+-4.787,
+-0.93
+],
+"controlled": -3.36,
+"controlled_ci": [
+-5.116,
+-1.605
+],
+"controlled_minus_naive": -0.502,
+"cmn_ci": null,
+"tie_share_arm": 0.0222,
+"tie_share_full": 0.0125,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -4.613,
+"naive_ci": [
+-6.424,
+-2.802
+],
+"controlled": -3.876,
+"controlled_ci": [
+-5.634,
+-2.118
+],
+"controlled_minus_naive": 0.737,
+"cmn_ci": null,
+"tie_share_arm": 0.0115,
+"tie_share_full": 0.0125,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -4.613,
+"naive_ci": [
+-6.424,
+-2.802
+],
+"controlled": -4.08,
+"controlled_ci": [
+-5.857,
+-2.303
+],
+"controlled_minus_naive": 0.533,
+"cmn_ci": null,
+"tie_share_arm": 0.0115,
+"tie_share_full": 0.0125,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|content|ANSONLY",
+"dataset": "wdc_products",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -4.613,
+"naive_ci": [
+-6.424,
+-2.802
+],
+"controlled": -3.62,
+"controlled_ci": [
+-5.335,
+-1.904
+],
+"controlled_minus_naive": 0.993,
+"cmn_ci": null,
+"tie_share_arm": 0.0115,
+"tie_share_full": 0.0125,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 18.324,
+"naive_ci": [
+14.987,
+21.661
+],
+"controlled": -2.201,
+"controlled_ci": [
+-4.706,
+0.304
+],
+"controlled_minus_naive": -20.525,
+"cmn_ci": null,
+"tie_share_arm": 0.202,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 18.324,
+"naive_ci": [
+14.987,
+21.661
+],
+"controlled": 18.324,
+"controlled_ci": [
+14.987,
+21.661
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.202,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 18.324,
+"naive_ci": [
+14.987,
+21.661
+],
+"controlled": 18.324,
+"controlled_ci": [
+14.987,
+21.661
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.202,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 17.528,
+"naive_ci": [
+14.492,
+20.564
+],
+"controlled": 17.205,
+"controlled_ci": [
+14.159,
+20.251
+],
+"controlled_minus_naive": -0.323,
+"cmn_ci": null,
+"tie_share_arm": 0.002,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 17.528,
+"naive_ci": [
+14.492,
+20.564
+],
+"controlled": 17.528,
+"controlled_ci": [
+14.492,
+20.564
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.002,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 17.528,
+"naive_ci": [
+14.492,
+20.564
+],
+"controlled": 17.528,
+"controlled_ci": [
+14.492,
+20.564
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.002,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -0.138,
+"naive_ci": [
+-1.517,
+1.242
+],
+"controlled": -0.862,
+"controlled_ci": [
+-1.899,
+0.175
+],
+"controlled_minus_naive": -0.724,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.0045,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -0.138,
+"naive_ci": [
+-1.517,
+1.242
+],
+"controlled": 0.104,
+"controlled_ci": [
+-1.208,
+1.415
+],
+"controlled_minus_naive": 0.242,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.0045,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -0.138,
+"naive_ci": [
+-1.517,
+1.242
+],
+"controlled": 0.104,
+"controlled_ci": [
+-1.208,
+1.415
+],
+"controlled_minus_naive": 0.242,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.0045,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -12.863,
+"naive_ci": [
+-14.853,
+-10.873
+],
+"controlled": -12.356,
+"controlled_ci": [
+-14.32,
+-10.391
+],
+"controlled_minus_naive": 0.507,
+"cmn_ci": null,
+"tie_share_arm": 0.0043,
+"tie_share_full": 0.0045,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -12.863,
+"naive_ci": [
+-14.853,
+-10.873
+],
+"controlled": -12.248,
+"controlled_ci": [
+-14.143,
+-10.354
+],
+"controlled_minus_naive": 0.615,
+"cmn_ci": null,
+"tie_share_arm": 0.0043,
+"tie_share_full": 0.0045,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -12.863,
+"naive_ci": [
+-14.853,
+-10.873
+],
+"controlled": -12.424,
+"controlled_ci": [
+-14.352,
+-10.496
+],
+"controlled_minus_naive": 0.439,
+"cmn_ci": null,
+"tie_share_arm": 0.0043,
+"tie_share_full": 0.0045,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 2.209,
+"naive_ci": [
+0.752,
+3.666
+],
+"controlled": 0.229,
+"controlled_ci": [
+-1.231,
+1.69
+],
+"controlled_minus_naive": -1.98,
+"cmn_ci": null,
+"tie_share_arm": 0.049,
+"tie_share_full": 0.0535,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 2.209,
+"naive_ci": [
+0.752,
+3.666
+],
+"controlled": 0.45,
+"controlled_ci": [
+-0.962,
+1.862
+],
+"controlled_minus_naive": -1.759,
+"cmn_ci": null,
+"tie_share_arm": 0.049,
+"tie_share_full": 0.0535,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 2.209,
+"naive_ci": [
+0.752,
+3.666
+],
+"controlled": 0.779,
+"controlled_ci": [
+-0.659,
+2.218
+],
+"controlled_minus_naive": -1.43,
+"cmn_ci": null,
+"tie_share_arm": 0.049,
+"tie_share_full": 0.0535,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 0.465,
+"naive_ci": [
+-0.94,
+1.871
+],
+"controlled": -0.505,
+"controlled_ci": [
+-1.92,
+0.911
+],
+"controlled_minus_naive": -0.97,
+"cmn_ci": null,
+"tie_share_arm": 0.0457,
+"tie_share_full": 0.0535,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 0.465,
+"naive_ci": [
+-0.94,
+1.871
+],
+"controlled": 0.363,
+"controlled_ci": [
+-1.055,
+1.782
+],
+"controlled_minus_naive": -0.102,
+"cmn_ci": null,
+"tie_share_arm": 0.0457,
+"tie_share_full": 0.0535,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": 0.465,
+"naive_ci": [
+-0.94,
+1.871
+],
+"controlled": 0.165,
+"controlled_ci": [
+-1.299,
+1.629
+],
+"controlled_minus_naive": -0.3,
+"cmn_ci": null,
+"tie_share_arm": 0.0457,
+"tie_share_full": 0.0535,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.478,
+"naive_ci": [
+-2.444,
+-0.513
+],
+"controlled": -1.654,
+"controlled_ci": [
+-2.494,
+-0.815
+],
+"controlled_minus_naive": -0.176,
+"cmn_ci": null,
+"tie_share_arm": 0.008,
+"tie_share_full": 0.0097,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.478,
+"naive_ci": [
+-2.444,
+-0.513
+],
+"controlled": -1.756,
+"controlled_ci": [
+-2.569,
+-0.944
+],
+"controlled_minus_naive": -0.278,
+"cmn_ci": null,
+"tie_share_arm": 0.008,
+"tie_share_full": 0.0097,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|access|NOPEER",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.478,
+"naive_ci": [
+-2.444,
+-0.513
+],
+"controlled": -1.624,
+"controlled_ci": [
+-2.456,
+-0.792
+],
+"controlled_minus_naive": -0.146,
+"cmn_ci": null,
+"tie_share_arm": 0.008,
+"tie_share_full": 0.0097,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.879,
+"naive_ci": [
+-2.947,
+-0.81
+],
+"controlled": -1.888,
+"controlled_ci": [
+-2.779,
+-0.997
+],
+"controlled_minus_naive": -0.009,
+"cmn_ci": null,
+"tie_share_arm": 0.0103,
+"tie_share_full": 0.0097,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.879,
+"naive_ci": [
+-2.947,
+-0.81
+],
+"controlled": -1.852,
+"controlled_ci": [
+-2.763,
+-0.94
+],
+"controlled_minus_naive": 0.027,
+"cmn_ci": null,
+"tie_share_arm": 0.0103,
+"tie_share_full": 0.0097,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|content|ANSONLY",
+"dataset": "geographic_settlements",
+"n": 1000,
+"metric": "pair F1(match)",
+"naive": -1.879,
+"naive_ci": [
+-2.947,
+-0.81
+],
+"controlled": -1.805,
+"controlled_ci": [
+-2.733,
+-0.878
+],
+"controlled_minus_naive": 0.074,
+"cmn_ci": null,
+"tie_share_arm": 0.0103,
+"tie_share_full": 0.0097,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 28.5,
+"naive_ci": [
+16.0,
+41.0
+],
+"controlled": 39.5,
+"controlled_ci": [
+29.0,
+50.0
+],
+"controlled_minus_naive": 11.0,
+"cmn_ci": null,
+"tie_share_arm": 0.79,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 28.5,
+"naive_ci": [
+16.0,
+41.0
+],
+"controlled": 28.5,
+"controlled_ci": [
+16.0,
+41.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.79,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 28.5,
+"naive_ci": [
+16.0,
+41.0
+],
+"controlled": 28.5,
+"controlled_ci": [
+16.0,
+41.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.79,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 13.0,
+"naive_ci": [
+4.0,
+22.5
+],
+"controlled": 14.5,
+"controlled_ci": [
+5.0,
+24.0
+],
+"controlled_minus_naive": 1.5,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 13.0,
+"naive_ci": [
+4.0,
+22.5
+],
+"controlled": 13.5,
+"controlled_ci": [
+4.5,
+23.0
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 13.0,
+"naive_ci": [
+4.0,
+22.5
+],
+"controlled": 13.5,
+"controlled_ci": [
+4.5,
+23.0
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.0,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 7.75,
+"naive_ci": [
+3.5,
+12.25
+],
+"controlled": 1.25,
+"controlled_ci": [
+-0.75,
+3.5
+],
+"controlled_minus_naive": -6.5,
+"cmn_ci": null,
+"tie_share_arm": 0.1325,
+"tie_share_full": 0.02,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 7.75,
+"naive_ci": [
+3.5,
+12.25
+],
+"controlled": 5.5,
+"controlled_ci": [
+1.5,
+9.5
+],
+"controlled_minus_naive": -2.25,
+"cmn_ci": null,
+"tie_share_arm": 0.1325,
+"tie_share_full": 0.02,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 7.75,
+"naive_ci": [
+3.5,
+12.25
+],
+"controlled": 5.5,
+"controlled_ci": [
+1.5,
+9.75
+],
+"controlled_minus_naive": -2.25,
+"cmn_ci": null,
+"tie_share_arm": 0.1325,
+"tie_share_full": 0.02,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.25,
+"naive_ci": [
+-1.75,
+2.25
+],
+"controlled": -0.5,
+"controlled_ci": [
+-2.25,
+1.25
+],
+"controlled_minus_naive": -0.75,
+"cmn_ci": null,
+"tie_share_arm": 0.0225,
+"tie_share_full": 0.02,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.25,
+"naive_ci": [
+-1.75,
+2.25
+],
+"controlled": 0.0,
+"controlled_ci": [
+-1.75,
+1.75
+],
+"controlled_minus_naive": -0.25,
+"cmn_ci": null,
+"tie_share_arm": 0.0225,
+"tie_share_full": 0.02,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.25,
+"naive_ci": [
+-1.75,
+2.25
+],
+"controlled": 0.5,
+"controlled_ci": [
+-1.25,
+2.25
+],
+"controlled_minus_naive": 0.25,
+"cmn_ci": null,
+"tie_share_arm": 0.0225,
+"tie_share_full": 0.02,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.75,
+"naive_ci": [
+-4.5,
+3.0
+],
+"controlled": -1.25,
+"controlled_ci": [
+-4.25,
+2.0
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.065,
+"tie_share_full": 0.055,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.75,
+"naive_ci": [
+-4.5,
+3.0
+],
+"controlled": -2.5,
+"controlled_ci": [
+-5.75,
+0.75
+],
+"controlled_minus_naive": -1.75,
+"cmn_ci": null,
+"tie_share_arm": 0.065,
+"tie_share_full": 0.055,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.75,
+"naive_ci": [
+-4.5,
+3.0
+],
+"controlled": -3.25,
+"controlled_ci": [
+-6.5,
+0.0
+],
+"controlled_minus_naive": -2.5,
+"cmn_ci": null,
+"tie_share_arm": 0.065,
+"tie_share_full": 0.055,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -3.0,
+"naive_ci": [
+-7.0,
+0.75
+],
+"controlled": -3.75,
+"controlled_ci": [
+-6.75,
+-1.0
+],
+"controlled_minus_naive": -0.75,
+"cmn_ci": null,
+"tie_share_arm": 0.04,
+"tie_share_full": 0.055,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -3.0,
+"naive_ci": [
+-7.0,
+0.75
+],
+"controlled": -4.25,
+"controlled_ci": [
+-7.75,
+-0.75
+],
+"controlled_minus_naive": -1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.04,
+"tie_share_full": 0.055,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -3.0,
+"naive_ci": [
+-7.0,
+0.75
+],
+"controlled": -5.0,
+"controlled_ci": [
+-8.75,
+-1.5
+],
+"controlled_minus_naive": -2.0,
+"cmn_ci": null,
+"tie_share_arm": 0.04,
+"tie_share_full": 0.055,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "gained",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-3.0,
+2.0
+],
+"controlled": -2.0,
+"controlled_ci": [
+-4.75,
+0.5
+],
+"controlled_minus_naive": -1.5,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-3.0,
+2.0
+],
+"controlled": -2.0,
+"controlled_ci": [
+-4.5,
+0.25
+],
+"controlled_minus_naive": -1.5,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|access|NOPEER",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-3.0,
+2.0
+],
+"controlled": -1.75,
+"controlled_ci": [
+-4.25,
+0.75
+],
+"controlled_minus_naive": -1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.015,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-3.0,
+2.0
+],
+"controlled": -1.75,
+"controlled_ci": [
+-4.0,
+0.5
+],
+"controlled_minus_naive": -1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.005,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-3.0,
+2.0
+],
+"controlled": -2.0,
+"controlled_ci": [
+-4.25,
+0.25
+],
+"controlled_minus_naive": -1.5,
+"cmn_ci": null,
+"tie_share_arm": 0.005,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|content|ANSONLY",
+"dataset": "gsm8k",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-3.0,
+2.0
+],
+"controlled": -1.75,
+"controlled_ci": [
+-4.0,
+0.5
+],
+"controlled_minus_naive": -1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.005,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.0,
+"naive_ci": [
+-9.5,
+5.5
+],
+"controlled": -0.5,
+"controlled_ci": [
+-4.5,
+4.0
+],
+"controlled_minus_naive": 1.5,
+"cmn_ci": null,
+"tie_share_arm": 0.13,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.0,
+"naive_ci": [
+-9.5,
+5.5
+],
+"controlled": -2.0,
+"controlled_ci": [
+-9.5,
+5.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.13,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.0,
+"naive_ci": [
+-9.5,
+5.5
+],
+"controlled": -2.0,
+"controlled_ci": [
+-9.5,
+5.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.13,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.0,
+"naive_ci": [
+-5.5,
+1.5
+],
+"controlled": -1.5,
+"controlled_ci": [
+-5.0,
+2.0
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.0,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.0,
+"naive_ci": [
+-5.5,
+1.5
+],
+"controlled": -2.0,
+"controlled_ci": [
+-5.5,
+1.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.0,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.0,
+"naive_ci": [
+-5.5,
+1.5
+],
+"controlled": -2.0,
+"controlled_ci": [
+-5.5,
+1.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.0,
+"tie_share_full": 0.005,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.25,
+"naive_ci": [
+-6.25,
+1.756
+],
+"controlled": 0.25,
+"controlled_ci": [
+-1.5,
+2.25
+],
+"controlled_minus_naive": 2.5,
+"cmn_ci": null,
+"tie_share_arm": 0.065,
+"tie_share_full": 0.0475,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.25,
+"naive_ci": [
+-6.25,
+1.756
+],
+"controlled": -0.75,
+"controlled_ci": [
+-4.25,
+3.0
+],
+"controlled_minus_naive": 1.5,
+"cmn_ci": null,
+"tie_share_arm": 0.065,
+"tie_share_full": 0.0475,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.25,
+"naive_ci": [
+-6.25,
+1.756
+],
+"controlled": -1.0,
+"controlled_ci": [
+-4.5,
+2.5
+],
+"controlled_minus_naive": 1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.065,
+"tie_share_full": 0.0475,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.0,
+"naive_ci": [
+-3.5,
+3.5
+],
+"controlled": -1.0,
+"controlled_ci": [
+-2.5,
+0.25
+],
+"controlled_minus_naive": -1.0,
+"cmn_ci": null,
+"tie_share_arm": 0.025,
+"tie_share_full": 0.0475,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.0,
+"naive_ci": [
+-3.5,
+3.5
+],
+"controlled": 0.5,
+"controlled_ci": [
+-1.75,
+3.25
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.025,
+"tie_share_full": 0.0475,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.0,
+"naive_ci": [
+-3.5,
+3.5
+],
+"controlled": 0.25,
+"controlled_ci": [
+-2.5,
+3.0
+],
+"controlled_minus_naive": 0.25,
+"cmn_ci": null,
+"tie_share_arm": 0.025,
+"tie_share_full": 0.0475,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 2.0,
+"naive_ci": [
+-4.0,
+7.75
+],
+"controlled": -0.5,
+"controlled_ci": [
+-5.0,
+4.25
+],
+"controlled_minus_naive": -2.5,
+"cmn_ci": null,
+"tie_share_arm": 0.035,
+"tie_share_full": 0.03,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 2.0,
+"naive_ci": [
+-4.0,
+7.75
+],
+"controlled": -1.0,
+"controlled_ci": [
+-5.75,
+3.75
+],
+"controlled_minus_naive": -3.0,
+"cmn_ci": null,
+"tie_share_arm": 0.035,
+"tie_share_full": 0.03,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 2.0,
+"naive_ci": [
+-4.0,
+7.75
+],
+"controlled": -1.0,
+"controlled_ci": [
+-6.25,
+4.0
+],
+"controlled_minus_naive": -3.0,
+"cmn_ci": null,
+"tie_share_arm": 0.035,
+"tie_share_full": 0.03,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 1.75,
+"naive_ci": [
+-3.0,
+6.75
+],
+"controlled": 0.5,
+"controlled_ci": [
+-3.75,
+4.75
+],
+"controlled_minus_naive": -1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.0375,
+"tie_share_full": 0.03,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 1.75,
+"naive_ci": [
+-3.0,
+6.75
+],
+"controlled": 0.75,
+"controlled_ci": [
+-4.0,
+5.5
+],
+"controlled_minus_naive": -1.0,
+"cmn_ci": null,
+"tie_share_arm": 0.0375,
+"tie_share_full": 0.03,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 1.75,
+"naive_ci": [
+-3.0,
+6.75
+],
+"controlled": 1.0,
+"controlled_ci": [
+-3.75,
+5.75
+],
+"controlled_minus_naive": -0.75,
+"cmn_ci": null,
+"tie_share_arm": 0.0375,
+"tie_share_full": 0.03,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -7.25,
+"naive_ci": [
+-11.25,
+-3.25
+],
+"controlled": -6.0,
+"controlled_ci": [
+-9.75,
+-2.25
+],
+"controlled_minus_naive": 1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.0175,
+"tie_share_full": 0.0225,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -7.25,
+"naive_ci": [
+-11.25,
+-3.25
+],
+"controlled": -5.25,
+"controlled_ci": [
+-9.0,
+-1.5
+],
+"controlled_minus_naive": 2.0,
+"cmn_ci": null,
+"tie_share_arm": 0.0175,
+"tie_share_full": 0.0225,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|access|NOPEER",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -7.25,
+"naive_ci": [
+-11.25,
+-3.25
+],
+"controlled": -6.75,
+"controlled_ci": [
+-10.75,
+-3.0
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.0175,
+"tie_share_full": 0.0225,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -1.25,
+"naive_ci": [
+-5.75,
+3.5
+],
+"controlled": -1.5,
+"controlled_ci": [
+-5.75,
+2.75
+],
+"controlled_minus_naive": -0.25,
+"cmn_ci": null,
+"tie_share_arm": 0.0225,
+"tie_share_full": 0.0225,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -1.25,
+"naive_ci": [
+-5.75,
+3.5
+],
+"controlled": -1.75,
+"controlled_ci": [
+-6.0,
+2.75
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.0225,
+"tie_share_full": 0.0225,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|content|ANSONLY",
+"dataset": "strategyqa",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -1.25,
+"naive_ci": [
+-5.75,
+3.5
+],
+"controlled": -2.75,
+"controlled_ci": [
+-7.0,
+1.75
+],
+"controlled_minus_naive": -1.5,
+"cmn_ci": null,
+"tie_share_arm": 0.0225,
+"tie_share_full": 0.0225,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 11.5,
+"naive_ci": [
+3.5,
+20.0
+],
+"controlled": 11.5,
+"controlled_ci": [
+4.5,
+19.0
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.34,
+"tie_share_full": 0.01,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 11.5,
+"naive_ci": [
+3.5,
+20.0
+],
+"controlled": 11.0,
+"controlled_ci": [
+3.0,
+19.0
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.34,
+"tie_share_full": 0.01,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 11.5,
+"naive_ci": [
+3.5,
+20.0
+],
+"controlled": 11.0,
+"controlled_ci": [
+3.0,
+19.0
+],
+"controlled_minus_naive": -0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.34,
+"tie_share_full": 0.01,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "ford|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 7.0,
+"naive_ci": [
+1.0,
+13.5
+],
+"controlled": 7.0,
+"controlled_ci": [
+1.0,
+13.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.02,
+"tie_share_full": 0.01,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "ford|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 7.0,
+"naive_ci": [
+1.0,
+13.5
+],
+"controlled": 8.0,
+"controlled_ci": [
+2.0,
+14.5
+],
+"controlled_minus_naive": 1.0,
+"cmn_ci": null,
+"tie_share_arm": 0.02,
+"tie_share_full": 0.01,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "ford|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 7.0,
+"naive_ci": [
+1.0,
+13.5
+],
+"controlled": 8.0,
+"controlled_ci": [
+2.0,
+14.5
+],
+"controlled_minus_naive": 1.0,
+"cmn_ci": null,
+"tie_share_arm": 0.02,
+"tie_share_full": 0.01,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -1.5,
+"naive_ci": [
+-5.5,
+2.5
+],
+"controlled": 0.5,
+"controlled_ci": [
+-2.75,
+3.75
+],
+"controlled_minus_naive": 2.0,
+"cmn_ci": null,
+"tie_share_arm": 0.1,
+"tie_share_full": 0.105,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -1.5,
+"naive_ci": [
+-5.5,
+2.5
+],
+"controlled": -0.25,
+"controlled_ci": [
+-3.75,
+3.5
+],
+"controlled_minus_naive": 1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.1,
+"tie_share_full": 0.105,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -1.5,
+"naive_ci": [
+-5.5,
+2.5
+],
+"controlled": -0.5,
+"controlled_ci": [
+-4.25,
+3.25
+],
+"controlled_minus_naive": 1.0,
+"cmn_ci": null,
+"tie_share_arm": 0.1,
+"tie_share_full": 0.105,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.75,
+"naive_ci": [
+-2.75,
+4.25
+],
+"controlled": 0.0,
+"controlled_ci": [
+-2.75,
+2.75
+],
+"controlled_minus_naive": -0.75,
+"cmn_ci": null,
+"tie_share_arm": 0.05,
+"tie_share_full": 0.105,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.75,
+"naive_ci": [
+-2.75,
+4.25
+],
+"controlled": 1.25,
+"controlled_ci": [
+-2.25,
+4.75
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.05,
+"tie_share_full": 0.105,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "du_mad|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 0.75,
+"naive_ci": [
+-2.75,
+4.25
+],
+"controlled": 1.0,
+"controlled_ci": [
+-2.0,
+4.25
+],
+"controlled_minus_naive": 0.25,
+"cmn_ci": null,
+"tie_share_arm": 0.05,
+"tie_share_full": 0.105,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 1.75,
+"naive_ci": [
+-3.25,
+7.0
+],
+"controlled": -2.25,
+"controlled_ci": [
+-6.5,
+2.25
+],
+"controlled_minus_naive": -4.0,
+"cmn_ci": null,
+"tie_share_arm": 0.1325,
+"tie_share_full": 0.1425,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 1.75,
+"naive_ci": [
+-3.25,
+7.0
+],
+"controlled": -0.75,
+"controlled_ci": [
+-5.75,
+4.25
+],
+"controlled_minus_naive": -2.5,
+"cmn_ci": null,
+"tie_share_arm": 0.1325,
+"tie_share_full": 0.1425,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": true,
+"significance": "same",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": 1.75,
+"naive_ci": [
+-3.25,
+7.0
+],
+"controlled": 0.5,
+"controlled_ci": [
+-4.75,
+5.75
+],
+"controlled_minus_naive": -1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.1325,
+"tie_share_full": 0.1425,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-6.0,
+5.0
+],
+"controlled": -2.75,
+"controlled_ci": [
+-6.75,
+1.25
+],
+"controlled_minus_naive": -2.25,
+"cmn_ci": null,
+"tie_share_arm": 0.105,
+"tie_share_full": 0.1425,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-6.0,
+5.0
+],
+"controlled": -2.5,
+"controlled_ci": [
+-7.0,
+1.75
+],
+"controlled_minus_naive": -2.0,
+"cmn_ci": null,
+"tie_share_arm": 0.105,
+"tie_share_full": 0.1425,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "madm2_objective|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -0.5,
+"naive_ci": [
+-6.0,
+5.0
+],
+"controlled": 0.0,
+"controlled_ci": [
+-4.75,
+4.75
+],
+"controlled_minus_naive": 0.5,
+"cmn_ci": null,
+"tie_share_arm": 0.105,
+"tie_share_full": 0.1425,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -5.5,
+"naive_ci": [
+-10.75,
+-0.5
+],
+"controlled": -5.5,
+"controlled_ci": [
+-10.0,
+-1.25
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.025,
+"tie_share_full": 0.025,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -5.5,
+"naive_ci": [
+-10.75,
+-0.5
+],
+"controlled": -4.25,
+"controlled_ci": [
+-8.5,
+0.0
+],
+"controlled_minus_naive": 1.25,
+"cmn_ci": null,
+"tie_share_arm": 0.025,
+"tie_share_full": 0.025,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "lost",
+"stable": false
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|access|NOPEER",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -5.5,
+"naive_ci": [
+-10.75,
+-0.5
+],
+"controlled": -5.25,
+"controlled_ci": [
+-9.75,
+-0.75
+],
+"controlled_minus_naive": 0.25,
+"cmn_ci": null,
+"tie_share_arm": 0.025,
+"tie_share_full": 0.025,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "first",
+"cell": "bccs|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.5,
+"naive_ci": [
+-7.0,
+2.0
+],
+"controlled": -2.75,
+"controlled_ci": [
+-6.75,
+1.25
+],
+"controlled_minus_naive": -0.25,
+"cmn_ci": null,
+"tie_share_arm": 0.0325,
+"tie_share_full": 0.025,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "last",
+"cell": "bccs|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.5,
+"naive_ci": [
+-7.0,
+2.0
+],
+"controlled": -2.5,
+"controlled_ci": [
+-6.75,
+1.5
+],
+"controlled_minus_naive": 0.0,
+"cmn_ci": null,
+"tie_share_arm": 0.0325,
+"tie_share_full": 0.025,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S5",
+"tie": "keep",
+"cell": "bccs|content|ANSONLY",
+"dataset": "mmlu_pro",
+"n": 100,
+"metric": "QA accuracy",
+"naive": -2.5,
+"naive_ci": [
+-7.0,
+2.0
+],
+"controlled": -1.5,
+"controlled_ci": [
+-5.75,
+2.5
+],
+"controlled_minus_naive": 1.0,
+"cmn_ci": null,
+"tie_share_arm": 0.0325,
+"tie_share_full": 0.025,
+"label": "estimand change (return operation)",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "same",
+"stable": true
+},
+{
+"family": "S6",
+"cell": "reconcile|roster|FULL",
+"dataset": "wdc_products",
+"n": null,
+"metric": "pair F1 pp (declines charged \u2212 delivered only)",
+"naive": -74.12,
+"naive_ci": null,
+"controlled": 0.0,
+"controlled_ci": null,
+"controlled_minus_naive": 74.12,
+"cmn_ci": null,
+"partial_population": false,
+"label": "measurement correction",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "no interval",
+"stable": false,
+"note": "naive effect vanishes (controlled = 0); no interval in source"
+},
+{
+"family": "S6",
+"cell": "reconcile|roster|FULL",
+"dataset": "geographic_settlements",
+"n": null,
+"metric": "pair F1 pp (declines charged \u2212 delivered only)",
+"naive": -55.36,
+"naive_ci": null,
+"controlled": 0.0,
+"controlled_ci": null,
+"controlled_minus_naive": 55.36,
+"cmn_ci": null,
+"partial_population": false,
+"label": "measurement correction",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "no interval",
+"stable": false,
+"note": "naive effect vanishes (controlled = 0); no interval in source"
+},
+{
+"family": "S6",
+"cell": "reconcile|roster|FULL",
+"dataset": "musicbrainz (local ~15% subset)",
+"n": null,
+"metric": "pair F1 pp (declines charged \u2212 delivered only)",
+"naive": -71.71,
+"naive_ci": null,
+"controlled": 0.0,
+"controlled_ci": null,
+"controlled_minus_naive": 71.71,
+"cmn_ci": null,
+"partial_population": true,
+"label": "measurement correction",
+"naive_undefined": false,
+"sign_change": false,
+"significance": "no interval",
+"stable": false,
+"note": "naive effect vanishes (controlled = 0); no interval in source"
+}
+]

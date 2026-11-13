@@ -1,0 +1,5 @@
+benchmark,pool,candidate_calls,input_tokens,output_tokens
+bird,original,6136,4032449,300267
+bird,qwen3_glm,6136,3914564,8800060
+spider,original,4136,854321,134911
+spider,qwen3_glm,4136,770314,3973652

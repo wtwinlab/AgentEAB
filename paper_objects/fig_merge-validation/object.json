@@ -1,0 +1,1012 @@
+{
+ "id": "fig_merge-validation",
+ "labels": [
+  "fig:merge-validation",
+  "sec:downstream",
+  "abstract",
+  "sec:s-grouping",
+  "tab:s-reversals",
+  "tab:s-relations"
+ ],
+ "section": "VI-F (sec:downstream); abstract; Supplementary S6-H (sec:s-grouping)",
+ "title": "Using pair judgments to form groups",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "plot": [
+  "python3",
+  "code/plot.py"
+ ],
+ "values": [
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "comparisons of the two grouping rules",
+   "printed": "48",
+   "key": "cc_vs_center_comparisons"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "connected components minus center, MusicBrainz, lowest",
+   "printed": "5.12",
+   "key": "cc_minus_center_musicbrainz_min_pp"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "connected components minus center, MusicBrainz, highest",
+   "printed": "17.19",
+   "key": "cc_minus_center_musicbrainz_max_pp"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "connected components minus center, WDC, lowest",
+   "printed": "0.26",
+   "key": "cc_minus_center_wdc_min_pp"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "connected components minus center, WDC, highest",
+   "printed": "0.54",
+   "key": "cc_minus_center_wdc_max_pp"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "connected components minus center, Settlements, lowest",
+   "printed": "-8.32",
+   "key": "cc_minus_center_settlements_min_pp"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "connected components minus center, Settlements, highest",
+   "printed": "+0.67",
+   "key": "cc_minus_center_settlements_max_pp"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Settlements configurations in the comparison (nine of 16 negative)",
+   "printed": "16",
+   "key": "cc_minus_center_settlements_n"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Qwen2.5-32B decision sharing, pair F1 change",
+   "printed": "+0.03",
+   "key": "share_q32b_decisions_pair_pp"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Qwen2.5-32B decision sharing, cluster F1 loss",
+   "printed": "3.05",
+   "key": "share_q32b_decisions_cluster_pp",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "changed direct judgments",
+   "printed": "23",
+   "key": "q32_changed_judgments"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "direct judgments (candidate pairs)",
+   "printed": "4,719",
+   "key": "settlements_sharing_pairs"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "added group relations",
+   "printed": "147",
+   "key": "q32_added_relations"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "added relations that are incorrect indirect relations",
+   "printed": "133",
+   "key": "q32_added_indirect_false"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "reversals between pair F1 and cluster F1",
+   "printed": "34",
+   "key": "reversals"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "sharing-grouping combinations",
+   "printed": "990",
+   "key": "combinations"
+  },
+  {
+   "label": "abstract",
+   "tex_file": "sections/00_abstract.tex",
+   "where": "changed judgments",
+   "printed": "23",
+   "key": "q32_changed_judgments"
+  },
+  {
+   "label": "abstract",
+   "tex_file": "sections/00_abstract.tex",
+   "where": "incorrect indirect relations",
+   "printed": "133",
+   "key": "q32_added_indirect_false"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "WDC true matches inside the candidate pairs",
+   "printed": "500",
+   "key": "wdc_true_matches_in_candidates"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "WDC true matches",
+   "printed": "2,970",
+   "key": "wdc_true_matches"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "WDC cap on direct-link F1",
+   "printed": "0.2882",
+   "key": "wdc_direct_link_f1_cap"
+  },
+  {
+   "label": "sec:downstream",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Settlements candidate coverage of true matches (%)",
+   "printed": "99.35",
+   "key": "settlements_candidate_coverage_pct"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "sharing configurations",
+   "printed": "66",
+   "key": "sharing_configurations"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "combinations",
+   "printed": "990",
+   "key": "combinations"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "combinations improving both metrics",
+   "printed": "655",
+   "key": "both_up"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "combinations lowering both metrics",
+   "printed": "272",
+   "key": "both_down"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "reversals",
+   "printed": "34",
+   "key": "reversals"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "pair F1 changes, cluster F1 unchanged",
+   "printed": "29",
+   "key": "pair_change_cluster_unchanged"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "configurations reversing under at least one rule",
+   "printed": "13",
+   "key": "configurations_with_reversal"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "reversals with changes below 0.10 pp treated as zero",
+   "printed": "11",
+   "key": "reversals_band010"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "pair-up/group-down: median cluster change",
+   "printed": "-0.27",
+   "key": "pairup_groupdown_cluster_median_pp"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "pair-up/group-down: lowest cluster change",
+   "printed": "-3.38",
+   "key": "pairup_groupdown_cluster_min_pp"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "pair-up/group-down: highest cluster change",
+   "printed": "-0.01",
+   "key": "pairup_groupdown_cluster_max_pp"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "pair-down/group-up: largest cluster gain (below 0.30)",
+   "printed": "0.30",
+   "key": "pairdown_groupup_cluster_max_pp"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "full-population example: pair F1 change",
+   "printed": "+0.026",
+   "key": "share_q32b_decisions_pair_pp"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "full-population example: cluster F1 change",
+   "printed": "-3.053",
+   "key": "share_q32b_decisions_cluster_pp"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "changed judgments that are true matches",
+   "printed": "12",
+   "key": "q32_changed_correct"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "changed judgments that are false matches",
+   "printed": "11",
+   "key": "q32_changed_incorrect"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "added group relations",
+   "printed": "147",
+   "key": "q32_added_relations"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "added relations that are direct",
+   "printed": "14",
+   "key": "q32_added_direct"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "added relations that are indirect (all false)",
+   "printed": "133",
+   "key": "q32_added_indirect_false"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "largest merge: records",
+   "printed": "15",
+   "key": "q32_largest_merge_size"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "entity-disjoint counterpart: cluster F1 change",
+   "printed": "-0.55",
+   "key": "entity_disjoint_counterpart_cluster_pp"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "WDC: combinations",
+   "printed": "330",
+   "key": "rev_wdc_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "WDC: pair up, group down",
+   "printed": "2",
+   "key": "rev_wdc_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "WDC: pair down, group up",
+   "printed": "11",
+   "key": "rev_wdc_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "WDC: reversals with the 0.10-pp near-zero band",
+   "printed": "2",
+   "key": "rev_wdc_band010"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements: combinations",
+   "printed": "330",
+   "key": "rev_settlements_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements: pair up, group down",
+   "printed": "18",
+   "key": "rev_settlements_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements: pair down, group up",
+   "printed": "3",
+   "key": "rev_settlements_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements: reversals with the 0.10-pp near-zero band",
+   "printed": "9",
+   "key": "rev_settlements_band010"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "MusicBrainz: combinations",
+   "printed": "330",
+   "key": "rev_musicbrainz_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "MusicBrainz: pair up, group down",
+   "printed": "0",
+   "key": "rev_musicbrainz_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "MusicBrainz: pair down, group up",
+   "printed": "0",
+   "key": "rev_musicbrainz_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "MusicBrainz: reversals with the 0.10-pp near-zero band",
+   "printed": "0",
+   "key": "rev_musicbrainz_band010"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Center: combinations",
+   "printed": "66",
+   "key": "rev_center_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Center: pair up, group down",
+   "printed": "0",
+   "key": "rev_center_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Center: pair down, group up",
+   "printed": "0",
+   "key": "rev_center_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Connected components: combinations",
+   "printed": "66",
+   "key": "rev_connected_components_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Connected components: pair up, group down",
+   "printed": "3",
+   "key": "rev_connected_components_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Connected components: pair down, group up",
+   "printed": "1",
+   "key": "rev_connected_components_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Merge-center: combinations",
+   "printed": "66",
+   "key": "rev_merge_center_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Merge-center: pair up, group down",
+   "printed": "2",
+   "key": "rev_merge_center_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Merge-center: pair down, group up",
+   "printed": "1",
+   "key": "rev_merge_center_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Disjoint-star: combinations",
+   "printed": "66",
+   "key": "rev_star_disjoint_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Disjoint-star: pair up, group down",
+   "printed": "2",
+   "key": "rev_star_disjoint_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Disjoint-star: pair down, group up",
+   "printed": "0",
+   "key": "rev_star_disjoint_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Greedy correlation: combinations",
+   "printed": "396",
+   "key": "rev_correlation_greedy_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Greedy correlation: pair up, group down",
+   "printed": "6",
+   "key": "rev_correlation_greedy_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Greedy correlation: pair down, group up",
+   "printed": "9",
+   "key": "rev_correlation_greedy_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Markov: combinations",
+   "printed": "330",
+   "key": "rev_markov_n"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Markov: pair up, group down",
+   "printed": "7",
+   "key": "rev_markov_pairup_groupdown"
+  },
+  {
+   "label": "tab:s-reversals",
+   "tex_file": "supplementary.tex",
+   "where": "Markov: pair down, group up",
+   "printed": "3",
+   "key": "rev_markov_pairdown_groupup"
+  },
+  {
+   "label": "tab:s-relations",
+   "tex_file": "supplementary.tex",
+   "where": "added true relations",
+   "printed": "5",
+   "key": "q32_added_true"
+  },
+  {
+   "label": "tab:s-relations",
+   "tex_file": "supplementary.tex",
+   "where": "added false relations",
+   "printed": "142",
+   "key": "q32_added_false"
+  },
+  {
+   "label": "tab:s-relations",
+   "tex_file": "supplementary.tex",
+   "where": "removed true relations",
+   "printed": "0",
+   "key": "q32_removed_true"
+  },
+  {
+   "label": "tab:s-relations",
+   "tex_file": "supplementary.tex",
+   "where": "removed false relations",
+   "printed": "0",
+   "key": "q32_removed_false"
+  },
+  {
+   "label": "tab:s-relations",
+   "tex_file": "supplementary.tex",
+   "where": "cluster F1 change",
+   "printed": "-3.05",
+   "key": "share_q32b_decisions_cluster_pp"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q7, column Pairs",
+   "printed": "0.585",
+   "key": "fig_wdc_qwen2.5-7b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q7, column Direct links",
+   "printed": "0.152",
+   "key": "fig_wdc_qwen2.5-7b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q7, column Groups",
+   "printed": "0.166",
+   "key": "fig_wdc_qwen2.5-7b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row L8, column Pairs",
+   "printed": "0.316",
+   "key": "fig_wdc_llama-3-8b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row L8, column Direct links",
+   "printed": "0.175",
+   "key": "fig_wdc_llama-3-8b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row L8, column Groups",
+   "printed": "0.003",
+   "key": "fig_wdc_llama-3-8b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row M7, column Pairs",
+   "printed": "0.511",
+   "key": "fig_wdc_mistral-7b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row M7, column Direct links",
+   "printed": "0.136",
+   "key": "fig_wdc_mistral-7b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row M7, column Groups",
+   "printed": "0.156",
+   "key": "fig_wdc_mistral-7b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q14, column Pairs",
+   "printed": "0.763",
+   "key": "fig_wdc_qwen2.5-14b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q14, column Direct links",
+   "printed": "0.231",
+   "key": "fig_wdc_qwen2.5-14b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q14, column Groups",
+   "printed": "0.248",
+   "key": "fig_wdc_qwen2.5-14b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q32, column Pairs",
+   "printed": "0.749",
+   "key": "fig_wdc_qwen2.5-32b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q32, column Direct links",
+   "printed": "0.209",
+   "key": "fig_wdc_qwen2.5-32b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q32, column Groups",
+   "printed": "0.226",
+   "key": "fig_wdc_qwen2.5-32b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q72, column Pairs",
+   "printed": "0.772",
+   "key": "fig_wdc_qwen2.5-72b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q72, column Direct links",
+   "printed": "0.219",
+   "key": "fig_wdc_qwen2.5-72b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Q72, column Groups",
+   "printed": "0.232",
+   "key": "fig_wdc_qwen2.5-72b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Vote, column Pairs",
+   "printed": "0.744",
+   "key": "fig_wdc_majority_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Vote, column Direct links",
+   "printed": "0.207",
+   "key": "fig_wdc_majority_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (a) WDC, row Vote, column Groups",
+   "printed": "0.223",
+   "key": "fig_wdc_majority_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q7, column Pairs",
+   "printed": "0.848",
+   "key": "fig_settlements_qwen2.5-7b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q7, column Direct links",
+   "printed": "0.845",
+   "key": "fig_settlements_qwen2.5-7b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q7, column Groups",
+   "printed": "0.874",
+   "key": "fig_settlements_qwen2.5-7b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row L8, column Pairs",
+   "printed": "0.928",
+   "key": "fig_settlements_llama-3-8b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row L8, column Direct links",
+   "printed": "0.925",
+   "key": "fig_settlements_llama-3-8b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row L8, column Groups",
+   "printed": "0.113",
+   "key": "fig_settlements_llama-3-8b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row M7, column Pairs",
+   "printed": "0.940",
+   "key": "fig_settlements_mistral-7b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row M7, column Direct links",
+   "printed": "0.937",
+   "key": "fig_settlements_mistral-7b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row M7, column Groups",
+   "printed": "0.172",
+   "key": "fig_settlements_mistral-7b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q14, column Pairs",
+   "printed": "0.965",
+   "key": "fig_settlements_qwen2.5-14b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q14, column Direct links",
+   "printed": "0.961",
+   "key": "fig_settlements_qwen2.5-14b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q14, column Groups",
+   "printed": "0.975",
+   "key": "fig_settlements_qwen2.5-14b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q32, column Pairs",
+   "printed": "0.994",
+   "key": "fig_settlements_qwen2.5-32b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q32, column Direct links",
+   "printed": "0.991",
+   "key": "fig_settlements_qwen2.5-32b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q32, column Groups",
+   "printed": "0.992",
+   "key": "fig_settlements_qwen2.5-32b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q72, column Pairs",
+   "printed": "0.993",
+   "key": "fig_settlements_qwen2.5-72b_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q72, column Direct links",
+   "printed": "0.990",
+   "key": "fig_settlements_qwen2.5-72b_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Q72, column Groups",
+   "printed": "0.986",
+   "key": "fig_settlements_qwen2.5-72b_groups"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Vote, column Pairs",
+   "printed": "0.993",
+   "key": "fig_settlements_majority_pairs"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Vote, column Direct links",
+   "printed": "0.990",
+   "key": "fig_settlements_majority_direct"
+  },
+  {
+   "label": "fig:merge-validation",
+   "figure": "figures/merge_validation.pdf",
+   "where": "panel (b) Settlements, row Vote, column Groups",
+   "printed": "0.984",
+   "key": "fig_settlements_majority_groups"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "largest merge: false indirect pairs it adds",
+   "printed": "78",
+   "key": "q32_largest_merge_added_false_indirect"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "largest merge: false indirect pairs it contributes",
+   "printed": "78",
+   "key": "q32_largest_merge_added_false_indirect"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "separate judgment collection: Settlements test records",
+   "printed": "1,494",
+   "key": "settlements_test_records"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "separate judgment collection: candidate pairs",
+   "printed": "4,719",
+   "key": "settlements_candidate_pairs"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements example: changed links that join previously separate components",
+   "printed": "14",
+   "key": "q32_bridging_links"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "the nine incorrect bridges applied alone: false relations added",
+   "printed": "130",
+   "key": "q32_incorrect_bridges_alone_false"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "Settlements example: relations added by the 14 joining edges, each applied individually, in total",
+   "printed": "141",
+   "key": "q32_bridges_alone_relations"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "joint closure of the changed links: relations added",
+   "printed": "147",
+   "key": "q32_added_relations"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "largest single-link addition (relations)",
+   "printed": "20",
+   "key": "q32_largest_single_bridge_relations"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "second judgment collection: relations added",
+   "printed": "24",
+   "key": "second_q32_added_relations"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "second judgment collection: false indirect relations added",
+   "printed": "22",
+   "key": "second_q32_added_indirect_false"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "second judgment collection: pair F1 change (pp)",
+   "printed": "+0.05",
+   "key": "entity_disjoint_counterpart_pair_pp"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "second judgment collection: cluster F1 change (pp)",
+   "printed": "-0.55",
+   "key": "entity_disjoint_counterpart_cluster_pp"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "test configurations",
+   "printed": "66",
+   "key": "sharing_configurations"
+  },
+  {
+   "label": "sec:s-grouping",
+   "tex_file": "supplementary.tex",
+   "where": "test configurations whose sharing effect on cluster F1 changes sign across the grouping settings",
+   "printed": "13",
+   "key": "configurations_sign_differs_across_settings"
+  }
+ ],
+ "unreproduced": [],
+ "statements": [
+  {
+   "text": "Qwen2.5-32B decision sharing on full-population Settlements: every changed judgment turns a non-match into a match",
+   "key": "q32_match_to_nonmatch",
+   "expected": 0
+  },
+  {
+   "text": "Qwen2.5-32B decision sharing: nine of the links that join separate components are incorrect",
+   "key": "q32_bridging_links_incorrect",
+   "expected": 9
+  },
+  {
+   "text": "Each incorrect joining link adds too few true relations to satisfy the cluster-F1 improvement condition",
+   "key": "q32_incorrect_bridges_above_condition",
+   "expected": 0
+  },
+  {
+   "text": "Under connected components the changed judgments cause nine component merges",
+   "key": "q32_merges",
+   "expected": 9
+  },
+  {
+   "text": "The largest merge joins four components",
+   "key": "q32_largest_merge_groups_before",
+   "expected": 4
+  },
+  {
+   "text": "The largest merge spans five reference entities",
+   "key": "q32_largest_merge_entities",
+   "expected": 5
+  },
+  {
+   "text": "The second judgment collection changes ten judgments",
+   "key": "second_q32_changed_judgments",
+   "expected": 10
+  },
+  {
+   "text": "Nine of the 16 Settlements configurations are negative (connected components minus center)",
+   "key": "cc_minus_center_settlements_negative",
+   "expected": 9
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+"""Native source allowlist with content hashes.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+from dataclasses import dataclass
+from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple
+
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+VENDOR = os.path.join(REPO, "vendor")
+
+
+class NotNativeSource(RuntimeError):
+    """A path that is not on the frozen native allowlist. There is no fallback."""
+
+
+@dataclass(frozen=True)
+class NativeScenario:
+    family: str                 # independent scenario family
+    variant: Optional[str]      # None for the family's own base case
+    rel_path: str
+    content_sha: str
+
+
+#: The only negotiation scenarios that may enter a main manifest.
+NEGOTIATION_ALLOWLIST: Tuple[Tuple[str, Optional[str], str], ...] = (
+    ("base", None, "llmdelib/games_descriptions/base"),
+    ("base", "rewritten", "llmdelib/games_descriptions/base_rewritten"),
+    ("base", "7players", "llmdelib/games_descriptions/base_7players"),
+    ("game1", None, "llmdelib/games_descriptions/game1"),
+    ("game2", None, "llmdelib/games_descriptions/game2"),
+    ("game3", None, "llmdelib/games_descriptions/game3"),
+)
+
+#: Independent families for any analysis that treats scenarios as units.
+NEGOTIATION_FAMILIES = ("base", "game1", "game2", "game3")
+
+DELIB_SOURCES: Tuple[Tuple[str, str, str], ...] = (
+    ("task_allocation", "level_1_and_2",
+     "delib/data/task_allocation/games/task_allocation_games/games/level_1_and_2"),
+    ("cooking", "level_1_and_2", "delib/data/cooking/games/test_games/games/level_1_and_2"),
+    ("cooking", "level_3", "delib/data/cooking/games/test_games/games/level_3"),
+)
+
+
+def _dir_sha(path: str) -> str:
+    """Hash of a directory's file names and contents, order-independent."""
+    h = hashlib.sha256()
+    for root, dirs, files in os.walk(path):
+        dirs.sort()
+        for fn in sorted(files):
+            fp = os.path.join(root, fn)
+            h.update(os.path.relpath(fp, path).encode())
+            with open(fp, "rb") as f:
+                for chunk in iter(lambda: f.read(1 << 20), b""):
+                    h.update(chunk)
+    return h.hexdigest()
+
+
+def _file_sha(path: str) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def negotiation_scenarios(vendor: str = VENDOR) -> List[NativeScenario]:
+    out: List[NativeScenario] = []
+    for family, variant, rel in NEGOTIATION_ALLOWLIST:
+        p = os.path.join(vendor, rel)
+        if not os.path.isdir(p):
+            raise NotNativeSource(f"allowlisted native scenario missing: {rel}")
+        out.append(NativeScenario(family, variant, rel, _dir_sha(p)))
+    return out
+
+
+def assert_native_path(rel_path: str) -> None:
+    """Refuse anything not on the allowlist. Used by the loader before any task is admitted."""
+    allowed = {r for _f, _v, r in NEGOTIATION_ALLOWLIST}
+    if rel_path not in allowed:
+        raise NotNativeSource(
+            f"{rel_path!r} is not an allowlisted native scenario. The vendored directory also "
+            f"contains study-generated scenarios; provenance is never inferred from a path glob.")
+
+
+def delib_instances(vendor: str = VENDOR) -> Dict[str, List[Dict[str, Any]]]:
+    """Per-domain instance inventory with per-file hashes, for content-level dedup at G0."""
+    out: Dict[str, List[Dict[str, Any]]] = {}
+    for domain, level, rel in DELIB_SOURCES:
+        d = os.path.join(vendor, rel)
+        if not os.path.isdir(d):
+            raise NotNativeSource(f"delib source missing: {rel}")
+        rows = []
+        for fn in sorted(os.listdir(d)):
+            if not fn.endswith(".pkl"):
+                continue
+            fp = os.path.join(d, fn)
+            rows.append({"domain": domain, "level": level, "file": fn,
+                         "rel_path": f"{rel}/{fn}", "sha256": _file_sha(fp)})
+        out.setdefault(domain, []).extend(rows)
+    return out
+
+
+def source_manifest(vendor: str = VENDOR) -> Dict[str, Any]:
+    """The frozen, hashed native source manifest. Content-level dedup is reported, not applied
+silently: a duplicate must be a visible decision, not a vanished task."""
+    neg = negotiation_scenarios(vendor)
+    delib = delib_instances(vendor)
+    dup: Dict[str, List[str]] = {}
+    for domain, rows in delib.items():
+        by_sha: Dict[str, List[str]] = {}
+        for r in rows:
+            by_sha.setdefault(r["sha256"], []).append(f"{r['level']}/{r['file']}")
+        dup[domain] = [v for v in by_sha.values() if len(v) > 1]
+    return {
+        "negotiation": {
+            "independent_families": list(NEGOTIATION_FAMILIES),
+            "scenarios": [s.__dict__ for s in neg],
+            "note": "base_rewritten and base_7players are variants of base, not independent tasks",
+        },
+        "delib": {
+            domain: {
+                "n_files": len(rows),
+                "by_level": {lv: sum(1 for r in rows if r["level"] == lv)
+                             for lv in sorted({r["level"] for r in rows})},
+                "duplicate_content_groups": dup[domain],
+                "files": rows,
+            }
+            for domain, rows in delib.items()
+        },
+    }
+
+
+if __name__ == "__main__":
+    m = source_manifest()
+    print("negotiation: %d allowlisted scenarios, %d independent families"
+          % (len(m["negotiation"]["scenarios"]), len(m["negotiation"]["independent_families"])))
+    for s in m["negotiation"]["scenarios"]:
+        print(f"   {s['family']:8s} {str(s['variant'] or '-'):10s} {s['content_sha'][:16]}  {s['rel_path']}")
+    for domain, d in m["delib"].items():
+        print(f"{domain}: {d['n_files']} files {d['by_level']}  "
+              f"duplicate content groups: {len(d['duplicate_content_groups'])}")

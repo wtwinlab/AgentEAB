@@ -1,0 +1,17 @@
+backbone,series,calls,x,accuracy,y
+llama3-8b,debate,6,0,20.7071,0.84
+llama3-8b,independent vote,6,0,24.2424,5.04
+llama3-8b,debate,9,15,26.7677,8.16
+llama3-8b,independent vote,9,15,26.2626,7.56
+llama3-8b,debate,10,20,25.5051,6.6
+llama3-8b,independent vote,10,20,26.2626,7.56
+llama3-8b,debate,12,30,23.9899,4.8
+llama3-8b,independent vote,12,30,26.2626,7.56
+qwen2.5-7b,debate,6,0,33.0808,15.72
+qwen2.5-7b,independent vote,6,0,37.3737,20.88
+qwen2.5-7b,debate,9,15,33.0808,15.72
+qwen2.5-7b,independent vote,9,15,41.9192,26.28
+qwen2.5-7b,debate,10,20,34.3434,17.16
+qwen2.5-7b,independent vote,10,20,41.4141,25.68
+qwen2.5-7b,debate,12,30,32.5758,15.12
+qwen2.5-7b,independent vote,12,30,41.4141,25.68

@@ -1,0 +1,398 @@
+{
+  "spec_version": "0.1",
+  "id": "chess_b1_formal",
+  "task": "chess",
+  "description": "CHESS B1 formal run (147 questions of sub_sampled_bird_dev_set, local Qwen3-32B, local embeddings, read-only execution): UT vs CHESS self-consistency vs paper voting rules on the list UT reads; first-* rules are diagnostics.",
+  "steps": [
+    "information_retrieval",
+    "candidate_generation",
+    "revision",
+    "ut_test_generation",
+    "ut_evaluate",
+    "evaluation_scoring"
+  ],
+  "decision_point": {
+    "after_step": "revision",
+    "before_step": "ut_test_generation",
+    "state_fields": [
+      "boundary_candidates",
+      "question",
+      "hint",
+      "db_id"
+    ]
+  },
+  "outputs": [
+    {
+      "id": "cg_candidates",
+      "producer": "candidate_generator.generate_candidate",
+      "produced_at_step": "candidate_generation",
+      "role": "candidate",
+      "provenance": "recorded",
+      "visible_to": [],
+      "note": "SQL_meta_infos['generate_candidate'] before revision; the Unit Tester reads only the last key, so these are historical candidates when revise ran"
+    },
+    {
+      "id": "boundary_candidates",
+      "producer": "candidate_generator",
+      "produced_at_step": "revision",
+      "role": "candidate",
+      "provenance": "recorded",
+      "visible_to": [
+        "UT_full",
+        "SC_official",
+        "Valid_vote",
+        "Nonempty_vote",
+        "Unfiltered_vote",
+        "First_executable_diag",
+        "First_nonempty_diag",
+        "UT_identity"
+      ],
+      "note": "list(state.SQL_meta_infos.keys())[-1] when the Unit Tester starts (generate_unit_test.py:28, evaluate.py:33); logged as 'candidates' of the generate_unit_test record and of the last revise record"
+    },
+    {
+      "id": "question_state",
+      "producer": "task",
+      "produced_at_step": "information_retrieval",
+      "role": "state",
+      "provenance": "recorded",
+      "visible_to": [
+        "UT_full",
+        "UT_identity"
+      ]
+    },
+    {
+      "id": "unit_tests",
+      "producer": "unit_tester.generate_unit_test",
+      "produced_at_step": "ut_test_generation",
+      "role": "state",
+      "provenance": "recorded",
+      "visible_to": [
+        "UT_full"
+      ]
+    },
+    {
+      "id": "gold_sql",
+      "producer": "benchmark",
+      "produced_at_step": "evaluation_scoring",
+      "role": "label",
+      "split": "test",
+      "provenance": "recorded",
+      "visible_to": [
+        "Any_correct"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "UT_full",
+      "role": "original",
+      "step": "ut_test_generation",
+      "replaces": null,
+      "consumes": [
+        "boundary_candidates",
+        "question_state"
+      ],
+      "produces": "final_sql",
+      "label_use": "none",
+      "information": "LLM unit-test generation over execution-result clusters, then one evaluate call per test over all candidates with execution results; highest summed score, ties to the largest execution cluster (evaluate.py:137-154)"
+    },
+    {
+      "id": "SC_official",
+      "role": "replacement",
+      "step": "ut_test_generation",
+      "replaces": "UT_full",
+      "consumes": [
+        "boundary_candidates"
+      ],
+      "produces": "final_sql",
+      "label_use": "none",
+      "extra_acquisition": [
+        "execute every boundary candidate (tool work, no model call); CHESS's UT executes them too"
+      ],
+      "information": "CHESS's own Evaluate.self_consistency (evaluate.py:106-114): first member of the largest execution-result cluster; defined but not called in the official flow"
+    },
+    {
+      "id": "Valid_vote",
+      "role": "replacement",
+      "step": "ut_test_generation",
+      "replaces": "UT_full",
+      "consumes": [
+        "boundary_candidates"
+      ],
+      "produces": "final_sql",
+      "label_use": "none",
+      "extra_acquisition": [
+        "execute boundary candidates in list order (tool work, no model call)"
+      ],
+      "information": "paper rule: vote by execution result over executable candidates, else Unfiltered_vote; ties lowest-sorted SQL text"
+    },
+    {
+      "id": "Nonempty_vote",
+      "role": "replacement",
+      "step": "ut_test_generation",
+      "replaces": "UT_full",
+      "consumes": [
+        "boundary_candidates"
+      ],
+      "produces": "final_sql",
+      "label_use": "none",
+      "extra_acquisition": [
+        "execute boundary candidates in list order (tool work, no model call)"
+      ],
+      "information": "paper rule: vote over executable non-empty candidates, else Valid_vote; ties lowest-sorted SQL text"
+    },
+    {
+      "id": "Unfiltered_vote",
+      "role": "replacement",
+      "step": "ut_test_generation",
+      "replaces": "UT_full",
+      "consumes": [
+        "boundary_candidates"
+      ],
+      "produces": "final_sql",
+      "label_use": "none",
+      "extra_acquisition": [
+        "execute boundary candidates in list order (tool work, no model call)"
+      ],
+      "information": "diagnostic: vote over all candidates, failures form status groups"
+    },
+    {
+      "id": "First_executable_diag",
+      "role": "replacement",
+      "step": "ut_test_generation",
+      "replaces": "UT_full",
+      "consumes": [
+        "boundary_candidates"
+      ],
+      "produces": "final_sql",
+      "label_use": "none",
+      "extra_acquisition": [
+        "execute boundary candidates in list order (tool work, no model call)"
+      ],
+      "information": "diagnostic only: first executable candidate in list order (not the paper's Valid)"
+    },
+    {
+      "id": "First_nonempty_diag",
+      "role": "replacement",
+      "step": "ut_test_generation",
+      "replaces": "UT_full",
+      "consumes": [
+        "boundary_candidates"
+      ],
+      "produces": "final_sql",
+      "label_use": "none",
+      "extra_acquisition": [
+        "execute boundary candidates in list order (tool work, no model call)"
+      ],
+      "information": "diagnostic only: first non-empty candidate in list order (not the paper's Nonempty)"
+    },
+    {
+      "id": "UT_identity",
+      "role": "identity",
+      "step": "ut_test_generation",
+      "replaces": "UT_full",
+      "consumes": [
+        "boundary_candidates",
+        "question_state"
+      ],
+      "produces": "final_sql",
+      "label_use": "none",
+      "information": "the logged UT selection standing in for UT (no-change check)"
+    },
+    {
+      "id": "Any_correct",
+      "role": "oracle_reference",
+      "step": "evaluation_scoring",
+      "replaces": null,
+      "consumes": [
+        "gold_sql"
+      ],
+      "produces": "final_sql",
+      "label_use": "oracle_reference",
+      "executable": false,
+      "information": "any boundary candidate correct (upper reference only)"
+    }
+  ],
+  "comparison": {
+    "contrasts": [
+      [
+        "UT_full",
+        "SC_official"
+      ],
+      [
+        "UT_full",
+        "Valid_vote"
+      ],
+      [
+        "UT_full",
+        "Nonempty_vote"
+      ],
+      [
+        "UT_full",
+        "Unfiltered_vote"
+      ],
+      [
+        "UT_full",
+        "First_executable_diag"
+      ],
+      [
+        "UT_full",
+        "First_nonempty_diag"
+      ],
+      [
+        "UT_full",
+        "UT_identity"
+      ]
+    ],
+    "varied": [
+      "final selection over the boundary candidates"
+    ],
+    "fixed": [
+      "boundary candidate list as retained and visible to the Unit Tester",
+      "database",
+      "scoring (set equality of execution results, CHESS compare_sqls)"
+    ],
+    "joint_changes": [
+      "UT also reads question, hint and schema and spends LLM calls on tests; the rules read only candidates and their execution results"
+    ],
+    "same_information_as_original": true,
+    "phases": {
+      "acquisition": "IR + candidate generation + revision (shared prefix, identical for every branch)",
+      "processing": "UT vs rules at the boundary",
+      "development": "none (rules fixed before any outcome is seen)"
+    }
+  },
+  "downstream": {
+    "suffix_steps": [
+      "evaluation_scoring"
+    ],
+    "recompute": "rescore",
+    "affects_control_flow": false,
+    "reuse_old_suffix": false,
+    "observable_dependencies_only": true
+  },
+  "unit": {
+    "key": [
+      "question_id"
+    ],
+    "pair_across": [],
+    "cluster": "db_id",
+    "weighting": "cluster_equal",
+    "repeat": {
+      "field": null,
+      "policy": "single"
+    }
+  },
+  "populations": {
+    "full": {
+      "definition": "every question with a logged boundary state",
+      "common_to": []
+    }
+  },
+  "missing_policy": {
+    "failed": "score_zero_keep",
+    "unresolved": "report",
+    "missing": "report"
+  },
+  "metric": {
+    "name": "execution_accuracy",
+    "adapter": "chess_b1",
+    "aggregator": "unit_mean",
+    "scale": "pp"
+  },
+  "labels": {
+    "scoring": true,
+    "dev_selection": false,
+    "runtime_input": false,
+    "test_best": "oracle_reference"
+  },
+  "costs": {
+    "components": [
+      {
+        "id": "ir_cg_revision_prefix",
+        "shared_prefix": true,
+        "added_to_arms": false,
+        "unit": "model calls / tokens"
+      },
+      {
+        "id": "ut_agent_tool_choice_calls",
+        "shared_prefix": false,
+        "added_to_arms": true,
+        "unit": "model calls",
+        "operations": [
+          "UT_full"
+        ]
+      },
+      {
+        "id": "ut_test_generation_call",
+        "shared_prefix": false,
+        "added_to_arms": true,
+        "unit": "model calls (1, skipped if <=1 candidate or 1 cluster)",
+        "operations": [
+          "UT_full"
+        ]
+      },
+      {
+        "id": "ut_evaluate_calls",
+        "shared_prefix": false,
+        "added_to_arms": true,
+        "unit": "model calls (one per test, up to 20 + 1 fixed test)",
+        "operations": [
+          "UT_full"
+        ]
+      },
+      {
+        "id": "candidate_execution",
+        "shared_prefix": false,
+        "added_to_arms": true,
+        "unit": "tool work",
+        "operations": [
+          "UT_full",
+          "SC_official",
+          "Valid_vote",
+          "Nonempty_vote",
+          "Unfiltered_vote",
+          "First_executable_diag",
+          "First_nonempty_diag",
+          "UT_identity"
+        ]
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": "experiments/10_chess_unit_tester/output/offline/per_question.json",
+      "role": "extracted B1 states, picks and scores"
+    },
+    {
+      "path": "experiments/10_chess_unit_tester/raw/formal_s{1,2,3}.jsonl",
+      "role": "every generation call"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ut_replaceable",
+      "statement": "a rule at the boundary matches or beats UT",
+      "needs_provenance_of": [
+        "boundary_candidates"
+      ]
+    }
+  ],
+  "analysis": {
+    "per_question": "experiments/10_chess_unit_tester/output/offline/per_question.json",
+    "ops_by_pool": {
+      "chess": [
+        "UT_full",
+        "SC_official",
+        "Valid_vote",
+        "Nonempty_vote",
+        "Unfiltered_vote",
+        "First_executable_diag",
+        "First_nonempty_diag",
+        "UT_identity"
+      ]
+    },
+    "estimates": []
+  },
+  "targets": []
+}

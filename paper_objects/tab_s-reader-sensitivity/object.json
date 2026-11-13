@@ -1,0 +1,1809 @@
+{
+ "id": "tab_s-reader-sensitivity",
+ "labels": [
+  "tab:s-reader-sensitivity",
+  "sec:s-reader-sensitivity",
+  "sec:s-reader-audit",
+  "sec:s-framework",
+  "sec:evaluation-checks",
+  "sec:peer-controls"
+ ],
+ "section": "Supplementary S6-F (sec:s-reader-sensitivity), S2-D (sec:s-reader-audit) and S2; validation paragraph of IV (sec:evaluation-checks); extractor sentences of VI-C (sec:peer-controls)",
+ "title": "Sensitivity of the 1,531-question effects to errors of the lenient extractor; extractor audits",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, lenient extractor",
+   "printed": "-2.30",
+   "key": "DuMAD_2cell|last|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, own extractor only",
+   "printed": "-1.00",
+   "key": "DuMAD_2cell|last|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, own extractor only, CI questions, lower",
+   "printed": "-1.65",
+   "key": "DuMAD_2cell|last|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, own extractor only, CI questions, upper",
+   "printed": "-0.38",
+   "key": "DuMAD_2cell|last|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, own extractor only, CI databases, lower",
+   "printed": "-1.53",
+   "key": "DuMAD_2cell|last|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, own extractor only, CI databases, upper",
+   "printed": "-0.42",
+   "key": "DuMAD_2cell|last|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, extractor's candidates",
+   "printed": "-2.17",
+   "key": "DuMAD_2cell|last|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-3.23",
+   "key": "DuMAD_2cell|last|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "-1.18",
+   "key": "DuMAD_2cell|last|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-3.06",
+   "key": "DuMAD_2cell|last|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "-1.29",
+   "key": "DuMAD_2cell|last|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, broad candidates",
+   "printed": "-1.62",
+   "key": "DuMAD_2cell|last|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-2.65",
+   "key": "DuMAD_2cell|last|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, broad candidates, CI questions, upper",
+   "printed": "-0.62",
+   "key": "DuMAD_2cell|last|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-2.72",
+   "key": "DuMAD_2cell|last|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / last-round, joint worst case, broad candidates, CI databases, upper",
+   "printed": "-0.48",
+   "key": "DuMAD_2cell|last|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, lenient extractor",
+   "printed": "-2.74",
+   "key": "DuMAD_2cell|E1|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, own extractor only",
+   "printed": "-1.21",
+   "key": "DuMAD_2cell|E1|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, own extractor only, CI questions, lower",
+   "printed": "-1.94",
+   "key": "DuMAD_2cell|E1|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, own extractor only, CI questions, upper",
+   "printed": "-0.49",
+   "key": "DuMAD_2cell|E1|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, own extractor only, CI databases, lower",
+   "printed": "-1.82",
+   "key": "DuMAD_2cell|E1|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, own extractor only, CI databases, upper",
+   "printed": "-0.65",
+   "key": "DuMAD_2cell|E1|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, extractor's candidates",
+   "printed": "-2.29",
+   "key": "DuMAD_2cell|E1|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-3.33",
+   "key": "DuMAD_2cell|E1|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "-1.27",
+   "key": "DuMAD_2cell|E1|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-3.05",
+   "key": "DuMAD_2cell|E1|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "-1.53",
+   "key": "DuMAD_2cell|E1|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, broad candidates",
+   "printed": "-1.29",
+   "key": "DuMAD_2cell|E1|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-2.37",
+   "key": "DuMAD_2cell|E1|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, broad candidates, CI questions, upper",
+   "printed": "-0.21",
+   "key": "DuMAD_2cell|E1|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-2.58",
+   "key": "DuMAD_2cell|E1|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "DuMAD_2cell / interaction, joint worst case, broad candidates, CI databases, upper",
+   "printed": "+0.35",
+   "key": "DuMAD_2cell|E1|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, lenient extractor",
+   "printed": "-2.97",
+   "key": "cell_du_mad|llama3-8b|last|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, own extractor only",
+   "printed": "0.00",
+   "key": "cell_du_mad|llama3-8b|last|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, extractor's candidates",
+   "printed": "-2.71",
+   "key": "cell_du_mad|llama3-8b|last|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-4.31",
+   "key": "cell_du_mad|llama3-8b|last|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "-1.21",
+   "key": "cell_du_mad|llama3-8b|last|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-3.90",
+   "key": "cell_du_mad|llama3-8b|last|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "-1.51",
+   "key": "cell_du_mad|llama3-8b|last|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, broad candidates",
+   "printed": "-1.60",
+   "key": "cell_du_mad|llama3-8b|last|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-3.17",
+   "key": "cell_du_mad|llama3-8b|last|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, broad candidates, CI questions, upper",
+   "printed": "-0.07",
+   "key": "cell_du_mad|llama3-8b|last|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-3.16",
+   "key": "cell_du_mad|llama3-8b|last|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / last-round, joint worst case, broad candidates, CI databases, upper",
+   "printed": "-0.03",
+   "key": "cell_du_mad|llama3-8b|last|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, lenient extractor",
+   "printed": "-3.14",
+   "key": "cell_du_mad|llama3-8b|E1|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, own extractor only",
+   "printed": "0.00",
+   "key": "cell_du_mad|llama3-8b|E1|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, extractor's candidates",
+   "printed": "-2.22",
+   "key": "cell_du_mad|llama3-8b|E1|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-3.79",
+   "key": "cell_du_mad|llama3-8b|E1|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "-0.65",
+   "key": "cell_du_mad|llama3-8b|E1|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-3.47",
+   "key": "cell_du_mad|llama3-8b|E1|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "-0.92",
+   "key": "cell_du_mad|llama3-8b|E1|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, broad candidates",
+   "printed": "-0.26",
+   "key": "cell_du_mad|llama3-8b|E1|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-1.96",
+   "key": "cell_du_mad|llama3-8b|E1|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, broad candidates, CI questions, upper",
+   "printed": "+1.44",
+   "key": "cell_du_mad|llama3-8b|E1|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-2.23",
+   "key": "cell_du_mad|llama3-8b|E1|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|llama3-8b / interaction, joint worst case, broad candidates, CI databases, upper",
+   "printed": "+2.15",
+   "key": "cell_du_mad|llama3-8b|E1|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / last-round, lenient extractor",
+   "printed": "-1.63",
+   "key": "cell_du_mad|qwen2.5-7b|last|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / last-round, own extractor only",
+   "printed": "-1.99",
+   "key": "cell_du_mad|qwen2.5-7b|last|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / last-round, own extractor only, CI questions, lower",
+   "printed": "-3.30",
+   "key": "cell_du_mad|qwen2.5-7b|last|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / last-round, own extractor only, CI questions, upper",
+   "printed": "-0.75",
+   "key": "cell_du_mad|qwen2.5-7b|last|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / last-round, own extractor only, CI databases, lower",
+   "printed": "-3.06",
+   "key": "cell_du_mad|qwen2.5-7b|last|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / last-round, own extractor only, CI databases, upper",
+   "printed": "-0.85",
+   "key": "cell_du_mad|qwen2.5-7b|last|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / last-round, joint worst case, extractor's candidates",
+   "printed": "-1.63",
+   "key": "cell_du_mad|qwen2.5-7b|last|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / last-round, joint worst case, broad candidates",
+   "printed": "-1.63",
+   "key": "cell_du_mad|qwen2.5-7b|last|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, lenient extractor",
+   "printed": "-2.35",
+   "key": "cell_du_mad|qwen2.5-7b|E1|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, own extractor only",
+   "printed": "-2.42",
+   "key": "cell_du_mad|qwen2.5-7b|E1|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, own extractor only, CI questions, lower",
+   "printed": "-3.89",
+   "key": "cell_du_mad|qwen2.5-7b|E1|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, own extractor only, CI questions, upper",
+   "printed": "-0.98",
+   "key": "cell_du_mad|qwen2.5-7b|E1|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, own extractor only, CI databases, lower",
+   "printed": "-3.64",
+   "key": "cell_du_mad|qwen2.5-7b|E1|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, own extractor only, CI databases, upper",
+   "printed": "-1.29",
+   "key": "cell_du_mad|qwen2.5-7b|E1|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, joint worst case, extractor's candidates",
+   "printed": "-2.35",
+   "key": "cell_du_mad|qwen2.5-7b|E1|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, joint worst case, broad candidates",
+   "printed": "-2.32",
+   "key": "cell_du_mad|qwen2.5-7b|E1|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-3.63",
+   "key": "cell_du_mad|qwen2.5-7b|E1|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, joint worst case, broad candidates, CI questions, upper",
+   "printed": "-1.01",
+   "key": "cell_du_mad|qwen2.5-7b|E1|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-3.55",
+   "key": "cell_du_mad|qwen2.5-7b|E1|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_du_mad|qwen2.5-7b / interaction, joint worst case, broad candidates, CI databases, upper",
+   "printed": "-1.17",
+   "key": "cell_du_mad|qwen2.5-7b|E1|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, lenient extractor",
+   "printed": "+0.56",
+   "key": "MADM2_2cell|last|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, own extractor only",
+   "printed": "+0.93",
+   "key": "MADM2_2cell|last|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, own extractor only, CI questions, lower",
+   "printed": "-0.15",
+   "key": "MADM2_2cell|last|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, own extractor only, CI questions, upper",
+   "printed": "+1.99",
+   "key": "MADM2_2cell|last|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, own extractor only, CI databases, lower",
+   "printed": "-0.42",
+   "key": "MADM2_2cell|last|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, own extractor only, CI databases, upper",
+   "printed": "+2.47",
+   "key": "MADM2_2cell|last|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, extractor's candidates",
+   "printed": "+0.51",
+   "key": "MADM2_2cell|last|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-0.57",
+   "key": "MADM2_2cell|last|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "+1.57",
+   "key": "MADM2_2cell|last|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-0.81",
+   "key": "MADM2_2cell|last|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "+2.04",
+   "key": "MADM2_2cell|last|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, broad candidates",
+   "printed": "+0.47",
+   "key": "MADM2_2cell|last|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-0.62",
+   "key": "MADM2_2cell|last|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, broad candidates, CI questions, upper",
+   "printed": "+1.53",
+   "key": "MADM2_2cell|last|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-0.86",
+   "key": "MADM2_2cell|last|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / last-round, joint worst case, broad candidates, CI databases, upper",
+   "printed": "+2.01",
+   "key": "MADM2_2cell|last|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, lenient extractor",
+   "printed": "0.00",
+   "key": "MADM2_2cell|E1|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, own extractor only",
+   "printed": "+0.51",
+   "key": "MADM2_2cell|E1|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, own extractor only, CI questions, lower",
+   "printed": "-0.82",
+   "key": "MADM2_2cell|E1|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, own extractor only, CI questions, upper",
+   "printed": "+1.85",
+   "key": "MADM2_2cell|E1|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, own extractor only, CI databases, lower",
+   "printed": "-0.93",
+   "key": "MADM2_2cell|E1|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, own extractor only, CI databases, upper",
+   "printed": "+1.79",
+   "key": "MADM2_2cell|E1|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, extractor's candidates",
+   "printed": "+0.54",
+   "key": "MADM2_2cell|E1|jointP|raise"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-0.80",
+   "key": "MADM2_2cell|E1|jointP|raise_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "+1.86",
+   "key": "MADM2_2cell|E1|jointP|raise_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-1.03",
+   "key": "MADM2_2cell|E1|jointP|raise_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "+2.12",
+   "key": "MADM2_2cell|E1|jointP|raise_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, broad candidates",
+   "printed": "+0.65",
+   "key": "MADM2_2cell|E1|jointB|raise"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-0.70",
+   "key": "MADM2_2cell|E1|jointB|raise_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, broad candidates, CI questions, upper",
+   "printed": "+1.99",
+   "key": "MADM2_2cell|E1|jointB|raise_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-0.89",
+   "key": "MADM2_2cell|E1|jointB|raise_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction, joint worst case, broad candidates, CI databases, upper",
+   "printed": "+2.22",
+   "key": "MADM2_2cell|E1|jointB|raise_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, extractor's candidates",
+   "printed": "-0.31",
+   "key": "MADM2_2cell|E1|jointP|lower"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-1.67",
+   "key": "MADM2_2cell|E1|jointP|lower_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "+1.03",
+   "key": "MADM2_2cell|E1|jointP|lower_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-1.78",
+   "key": "MADM2_2cell|E1|jointP|lower_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "+1.07",
+   "key": "MADM2_2cell|E1|jointP|lower_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, broad candidates",
+   "printed": "-0.44",
+   "key": "MADM2_2cell|E1|jointB|lower"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, broad candidates, CI questions, lower",
+   "printed": "-1.81",
+   "key": "MADM2_2cell|E1|jointB|lower_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, broad candidates, CI questions, upper",
+   "printed": "+0.90",
+   "key": "MADM2_2cell|E1|jointB|lower_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, broad candidates, CI databases, lower",
+   "printed": "-1.96",
+   "key": "MADM2_2cell|E1|jointB|lower_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "MADM2_2cell / interaction (other direction), joint worst case, broad candidates, CI databases, upper",
+   "printed": "+0.96",
+   "key": "MADM2_2cell|E1|jointB|lower_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, lenient extractor",
+   "printed": "+2.51",
+   "key": "cell_madm2_objective|llama3-8b|last|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, own extractor only",
+   "printed": "+3.27",
+   "key": "cell_madm2_objective|llama3-8b|last|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, own extractor only, CI questions, lower",
+   "printed": "+1.57",
+   "key": "cell_madm2_objective|llama3-8b|last|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, own extractor only, CI questions, upper",
+   "printed": "+5.00",
+   "key": "cell_madm2_objective|llama3-8b|last|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, own extractor only, CI databases, lower",
+   "printed": "+1.31",
+   "key": "cell_madm2_objective|llama3-8b|last|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, own extractor only, CI databases, upper",
+   "printed": "+5.43",
+   "key": "cell_madm2_objective|llama3-8b|last|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, extractor's candidates",
+   "printed": "+2.42",
+   "key": "cell_madm2_objective|llama3-8b|last|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "+0.69",
+   "key": "cell_madm2_objective|llama3-8b|last|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "+4.15",
+   "key": "cell_madm2_objective|llama3-8b|last|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "+0.49",
+   "key": "cell_madm2_objective|llama3-8b|last|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "+4.58",
+   "key": "cell_madm2_objective|llama3-8b|last|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, broad candidates",
+   "printed": "+2.35",
+   "key": "cell_madm2_objective|llama3-8b|last|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, broad candidates, CI questions, lower",
+   "printed": "+0.62",
+   "key": "cell_madm2_objective|llama3-8b|last|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, broad candidates, CI questions, upper",
+   "printed": "+4.08",
+   "key": "cell_madm2_objective|llama3-8b|last|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, broad candidates, CI databases, lower",
+   "printed": "+0.41",
+   "key": "cell_madm2_objective|llama3-8b|last|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / last-round, joint worst case, broad candidates, CI databases, upper",
+   "printed": "+4.56",
+   "key": "cell_madm2_objective|llama3-8b|last|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, lenient extractor",
+   "printed": "+1.89",
+   "key": "cell_madm2_objective|llama3-8b|E1|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, own extractor only",
+   "printed": "+2.97",
+   "key": "cell_madm2_objective|llama3-8b|E1|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, own extractor only, CI questions, lower",
+   "printed": "+0.82",
+   "key": "cell_madm2_objective|llama3-8b|E1|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, own extractor only, CI questions, upper",
+   "printed": "+5.09",
+   "key": "cell_madm2_objective|llama3-8b|E1|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, own extractor only, CI databases, lower",
+   "printed": "+0.85",
+   "key": "cell_madm2_objective|llama3-8b|E1|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, own extractor only, CI databases, upper",
+   "printed": "+5.06",
+   "key": "cell_madm2_objective|llama3-8b|E1|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, extractor's candidates",
+   "printed": "+1.31",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-0.85",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "+3.40",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-0.93",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "+3.68",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, broad candidates",
+   "printed": "+1.05",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-1.11",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, broad candidates, CI questions, upper",
+   "printed": "+3.14",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-1.27",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|llama3-8b / interaction, joint worst case, broad candidates, CI databases, upper",
+   "printed": "+3.47",
+   "key": "cell_madm2_objective|llama3-8b|E1|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / last-round, lenient extractor",
+   "printed": "-1.40",
+   "key": "cell_madm2_objective|qwen2.5-7b|last|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / last-round, own extractor only",
+   "printed": "-1.40",
+   "key": "cell_madm2_objective|qwen2.5-7b|last|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / last-round, own extractor only, CI questions, lower",
+   "printed": "-2.78",
+   "key": "cell_madm2_objective|qwen2.5-7b|last|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / last-round, own extractor only, CI questions, upper",
+   "printed": "-0.07",
+   "key": "cell_madm2_objective|qwen2.5-7b|last|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / last-round, own extractor only, CI databases, lower",
+   "printed": "-2.47",
+   "key": "cell_madm2_objective|qwen2.5-7b|last|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / last-round, own extractor only, CI databases, upper",
+   "printed": "-0.31",
+   "key": "cell_madm2_objective|qwen2.5-7b|last|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / last-round, joint worst case, extractor's candidates",
+   "printed": "-1.40",
+   "key": "cell_madm2_objective|qwen2.5-7b|last|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / last-round, joint worst case, broad candidates",
+   "printed": "-1.40",
+   "key": "cell_madm2_objective|qwen2.5-7b|last|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / interaction, lenient extractor",
+   "printed": "-1.89",
+   "key": "cell_madm2_objective|qwen2.5-7b|E1|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / interaction, own extractor only",
+   "printed": "-1.96",
+   "key": "cell_madm2_objective|qwen2.5-7b|E1|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / interaction, own extractor only, CI questions, lower",
+   "printed": "-3.59",
+   "key": "cell_madm2_objective|qwen2.5-7b|E1|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / interaction, own extractor only, CI questions, upper",
+   "printed": "-0.29",
+   "key": "cell_madm2_objective|qwen2.5-7b|E1|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / interaction, own extractor only, CI databases, lower",
+   "printed": "-3.36",
+   "key": "cell_madm2_objective|qwen2.5-7b|E1|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / interaction, own extractor only, CI databases, upper",
+   "printed": "-0.83",
+   "key": "cell_madm2_objective|qwen2.5-7b|E1|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / interaction, joint worst case, extractor's candidates",
+   "printed": "-1.89",
+   "key": "cell_madm2_objective|qwen2.5-7b|E1|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "cell_madm2_objective|qwen2.5-7b / interaction, joint worst case, broad candidates",
+   "printed": "-1.89",
+   "key": "cell_madm2_objective|qwen2.5-7b|E1|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, lenient extractor",
+   "printed": "-0.87",
+   "key": "4cell|last|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, own extractor only",
+   "printed": "-0.03",
+   "key": "4cell|last|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, own extractor only, CI questions, lower",
+   "printed": "-0.67",
+   "key": "4cell|last|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, own extractor only, CI questions, upper",
+   "printed": "+0.58",
+   "key": "4cell|last|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, own extractor only, CI databases, lower",
+   "printed": "-0.90",
+   "key": "4cell|last|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, own extractor only, CI databases, upper",
+   "printed": "+0.98",
+   "key": "4cell|last|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, extractor's candidates",
+   "printed": "-0.69",
+   "key": "4cell|last|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-1.44",
+   "key": "4cell|last|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "+0.05",
+   "key": "4cell|last|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-1.59",
+   "key": "4cell|last|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "+0.38",
+   "key": "4cell|last|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, broad candidates",
+   "printed": "-0.39",
+   "key": "4cell|last|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-1.13",
+   "key": "4cell|last|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, broad candidates, CI questions, upper",
+   "printed": "+0.34",
+   "key": "4cell|last|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-1.40",
+   "key": "4cell|last|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / last-round, joint worst case, broad candidates, CI databases, upper",
+   "printed": "+0.74",
+   "key": "4cell|last|jointB_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, lenient extractor",
+   "printed": "-1.37",
+   "key": "4cell|E1|lenient"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, own extractor only",
+   "printed": "-0.35",
+   "key": "4cell|E1|own"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, own extractor only, CI questions, lower",
+   "printed": "-1.14",
+   "key": "4cell|E1|own_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, own extractor only, CI questions, upper",
+   "printed": "+0.42",
+   "key": "4cell|E1|own_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, own extractor only, CI databases, lower",
+   "printed": "-1.28",
+   "key": "4cell|E1|own_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, own extractor only, CI databases, upper",
+   "printed": "+0.51",
+   "key": "4cell|E1|own_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, extractor's candidates",
+   "printed": "-0.87",
+   "key": "4cell|E1|jointP"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, extractor's candidates, CI questions, lower",
+   "printed": "-1.75",
+   "key": "4cell|E1|jointP_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, extractor's candidates, CI questions, upper",
+   "printed": "0.00",
+   "key": "4cell|E1|jointP_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, extractor's candidates, CI databases, lower",
+   "printed": "-1.91",
+   "key": "4cell|E1|jointP_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, extractor's candidates, CI databases, upper",
+   "printed": "+0.20",
+   "key": "4cell|E1|jointP_db_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, broad candidates",
+   "printed": "-0.32",
+   "key": "4cell|E1|jointB"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, broad candidates, CI questions, lower",
+   "printed": "-1.21",
+   "key": "4cell|E1|jointB_q_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, broad candidates, CI questions, upper",
+   "printed": "+0.59",
+   "key": "4cell|E1|jointB_q_hi"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, broad candidates, CI databases, lower",
+   "printed": "-1.51",
+   "key": "4cell|E1|jointB_db_lo"
+  },
+  {
+   "label": "tab:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "4cell / interaction, joint worst case, broad candidates, CI databases, upper",
+   "printed": "+0.97",
+   "key": "4cell|E1|jointB_db_hi"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "ambiguous recovered replies, largest share among Du-MAD initial replies (%)",
+   "printed": "2.4",
+   "key": "du_ambiguous_share_max_r0"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "ambiguous recovered replies, largest share among Du-MAD last-round replies (%)",
+   "printed": "0.4",
+   "key": "du_ambiguous_share_max_last"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "recovered queries whose removal alone changes a Du-MAD vote, last round without peers",
+   "printed": "146",
+   "key": "du_last_without_pivotal1"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD runs with such a query at the last round with peers",
+   "printed": "64",
+   "key": "du_last_with_runs_dependent"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "of which hold only unambiguous ones",
+   "printed": "62",
+   "key": "du_last_with_runs_dependent_all_unambiguous"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "joint worst case, extractor's candidates: last-round votes reassigned over the two Du-MAD cells",
+   "printed": "8",
+   "key": "DuMAD_2cell|last|jointP_n_votes"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "joint worst case, extractor's candidates: votes reassigned in all (interaction effect)",
+   "printed": "28",
+   "key": "DuMAD_2cell|E1|jointP_n_votes"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "four-configuration interaction effect, own extractor only",
+   "printed": "-0.35",
+   "key": "4cell|E1|own"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "four-configuration interaction effect, joint worst case",
+   "printed": "-0.87",
+   "key": "4cell|E1|jointP"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, population of vote-deciding recovered replies",
+   "printed": "13,027",
+   "key": "audit2_population"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies drawn, llama3-8b|with_peers",
+   "printed": "12",
+   "key": "audit2_n|llama3-8b|with_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies accepted, llama3-8b|with_peers",
+   "printed": "12",
+   "key": "audit2_yes|llama3-8b|with_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, stratum population, llama3-8b|with_peers",
+   "printed": "5,840",
+   "key": "audit2_population|llama3-8b|with_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, Wilson 95% lower bound, llama3-8b|with_peers (%)",
+   "printed": "75.8",
+   "key": "audit2_wilson_lo|llama3-8b|with_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies drawn, llama3-8b|without_peers",
+   "printed": "13",
+   "key": "audit2_n|llama3-8b|without_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies accepted, llama3-8b|without_peers",
+   "printed": "13",
+   "key": "audit2_yes|llama3-8b|without_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, stratum population, llama3-8b|without_peers",
+   "printed": "6,090",
+   "key": "audit2_population|llama3-8b|without_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, Wilson 95% lower bound, llama3-8b|without_peers (%)",
+   "printed": "77.2",
+   "key": "audit2_wilson_lo|llama3-8b|without_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies drawn, qwen2.5-7b|with_peers",
+   "printed": "12",
+   "key": "audit2_n|qwen2.5-7b|with_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies accepted, qwen2.5-7b|with_peers",
+   "printed": "12",
+   "key": "audit2_yes|qwen2.5-7b|with_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, stratum population, qwen2.5-7b|with_peers",
+   "printed": "559",
+   "key": "audit2_population|qwen2.5-7b|with_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, Wilson 95% lower bound, qwen2.5-7b|with_peers (%)",
+   "printed": "75.8",
+   "key": "audit2_wilson_lo|qwen2.5-7b|with_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies drawn, qwen2.5-7b|without_peers",
+   "printed": "13",
+   "key": "audit2_n|qwen2.5-7b|without_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies accepted, qwen2.5-7b|without_peers",
+   "printed": "13",
+   "key": "audit2_yes|qwen2.5-7b|without_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, stratum population, qwen2.5-7b|without_peers",
+   "printed": "538",
+   "key": "audit2_population|qwen2.5-7b|without_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, Wilson 95% lower bound, qwen2.5-7b|without_peers (%)",
+   "printed": "77.2",
+   "key": "audit2_wilson_lo|qwen2.5-7b|without_peers"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, replies accepted of 50",
+   "printed": "50",
+   "key": "audit2_yes"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "second audit, Wilson 95% lower bound, all 50 (%)",
+   "printed": "92.9",
+   "key": "audit2_wilson_lo"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "audit-rate sensitivity, number of random draws",
+   "printed": "1,000",
+   "key": "perturb_draws"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "audited rate, human audit: rejected queries",
+   "printed": "1",
+   "key": "audit1_rate_no"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "audited rate, human audit: items",
+   "printed": "50",
+   "key": "audit1_n"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "audited rate, agent judges: rejected queries",
+   "printed": "12",
+   "key": "audit1_rate_further_no"
+  },
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "where": "audited rate, agent judges: items",
+   "printed": "450",
+   "key": "audit1_n_further"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD calls where only the lenient extractor finds SQL",
+   "printed": "17,350",
+   "key": "audit1_population"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "blind human audit, items",
+   "printed": "50",
+   "key": "audit1_n"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "blind human audit, accepted",
+   "printed": "49",
+   "key": "audit1_yes"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "blind human audit, 95% CI lower end (Clopper-Pearson, %)",
+   "printed": "89.4",
+   "key": "audit1_cp_lo"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "agent judge GPT-6, agreement with the annotator (of 50)",
+   "printed": "50",
+   "key": "audit1_agree_gpt6"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "agent judge Claude Opus 5.5, agreement with the annotator (of 50)",
+   "printed": "48",
+   "key": "audit1_agree_opus"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "agent judges, further items",
+   "printed": "450",
+   "key": "audit1_n_further"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "agent judges, further items accepted",
+   "printed": "438",
+   "key": "audit1_further_accepted"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "agent judges, further items accepted (%)",
+   "printed": "97.3",
+   "key": "audit1_further_accepted_pct"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "agent judges, 95% CI lower end (Clopper-Pearson, %)",
+   "printed": "95.4",
+   "key": "audit1_further_cp_lo"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "second blind audit, accepted of 50",
+   "printed": "50",
+   "key": "audit2_yes"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "joint worst case, extractor's candidates, Du-MAD last-round difference",
+   "printed": "-2.17",
+   "key": "DuMAD_2cell|last|jointP"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "joint worst case, every query-like line, Du-MAD last-round difference",
+   "printed": "-1.62",
+   "key": "DuMAD_2cell|last|jointB"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "protocol extractor alone, Du-MAD/Qwen2.5-7B last-round loss",
+   "printed": "1.99",
+   "key": "cell_du_mad|qwen2.5-7b|last|own",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "blind human audit, 95% CI upper end (Clopper-Pearson, %)",
+   "printed": "99.9",
+   "key": "audit1_cp_hi"
+  },
+  {
+   "label": "sec:s-reader-audit",
+   "tex_file": "supplementary.tex",
+   "where": "agent judges, 95% CI upper end (Clopper-Pearson, %)",
+   "printed": "98.6",
+   "key": "audit1_further_cp_hi"
+  },
+  {
+   "label": "sec:evaluation-checks",
+   "tex_file": "sections/02_implementation.tex",
+   "where": "answer recovery: leniently recovered queries the blind human audit accepted",
+   "printed": "49",
+   "key": "audit1_yes"
+  },
+  {
+   "label": "sec:evaluation-checks",
+   "tex_file": "sections/02_implementation.tex",
+   "where": "answer recovery: queries in the first audit",
+   "printed": "50",
+   "key": "audit1_n"
+  },
+  {
+   "label": "sec:evaluation-checks",
+   "tex_file": "sections/02_implementation.tex",
+   "where": "answer recovery: second sample, vote-determining queries accepted (all of them)",
+   "printed": "50",
+   "key": "audit2_yes"
+  },
+  {
+   "label": "sec:s-framework",
+   "tex_file": "supplementary.tex",
+   "where": "first audit: recovered queries accepted",
+   "printed": "49",
+   "key": "audit1_yes"
+  },
+  {
+   "label": "sec:s-framework",
+   "tex_file": "supplementary.tex",
+   "where": "first audit: recovered queries audited",
+   "printed": "50",
+   "key": "audit1_n"
+  },
+  {
+   "label": "sec:s-framework",
+   "tex_file": "supplementary.tex",
+   "where": "second audit: vote-deciding Du-MAD queries accepted",
+   "printed": "50",
+   "key": "audit2_yes"
+  },
+  {
+   "label": "sec:s-framework",
+   "tex_file": "supplementary.tex",
+   "where": "second audit: vote-deciding Du-MAD queries audited",
+   "printed": "50",
+   "key": "audit2_n"
+  }
+ ],
+ "not_checkable": [
+  {
+   "label": "sec:s-reader-sensitivity",
+   "tex_file": "supplementary.tex",
+   "printed": "less than 0.1 pp",
+   "key": "output/reader_sensitivity.json: audit_rate_sensitivity_shift",
+   "computed": "largest mean shift 0.09 pp",
+   "reason": "a bound, not a point value; compute.py asserts that every mean shift is below 0.1 pp"
+  }
+ ],
+ "unreproduced": []
+}

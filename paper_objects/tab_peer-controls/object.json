@@ -1,0 +1,991 @@
+{
+ "id": "tab_peer-controls",
+ "labels": [
+  "tab:peer-controls",
+  "sec:peer-controls",
+  "sec:peer-flow",
+  "sec:factorial",
+  "sec:s-inference",
+  "sec:s-peer-flow",
+  "tab:s-peer-transitions",
+  "tab:s-ties-expanded"
+ ],
+ "section": "VI-B peer interaction paragraph (sec:factorial), VI-C (sec:peer-controls) with Table V, VI-D per-agent paragraph (sec:peer-flow); supplementary S4-A, S6-B, Tables S14 and S16",
+ "title": "Du-MAD and MAD-M2 peer effects on BIRD under fixed output rules, tie rules and per-agent transitions",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction effect paragraph: sampled BIRD questions",
+   "printed": "198",
+   "key": "s198_n_questions"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "four Du-MAD and MAD-M2 configurations, protocol extractor and exact-match vote, first-agent ties",
+   "printed": "+3.03",
+   "key": "s198|4cell|strict|string|first|dpeer"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "four configurations, lenient extractor and execution vote, first-agent ties",
+   "printed": "-1.96",
+   "key": "s198|4cell|lenient|exec|first|dpeer"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-agent ties, protocol extractor and exact-match vote",
+   "printed": "+1.64",
+   "key": "s198|4cell|strict|string|last|dpeer"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-agent ties, lenient extractor and execution vote",
+   "printed": "-1.14",
+   "key": "s198|4cell|lenient|exec|last|dpeer"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "random ties, protocol extractor and exact-match vote",
+   "printed": "+1.07",
+   "key": "s198|4cell|strict|string|random|dpeer"
+  },
+  {
+   "label": "sec:factorial",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "random ties, lenient extractor and execution vote",
+   "printed": "-2.15",
+   "key": "s198|4cell|lenient|exec|random|dpeer"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "first paragraph: BIRD development questions",
+   "printed": "1,531",
+   "key": "n_questions_fulldev"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "first paragraph: Du-MAD last-round difference",
+   "printed": "-2.30",
+   "key": "DuMAD_2cell|last_diff"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "first paragraph: MAD-M2 with Llama-3-8B, last-round difference",
+   "printed": "+2.51",
+   "key": "cell_madm2_objective|llama3-8b|last_diff"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "first paragraph: MAD-M2 with Qwen2.5-7B, last-round difference",
+   "printed": "-1.40",
+   "key": "cell_madm2_objective|qwen2.5-7b|last_diff"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "first paragraph: initial-accuracy difference over the four pairs",
+   "printed": "+0.50",
+   "key": "4cell|r0_diff"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "first paragraph: peer interaction loss overall",
+   "printed": "-1.37",
+   "key": "4cell|dpeer|first"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "first paragraph: peer interaction loss, Du-MAD",
+   "printed": "-2.74",
+   "key": "DuMAD_2cell|dpeer|first"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "initial answers (%), Du-MAD, with peers",
+   "printed": "37.39",
+   "key": "DuMAD_2cell|r0_with"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "initial answers (%), Du-MAD, without peers",
+   "printed": "36.95",
+   "key": "DuMAD_2cell|r0_without"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last round (%), Du-MAD, with peers",
+   "printed": "37.83",
+   "key": "DuMAD_2cell|last_with"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last round (%), Du-MAD, without peers",
+   "printed": "40.14",
+   "key": "DuMAD_2cell|last_without"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "initial answers (%), MAD-M2, with peers",
+   "printed": "37.79",
+   "key": "MADM2_2cell|r0_with"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "initial answers (%), MAD-M2, without peers",
+   "printed": "37.23",
+   "key": "MADM2_2cell|r0_without"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last round (%), MAD-M2, with peers",
+   "printed": "36.94",
+   "key": "MADM2_2cell|last_with"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last round (%), MAD-M2, without peers",
+   "printed": "36.38",
+   "key": "MADM2_2cell|last_without"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "initial answers (%), Pooled, with peers",
+   "printed": "37.59",
+   "key": "4cell|r0_with"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "initial answers (%), Pooled, without peers",
+   "printed": "37.09",
+   "key": "4cell|r0_without"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last round (%), Pooled, with peers",
+   "printed": "37.39",
+   "key": "4cell|last_with"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last round (%), Pooled, without peers",
+   "printed": "38.26",
+   "key": "4cell|last_without"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference (pp), Du-MAD",
+   "printed": "-2.30",
+   "key": "DuMAD_2cell|last_diff"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Du-MAD, 95% CI questions, lower",
+   "printed": "-3.36",
+   "key": "DuMAD_2cell|last_diff_q_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Du-MAD, 95% CI questions, upper",
+   "printed": "-1.31",
+   "key": "DuMAD_2cell|last_diff_q_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Du-MAD, 95% CI databases, lower",
+   "printed": "-3.18",
+   "key": "DuMAD_2cell|last_diff_db_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Du-MAD, 95% CI databases, upper",
+   "printed": "-1.39",
+   "key": "DuMAD_2cell|last_diff_db_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction (pp), Du-MAD",
+   "printed": "-2.74",
+   "key": "DuMAD_2cell|dpeer|first"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, Du-MAD, 95% CI questions, lower",
+   "printed": "-3.77",
+   "key": "DuMAD_2cell|dpeer|first_q_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, Du-MAD, 95% CI questions, upper",
+   "printed": "-1.73",
+   "key": "DuMAD_2cell|dpeer|first_q_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, Du-MAD, 95% CI databases, lower",
+   "printed": "-3.46",
+   "key": "DuMAD_2cell|dpeer|first_db_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, Du-MAD, 95% CI databases, upper",
+   "printed": "-2.01",
+   "key": "DuMAD_2cell|dpeer|first_db_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference (pp), MAD-M2",
+   "printed": "+0.56",
+   "key": "MADM2_2cell|last_diff"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, MAD-M2, 95% CI questions, lower",
+   "printed": "-0.52",
+   "key": "MADM2_2cell|last_diff_q_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, MAD-M2, 95% CI questions, upper",
+   "printed": "+1.62",
+   "key": "MADM2_2cell|last_diff_q_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, MAD-M2, 95% CI databases, lower",
+   "printed": "-0.77",
+   "key": "MADM2_2cell|last_diff_db_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, MAD-M2, 95% CI databases, upper",
+   "printed": "+2.10",
+   "key": "MADM2_2cell|last_diff_db_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction (pp), MAD-M2",
+   "printed": "0.00",
+   "key": "MADM2_2cell|dpeer|first"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, MAD-M2, 95% CI questions, lower",
+   "printed": "-1.36",
+   "key": "MADM2_2cell|dpeer|first_q_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, MAD-M2, 95% CI questions, upper",
+   "printed": "+1.34",
+   "key": "MADM2_2cell|dpeer|first_q_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, MAD-M2, 95% CI databases, lower",
+   "printed": "-1.50",
+   "key": "MADM2_2cell|dpeer|first_db_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, MAD-M2, 95% CI databases, upper",
+   "printed": "+1.46",
+   "key": "MADM2_2cell|dpeer|first_db_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference (pp), Pooled",
+   "printed": "-0.87",
+   "key": "4cell|last_diff"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Pooled, 95% CI questions, lower",
+   "printed": "-1.63",
+   "key": "4cell|last_diff_q_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Pooled, 95% CI questions, upper",
+   "printed": "-0.13",
+   "key": "4cell|last_diff_q_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Pooled, 95% CI databases, lower",
+   "printed": "-1.76",
+   "key": "4cell|last_diff_db_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Pooled, 95% CI databases, upper",
+   "printed": "+0.18",
+   "key": "4cell|last_diff_db_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction (pp), Pooled",
+   "printed": "-1.37",
+   "key": "4cell|dpeer|first"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, Pooled, 95% CI questions, lower",
+   "printed": "-2.25",
+   "key": "4cell|dpeer|first_q_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, Pooled, 95% CI questions, upper",
+   "printed": "-0.51",
+   "key": "4cell|dpeer|first_q_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, Pooled, 95% CI databases, lower",
+   "printed": "-2.32",
+   "key": "4cell|dpeer|first_db_lo"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "peer interaction, Pooled, 95% CI databases, upper",
+   "printed": "-0.43",
+   "key": "4cell|dpeer|first_db_hi"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Du-MAD, Llama-3-8B",
+   "printed": "-2.97",
+   "key": "cell_du_mad|llama3-8b|last_diff"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, Du-MAD, Qwen2.5-7B",
+   "printed": "-1.63",
+   "key": "cell_du_mad|qwen2.5-7b|last_diff"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, MAD-M2, Llama-3-8B",
+   "printed": "+2.51",
+   "key": "cell_madm2_objective|llama3-8b|last_diff"
+  },
+  {
+   "label": "tab:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "last-round difference, MAD-M2, Qwen2.5-7B",
+   "printed": "-1.40",
+   "key": "cell_madm2_objective|qwen2.5-7b|last_diff"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "tie paragraph: Du-MAD peer interaction loss, range end (first-agent ties)",
+   "printed": "-2.74",
+   "key": "DuMAD_2cell|dpeer|first"
+  },
+  {
+   "label": "sec:peer-controls",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "tie paragraph: Du-MAD peer interaction loss, range end (random ties)",
+   "printed": "-2.68",
+   "key": "DuMAD_2cell|dpeer|random"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "first paragraph: questions",
+   "printed": "1,531",
+   "key": "n_questions_fulldev"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Du-MAD peers reduce per-agent loss by",
+   "printed": "1.12",
+   "key": "DuMAD_2cell|agent_LOSS",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Du-MAD peers reduce per-agent recovery by",
+   "printed": "2.84",
+   "key": "DuMAD_2cell|agent_REC",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "Du-MAD per-agent net change",
+   "printed": "-1.73",
+   "key": "DuMAD_2cell|agent_net"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "recovery of initially wrong Du-MAD answers without peers (%)",
+   "printed": "9.08",
+   "key": "DuMAD_2cell|cond_rec_without"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "recovery of initially wrong Du-MAD answers with peers (%)",
+   "printed": "4.75",
+   "key": "DuMAD_2cell|cond_rec_with"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "MAD-M2 per-agent net effect",
+   "printed": "+3.29",
+   "key": "MADM2_2cell|agent_net"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "per-agent net effect over the four pairs",
+   "printed": "+0.78",
+   "key": "4cell|agent_net"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "per-agent net effect, question interval, lower",
+   "printed": "0.14",
+   "key": "4cell|agent_net_q_lo"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "per-agent net effect, question interval, upper",
+   "printed": "1.43",
+   "key": "4cell|agent_net_q_hi"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "per-agent net effect, database interval, lower",
+   "printed": "0.06",
+   "key": "4cell|agent_net_db_lo"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "per-agent net effect, database interval, upper",
+   "printed": "1.66",
+   "key": "4cell|agent_net_db_hi"
+  },
+  {
+   "label": "sec:peer-flow",
+   "tex_file": "sections/05_q2_quality_loss.tex",
+   "where": "vote-level peer interaction effect on the same questions",
+   "printed": "-1.37",
+   "key": "4cell|dpeer|first"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "separate Du-MAD no-peer collections: runs whose outputs differ",
+   "printed": "53",
+   "key": "dumad_nopeer_runs_differing"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "separate Du-MAD no-peer collections: runs compared",
+   "printed": "792",
+   "key": "dumad_nopeer_runs_compared"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "four-configuration peer interaction effect, sampled factorial comparison",
+   "printed": "-1.96",
+   "key": "s198|4cell|lenient|exec|first|dpeer"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "four-configuration peer interaction effect, full-development comparison on the 198 questions",
+   "printed": "-1.83",
+   "key": "4cell|dpeer|first|198"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "other development questions",
+   "printed": "1,333",
+   "key": "n_questions_remaining"
+  },
+  {
+   "label": "sec:s-inference",
+   "tex_file": "supplementary.tex",
+   "where": "paired with/no-peer executions on the 1,333 questions",
+   "printed": "-1.30",
+   "key": "4cell|dpeer|first|1333"
+  },
+  {
+   "label": "sec:s-peer-flow",
+   "tex_file": "supplementary.tex",
+   "where": "first paragraph: questions",
+   "printed": "1,531",
+   "key": "n_questions_fulldev"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, gross loss",
+   "printed": "-1.12",
+   "key": "DuMAD_2cell|agent_LOSS"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, gross recovery",
+   "printed": "-2.84",
+   "key": "DuMAD_2cell|agent_REC"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, net",
+   "printed": "-1.73",
+   "key": "DuMAD_2cell|agent_net"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, conditional loss",
+   "printed": "-3.26",
+   "key": "DuMAD_2cell|cond_loss_diff"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Du-MAD, conditional recovery",
+   "printed": "-4.33",
+   "key": "DuMAD_2cell|cond_rec_diff"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, gross loss",
+   "printed": "-1.58",
+   "key": "MADM2_2cell|agent_LOSS"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, gross recovery",
+   "printed": "+1.71",
+   "key": "MADM2_2cell|agent_REC"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, net",
+   "printed": "+3.29",
+   "key": "MADM2_2cell|agent_net"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, conditional loss",
+   "printed": "-7.22",
+   "key": "MADM2_2cell|cond_loss_diff"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "MAD-M2, conditional recovery",
+   "printed": "+2.25",
+   "key": "MADM2_2cell|cond_rec_diff"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Mean, gross loss",
+   "printed": "-1.35",
+   "key": "4cell|agent_LOSS"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Mean, gross recovery",
+   "printed": "-0.57",
+   "key": "4cell|agent_REC"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Mean, net",
+   "printed": "+0.78",
+   "key": "4cell|agent_net"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Mean, conditional loss",
+   "printed": "-5.24",
+   "key": "4cell|cond_loss_diff"
+  },
+  {
+   "label": "tab:s-peer-transitions",
+   "tex_file": "supplementary.tex",
+   "where": "Mean, conditional recovery",
+   "printed": "-1.04",
+   "key": "4cell|cond_rec_diff"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "questions, upper block",
+   "printed": "198",
+   "key": "s198_n_questions"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "questions, lower block",
+   "printed": "1,531",
+   "key": "n_questions_fulldev"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD and MAD-M2, protocol extractor, exact-match vote, first",
+   "printed": "+3.03",
+   "key": "s198|4cell|strict|string|first|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD and MAD-M2, protocol extractor, exact-match vote, last",
+   "printed": "+1.64",
+   "key": "s198|4cell|strict|string|last|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD and MAD-M2, protocol extractor, exact-match vote, random",
+   "printed": "+1.07",
+   "key": "s198|4cell|strict|string|random|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD and MAD-M2, lenient extractor, execution vote, first",
+   "printed": "-1.96",
+   "key": "s198|4cell|lenient|exec|first|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD and MAD-M2, lenient extractor, execution vote, last",
+   "printed": "-1.14",
+   "key": "s198|4cell|lenient|exec|last|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD and MAD-M2, lenient extractor, execution vote, random",
+   "printed": "-2.15",
+   "key": "s198|4cell|lenient|exec|random|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD, lenient extractor, execution vote, first",
+   "printed": "-3.91",
+   "key": "s198|DuMAD_2cell|lenient|exec|first|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD, lenient extractor, execution vote, last",
+   "printed": "-3.91",
+   "key": "s198|DuMAD_2cell|lenient|exec|last|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, Du-MAD, lenient extractor, execution vote, random",
+   "printed": "-4.29",
+   "key": "s198|DuMAD_2cell|lenient|exec|random|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, MAD-M2, lenient extractor, execution vote, first",
+   "printed": "0.00",
+   "key": "s198|MADM2_2cell|lenient|exec|first|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, MAD-M2, lenient extractor, execution vote, last",
+   "printed": "+1.64",
+   "key": "s198|MADM2_2cell|lenient|exec|last|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "198, MAD-M2, lenient extractor, execution vote, random",
+   "printed": "0.00",
+   "key": "s198|MADM2_2cell|lenient|exec|random|dpeer"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, Du-MAD and MAD-M2, lenient extractor, execution vote, first",
+   "printed": "-1.37",
+   "key": "4cell|dpeer|first"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, Du-MAD and MAD-M2, lenient extractor, execution vote, last",
+   "printed": "-0.79",
+   "key": "4cell|dpeer|last"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, Du-MAD and MAD-M2, lenient extractor, execution vote, random",
+   "printed": "-1.05",
+   "key": "4cell|dpeer|random"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, Du-MAD, lenient extractor, execution vote, first",
+   "printed": "-2.74",
+   "key": "DuMAD_2cell|dpeer|first"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, Du-MAD, lenient extractor, execution vote, last",
+   "printed": "-2.73",
+   "key": "DuMAD_2cell|dpeer|last"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, Du-MAD, lenient extractor, execution vote, random",
+   "printed": "-2.68",
+   "key": "DuMAD_2cell|dpeer|random"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, MAD-M2, lenient extractor, execution vote, first",
+   "printed": "0.00",
+   "key": "MADM2_2cell|dpeer|first"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, MAD-M2, lenient extractor, execution vote, last",
+   "printed": "+1.14",
+   "key": "MADM2_2cell|dpeer|last"
+  },
+  {
+   "label": "tab:s-ties-expanded",
+   "tex_file": "supplementary.tex",
+   "where": "1,531, MAD-M2, lenient extractor, execution vote, random",
+   "printed": "+0.57",
+   "key": "MADM2_2cell|dpeer|random"
+  }
+ ],
+ "statements": [
+  {
+   "text": "Section VI-B: the +3.03 pp peer interaction effect (first-agent ties) is detected",
+   "key": "s198|4cell|strict|string|first|dpeer_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-B: the question interval of the -1.96 pp estimate ends at zero",
+   "key": "s198|4cell|lenient|exec|first|dpeer_q_hi",
+   "expected": 0.0
+  },
+  {
+   "text": "Section VI-B: the -1.96 pp estimate is not detected",
+   "key": "s198|4cell|lenient|exec|first|dpeer_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-B: last-agent ties, +1.64 pp not detected",
+   "key": "s198|4cell|strict|string|last|dpeer_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-B: last-agent ties, -1.14 pp not detected",
+   "key": "s198|4cell|lenient|exec|last|dpeer_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-B: random ties, +1.07 pp not detected",
+   "key": "s198|4cell|strict|string|random|dpeer_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-B: random ties, -2.15 pp detected (the only detected loss)",
+   "key": "s198|4cell|lenient|exec|random|dpeer_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: last-round difference detected for Du-MAD/Llama-3-8B",
+   "key": "cell_du_mad|llama3-8b|last_diff_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: last-round difference detected for Du-MAD/Qwen2.5-7B",
+   "key": "cell_du_mad|qwen2.5-7b|last_diff_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: last-round difference detected for MAD-M2/Llama-3-8B",
+   "key": "cell_madm2_objective|llama3-8b|last_diff_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: last-round difference detected for MAD-M2/Qwen2.5-7B",
+   "key": "cell_madm2_objective|qwen2.5-7b|last_diff_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: MAD-M2 mean last-round difference not detected",
+   "key": "MADM2_2cell|last_diff_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-C: pooled last-round difference not detected",
+   "key": "4cell|last_diff_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-C: initial-accuracy difference over the four pairs not detected",
+   "key": "4cell|r0_diff_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-C: peer interaction loss detected overall",
+   "key": "4cell|dpeer|first_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: peer interaction loss detected for Du-MAD",
+   "key": "DuMAD_2cell|dpeer|first_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: Du-MAD peer interaction loss detected under first ties",
+   "key": "DuMAD_2cell|dpeer|first_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: Du-MAD peer interaction loss detected under last ties",
+   "key": "DuMAD_2cell|dpeer|last_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: Du-MAD peer interaction loss detected under random ties",
+   "key": "DuMAD_2cell|dpeer|random_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-C: pooled peer interaction effect not detected under last-agent ties",
+   "key": "4cell|dpeer|last_detected",
+   "expected": false
+  },
+  {
+   "text": "Section VI-D: MAD-M2 per-agent net effect detected with Llama-3-8B",
+   "key": "cell_madm2_objective|llama3-8b|agent_net_detected",
+   "expected": true
+  },
+  {
+   "text": "Section VI-D: MAD-M2 per-agent net effect not detected with Qwen2.5-7B",
+   "key": "cell_madm2_objective|qwen2.5-7b|agent_net_detected",
+   "expected": false
+  },
+  {
+   "text": "Supplement S4-A: -1.96 pp not detected",
+   "key": "s198|4cell|lenient|exec|first|dpeer_detected",
+   "expected": false
+  },
+  {
+   "text": "Supplement S4-A: -1.83 pp not detected",
+   "key": "4cell|dpeer|first|198_detected",
+   "expected": false
+  },
+  {
+   "text": "Supplement S4-A: -1.30 pp on the 1,333 questions detected",
+   "key": "4cell|dpeer|first|1333_detected",
+   "expected": true
+  }
+ ],
+ "unreproduced": []
+}

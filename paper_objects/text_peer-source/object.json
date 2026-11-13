@@ -1,0 +1,1034 @@
+{
+ "id": "text_peer-source",
+ "labels": [
+  "sec:peer-source",
+  "sec:s-spend-peers",
+  "tab:s-peer-effects",
+  "tab:s-peer-change",
+  "tab:s-weaker"
+ ],
+ "section": "V-C (sec:peer-source); Supplementary S5-D (sec:s-spend-peers)",
+ "title": "Stronger peers: Qwen3-32B peer responses, and a weaker Qwen2.5-7B recipient",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:peer-source",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "increase of the answers-only effect when Qwen3-32B peers replace Qwen2.5-7B peers, upper end of 2.36--3.75 (Qwen3)",
+   "printed": "3.75",
+   "key": "chg_qwen3_answers_none"
+  },
+  {
+   "label": "sec:peer-source",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "same, lower end (Gemma)",
+   "printed": "2.36",
+   "key": "chg_gemma_answers_none"
+  },
+  {
+   "label": "sec:peer-source",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: Qwen2.5-7B recipient, full responses (%)",
+   "printed": "71.81",
+   "key": "w_acc_all_full"
+  },
+  {
+   "label": "sec:peer-source",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: Qwen2.5-7B recipient, answers (%)",
+   "printed": "68.33",
+   "key": "w_acc_all_answer_only"
+  },
+  {
+   "label": "sec:peer-source",
+   "tex_file": "sections/04_q1_end_to_end.tex",
+   "where": "prose: Qwen2.5-7B recipient, no peers (%)",
+   "printed": "57.43",
+   "key": "w_acc_all_no_peers"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Full - none: effect",
+   "printed": "+2.36",
+   "key": "eff_qwen3_full_none"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Full - none: 95% CI lower",
+   "printed": "-0.14",
+   "key": "eff_qwen3_full_none_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Full - none: 95% CI upper",
+   "printed": "4.86",
+   "key": "eff_qwen3_full_none_hi"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - none: effect",
+   "printed": "+6.74",
+   "key": "eff_qwen3_answers_none"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - none: 95% CI lower",
+   "printed": "4.31",
+   "key": "eff_qwen3_answers_none_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - none: 95% CI upper",
+   "printed": "9.17",
+   "key": "eff_qwen3_answers_none_hi"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - full: effect",
+   "printed": "+4.38",
+   "key": "eff_qwen3_answers_full"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - full: 95% CI lower",
+   "printed": "2.22",
+   "key": "eff_qwen3_answers_full_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, Answers - full: 95% CI upper",
+   "printed": "6.60",
+   "key": "eff_qwen3_answers_full_hi"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Full - none: effect",
+   "printed": "+4.72",
+   "key": "eff_gptoss_full_none"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Full - none: 95% CI lower",
+   "printed": "2.01",
+   "key": "eff_gptoss_full_none_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Full - none: 95% CI upper",
+   "printed": "7.50",
+   "key": "eff_gptoss_full_none_hi"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - none: effect",
+   "printed": "+8.61",
+   "key": "eff_gptoss_answers_none"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - none: 95% CI lower",
+   "printed": "6.11",
+   "key": "eff_gptoss_answers_none_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - none: 95% CI upper",
+   "printed": "11.11",
+   "key": "eff_gptoss_answers_none_hi"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - full: effect",
+   "printed": "+3.89",
+   "key": "eff_gptoss_answers_full"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - full: 95% CI lower",
+   "printed": "2.08",
+   "key": "eff_gptoss_answers_full_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, Answers - full: 95% CI upper",
+   "printed": "5.76",
+   "key": "eff_gptoss_answers_full_hi"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Full - none: effect",
+   "printed": "-0.07",
+   "key": "eff_gemma_full_none"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Full - none: 95% CI lower",
+   "printed": "-2.64",
+   "key": "eff_gemma_full_none_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Full - none: 95% CI upper",
+   "printed": "2.50",
+   "key": "eff_gemma_full_none_hi"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - none: effect",
+   "printed": "-0.69",
+   "key": "eff_gemma_answers_none"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - none: 95% CI lower",
+   "printed": "-2.99",
+   "key": "eff_gemma_answers_none_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - none: 95% CI upper",
+   "printed": "1.53",
+   "key": "eff_gemma_answers_none_hi"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - full: effect",
+   "printed": "-0.62",
+   "key": "eff_gemma_answers_full"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - full: 95% CI lower",
+   "printed": "-2.64",
+   "key": "eff_gemma_answers_full_lo"
+  },
+  {
+   "label": "tab:s-peer-effects",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, Answers - full: 95% CI upper",
+   "printed": "1.39",
+   "key": "eff_gemma_answers_full_hi"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, full: Delta Recovered (difference of the two-decimal components)",
+   "printed": "-2.30",
+   "key": "chg_qwen3_full_drec"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, full: Delta Lost (difference of the two-decimal components)",
+   "printed": "-3.96",
+   "key": "chg_qwen3_full_dlost"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, full: change",
+   "printed": "+1.67",
+   "key": "chg_qwen3_full_none"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, full: 95% CI lower",
+   "printed": "-1.46",
+   "key": "chg_qwen3_full_none_lo"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, full: 95% CI upper",
+   "printed": "4.79",
+   "key": "chg_qwen3_full_none_hi"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, answers: Delta Recovered (difference of the two-decimal components)",
+   "printed": "+1.19",
+   "key": "chg_qwen3_answers_drec"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, answers: Delta Lost (difference of the two-decimal components)",
+   "printed": "-2.57",
+   "key": "chg_qwen3_answers_dlost"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, answers: change",
+   "printed": "+3.75",
+   "key": "chg_qwen3_answers_none"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, answers: 95% CI lower",
+   "printed": "1.32",
+   "key": "chg_qwen3_answers_none_lo"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3, answers: 95% CI upper",
+   "printed": "6.25",
+   "key": "chg_qwen3_answers_none_hi"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, full: Delta Recovered (difference of the two-decimal components)",
+   "printed": "+2.08",
+   "key": "chg_gptoss_full_drec"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, full: Delta Lost (difference of the two-decimal components)",
+   "printed": "-2.15",
+   "key": "chg_gptoss_full_dlost"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, full: change",
+   "printed": "+4.24",
+   "key": "chg_gptoss_full_none"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, full: 95% CI lower",
+   "printed": "1.39",
+   "key": "chg_gptoss_full_none_lo"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, full: 95% CI upper",
+   "printed": "7.01",
+   "key": "chg_gptoss_full_none_hi"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, answers: Delta Recovered (difference of the two-decimal components)",
+   "printed": "+1.94",
+   "key": "chg_gptoss_answers_drec"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, answers: Delta Lost (difference of the two-decimal components)",
+   "printed": "-0.84",
+   "key": "chg_gptoss_answers_dlost"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, answers: change",
+   "printed": "+2.78",
+   "key": "chg_gptoss_answers_none"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, answers: 95% CI lower",
+   "printed": "0.62",
+   "key": "chg_gptoss_answers_none_lo"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "gpt-oss, answers: 95% CI upper",
+   "printed": "4.93",
+   "key": "chg_gptoss_answers_none_hi"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, full: Delta Recovered (difference of the two-decimal components)",
+   "printed": "+1.11",
+   "key": "chg_gemma_full_drec"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, full: Delta Lost (difference of the two-decimal components)",
+   "printed": "-2.64",
+   "key": "chg_gemma_full_dlost"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, full: change",
+   "printed": "+3.75",
+   "key": "chg_gemma_full_none"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, full: 95% CI lower",
+   "printed": "1.11",
+   "key": "chg_gemma_full_none_lo"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, full: 95% CI upper",
+   "printed": "6.32",
+   "key": "chg_gemma_full_none_hi"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, answers: Delta Recovered (difference of the two-decimal components)",
+   "printed": "+0.07",
+   "key": "chg_gemma_answers_drec"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, answers: Delta Lost (difference of the two-decimal components)",
+   "printed": "-2.29",
+   "key": "chg_gemma_answers_dlost"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, answers: change",
+   "printed": "+2.36",
+   "key": "chg_gemma_answers_none"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, answers: 95% CI lower",
+   "printed": "-0.07",
+   "key": "chg_gemma_answers_none_lo"
+  },
+  {
+   "label": "tab:s-peer-change",
+   "tex_file": "supplementary.tex",
+   "where": "Gemma, answers: 95% CI upper",
+   "printed": "4.72",
+   "key": "chg_gemma_answers_none_hi"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen3-32B peer accuracy, gsm8k",
+   "printed": "96.39",
+   "key": "peer_qwen3-32b_gsm8k"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5-7B peer accuracy, gsm8k",
+   "printed": "91.94",
+   "key": "peer_qwen25-7b_gsm8k"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Llama-3-8B peer accuracy, gsm8k",
+   "printed": "73.61",
+   "key": "peer_llama3-8b_gsm8k"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen3-32B peer accuracy, strategyqa",
+   "printed": "77.78",
+   "key": "peer_qwen3-32b_strategyqa"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5-7B peer accuracy, strategyqa",
+   "printed": "64.44",
+   "key": "peer_qwen25-7b_strategyqa"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Llama-3-8B peer accuracy, strategyqa",
+   "printed": "54.72",
+   "key": "peer_llama3-8b_strategyqa"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen3-32B peer accuracy, mmlu_pro",
+   "printed": "60.83",
+   "key": "peer_qwen3-32b_mmlu_pro"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5-7B peer accuracy, mmlu_pro",
+   "printed": "55.56",
+   "key": "peer_qwen25-7b_mmlu_pro"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Llama-3-8B peer accuracy, mmlu_pro",
+   "printed": "39.17",
+   "key": "peer_llama3-8b_mmlu_pro"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen3-32B peer accuracy, gpqa",
+   "printed": "42.50",
+   "key": "peer_qwen3-32b_gpqa"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5-7B peer accuracy, gpqa",
+   "printed": "31.11",
+   "key": "peer_qwen25-7b_gpqa"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Llama-3-8B peer accuracy, gpqa",
+   "printed": "25.56",
+   "key": "peer_llama3-8b_gpqa"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Llama-3-8B-set baseline, Qwen3 full effect",
+   "printed": "+0.62",
+   "key": "sens_qwen3_full_none"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Llama-3-8B-set baseline, Qwen3 answers-only effect",
+   "printed": "+5.00",
+   "key": "sens_qwen3_answers_none"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Llama-3-8B-set baseline, gpt-oss full effect",
+   "printed": "+5.07",
+   "key": "sens_gptoss_full_none"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Llama-3-8B-set baseline, gpt-oss answers-only effect",
+   "printed": "+8.96",
+   "key": "sens_gptoss_answers_none"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: answers-minus-full change, Qwen3",
+   "printed": "+2.08",
+   "key": "chg_qwen3_answers_full"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: answers-minus-full change, gpt-oss",
+   "printed": "-1.46",
+   "key": "chg_gptoss_answers_full"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: answers-minus-full change, Gemma",
+   "printed": "-1.39",
+   "key": "chg_gemma_answers_full"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5-7B recipient, answers only (%)",
+   "printed": "68.33",
+   "key": "w_acc_all_answer_only"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5-7B recipient, full responses (%)",
+   "printed": "71.81",
+   "key": "w_acc_all_full"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: Qwen2.5-7B recipient, no peers (%)",
+   "printed": "57.43",
+   "key": "w_acc_all_no_peers"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: peers' pooled accuracy (%)",
+   "printed": "69.38",
+   "key": "w_peer_all"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: peer minus recipient gap",
+   "printed": "11.94",
+   "key": "w_gap_all"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: gap 95% CI lower",
+   "printed": "8.54",
+   "key": "w_gap_all_lo"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: answers minus no peers",
+   "printed": "+10.90",
+   "key": "w_eff_all_answers_none"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: answers minus no peers, CI lower",
+   "printed": "8.06",
+   "key": "w_eff_all_answers_none_lo"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: full minus no peers",
+   "printed": "+14.37",
+   "key": "w_eff_all_full_none"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: full minus no peers, CI lower",
+   "printed": "10.69",
+   "key": "w_eff_all_full_none_lo"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: answers-only recovers (pp)",
+   "printed": "17.36",
+   "key": "w_answer_only_recovered"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: answers-only loses (pp)",
+   "printed": "6.46",
+   "key": "w_answer_only_lost"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: full responses recover (pp)",
+   "printed": "23.47",
+   "key": "w_full_recovered"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: full responses lose (pp)",
+   "printed": "9.10",
+   "key": "w_full_lost"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: with Qwen2.5 peers, answers minus full",
+   "printed": "+2.57",
+   "key": "w_qwen25peers_answers_full"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: with Qwen2.5 peers, CI lower",
+   "printed": "0.21",
+   "key": "w_qwen25peers_answers_full_lo"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: change between sources",
+   "printed": "-6.04",
+   "key": "w_source_change"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: change between sources, CI lower",
+   "printed": "-9.44",
+   "key": "w_source_change_lo"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: change between sources, CI upper",
+   "printed": "-2.57",
+   "key": "w_source_change_hi"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: mean input tokens per call, no_peers",
+   "printed": "199",
+   "key": "w_no_peers_mean_in"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: mean output tokens per call, no_peers",
+   "printed": "430",
+   "key": "w_no_peers_mean_out"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: mean input tokens per call, answer_only",
+   "printed": "240",
+   "key": "w_answer_only_mean_in"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: mean output tokens per call, answer_only",
+   "printed": "416",
+   "key": "w_answer_only_mean_out"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: mean input tokens per call, full",
+   "printed": "1,120",
+   "key": "w_full_mean_in"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: mean output tokens per call, full",
+   "printed": "467",
+   "key": "w_full_mean_out"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: truncation rate, lower end (%)",
+   "printed": "2.50",
+   "key": "w_trunc_min"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: re-scored no-peer outcomes that agree",
+   "printed": "1,440",
+   "key": "w_rescored_agree"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gsm8k row, no peers",
+   "printed": "86.67",
+   "key": "w_acc_gsm8k_no_peers"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gsm8k row, answers",
+   "printed": "96.94",
+   "key": "w_acc_gsm8k_answer_only"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gsm8k row, full",
+   "printed": "95.00",
+   "key": "w_acc_gsm8k_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gsm8k row, answers - full",
+   "printed": "+1.94",
+   "key": "w_eff_gsm8k_answers_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gsm8k row, 95% CI lower",
+   "printed": "-0.83",
+   "key": "w_eff_gsm8k_answers_full_lo"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gsm8k row, 95% CI upper",
+   "printed": "4.72",
+   "key": "w_eff_gsm8k_answers_full_hi"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "strategyqa row, no peers",
+   "printed": "60.28",
+   "key": "w_acc_strategyqa_no_peers"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "strategyqa row, answers",
+   "printed": "77.50",
+   "key": "w_acc_strategyqa_answer_only"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "strategyqa row, full",
+   "printed": "76.11",
+   "key": "w_acc_strategyqa_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "strategyqa row, answers - full",
+   "printed": "+1.39",
+   "key": "w_eff_strategyqa_answers_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "strategyqa row, 95% CI lower",
+   "printed": "-3.33",
+   "key": "w_eff_strategyqa_answers_full_lo"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "strategyqa row, 95% CI upper",
+   "printed": "6.39",
+   "key": "w_eff_strategyqa_answers_full_hi"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "mmlu_pro row, no peers",
+   "printed": "51.67",
+   "key": "w_acc_mmlu_pro_no_peers"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "mmlu_pro row, answers",
+   "printed": "62.78",
+   "key": "w_acc_mmlu_pro_answer_only"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "mmlu_pro row, full",
+   "printed": "66.94",
+   "key": "w_acc_mmlu_pro_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "mmlu_pro row, answers - full",
+   "printed": "-4.17",
+   "key": "w_eff_mmlu_pro_answers_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "mmlu_pro row, 95% CI lower",
+   "printed": "-10.01",
+   "key": "w_eff_mmlu_pro_answers_full_lo"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "mmlu_pro row, 95% CI upper",
+   "printed": "1.94",
+   "key": "w_eff_mmlu_pro_answers_full_hi"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gpqa row, no peers",
+   "printed": "31.11",
+   "key": "w_acc_gpqa_no_peers"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gpqa row, answers",
+   "printed": "36.11",
+   "key": "w_acc_gpqa_answer_only"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gpqa row, full",
+   "printed": "49.17",
+   "key": "w_acc_gpqa_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gpqa row, answers - full",
+   "printed": "-13.06",
+   "key": "w_eff_gpqa_answers_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gpqa row, 95% CI lower",
+   "printed": "-21.11",
+   "key": "w_eff_gpqa_answers_full_lo"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "gpqa row, 95% CI upper",
+   "printed": "-5.28",
+   "key": "w_eff_gpqa_answers_full_hi"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "all row, no peers",
+   "printed": "57.43",
+   "key": "w_acc_all_no_peers"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "all row, answers",
+   "printed": "68.33",
+   "key": "w_acc_all_answer_only"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "all row, full",
+   "printed": "71.81",
+   "key": "w_acc_all_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "all row, answers - full",
+   "printed": "-3.47",
+   "key": "w_eff_all_answers_full"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "all row, 95% CI lower",
+   "printed": "-6.46",
+   "key": "w_eff_all_answers_full_lo"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "all row, 95% CI upper",
+   "printed": "-0.56",
+   "key": "w_eff_all_answers_full_hi"
+  },
+  {
+   "label": "tab:s-weaker",
+   "tex_file": "supplementary.tex",
+   "where": "table note: outcomes per condition",
+   "printed": "1,440",
+   "key": "w_units"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: gap 95% CI upper",
+   "printed": "15.49",
+   "key": "w_gap_all_hi"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: answers minus no peers, CI upper",
+   "printed": "13.82",
+   "key": "w_eff_all_answers_none_hi"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: full minus no peers, CI upper",
+   "printed": "18.06",
+   "key": "w_eff_all_full_none_hi"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: with Qwen2.5 peers, CI upper",
+   "printed": "4.93",
+   "key": "w_qwen25peers_answers_full_hi"
+  },
+  {
+   "label": "sec:s-spend-peers",
+   "tex_file": "supplementary.tex",
+   "where": "prose: truncation rate, upper end (%)",
+   "printed": "2.71",
+   "key": "w_trunc_max"
+  }
+ ],
+ "unreproduced": [],
+ "statements": [
+  {
+   "text": "Correct-to-wrong answer changes fall in all six recipient-format combinations when Qwen3-32B peers replace Qwen2.5-7B peers",
+   "key": "regression_rate_falls_combinations",
+   "expected": 6
+  }
+ ]
+}

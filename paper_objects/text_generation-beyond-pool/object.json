@@ -1,0 +1,122 @@
+{
+ "id": "text_generation-beyond-pool",
+ "labels": [
+  "sec:s-spend-pool"
+ ],
+ "section": "Supplementary S8-A (sec:s-spend-pool), availability paragraph",
+ "title": "Generation's gain over voting, split by whether the pool holds a correct query",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "generation minus Nonempty, all BIRD questions (pp)",
+   "printed": "8.87",
+   "key": "bird_DS_G_minus_Nonempty"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "part contributed by questions whose pool holds no correct query (pp)",
+   "printed": "8.16",
+   "key": "bird_DS_G_minus_Nonempty_oracle0"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "questions whose pool holds no correct query",
+   "printed": "557",
+   "key": "bird_oracle0_questions"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "of those, answered correctly by DeepSeek-V4-Pro generation",
+   "printed": "118",
+   "key": "bird_oracle0_DS_G_correct"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "questions with a correct candidate: generation minus Nonempty (pp)",
+   "printed": "+0.72",
+   "key": "bird_DS_G_minus_Nonempty_oracle1"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "questions with a correct candidate: generation below the DeepSeek-V4-Pro selector (pp)",
+   "printed": "1.51",
+   "key": "bird_DS_G_minus_DS_S_al_oracle1",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "questions whose pool holds a correct query",
+   "printed": "977",
+   "key": "bird_oracle1_questions"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro generation, share of the no-correct-candidate questions answered (%)",
+   "printed": "21.2",
+   "key": "bird_oracle0_DS_G_pct"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B generation, no-correct-candidate questions answered",
+   "printed": "59",
+   "key": "bird_oracle0_Q3_G_correct"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3-32B generation, share answered (%)",
+   "printed": "10.6",
+   "key": "bird_oracle0_Q3_G_pct"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: no-correct-candidate questions answered by DeepSeek-V4-Pro generation",
+   "printed": "28",
+   "key": "spider_oracle0_DS_G_correct"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Spider: part of generation minus Nonempty from those questions (pp)",
+   "printed": "+1.91",
+   "key": "spider_DS_G_minus_Nonempty_oracle0"
+  }
+ ],
+ "unreproduced": [],
+ "statements": [
+  {
+   "text": "questions with a correct candidate: generation minus Nonempty is not detected",
+   "key": "bird_DS_G_minus_Nonempty_oracle1_detected",
+   "expected": 0
+  },
+  {
+   "text": "questions with a correct candidate: generation minus the DeepSeek-V4-Pro selector is detected",
+   "key": "bird_DS_G_minus_DS_S_al_oracle1_detected",
+   "expected": 1
+  },
+  {
+   "text": "voting and both selectors answer none of the no-correct-candidate BIRD questions",
+   "key": "bird_oracle0_Nonempty_correct",
+   "expected": 0
+  },
+  {
+   "text": "Spider: the total gain of generation over Nonempty is not detected",
+   "key": "spider_DS_G_minus_Nonempty_detected",
+   "expected": 0
+  }
+ ]
+}

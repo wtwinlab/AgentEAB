@@ -1,0 +1,1936 @@
+{
+ "id": "tab_strength",
+ "labels": [
+  "tab:strength",
+  "sec:sql-feedback",
+  "sec:q4",
+  "tab:s-did",
+  "tab:s-aligned",
+  "tab:s-repeat",
+  "tab:s-repeat-within",
+  "tab:s-availability",
+  "tab:s-quality-cost",
+  "tab:s-selector-controls",
+  "sec:s-spend-pool",
+  "sec:s-decoding"
+ ],
+ "section": "VIII-A (sec:sql-feedback), VIII-C; Supplementary S8-A (sec:s-spend-pool), S4-B (sec:s-decoding)",
+ "title": "Selection and generation calls on a fixed SQL candidate pool",
+ "compute": [
+  "python3",
+  "code/compute.py"
+ ],
+ "values": [
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Selector - Nonempty, Qwen3-32B, estimate",
+   "printed": "+1.35",
+   "key": "ds_bird_Q3_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Selector - Nonempty, Qwen3-32B, 95% CI lower",
+   "printed": "-0.30",
+   "key": "ds_bird_Q3_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Selector - Nonempty, Qwen3-32B, 95% CI upper",
+   "printed": "3.03",
+   "key": "ds_bird_Q3_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Selector - Nonempty, DeepSeek-V4, estimate",
+   "printed": "+2.22",
+   "key": "ds_bird_DS_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Selector - Nonempty, DeepSeek-V4, 95% CI lower",
+   "printed": "0.33",
+   "key": "ds_bird_DS_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Selector - Nonempty, DeepSeek-V4, 95% CI upper",
+   "printed": "4.28",
+   "key": "ds_bird_DS_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - Nonempty, Qwen3-32B, estimate",
+   "printed": "+3.61",
+   "key": "ds_bird_Q3_Generation_minus_Nonempty"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - Nonempty, Qwen3-32B, 95% CI lower",
+   "printed": "1.83",
+   "key": "ds_bird_Q3_Generation_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - Nonempty, Qwen3-32B, 95% CI upper",
+   "printed": "5.22",
+   "key": "ds_bird_Q3_Generation_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - Nonempty, DeepSeek-V4, estimate",
+   "printed": "+8.87",
+   "key": "ds_bird_DS_Generation_minus_Nonempty"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - Nonempty, DeepSeek-V4, 95% CI lower",
+   "printed": "6.41",
+   "key": "ds_bird_DS_Generation_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - Nonempty, DeepSeek-V4, 95% CI upper",
+   "printed": "11.44",
+   "key": "ds_bird_DS_Generation_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - selector, Qwen3-32B, estimate",
+   "printed": "+2.26",
+   "key": "ds_bird_Q3_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - selector, Qwen3-32B, 95% CI lower",
+   "printed": "0.53",
+   "key": "ds_bird_Q3_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - selector, Qwen3-32B, 95% CI upper",
+   "printed": "3.68",
+   "key": "ds_bird_Q3_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - selector, DeepSeek-V4, estimate",
+   "printed": "+6.65",
+   "key": "ds_bird_DS_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - selector, DeepSeek-V4, 95% CI lower",
+   "printed": "4.30",
+   "key": "ds_bird_DS_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation - selector, DeepSeek-V4, 95% CI upper",
+   "printed": "9.14",
+   "key": "ds_bird_DS_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation accuracy, Qwen3-32B",
+   "printed": "57.88",
+   "key": "ds_bird_level_Q3_Generation"
+  },
+  {
+   "label": "tab:strength",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Generation accuracy, DeepSeek-V4",
+   "printed": "63.14",
+   "key": "ds_bird_level_DS_Generation"
+  },
+  {
+   "label": "sec:sql-feedback",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "difference of selector gains, DeepSeek minus Qwen3",
+   "printed": "+0.87",
+   "key": "did_bird_S_al_minus_Nonempty"
+  },
+  {
+   "label": "sec:sql-feedback",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "difference of generation gains, DeepSeek minus Qwen3",
+   "printed": "+5.26",
+   "key": "did_bird_Generation_minus_Nonempty"
+  },
+  {
+   "label": "sec:sql-feedback",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "DeepSeek generation over selection",
+   "printed": "6.65",
+   "key": "ds_bird_DS_Generation_minus_S_al"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: cross-pool change of the generation-selection gap, BIRD, estimate",
+   "printed": "-2.31",
+   "key": "change_bird_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: cross-pool change of the generation-selection gap, BIRD, 95% CI lower",
+   "printed": "-3.67",
+   "key": "change_bird_avg_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: cross-pool change of the generation-selection gap, BIRD, 95% CI upper",
+   "printed": "-0.89",
+   "key": "change_bird_avg_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: cross-pool change, Spider",
+   "printed": "+0.19",
+   "key": "change_spider_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: Spider Qwen3/GLM, Nonempty over the selector (range start)",
+   "printed": "1.8",
+   "key": "decode_qwen3_glm_spider_avg_S_al_minus_Nonempty",
+   "transform": "abs"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: six versus two same-source samples, BIRD availability",
+   "printed": "6.16",
+   "key": "samesource_bird_k6_minus_k2_Oracle"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: six versus two same-source samples, BIRD Nonempty",
+   "printed": "0.93",
+   "key": "samesource_bird_k6_minus_k2_Nonempty"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: six versus two same-source samples, generation lead over Nonempty",
+   "printed": "+0.36",
+   "key": "samesource_bird_k6_minus_k2_Generation_minus_Nonempty"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: LLM selector with full inputs over generation, price ratio (range start)",
+   "printed": "1.3",
+   "key": "cost_S_al_over_Generation_min"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: Qwen3/GLM pool acquisition, BIRD output tokens (M)",
+   "printed": "8.80",
+   "key": "acquisition_qwen3_glm_bird_output_M"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: Qwen3/GLM pool acquisition, Spider output tokens (M)",
+   "printed": "3.97",
+   "key": "acquisition_qwen3_glm_spider_output_M"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: four-model pool acquisition, BIRD output tokens (M)",
+   "printed": "0.30",
+   "key": "acquisition_original_bird_output_M"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: four-model pool acquisition, Spider output tokens (M)",
+   "printed": "0.13",
+   "key": "acquisition_original_spider_output_M"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD selector, estimate",
+   "printed": "+0.87",
+   "key": "did_bird_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD selector, 95% CI lower",
+   "printed": "-0.38",
+   "key": "did_bird_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD selector, 95% CI upper",
+   "printed": "+2.10",
+   "key": "did_bird_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation, estimate",
+   "printed": "+5.26",
+   "key": "did_bird_Generation_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation, 95% CI lower",
+   "printed": "3.18",
+   "key": "did_bird_Generation_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation, 95% CI upper",
+   "printed": "7.40",
+   "key": "did_bird_Generation_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation - selector gap, estimate",
+   "printed": "+4.39",
+   "key": "did_bird_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation - selector gap, 95% CI lower",
+   "printed": "2.18",
+   "key": "did_bird_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD generation - selector gap, 95% CI upper",
+   "printed": "7.07",
+   "key": "did_bird_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider selector, estimate",
+   "printed": "+0.85",
+   "key": "did_spider_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider selector, 95% CI lower",
+   "printed": "-0.49",
+   "key": "did_spider_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider selector, 95% CI upper",
+   "printed": "+2.08",
+   "key": "did_spider_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation, estimate",
+   "printed": "+1.40",
+   "key": "did_spider_Generation_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation, 95% CI lower",
+   "printed": "-0.31",
+   "key": "did_spider_Generation_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation, 95% CI upper",
+   "printed": "+3.05",
+   "key": "did_spider_Generation_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation - selector gap, estimate",
+   "printed": "+0.55",
+   "key": "did_spider_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation - selector gap, 95% CI lower",
+   "printed": "-1.33",
+   "key": "did_spider_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "tab:s-did",
+   "tex_file": "supplementary.tex",
+   "where": "Spider generation - selector gap, 95% CI upper",
+   "printed": "+2.54",
+   "key": "did_spider_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus Generation, estimate",
+   "printed": "-2.26",
+   "key": "aligned_original_bird_S_al_minus_Generation"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus Generation, 95% CI lower",
+   "printed": "-3.68",
+   "key": "aligned_original_bird_S_al_minus_Generation_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus Generation, 95% CI upper",
+   "printed": "-0.53",
+   "key": "aligned_original_bird_S_al_minus_Generation_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus selector (execution summary), estimate",
+   "printed": "+0.38",
+   "key": "aligned_original_bird_S_al_minus_C"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus selector (execution summary), 95% CI lower",
+   "printed": "-0.73",
+   "key": "aligned_original_bird_S_al_minus_C_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus selector (execution summary), 95% CI upper",
+   "printed": "1.45",
+   "key": "aligned_original_bird_S_al_minus_C_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus Nonempty, estimate",
+   "printed": "+1.35",
+   "key": "aligned_original_bird_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus Nonempty, 95% CI lower",
+   "printed": "-0.30",
+   "key": "aligned_original_bird_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, bird, selector minus Nonempty, 95% CI upper",
+   "printed": "3.03",
+   "key": "aligned_original_bird_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus Generation, estimate",
+   "printed": "+0.89",
+   "key": "aligned_original_spider_S_al_minus_Generation"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus Generation, 95% CI lower",
+   "printed": "-0.42",
+   "key": "aligned_original_spider_S_al_minus_Generation_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus Generation, 95% CI upper",
+   "printed": "2.30",
+   "key": "aligned_original_spider_S_al_minus_Generation_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus selector (execution summary), estimate",
+   "printed": "-0.12",
+   "key": "aligned_original_spider_S_al_minus_C"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus selector (execution summary), 95% CI lower",
+   "printed": "-1.22",
+   "key": "aligned_original_spider_S_al_minus_C_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus selector (execution summary), 95% CI upper",
+   "printed": "0.92",
+   "key": "aligned_original_spider_S_al_minus_C_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus Nonempty, estimate",
+   "printed": "+0.46",
+   "key": "aligned_original_spider_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus Nonempty, 95% CI lower",
+   "printed": "-1.93",
+   "key": "aligned_original_spider_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Four-model pool, spider, selector minus Nonempty, 95% CI upper",
+   "printed": "2.40",
+   "key": "aligned_original_spider_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus Generation, estimate",
+   "printed": "-0.04",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_Generation"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus Generation, 95% CI lower",
+   "printed": "-1.66",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_Generation_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus Generation, 95% CI upper",
+   "printed": "1.50",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_Generation_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus selector (execution summary), estimate",
+   "printed": "-0.51",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_C"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus selector (execution summary), 95% CI lower",
+   "printed": "-1.46",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_C_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus selector (execution summary), 95% CI upper",
+   "printed": "0.59",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_C_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus Nonempty, estimate",
+   "printed": "-0.07",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus Nonempty, 95% CI lower",
+   "printed": "-1.25",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, bird, selector minus Nonempty, 95% CI upper",
+   "printed": "1.24",
+   "key": "aligned_qwen3_glm_bird_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus Generation, estimate",
+   "printed": "-0.03",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_Generation"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus Generation, 95% CI lower",
+   "printed": "-0.81",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_Generation_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus Generation, 95% CI upper",
+   "printed": "0.80",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_Generation_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus selector (execution summary), estimate",
+   "printed": "-0.26",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_C"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus selector (execution summary), 95% CI lower",
+   "printed": "-1.15",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_C_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus selector (execution summary), 95% CI upper",
+   "printed": "0.57",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_C_hi"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus Nonempty, estimate",
+   "printed": "-1.93",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus Nonempty, 95% CI lower",
+   "printed": "-3.68",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-aligned",
+   "tex_file": "supplementary.tex",
+   "where": "Qwen3/GLM pool, spider, selector minus Nonempty, 95% CI upper",
+   "printed": "-0.60",
+   "key": "aligned_qwen3_glm_spider_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "bird, Four-model pool, d1",
+   "printed": "2.26",
+   "key": "decode_original_bird_d1_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "bird, Four-model pool, d2",
+   "printed": "3.29",
+   "key": "decode_original_bird_d2_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "bird, Four-model pool, avg",
+   "printed": "2.77",
+   "key": "decode_original_bird_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "bird, Qwen3/GLM pool, d1",
+   "printed": "0.04",
+   "key": "decode_qwen3_glm_bird_d1_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "bird, Qwen3/GLM pool, d2",
+   "printed": "0.89",
+   "key": "decode_qwen3_glm_bird_d2_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "bird, Qwen3/GLM pool, avg",
+   "printed": "0.46",
+   "key": "decode_qwen3_glm_bird_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "spider, Four-model pool, d1",
+   "printed": "-0.89",
+   "key": "decode_original_spider_d1_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "spider, Four-model pool, d2",
+   "printed": "0.25",
+   "key": "decode_original_spider_d2_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "spider, Four-model pool, avg",
+   "printed": "-0.32",
+   "key": "decode_original_spider_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "spider, Qwen3/GLM pool, d1",
+   "printed": "0.03",
+   "key": "decode_qwen3_glm_spider_d1_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "spider, Qwen3/GLM pool, d2",
+   "printed": "-0.29",
+   "key": "decode_qwen3_glm_spider_d2_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat",
+   "tex_file": "supplementary.tex",
+   "where": "spider, Qwen3/GLM pool, avg",
+   "printed": "-0.13",
+   "key": "decode_qwen3_glm_spider_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, Generation - S_al, estimate",
+   "printed": "0.46",
+   "key": "decode_qwen3_glm_bird_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, Generation - S_al, 95% CI lower",
+   "printed": "-0.48",
+   "key": "decode_qwen3_glm_bird_avg_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, Generation - S_al, 95% CI upper",
+   "printed": "1.48",
+   "key": "decode_qwen3_glm_bird_avg_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, Generation - Nonempty, estimate",
+   "printed": "0.48",
+   "key": "decode_qwen3_glm_bird_avg_Generation_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, Generation - Nonempty, 95% CI lower",
+   "printed": "-0.64",
+   "key": "decode_qwen3_glm_bird_avg_Generation_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, Generation - Nonempty, 95% CI upper",
+   "printed": "1.57",
+   "key": "decode_qwen3_glm_bird_avg_Generation_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, S_al - Nonempty, estimate",
+   "printed": "0.02",
+   "key": "decode_qwen3_glm_bird_avg_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, S_al - Nonempty, 95% CI lower",
+   "printed": "-1.13",
+   "key": "decode_qwen3_glm_bird_avg_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, bird, S_al - Nonempty, 95% CI upper",
+   "printed": "1.32",
+   "key": "decode_qwen3_glm_bird_avg_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, Generation - S_al, estimate",
+   "printed": "-0.13",
+   "key": "decode_qwen3_glm_spider_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, Generation - S_al, 95% CI lower",
+   "printed": "-0.74",
+   "key": "decode_qwen3_glm_spider_avg_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, Generation - S_al, 95% CI upper",
+   "printed": "0.50",
+   "key": "decode_qwen3_glm_spider_avg_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, Generation - Nonempty, estimate",
+   "printed": "-1.91",
+   "key": "decode_qwen3_glm_spider_avg_Generation_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, Generation - Nonempty, 95% CI lower",
+   "printed": "-3.35",
+   "key": "decode_qwen3_glm_spider_avg_Generation_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, Generation - Nonempty, 95% CI upper",
+   "printed": "-0.69",
+   "key": "decode_qwen3_glm_spider_avg_Generation_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, S_al - Nonempty, estimate",
+   "printed": "-1.78",
+   "key": "decode_qwen3_glm_spider_avg_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, S_al - Nonempty, 95% CI lower",
+   "printed": "-3.46",
+   "key": "decode_qwen3_glm_spider_avg_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "within Qwen3/GLM pool, spider, S_al - Nonempty, 95% CI upper",
+   "printed": "-0.47",
+   "key": "decode_qwen3_glm_spider_avg_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, Generation - S_al, estimate",
+   "printed": "-2.31",
+   "key": "change_bird_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, Generation - S_al, 95% CI lower",
+   "printed": "-3.67",
+   "key": "change_bird_avg_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, Generation - S_al, 95% CI upper",
+   "printed": "-0.89",
+   "key": "change_bird_avg_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, Generation - Nonempty, estimate",
+   "printed": "-3.42",
+   "key": "change_bird_avg_Generation_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, Generation - Nonempty, 95% CI lower",
+   "printed": "-5.56",
+   "key": "change_bird_avg_Generation_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, Generation - Nonempty, 95% CI upper",
+   "printed": "-1.35",
+   "key": "change_bird_avg_Generation_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, S_al - Nonempty, estimate",
+   "printed": "-1.10",
+   "key": "change_bird_avg_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, S_al - Nonempty, 95% CI lower",
+   "printed": "-3.02",
+   "key": "change_bird_avg_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, bird, S_al - Nonempty, 95% CI upper",
+   "printed": "0.49",
+   "key": "change_bird_avg_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, Generation - S_al, estimate",
+   "printed": "+0.19",
+   "key": "change_spider_avg_Generation_minus_S_al"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, Generation - S_al, 95% CI lower",
+   "printed": "-1.29",
+   "key": "change_spider_avg_Generation_minus_S_al_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, Generation - S_al, 95% CI upper",
+   "printed": "1.70",
+   "key": "change_spider_avg_Generation_minus_S_al_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, Generation - Nonempty, estimate",
+   "printed": "-1.81",
+   "key": "change_spider_avg_Generation_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, Generation - Nonempty, 95% CI lower",
+   "printed": "-4.53",
+   "key": "change_spider_avg_Generation_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, Generation - Nonempty, 95% CI upper",
+   "printed": "1.05",
+   "key": "change_spider_avg_Generation_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, S_al - Nonempty, estimate",
+   "printed": "-2.00",
+   "key": "change_spider_avg_S_al_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, S_al - Nonempty, 95% CI lower",
+   "printed": "-3.68",
+   "key": "change_spider_avg_S_al_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-repeat-within",
+   "tex_file": "supplementary.tex",
+   "where": "change from the four-model pool, spider, S_al - Nonempty, 95% CI upper",
+   "printed": "-0.27",
+   "key": "change_spider_avg_S_al_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, available",
+   "printed": "63.36",
+   "key": "common_original_bird_Oracle"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, available, not returned by Unfiltered",
+   "printed": "16.25",
+   "key": "common_original_bird_unreturned_Original"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, available, not returned by Nonempty",
+   "printed": "9.03",
+   "key": "common_original_bird_unreturned_Nonempty"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, available",
+   "printed": "66.62",
+   "key": "common_qwen3_glm_bird_Oracle"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, available, not returned by Unfiltered",
+   "printed": "12.80",
+   "key": "common_qwen3_glm_bird_unreturned_Original"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, available, not returned by Nonempty",
+   "printed": "9.22",
+   "key": "common_qwen3_glm_bird_unreturned_Nonempty"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, available",
+   "printed": "84.96",
+   "key": "common_original_spider_Oracle"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, available, not returned by Unfiltered",
+   "printed": "7.94",
+   "key": "common_original_spider_unreturned_Original"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, available, not returned by Nonempty",
+   "printed": "6.25",
+   "key": "common_original_spider_unreturned_Nonempty"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, available",
+   "printed": "84.11",
+   "key": "common_qwen3_glm_spider_Oracle"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, available, not returned by Unfiltered",
+   "printed": "5.98",
+   "key": "common_qwen3_glm_spider_unreturned_Original"
+  },
+  {
+   "label": "tab:s-availability",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, available, not returned by Nonempty",
+   "printed": "4.87",
+   "key": "common_qwen3_glm_spider_unreturned_Nonempty"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, Nonempty accuracy",
+   "printed": "54.32",
+   "key": "common_original_bird_Nonempty"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, selector, execution summary, accuracy",
+   "printed": "53.79",
+   "key": "common_original_bird_B"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, selector, execution summary, input tokens",
+   "printed": "476",
+   "key": "cost_original_bird_B_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, selector, execution summary, output tokens",
+   "printed": "3",
+   "key": "cost_original_bird_B_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, selector, execution summary, USD per 1,000 questions",
+   "printed": "0.039",
+   "key": "cost_original_bird_B_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, selector, generation prompt, accuracy",
+   "printed": "55.44",
+   "key": "common_original_bird_S_al_avg"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, selector, generation prompt, input tokens",
+   "printed": "1,077",
+   "key": "cost_original_bird_S_al_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, selector, generation prompt, output tokens",
+   "printed": "1,435",
+   "key": "cost_original_bird_S_al_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, selector, generation prompt, USD per 1,000 questions",
+   "printed": "0.488",
+   "key": "cost_original_bird_S_al_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, generation, accuracy",
+   "printed": "58.22",
+   "key": "common_original_bird_Generation_avg"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, generation, input tokens",
+   "printed": "1,066",
+   "key": "cost_original_bird_Generation_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, generation, output tokens",
+   "printed": "1,067",
+   "key": "cost_original_bird_Generation_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, bird, generation, USD per 1,000 questions",
+   "printed": "0.384",
+   "key": "cost_original_bird_Generation_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, Nonempty accuracy",
+   "printed": "57.40",
+   "key": "common_qwen3_glm_bird_Nonempty"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, selector, execution summary, accuracy",
+   "printed": "57.03",
+   "key": "common_qwen3_glm_bird_B"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, selector, execution summary, input tokens",
+   "printed": "600",
+   "key": "cost_qwen3_glm_bird_B_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, selector, execution summary, output tokens",
+   "printed": "3",
+   "key": "cost_qwen3_glm_bird_B_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, selector, execution summary, USD per 1,000 questions",
+   "printed": "0.049",
+   "key": "cost_qwen3_glm_bird_B_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, selector, generation prompt, accuracy",
+   "printed": "57.41",
+   "key": "common_qwen3_glm_bird_S_al_avg"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, selector, generation prompt, input tokens",
+   "printed": "1,196",
+   "key": "cost_qwen3_glm_bird_S_al_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, selector, generation prompt, output tokens",
+   "printed": "1,357",
+   "key": "cost_qwen3_glm_bird_S_al_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, selector, generation prompt, USD per 1,000 questions",
+   "printed": "0.476",
+   "key": "cost_qwen3_glm_bird_S_al_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, generation, accuracy",
+   "printed": "57.88",
+   "key": "common_qwen3_glm_bird_Generation_avg"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, generation, input tokens",
+   "printed": "1,185",
+   "key": "cost_qwen3_glm_bird_Generation_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, generation, output tokens",
+   "printed": "935",
+   "key": "cost_qwen3_glm_bird_Generation_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, bird, generation, USD per 1,000 questions",
+   "printed": "0.357",
+   "key": "cost_qwen3_glm_bird_Generation_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, Nonempty accuracy",
+   "printed": "78.71",
+   "key": "common_original_spider_Nonempty"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, selector, execution summary, accuracy",
+   "printed": "76.97",
+   "key": "common_original_spider_B"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, selector, execution summary, input tokens",
+   "printed": "379",
+   "key": "cost_original_spider_B_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, selector, execution summary, output tokens",
+   "printed": "3",
+   "key": "cost_original_spider_B_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, selector, execution summary, USD per 1,000 questions",
+   "printed": "0.031",
+   "key": "cost_original_spider_B_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, selector, generation prompt, accuracy",
+   "printed": "78.92",
+   "key": "common_original_spider_S_al_avg"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, selector, generation prompt, input tokens",
+   "printed": "549",
+   "key": "cost_original_spider_S_al_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, selector, generation prompt, output tokens",
+   "printed": "1,196",
+   "key": "cost_original_spider_S_al_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, selector, generation prompt, USD per 1,000 questions",
+   "printed": "0.379",
+   "key": "cost_original_spider_S_al_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, generation, accuracy",
+   "printed": "78.60",
+   "key": "common_original_spider_Generation_avg"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, generation, input tokens",
+   "printed": "538",
+   "key": "cost_original_spider_Generation_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, generation, output tokens",
+   "printed": "745",
+   "key": "cost_original_spider_Generation_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "original pool, spider, generation, USD per 1,000 questions",
+   "printed": "0.252",
+   "key": "cost_original_spider_Generation_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, Nonempty accuracy",
+   "printed": "79.24",
+   "key": "common_qwen3_glm_spider_Nonempty"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, selector, execution summary, accuracy",
+   "printed": "77.57",
+   "key": "common_qwen3_glm_spider_B"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, selector, execution summary, input tokens",
+   "printed": "412",
+   "key": "cost_qwen3_glm_spider_B_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, selector, execution summary, output tokens",
+   "printed": "3",
+   "key": "cost_qwen3_glm_spider_B_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, selector, execution summary, USD per 1,000 questions",
+   "printed": "0.034",
+   "key": "cost_qwen3_glm_spider_B_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, selector, generation prompt, accuracy",
+   "printed": "77.46",
+   "key": "common_qwen3_glm_spider_S_al_avg"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, selector, generation prompt, input tokens",
+   "printed": "582",
+   "key": "cost_qwen3_glm_spider_S_al_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, selector, generation prompt, output tokens",
+   "printed": "1,094",
+   "key": "cost_qwen3_glm_spider_S_al_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, selector, generation prompt, USD per 1,000 questions",
+   "printed": "0.353",
+   "key": "cost_qwen3_glm_spider_S_al_usd_per_1000q"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, generation, accuracy",
+   "printed": "77.33",
+   "key": "common_qwen3_glm_spider_Generation_avg"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, generation, input tokens",
+   "printed": "571",
+   "key": "cost_qwen3_glm_spider_Generation_input"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, generation, output tokens",
+   "printed": "717",
+   "key": "cost_qwen3_glm_spider_Generation_output"
+  },
+  {
+   "label": "tab:s-quality-cost",
+   "tex_file": "supplementary.tex",
+   "where": "qwen3_glm pool, spider, generation, USD per 1,000 questions",
+   "printed": "0.246",
+   "key": "cost_qwen3_glm_spider_Generation_usd_per_1000q"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "generation-minus-selector gap wider for DeepSeek-V4-Pro",
+   "printed": "4.39",
+   "key": "did_bird_Generation_minus_S_al"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "cross-pool rise of Nonempty, BIRD",
+   "printed": "3.08",
+   "key": "levelchange_bird_avg_Nonempty"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "cross-pool rise of Nonempty, CI lower",
+   "printed": "1.56",
+   "key": "levelchange_bird_avg_Nonempty_lo"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "cross-pool rise of the LLM selector with full inputs",
+   "printed": "1.97",
+   "key": "levelchange_bird_avg_S_al"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "same, CI lower",
+   "printed": "0.08",
+   "key": "levelchange_bird_avg_S_al_lo"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "cross-pool change of generation, estimate",
+   "printed": "-0.34",
+   "key": "levelchange_bird_avg_Generation"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "cross-pool change of generation, 95% CI lower",
+   "printed": "-2.33",
+   "key": "levelchange_bird_avg_Generation_lo"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "cross-pool change of generation, 95% CI upper",
+   "printed": "1.55",
+   "key": "levelchange_bird_avg_Generation_hi"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty over Unfiltered, four-model BIRD pool",
+   "printed": "7.21",
+   "key": "common_original_bird_Nonempty_minus_Original"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Nonempty over Unfiltered, Qwen3/GLM BIRD pool",
+   "printed": "3.58",
+   "key": "common_qwen3_glm_bird_Nonempty_minus_Original"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "available, not returned by Nonempty, four-model BIRD pool (about 9)",
+   "printed": "9",
+   "key": "common_original_bird_unreturned_Nonempty"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "available, not returned by Nonempty, Qwen3/GLM BIRD pool (about 9)",
+   "printed": "9",
+   "key": "common_qwen3_glm_bird_unreturned_Nonempty"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Spider Unfiltered accuracy, Qwen3/GLM pool",
+   "printed": "78.13",
+   "key": "common_qwen3_glm_spider_Original"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Spider Unfiltered accuracy, four-model pool",
+   "printed": "77.02",
+   "key": "common_original_spider_Original"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "body's first-decode Qwen3-32B generation accuracy",
+   "printed": "57.88",
+   "key": "ds_bird_level_Q3_Generation"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "body's availability",
+   "printed": "63.30",
+   "key": "ds_bird_level_Oracle"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD questions in cross-pool comparisons",
+   "printed": "1,532",
+   "key": "common_bird_questions"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD questions within a pool",
+   "printed": "1,534",
+   "key": "ds_bird_questions"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "where": "Spider questions",
+   "printed": "1,034",
+   "key": "ds_spider_questions"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, B - A, estimate",
+   "printed": "-0.46",
+   "key": "controls_bird_B_minus_A"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, B - A, 95% CI lower",
+   "printed": "-1.50",
+   "key": "controls_bird_B_minus_A_lo"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, B - A, 95% CI upper",
+   "printed": "0.53",
+   "key": "controls_bird_B_minus_A_hi"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, C - B, estimate",
+   "printed": "+1.51",
+   "key": "controls_bird_C_minus_B"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, C - B, 95% CI lower",
+   "printed": "0.20",
+   "key": "controls_bird_C_minus_B_lo"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, C - B, 95% CI upper",
+   "printed": "2.59",
+   "key": "controls_bird_C_minus_B_hi"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, C - Nonempty, estimate",
+   "printed": "+0.98",
+   "key": "controls_bird_C_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, C - Nonempty, 95% CI lower",
+   "printed": "-0.47",
+   "key": "controls_bird_C_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, C - Nonempty, 95% CI upper",
+   "printed": "2.13",
+   "key": "controls_bird_C_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Generation - C, estimate",
+   "printed": "+2.64",
+   "key": "controls_bird_Generation_minus_C"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Generation - C, 95% CI lower",
+   "printed": "1.05",
+   "key": "controls_bird_Generation_minus_C_lo"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "BIRD, Generation - C, 95% CI upper",
+   "printed": "4.05",
+   "key": "controls_bird_Generation_minus_C_hi"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, B - A, estimate",
+   "printed": "+0.74",
+   "key": "controls_spider_B_minus_A"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, B - A, 95% CI lower",
+   "printed": "-0.84",
+   "key": "controls_spider_B_minus_A_lo"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, B - A, 95% CI upper",
+   "printed": "2.47",
+   "key": "controls_spider_B_minus_A_hi"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, C - B, estimate",
+   "printed": "+2.31",
+   "key": "controls_spider_C_minus_B"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, C - B, 95% CI lower",
+   "printed": "0.23",
+   "key": "controls_spider_C_minus_B_lo"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, C - B, 95% CI upper",
+   "printed": "4.26",
+   "key": "controls_spider_C_minus_B_hi"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, C - Nonempty, estimate",
+   "printed": "+0.58",
+   "key": "controls_spider_C_minus_Nonempty"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, C - Nonempty, 95% CI lower",
+   "printed": "-1.78",
+   "key": "controls_spider_C_minus_Nonempty_lo"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, C - Nonempty, 95% CI upper",
+   "printed": "2.58",
+   "key": "controls_spider_C_minus_Nonempty_hi"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Generation - C, estimate",
+   "printed": "-1.01",
+   "key": "controls_spider_Generation_minus_C"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Generation - C, 95% CI lower",
+   "printed": "-2.92",
+   "key": "controls_spider_Generation_minus_C_lo"
+  },
+  {
+   "label": "tab:s-selector-controls",
+   "tex_file": "supplementary.tex",
+   "where": "Spider, Generation - C, 95% CI upper",
+   "printed": "0.69",
+   "key": "controls_spider_Generation_minus_C_hi"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "selector condition A accuracy, bird",
+   "printed": "54.20",
+   "key": "controls_bird_level_A"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "selector condition B accuracy, bird",
+   "printed": "53.73",
+   "key": "controls_bird_level_B"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "selector condition C accuracy, bird",
+   "printed": "55.25",
+   "key": "controls_bird_level_C"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "selector condition A accuracy, spider",
+   "printed": "76.23",
+   "key": "controls_spider_level_A"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "selector condition B accuracy, spider",
+   "printed": "76.97",
+   "key": "controls_spider_level_B"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "selector condition C accuracy, spider",
+   "printed": "79.28",
+   "key": "controls_spider_level_C"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition B first-position share, BIRD",
+   "printed": "40.5",
+   "key": "controls_B_bird_first_position_pct"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition B first-position share, Spider",
+   "printed": "55.6",
+   "key": "controls_B_spider_first_position_pct"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition C first-position share, BIRD",
+   "printed": "40.7",
+   "key": "controls_C_bird_first_position_pct"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition C first-position share, Spider",
+   "printed": "51.6",
+   "key": "controls_C_spider_first_position_pct"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition C input tokens",
+   "printed": "1,102,863",
+   "key": "controls_C_input_total"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition C output tokens",
+   "printed": "3,638,952",
+   "key": "controls_C_output_total"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition C reasoning tokens",
+   "printed": "3,623,544",
+   "key": "controls_C_reasoning_total"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "questions per condition",
+   "printed": "2,568",
+   "key": "controls_C_questions"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition C mean latency, Spider (s)",
+   "printed": "35.5",
+   "key": "controls_C_spider_mean_latency_s"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "conditions A and B input tokens (A)",
+   "printed": "1,113,135",
+   "key": "controls_A_input_total"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "conditions A and B input tokens (B)",
+   "printed": "1,113,135",
+   "key": "controls_B_input_total"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition A output tokens",
+   "printed": "7,971",
+   "key": "controls_A_output_total"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "condition B output tokens",
+   "printed": "7,873",
+   "key": "controls_B_output_total"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "invalid candidate choices in A",
+   "printed": "5",
+   "key": "controls_A_invalid_choices"
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "invalid candidate choices in B",
+   "printed": "2",
+   "key": "controls_B_invalid_choices"
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "printed": "1.9",
+   "key": "decode_qwen3_glm_spider_avg_Generation_minus_Nonempty",
+   "transform": "abs",
+   "where": "Section VIII-C: Spider Qwen3/GLM, Nonempty over generation (range end of 1.8--1.9)",
+   "computed": 1.9114
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "printed": "1.5",
+   "key": "cost_S_al_over_Generation_max",
+   "where": "Section VIII-C: price ratio, range end of 1.3--1.5",
+   "computed": 1.5043
+  },
+  {
+   "label": "sec:q4",
+   "tex_file": "sections/07_q4_extra_spend.tex",
+   "where": "Section VIII-C: cross-pool comparisons use Qwen3-32B on the 1,532 BIRD questions with scored candidates in both pools",
+   "printed": "1,532",
+   "key": "common_bird_questions"
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "printed": "4.59",
+   "key": "levelchange_bird_avg_Nonempty_hi",
+   "where": "95% CI upper of 3.08 (1.56--4.59)",
+   "computed": 4.5886
+  },
+  {
+   "label": "sec:s-spend-pool",
+   "tex_file": "supplementary.tex",
+   "printed": "4.06",
+   "key": "levelchange_bird_avg_S_al_hi",
+   "where": "95% CI upper of 1.97 (0.08--4.06)",
+   "computed": 4.056
+  },
+  {
+   "label": "sec:s-decoding",
+   "tex_file": "supplementary.tex",
+   "where": "DeepSeek-V4-Pro mean latency on BIRD (s)",
+   "printed": "40.3",
+   "key": "controls_C_bird_mean_latency_s"
+  }
+ ],
+ "unreproduced": []
+}
